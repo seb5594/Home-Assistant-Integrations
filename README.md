@@ -22,8 +22,7 @@ under **Settings → Devices & services**.
 
 > Releases include `pulseaudio_loopback.zip` for HACS and `pulseaudio_loopback-1.0.0-manual.zip` for manual installation. Extract the manual ZIP into your Home Assistant configuration directory; it already contains `custom_components/pulseaudio_loopback/`. `SHA256SUMS.txt` lets you verify both downloads. HACS selects its ZIP automatically.
 
-**PulseAudio Loopback Extended** · [Changelog](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration/blob/main/CHANGELOG.md)
-
+**PulseAudio Loopback Extended** · [Changelog](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration/blob/main/CHANGELOG.md)<br>
 [![version](https://img.shields.io/static/v1?label=version&message=1.0.0&color=1877A5&style=flat)](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration/releases) [![released](https://img.shields.io/github/release-date-pre/seb5594/hass-pulseaudio_loopback_extended-integration?label=released&style=flat)](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration/releases) [![checks](https://img.shields.io/github/actions/workflow/status/seb5594/hass-pulseaudio_loopback_extended-integration/ci.yml?branch=main&label=checks&style=flat)](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration/actions/workflows/ci.yml)<br>
 [![stars](https://img.shields.io/github/stars/seb5594/hass-pulseaudio_loopback_extended-integration?label=stars&style=flat)](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration/stargazers) [![issues](https://img.shields.io/github/issues/seb5594/hass-pulseaudio_loopback_extended-integration?label=issues&style=flat)](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration/issues) [![updated](https://img.shields.io/github/last-commit/seb5594/hass-pulseaudio_loopback_extended-integration?label=updated&style=flat)](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration/commits/main)<br>
 [![downloads](https://img.shields.io/github/downloads/seb5594/hass-pulseaudio_loopback_extended-integration/total?label=downloads&style=flat)](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration/releases) [![latest release](https://img.shields.io/github/downloads/seb5594/hass-pulseaudio_loopback_extended-integration/latest/total?label=latest%20release&style=flat)](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration/releases/latest)<br>
@@ -31,8 +30,3 @@ under **Settings → Devices & services**.
 ![tests](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fseb5594%2Fhass-pulseaudio_loopback_extended-integration%2Fbadges%2Ftests.json&style=flat) ![HACS zip](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fseb5594%2Fhass-pulseaudio_loopback_extended-integration%2Fbadges%2Fzip-size.json&style=flat) ![last build](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fseb5594%2Fhass-pulseaudio_loopback_extended-integration%2Fbadges%2Flast-build.json&style=flat)
 
 [Source & documentation](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration) · [Pinned commit `28622c8`](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration/commit/28622c8c2ef12a53768e1138f66995cb8b43223b)
-
-Download counts come from GitHub release assets; GitHub does not report installations or countries.
-Only public repositories are listed. Test counts and ZIP sizes are published by each project's pipeline.
-
-The catalog follows each source repository's current default branch and pins that commit as a Git submodule. [How catalog updates work](.github/DEVELOPMENT.md).
