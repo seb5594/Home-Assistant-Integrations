@@ -1,8 +1,7 @@
 # Home Assistant Integrations by seb5594
 
 [![catalog sync](https://img.shields.io/github/actions/workflow/status/seb5594/Home-Assistant-Integrations/update.yml?branch=main&label=catalog%20sync&style=flat)](https://github.com/seb5594/Home-Assistant-Integrations/actions/workflows/update.yml) ![integrations](https://img.shields.io/static/v1?label=integrations&message=1&color=1877A5&style=flat)<br>
-[![synced](https://img.shields.io/github/last-commit/seb5594/Home-Assistant-Integrations?label=synced&style=flat)](https://github.com/seb5594/Home-Assistant-Integrations/commits/main)<br>
-[![Buy Me a Coffee](https://img.shields.io/static/v1?label=Support&message=Buy%20Me%20a%20Coffee&color=FFDD00&logo=buy-me-a-coffee&logoColor=black&style=flat)](https://buymeacoffee.com/seb5594) [![PayPal](https://img.shields.io/static/v1?label=Support&message=PayPal&color=0070BA&logo=paypal&logoColor=white&style=flat)](https://www.paypal.com/donate/?hosted_button_id=QMQPNRENXDN26)
+[![synced](https://img.shields.io/github/last-commit/seb5594/Home-Assistant-Integrations?label=synced&style=flat)](https://github.com/seb5594/Home-Assistant-Integrations/commits/main)
 
 Custom integrations for Home Assistant, installable through HACS. Each integration lives in its
 own repository; this catalog lists the public ones with their version, platform details, test
@@ -34,6 +33,14 @@ under **Settings → Devices & services**.
 Questions or problems? Open an issue on GitHub, but in the repository of the integration
 concerned: every integration lives in its own repository, linked in its entry above. Issues opened
 here cannot be handled.
+
+## Say thanks
+
+All my projects are built in my spare time, just for the fun of it. Still, they take a lot of time and care, and many of the smart home gadgets I buy end up here because I want to make them cloud-free and smart-home ready. Every bit of support means a lot to me.
+
+If my work helped you or turned out to be useful, show your appreciation with a hot drink for my next sleepless night.
+
+[![Buy Me a Coffee](https://img.shields.io/static/v1?label=Support&message=Buy%20Me%20a%20Coffee&color=FFDD00&logo=buy-me-a-coffee&logoColor=black&style=for-the-badge)](https://buymeacoffee.com/seb5594) [![PayPal](https://img.shields.io/static/v1?label=Support&message=PayPal&color=0070BA&logo=paypal&logoColor=white&style=for-the-badge)](https://www.paypal.com/donate/?hosted_button_id=QMQPNRENXDN26)
 
 ## License
 
