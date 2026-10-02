@@ -22,7 +22,7 @@ under **Settings → Devices & services**.
 <!-- Generated from the source repositories by the hass-workflows catalog action. -->
 ### [pulseaudio_loopback_extended](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration)
 
-> **Changelog** · **Download the latest release ZIPs**
+> Releases include `pulseaudio_loopback.zip` for HACS and `pulseaudio_loopback-1.0.0-manual.zip` for manual installation. Extract the manual ZIP into your Home Assistant configuration directory; it already contains `custom_components/pulseaudio_loopback/`. `SHA256SUMS.txt` lets you verify both downloads. HACS selects its ZIP automatically.
 
 **PulseAudio Loopback Extended** · [Changelog](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration/blob/main/CHANGELOG.md)
 
