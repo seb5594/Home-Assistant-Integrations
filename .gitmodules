@@ -1,3 +1,0 @@
-[submodule "pulseaudio_loopback_extended"]
-	path = pulseaudio_loopback_extended
-	url = https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration.git
