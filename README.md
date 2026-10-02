@@ -17,11 +17,11 @@ under **Settings → Devices & services**.
 ## Available integrations
 
 <!-- Generated from the source repositories by the hass-workflows catalog action. -->
-### [pulseaudio_loopback_extended](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration)
+### [pulseaudio_loopback_extended](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration) (1.0.0)
 
 > Releases include `pulseaudio_loopback.zip` for HACS and `pulseaudio_loopback-1.0.0-manual.zip` for manual installation. Extract the manual ZIP into your Home Assistant configuration directory; it already contains `custom_components/pulseaudio_loopback/`. `SHA256SUMS.txt` lets you verify both downloads. HACS selects its ZIP automatically.
 
-**PulseAudio Loopback Extended** · [Changelog](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration/blob/main/CHANGELOG.md)<br>
+[Changelog](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration/blob/main/CHANGELOG.md)<br>
 ![home assistant](https://img.shields.io/static/v1?label=home%20assistant&message=%E2%89%A5%202023.12.0&color=1877A5&style=flat) [![version](https://img.shields.io/static/v1?label=version&message=1.0.0&color=1877A5&style=flat)](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration/releases) [![released](https://img.shields.io/github/release-date-pre/seb5594/hass-pulseaudio_loopback_extended-integration?label=released&style=flat)](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration/releases) [![checks](https://img.shields.io/github/actions/workflow/status/seb5594/hass-pulseaudio_loopback_extended-integration/ci.yml?branch=main&label=checks&style=flat)](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration/actions/workflows/ci.yml)<br>
 [![downloads](https://img.shields.io/github/downloads/seb5594/hass-pulseaudio_loopback_extended-integration/total?label=downloads&style=flat)](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration/releases) [![latest release](https://img.shields.io/github/downloads/seb5594/hass-pulseaudio_loopback_extended-integration/latest/total?label=latest%20release&style=flat)](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration/releases/latest)<br>
 [![updated](https://img.shields.io/github/last-commit/seb5594/hass-pulseaudio_loopback_extended-integration?label=updated&style=flat)](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration/commits/main) [![license](https://img.shields.io/github/license/seb5594/hass-pulseaudio_loopback_extended-integration?label=license&style=flat)](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration)
