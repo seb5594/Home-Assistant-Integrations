@@ -26,7 +26,7 @@ under **Settings → Devices & services**.
 [![updated](https://img.shields.io/github/last-commit/seb5594/hass-pulseaudio_loopback_extended-integration?label=updated&style=flat)](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration/commits/main) [![license](https://img.shields.io/github/license/seb5594/hass-pulseaudio_loopback_extended-integration?label=license&style=flat)](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration)<br>
 ![tests](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fseb5594%2Fhass-pulseaudio_loopback_extended-integration%2Fbadges%2Ftests.json&style=flat) ![HACS zip](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fseb5594%2Fhass-pulseaudio_loopback_extended-integration%2Fbadges%2Fzip-size.json&style=flat) ![last build](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fseb5594%2Fhass-pulseaudio_loopback_extended-integration%2Fbadges%2Flast-build.json&style=flat)
 
-[Source & documentation](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration) · [Pinned commit `0ecc911`](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration/commit/0ecc9110ce428a2e6217793b6c2c7217357005f9)
+[Source & documentation](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration) · [Pinned commit `efc0b22`](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration/commit/efc0b22949f16b4986e9c7b6be79caee67150d6d)
 
 ## Support
 
