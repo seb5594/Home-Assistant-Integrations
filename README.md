@@ -1,7 +1,7 @@
 # Home Assistant Integrations by seb5594
 
 [![catalog sync](https://img.shields.io/github/actions/workflow/status/seb5594/Home-Assistant-Integrations/update.yml?branch=main&label=catalog%20sync&style=flat)](https://github.com/seb5594/Home-Assistant-Integrations/actions/workflows/update.yml) ![integrations](https://img.shields.io/static/v1?label=integrations&message=1&color=1877A5&style=flat)<br>
-[![synced](https://img.shields.io/github/last-commit/seb5594/Home-Assistant-Integrations?label=synced&style=flat)](https://github.com/seb5594/Home-Assistant-Integrations/commits/main)
+[![stars](https://img.shields.io/github/stars/seb5594/Home-Assistant-Integrations?label=stars&style=flat)](https://github.com/seb5594/Home-Assistant-Integrations/stargazers) [![synced](https://img.shields.io/github/last-commit/seb5594/Home-Assistant-Integrations?label=synced&style=flat)](https://github.com/seb5594/Home-Assistant-Integrations/commits/main)
 
 Custom integrations for Home Assistant, installable through HACS. Each integration lives in its
 own repository; this catalog lists the public ones with their version, platform details, test
@@ -22,10 +22,11 @@ under **Settings → Devices & services**.
 > This is a custom component for Home Assistant that extends the original PulseAudio Loopback integration by adding advanced audio routing parameters.
 
 [Changelog](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration/blob/main/CHANGELOG.md)<br>
-![home assistant](https://img.shields.io/static/v1?label=home%20assistant&message=%E2%89%A5%202022.4.0&color=1877A5&style=flat) [![version](https://img.shields.io/static/v1?label=version&message=1.0.0&color=1877A5&style=flat)](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration/releases) [![released](https://img.shields.io/github/release-date-pre/seb5594/hass-pulseaudio_loopback_extended-integration?label=released&style=flat)](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration/releases) [![checks](https://img.shields.io/github/actions/workflow/status/seb5594/hass-pulseaudio_loopback_extended-integration/ci.yml?branch=main&label=checks&style=flat)](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration/actions/workflows/ci.yml)<br>
-[![updated](https://img.shields.io/github/last-commit/seb5594/hass-pulseaudio_loopback_extended-integration?label=updated&style=flat)](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration/commits/main) [![license](https://img.shields.io/github/license/seb5594/hass-pulseaudio_loopback_extended-integration?label=license&style=flat)](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration)
+![home assistant](https://img.shields.io/static/v1?label=home%20assistant&message=%E2%89%A5%202022.4.0&color=1877A5&style=flat) [![version](https://img.shields.io/static/v1?label=version&message=1.0.0&color=1877A5&style=flat)](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration/releases) [![released](https://img.shields.io/github/release-date-pre/seb5594/hass-pulseaudio_loopback_extended-integration?label=released&style=flat)](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration/releases) [![checks](https://img.shields.io/github/actions/workflow/status/seb5594/hass-pulseaudio_loopback_extended-integration/ci.yml?branch=main&label=checks&style=flat)](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration/actions/workflows/ci.yml) [![HA releases](https://img.shields.io/github/actions/workflow/status/seb5594/hass-pulseaudio_loopback_extended-integration/compat.yml?branch=main&label=HA%20releases&style=flat)](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration/actions/workflows/compat.yml)<br>
+[![downloads](https://img.shields.io/github/downloads/seb5594/hass-pulseaudio_loopback_extended-integration/total?label=downloads&style=flat)](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration/releases)<br>
+[![updated](https://img.shields.io/github/last-commit/seb5594/hass-pulseaudio_loopback_extended-integration?label=updated&style=flat)](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration/commits/main)
 
-[Source & documentation](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration) · [Pinned commit `efc0b22`](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration/commit/efc0b22949f16b4986e9c7b6be79caee67150d6d)
+[Source & documentation](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration) · [Pinned commit `93efd4a`](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration/commit/93efd4a69c43044680b388557d6ff7b0f8ee655b)
 
 ## Support
 
@@ -43,5 +44,4 @@ If my work helped you or turned out to be useful, show your appreciation with a 
 
 ## License
 
-Every project listed here is licensed on its own. The license badge and the `LICENSE` file in each
-repository state which terms apply.
+Every project listed here is licensed on its own. The `LICENSE` file in each repository states which terms apply.
