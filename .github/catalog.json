@@ -1,5 +1,9 @@
 [
   {
+    "repository": "seb5594/hass-ninebot_e_scooters-integration",
+    "commit": "a83c9c70592834f7f8fbdcb4220772e665de5d61"
+  },
+  {
     "repository": "seb5594/hass-pulseaudio_loopback_extended-integration",
     "commit": "3ff38b85e0816c87e9bf0adb786e22098195e6be"
   }

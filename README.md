@@ -1,6 +1,6 @@
 # Home Assistant Integrations by seb5594
 
-[![catalog sync](https://img.shields.io/github/actions/workflow/status/seb5594/Home-Assistant-Integrations/update.yml?branch=main&label=catalog%20sync&style=flat)](https://github.com/seb5594/Home-Assistant-Integrations/actions/workflows/update.yml) ![integrations](https://img.shields.io/static/v1?label=integrations&message=1&color=1877A5&style=flat)<br>
+[![catalog sync](https://img.shields.io/github/actions/workflow/status/seb5594/Home-Assistant-Integrations/update.yml?branch=main&label=catalog%20sync&style=flat)](https://github.com/seb5594/Home-Assistant-Integrations/actions/workflows/update.yml) ![integrations](https://img.shields.io/static/v1?label=integrations&message=2&color=1877A5&style=flat)<br>
 [![stars](https://img.shields.io/github/stars/seb5594/Home-Assistant-Integrations?label=stars&style=flat)](https://github.com/seb5594/Home-Assistant-Integrations/stargazers) [![synced](https://img.shields.io/github/last-commit/seb5594/Home-Assistant-Integrations?label=synced&style=flat)](https://github.com/seb5594/Home-Assistant-Integrations/commits/main)
 
 Custom integrations for Home Assistant, installable through HACS. Each integration lives in its
@@ -17,6 +17,18 @@ under **Settings → Devices & services**.
 ## Available integrations
 
 <!-- Generated from the source repositories by the hass-workflows catalog action. -->
+### [ninebot_e_scooters](https://github.com/seb5594/hass-ninebot_e_scooters-integration) (1.0.0b3)
+
+> Local Home Assistant integration for Ninebot/Segway e-scooters and compatible Xiaomi models. No cloud account required.
+
+[Changelog](https://github.com/seb5594/hass-ninebot_e_scooters-integration/blob/main/CHANGELOG.md)<br>
+![setup](https://img.shields.io/static/v1?label=setup&message=UI%20config%20flow&color=157F71&style=flat)<br>
+![home assistant](https://img.shields.io/static/v1?label=home%20assistant&message=%E2%89%A5%202023.2.0&color=1877A5&style=flat) [![version](https://img.shields.io/static/v1?label=version&message=1.0.0b3&color=1877A5&style=flat)](https://github.com/seb5594/hass-ninebot_e_scooters-integration/releases) [![released](https://img.shields.io/github/release-date-pre/seb5594/hass-ninebot_e_scooters-integration?label=released&style=flat)](https://github.com/seb5594/hass-ninebot_e_scooters-integration/releases) [![checks](https://img.shields.io/github/actions/workflow/status/seb5594/hass-ninebot_e_scooters-integration/ci.yml?branch=main&label=checks&style=flat)](https://github.com/seb5594/hass-ninebot_e_scooters-integration/actions/workflows/ci.yml) [![HA releases](https://img.shields.io/github/actions/workflow/status/seb5594/hass-ninebot_e_scooters-integration/compat.yml?branch=main&label=HA%20releases&style=flat)](https://github.com/seb5594/hass-ninebot_e_scooters-integration/actions/workflows/compat.yml)<br>
+[![downloads](https://img.shields.io/github/downloads/seb5594/hass-ninebot_e_scooters-integration/total?label=downloads&style=flat&color=1877A5)](https://github.com/seb5594/hass-ninebot_e_scooters-integration/releases) [![latest release](https://img.shields.io/github/downloads/seb5594/hass-ninebot_e_scooters-integration/latest/total?label=latest%20release&style=flat&color=1877A5)](https://github.com/seb5594/hass-ninebot_e_scooters-integration/releases/latest)<br>
+[![updated](https://img.shields.io/github/last-commit/seb5594/hass-ninebot_e_scooters-integration?label=updated&style=flat)](https://github.com/seb5594/hass-ninebot_e_scooters-integration/commits/main)
+
+[Source & documentation](https://github.com/seb5594/hass-ninebot_e_scooters-integration) · [Pinned commit `a83c9c7`](https://github.com/seb5594/hass-ninebot_e_scooters-integration/commit/a83c9c70592834f7f8fbdcb4220772e665de5d61)
+
 ### [pulseaudio_loopback_extended](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration) (1.0.0)
 
 > This is a custom component for Home Assistant that extends the original PulseAudio Loopback integration by adding advanced audio routing parameters.
