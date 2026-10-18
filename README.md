@@ -25,7 +25,7 @@ under **Settings → Devices & services**.
 [![home assistant](https://img.shields.io/static/v1?label=home%20assistant&message=%E2%89%A5%202023.2.0&color=1877A5&style=flat)](https://github.com/seb5594/hass-ninebot_e_scooters-integration/actions/workflows/compat.yml) [![version](https://img.shields.io/static/v1?label=version&message=1.0.0b3&color=1877A5&style=flat)](https://github.com/seb5594/hass-ninebot_e_scooters-integration/releases/tag/v1.0.0b3)<br>
 [![downloads](https://img.shields.io/github/downloads/seb5594/hass-ninebot_e_scooters-integration/v1.0.0b3/total?label=downloads&color=1877A5&style=flat)](https://github.com/seb5594/hass-ninebot_e_scooters-integration/releases) [![issues](https://img.shields.io/github/issues/seb5594/hass-ninebot_e_scooters-integration?label=issues&style=flat)](https://github.com/seb5594/hass-ninebot_e_scooters-integration/issues) [![checks](https://img.shields.io/github/actions/workflow/status/seb5594/hass-ninebot_e_scooters-integration/ci.yml?branch=main&label=checks&style=flat)](https://github.com/seb5594/hass-ninebot_e_scooters-integration/actions/workflows/ci.yml)
 
-[Source & documentation](https://github.com/seb5594/hass-ninebot_e_scooters-integration) · [Pinned commit `4f5786b`](https://github.com/seb5594/hass-ninebot_e_scooters-integration/commit/4f5786b32e1cb27b7b8c4c83e9fbf0083cfdc0e8)
+[Source & documentation](https://github.com/seb5594/hass-ninebot_e_scooters-integration) · [Pinned commit `4877f99`](https://github.com/seb5594/hass-ninebot_e_scooters-integration/commit/4877f9924fc85a7055082fd809ebbcf4030c0ffb)
 
 ### [pulseaudio_loopback_extended](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration) (1.0.0)
 
