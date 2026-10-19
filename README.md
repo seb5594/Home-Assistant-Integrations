@@ -25,7 +25,7 @@ under **Settings → Devices & services**.
 [![home assistant](https://img.shields.io/static/v1?label=home%20assistant&message=%E2%89%A5%202023.2.0&color=1877A5&style=flat)](https://github.com/seb5594/hass-ninebot_e_scooters-integration/actions/workflows/compat.yml) [![version](https://img.shields.io/static/v1?label=version&message=1.0.0b3&color=1877A5&style=flat)](https://github.com/seb5594/hass-ninebot_e_scooters-integration/releases/tag/v1.0.0b3)<br>
 [![downloads](https://img.shields.io/github/downloads/seb5594/hass-ninebot_e_scooters-integration/v1.0.0b3/total?label=downloads&color=1877A5&style=flat)](https://github.com/seb5594/hass-ninebot_e_scooters-integration/releases) [![issues](https://img.shields.io/github/issues/seb5594/hass-ninebot_e_scooters-integration?label=issues&style=flat)](https://github.com/seb5594/hass-ninebot_e_scooters-integration/issues) ![tests](https://img.shields.io/static/v1?label=tests&message=221%20passed&color=2F855A&style=flat) [![checks](https://img.shields.io/github/actions/workflow/status/seb5594/hass-ninebot_e_scooters-integration/ci.yml?branch=main&label=checks&style=flat)](https://github.com/seb5594/hass-ninebot_e_scooters-integration/actions/workflows/ci.yml)
 
-[Source & documentation](https://github.com/seb5594/hass-ninebot_e_scooters-integration) · [Pinned commit `ac248fe`](https://github.com/seb5594/hass-ninebot_e_scooters-integration/commit/ac248fe9d3b55a8ea0008d2633ddf20d75c2b209)
+[Source & documentation](https://github.com/seb5594/hass-ninebot_e_scooters-integration) · [Pinned commit `6e17b9e`](https://github.com/seb5594/hass-ninebot_e_scooters-integration/commit/6e17b9eeec6b5e97e845dfc15400ed35bca9a96a)
 
 ### [pulseaudio_loopback_extended](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration) (1.0.0)
 
@@ -35,7 +35,7 @@ under **Settings → Devices & services**.
 [![home assistant](https://img.shields.io/static/v1?label=home%20assistant&message=%E2%89%A5%202022.4.0&color=1877A5&style=flat)](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration/actions/workflows/compat.yml) [![version](https://img.shields.io/static/v1?label=version&message=1.0.0&color=1877A5&style=flat)](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration/releases/tag/v1.0.0)<br>
 [![downloads](https://img.shields.io/github/downloads/seb5594/hass-pulseaudio_loopback_extended-integration/v1.0.0/total?label=downloads&color=1877A5&style=flat)](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration/releases) [![issues](https://img.shields.io/github/issues/seb5594/hass-pulseaudio_loopback_extended-integration?label=issues&style=flat)](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration/issues) ![tests](https://img.shields.io/static/v1?label=tests&message=20%20passed&color=2F855A&style=flat) [![checks](https://img.shields.io/github/actions/workflow/status/seb5594/hass-pulseaudio_loopback_extended-integration/ci.yml?branch=main&label=checks&style=flat)](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration/actions/workflows/ci.yml)
 
-[Source & documentation](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration) · [Pinned commit `2d499e6`](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration/commit/09d0b0635714e919122127795f5ba4f3fe3ac447)
+[Source & documentation](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration) · [Pinned commit `aa071c5`](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration/commit/24216db35f0f7ed81bf3ea62929cf98b7a1c90f7)
 
 ### [vacuum_mapguard](https://github.com/seb5594/hass-vacuum_mapguard-integration) (1.1.1)
 
@@ -45,7 +45,7 @@ under **Settings → Devices & services**.
 [![home assistant](https://img.shields.io/static/v1?label=home%20assistant&message=%E2%89%A5%202026.3.0&color=1877A5&style=flat)](https://github.com/seb5594/hass-vacuum_mapguard-integration/actions/workflows/compat.yml) [![version](https://img.shields.io/static/v1?label=version&message=1.1.1&color=1877A5&style=flat)](https://github.com/seb5594/hass-vacuum_mapguard-integration/releases/tag/v1.1.1)<br>
 [![downloads](https://img.shields.io/github/downloads/seb5594/hass-vacuum_mapguard-integration/v1.1.1/total?label=downloads&color=1877A5&style=flat)](https://github.com/seb5594/hass-vacuum_mapguard-integration/releases) [![issues](https://img.shields.io/github/issues/seb5594/hass-vacuum_mapguard-integration?label=issues&style=flat)](https://github.com/seb5594/hass-vacuum_mapguard-integration/issues) ![tests](https://img.shields.io/static/v1?label=tests&message=5%20passed&color=2F855A&style=flat) [![checks](https://img.shields.io/github/actions/workflow/status/seb5594/hass-vacuum_mapguard-integration/ci.yml?branch=main&label=checks&style=flat)](https://github.com/seb5594/hass-vacuum_mapguard-integration/actions/workflows/ci.yml)
 
-[Source & documentation](https://github.com/seb5594/hass-vacuum_mapguard-integration) · [Pinned commit `05a57af`](https://github.com/seb5594/hass-vacuum_mapguard-integration/commit/f4bf6f1e2dc069ef550e46488518bc279d90b06e)
+[Source & documentation](https://github.com/seb5594/hass-vacuum_mapguard-integration) · [Pinned commit `9eff6d9`](https://github.com/seb5594/hass-vacuum_mapguard-integration/commit/9c368696d16383333ace6944437dee4da88d39d7)
 
 ## Support
 
