@@ -23,9 +23,9 @@ under **Settings → Devices & services**.
 
 [Changelog](https://github.com/seb5594/hass-medication_tracker-integration/blob/main/CHANGELOG.md)<br>
 ![home assistant](https://img.shields.io/static/v1?label=home%20assistant&message=%E2%89%A5%202024.7.0&color=1877A5&style=flat) [![version](https://img.shields.io/static/v1?label=version&message=2026.10.20.0&color=1877A5&style=flat)](https://github.com/seb5594/hass-medication_tracker-integration/releases)<br>
-[![issues](https://img.shields.io/github/issues/seb5594/hass-medication_tracker-integration?label=issues&style=flat)](https://github.com/seb5594/hass-medication_tracker-integration/issues)
+[![issues](https://img.shields.io/github/issues/seb5594/hass-medication_tracker-integration?label=issues&style=flat)](https://github.com/seb5594/hass-medication_tracker-integration/issues) [![checks](https://img.shields.io/github/actions/workflow/status/seb5594/hass-medication_tracker-integration/ci.yml?branch=main&label=checks&style=flat)](https://github.com/seb5594/hass-medication_tracker-integration/actions/workflows/ci.yml)
 
-[Source & documentation](https://github.com/seb5594/hass-medication_tracker-integration) · [Pinned commit `4040793`](https://github.com/seb5594/hass-medication_tracker-integration/commit/4040793fca32ed063a1fe7c60a9a060a3ae4f933)
+[Source & documentation](https://github.com/seb5594/hass-medication_tracker-integration) · [Pinned commit `ee2ac79`](https://github.com/seb5594/hass-medication_tracker-integration/commit/ee2ac79ca62cc90babffaa9be49cf0e11ba5e7a6)
 
 ### [ninebot_e_scooters](https://github.com/seb5594/hass-ninebot_e_scooters-integration) (1.0.0b3)
 
