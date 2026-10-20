@@ -1,6 +1,6 @@
 # Home Assistant Integrations by seb5594
 
-[![catalog sync](https://img.shields.io/github/actions/workflow/status/seb5594/Home-Assistant-Integrations/update.yml?branch=main&label=catalog%20sync&style=flat)](https://github.com/seb5594/Home-Assistant-Integrations/actions/workflows/update.yml) ![integrations](https://img.shields.io/static/v1?label=integrations&message=3&color=1877A5&style=flat)<br>
+[![catalog sync](https://img.shields.io/github/actions/workflow/status/seb5594/Home-Assistant-Integrations/update.yml?branch=main&label=catalog%20sync&style=flat)](https://github.com/seb5594/Home-Assistant-Integrations/actions/workflows/update.yml) ![integrations](https://img.shields.io/static/v1?label=integrations&message=4&color=1877A5&style=flat)<br>
 [![stars](https://img.shields.io/github/stars/seb5594/Home-Assistant-Integrations?label=stars&style=flat)](https://github.com/seb5594/Home-Assistant-Integrations/stargazers) [![synced](https://img.shields.io/github/last-commit/seb5594/Home-Assistant-Integrations?label=synced&style=flat)](https://github.com/seb5594/Home-Assistant-Integrations/commits/main)
 
 Custom integrations for Home Assistant, installable through HACS. Each integration lives in its
@@ -17,6 +17,16 @@ under **Settings → Devices & services**.
 ## Available integrations
 
 <!-- Generated from the source repositories by the hass-workflows catalog action. -->
+### [medication_tracker](https://github.com/seb5594/hass-medication_tracker-integration) (2026.10.20.0)
+
+> Track medications, scheduled doses, streaks, and overdue alerts — entirely local, no cloud, no app required.
+
+[Changelog](https://github.com/seb5594/hass-medication_tracker-integration/blob/main/CHANGELOG.md)<br>
+![home assistant](https://img.shields.io/static/v1?label=home%20assistant&message=%E2%89%A5%202024.7.0&color=1877A5&style=flat) [![version](https://img.shields.io/static/v1?label=version&message=2026.10.20.0&color=1877A5&style=flat)](https://github.com/seb5594/hass-medication_tracker-integration/releases)<br>
+[![issues](https://img.shields.io/github/issues/seb5594/hass-medication_tracker-integration?label=issues&style=flat)](https://github.com/seb5594/hass-medication_tracker-integration/issues)
+
+[Source & documentation](https://github.com/seb5594/hass-medication_tracker-integration) · [Pinned commit `4040793`](https://github.com/seb5594/hass-medication_tracker-integration/commit/4040793fca32ed063a1fe7c60a9a060a3ae4f933)
+
 ### [ninebot_e_scooters](https://github.com/seb5594/hass-ninebot_e_scooters-integration) (1.0.0b3)
 
 > Local Home Assistant integration for Ninebot/Segway e-scooters and compatible Xiaomi models. No cloud account required.

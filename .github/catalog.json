@@ -1,5 +1,9 @@
 [
   {
+    "repository": "seb5594/hass-medication_tracker-integration",
+    "commit": "4040793fca32ed063a1fe7c60a9a060a3ae4f933"
+  },
+  {
     "repository": "seb5594/hass-ninebot_e_scooters-integration",
     "commit": "25a6c84fab2b06fd37b2ef01eded37ea6f03abe8"
   },
