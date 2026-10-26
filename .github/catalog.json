@@ -5,10 +5,10 @@
   },
   {
     "repository": "seb5594/hass-pulseaudio_loopback_extended-integration",
-    "commit": "34df7108a4153a721752f806eccc1f3eccb4a6a3"
+    "commit": "d503e1a9abe34355f8398472063ffa524e5621e7"
   },
   {
     "repository": "seb5594/hass-vacuum_mapguard-integration",
-    "commit": "55f8ae6cdd36446409d2cffccaebc2eb04ef3306"
+    "commit": "ca7798607dcd86d6600444fd9a41b38dcd06b816"
   }
 ]
