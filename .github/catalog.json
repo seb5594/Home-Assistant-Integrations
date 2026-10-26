@@ -1,14 +1,14 @@
 [
   {
     "repository": "seb5594/hass-ninebot_e_scooters-integration",
-    "commit": "588fe599ff428401bcb745054bc3d8c182ef4461"
+    "commit": "b25ff13cc874127c65f839711859d2c155d92c72"
   },
   {
     "repository": "seb5594/hass-pulseaudio_loopback_extended-integration",
-    "commit": "d503e1a9abe34355f8398472063ffa524e5621e7"
+    "commit": "6bf07eb0ce7da6cd5b2807739231bf7d83c7c46b"
   },
   {
     "repository": "seb5594/hass-vacuum_mapguard-integration",
-    "commit": "ca7798607dcd86d6600444fd9a41b38dcd06b816"
+    "commit": "591282db04c3ad6c5ea66807911ae2d8a08014f1"
   }
 ]
