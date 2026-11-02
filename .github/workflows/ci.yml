@@ -23,7 +23,7 @@ jobs:
       - name: Check reproducible README
         run: |
           python scripts/sync_catalog.py --from-lock
-          git diff --exit-code -- README.md assets/brands/README.md
+          git diff --exit-code -- README.md catalog-feed.json assets/brands/README.md
   home-assistant:
     runs-on: ubuntu-latest
     timeout-minutes: 15

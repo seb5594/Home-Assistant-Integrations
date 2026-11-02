@@ -12,10 +12,17 @@ from homeassistant.const import __version__ as HA_VERSION
 from homeassistant.core import callback
 from homeassistant.helpers import selector
 
-from .const import DOMAIN, NAME
+from .const import CONF_AUTO_REGISTER, CONF_NOTIFY_NEW, DOMAIN, NAME
 from .installer import install_selected, load_catalog
 
 _LOGGER = logging.getLogger(__name__)
+
+
+def settings_schema(settings):
+    return vol.Schema({
+        vol.Required(CONF_AUTO_REGISTER, default=settings.get(CONF_AUTO_REGISTER, True)): bool,
+        vol.Required(CONF_NOTIFY_NEW, default=settings.get(CONF_NOTIFY_NEW, True)): bool,
+    })
 
 
 class InstallFlow:
@@ -105,9 +112,10 @@ class InstallFlow:
 
     async def async_step_finish(self, user_input=None):
         if user_input is not None:
+            data = dict(self.config_entry.options)
+            data["selected"] = self._selected
             return self.async_create_entry(
-                title=NAME if self._selection_step == "user" else "",
-                data={"selected": self._selected},
+                title="", data=data,
             )
         changed = self._result["changed"]
         return self.async_show_form(
@@ -116,16 +124,17 @@ class InstallFlow:
         )
 
 
-class CatalogConfigFlow(InstallFlow, config_entries.ConfigFlow, domain=DOMAIN):
+class CatalogConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
     """One catalog instance for the Home Assistant config directory."""
 
     VERSION = 1
-    _selection_step = "user"
 
     async def async_step_user(self, user_input=None):
         await self.async_set_unique_id(DOMAIN)
         self._abort_if_unique_id_configured()
-        return await self._async_select("user", user_input, [])
+        if user_input is not None:
+            return self.async_create_entry(title=NAME, data=user_input)
+        return self.async_show_form(step_id="user", data_schema=settings_schema({}))
 
     @staticmethod
     @callback
@@ -136,10 +145,23 @@ class CatalogConfigFlow(InstallFlow, config_entries.ConfigFlow, domain=DOMAIN):
 class CatalogOptionsFlow(InstallFlow, config_entries.OptionsFlow):
     """Reopen Configure after a HACS catalog update to apply new snapshots."""
 
-    _selection_step = "init"
+    _selection_step = "install_snapshots"
 
     async def async_step_init(self, user_input=None):
+        return self.async_show_menu(
+            step_id="init", menu_options=["settings", "install_snapshots"],
+        )
+
+    async def async_step_settings(self, user_input=None):
+        settings = dict(self.config_entry.data) | dict(self.config_entry.options)
+        if user_input is not None:
+            return self.async_create_entry(
+                title="", data=dict(self.config_entry.options) | user_input,
+            )
+        return self.async_show_form(step_id="settings", data_schema=settings_schema(settings))
+
+    async def async_step_install_snapshots(self, user_input=None):
         defaults = self.config_entry.options.get(
             "selected", self.config_entry.data.get("selected", [])
         )
-        return await self._async_select("init", user_input, defaults)
+        return await self._async_select("install_snapshots", user_input, defaults)

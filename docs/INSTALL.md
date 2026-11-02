@@ -1,44 +1,66 @@
-# Install from one catalog
+# seb5594's Integration Hub
 
 ## What this workaround does
 
-HACS supports one integration per repository. This repository contains one HACS integration,
-**Home Assistant Integration Catalog** (`integration_catalog`). Its setup dialog downloads
-only the components you select, at the commits and file checksums shipped with the catalog.
-They retain their original domains, names, configuration and requirements.
+HACS supports one integration per repository. This repository contains **seb5594's Integration Hub**
+(`integration_catalog`). The hub registers the individual catalog repositories in HACS, where you choose
+what to download and configure. HACS then manages each source integration's normal releases and updates.
+Adding a repository does not install its integration or change its configuration.
 
-This is an **experimental custom installer**, not a native HACS multi-integration repository.
-HACS tracks only the catalog, not the versions of the child components. No HACS internals,
-storage files, monkey patches, symlinks or archive traversal tricks are used.
+Automatic registration is an **experimental HACS adapter**. It calls the runtime registration and persistence
+functions used by HACS itself, with normal validation enabled. These are internal APIs, not a stable public
+extension contract. The hub never edits HACS storage files directly, disables validation, or patches HACS.
 
 ## First installation
 
 1. In **HACS → ⋮ → Custom repositories**, add `https://github.com/seb5594/Home-Assistant-Integrations`, category **Integration**.
-2. Download **Home Assistant Integration Catalog (experimental installer)**.
+2. Download **seb5594's Integration Hub**.
 3. Restart Home Assistant.
-4. In **Settings → Devices & services → Add integration**, search for **Home Assistant Integration Catalog**.
-5. Select one or more integrations and acknowledge the installer behavior. The dialog shows each friendly name, snapshot version and minimum Home Assistant version.
-6. Wait for the result. Downloads and checks finish before any component is installed.
-7. Restart Home Assistant after an installation or update.
-8. Add/configure the installed integrations under their original names, following their own documentation. Integrations that require YAML still require YAML.
+4. In **Settings → Devices & services → Add integration**, search for **seb5594's Integration Hub**.
+5. Leave automatic HACS registration and new-integration notifications enabled, or change these settings.
+6. Open HACS. The catalog's individual repositories are added automatically; choose the integrations to download.
+7. Follow HACS' restart instructions and each integration's own configuration documentation.
 
-The catalog requires Home Assistant **2025.1.0 or newer**. Each selected component can require a later version;
-the installer checks the minimum declared by its source repository before downloading.
-Internet access to `codeload.github.com` is required during installation. No GitHub token, Git client,
-Supervisor or shell access is needed for normal installation.
+The hub requires Home Assistant **2025.1.0 or newer** and an existing configured HACS installation for
+automatic registration. It reuses HACS' GitHub connection; no additional token, Git client, Supervisor or
+shell access is required. The public discovery feed is fetched from `raw.githubusercontent.com`.
+If HACS is unavailable, discovery notifications and direct add links still work. Failed registrations
+are retried, with a notification for unavailable/incompatible APIs. The hub checks again one minute
+after startup to accommodate HACS' startup tasks, then hourly. You can press **Refresh catalog** immediately.
 
-## Updates and adding more integrations
+## New integration notifications
+
+The hub checks the public `catalog-feed.json` hourly. The repository synchronizer refreshes that feed
+hourly and after an integration's release dispatch. New public catalog projects produce a Home Assistant
+persistent notification with their friendly names, versions and direct HACS links. Registration happens
+before the notification when HACS is available. Notifications do not mean a component was installed.
+
+The first successful check (or bundled fallback when offline) establishes a baseline. Seen repository
+IDs are persisted across restarts, so unchanged catalogs and new versions of an existing project do not
+repeat the notification. Updates of downloaded integrations remain HACS' responsibility. If the feed cannot
+be read or validated, the hub retains its last known catalog; it does not infer removals or uninstall anything.
+
+Use **Configure → Hub settings** to disable registration and/or new-project notifications. Disabling
+registration does not remove repositories already added. Removing the hub leaves those repositories in HACS.
+
+## Optional snapshot installer (advanced)
+
+The original direct-file installer remains under **Configure → Install snapshots (advanced)**. It downloads
+the exact component commits and SHA-256 allowlists shipped with the installed hub version. It is independent
+of HACS' component management. Do not download the same integration using both systems.
 
 1. Update the catalog in HACS when a new catalog version is available.
 2. Restart Home Assistant so the new catalog code and snapshot list are loaded.
-3. Open **Settings → Devices & services → Home Assistant Integration Catalog → Configure**.
+3. Open **Settings → Devices & services → seb5594's Integration Hub → Configure → Install snapshots (advanced)**.
 4. Select the components to install/update and submit. An unchanged snapshot is skipped.
 5. Restart Home Assistant if anything changed.
 
-Updates are applied only when requested in this dialog. Normal startup never modifies component files.
+Snapshot updates are applied only when requested in this dialog. Normal startup never modifies component files.
 Selecting fewer integrations does **not** uninstall the others. Components not selected remain at their installed versions.
 The catalog follows the default branch of each public source repository, so snapshots can include unreleased changes.
-Use the individual HACS repositories if you want each project's independent release selection and update entities.
+The normal automatic-registration mode provides each project's independent HACS release selection and update entities.
+The snapshot installer checks the source's minimum HA version before downloading and requires internet access to
+`codeload.github.com`. The remaining sections describe its ownership checks, backups and removal.
 
 ## Existing installations and local changes
 

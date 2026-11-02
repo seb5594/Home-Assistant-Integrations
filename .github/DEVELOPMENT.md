@@ -26,6 +26,7 @@ Duplicate domains also stop discovery. The synchronizer generates:
 - `.gitmodules` and `integrations/<domain>` gitlinks, pinned to source commits;
 - `.github/catalog.json`, retaining the repository/commit format;
 - `custom_components/integration_catalog/catalog.json`, with friendly names, minimum HA versions and a per-file SHA-256 allowlist;
+- `catalog-feed.json`, a small public feed polled by installed hubs independently of HACS hub updates;
 - `assets/brands/` source logos and attribution;
 - `README.md`, from the editable `templates/README.md` template.
 
@@ -49,5 +50,10 @@ checkout can run the standard-library tests without installing Home Assistant.
 
 ## Design boundaries
 
-The installer is an experimental opt-in filesystem manager. It must not edit HACS storage, import source
-code while installing, overwrite a directory it does not own, or mutate child components on HA startup.
+The hub registers source repositories through a capability-checked HACS runtime adapter, preserving normal
+HACS validation and skip policies. This internal API can change: keep it in `hacs_bridge.py`, surface errors
+and retain manual HACS links. Polling never downloads child components. Notifications are deduplicated by
+repository identity using the hub's own HA Store, not HACS storage. The first check establishes a baseline.
+
+The optional snapshot installer must not edit HACS storage files directly, import source code while installing,
+overwrite a directory it does not own, or mutate child component files on HA startup.

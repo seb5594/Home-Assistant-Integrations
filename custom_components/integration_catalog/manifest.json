@@ -1,6 +1,7 @@
 {
   "domain": "integration_catalog",
-  "name": "Home Assistant Integration Catalog",
+  "name": "seb5594's Integration Hub",
+  "after_dependencies": ["hacs"],
   "codeowners": [
     "@seb5594"
   ],
@@ -13,5 +14,5 @@
   "iot_class": "cloud_polling",
   "issue_tracker": "https://github.com/seb5594/Home-Assistant-Integrations/issues",
   "requirements": [],
-  "version": "2026.11.2.81661"
+  "version": "2026.11.3.0"
 }

@@ -43,3 +43,11 @@ class CatalogTests(unittest.TestCase):
         manifest = json.loads(manifests[0].read_text("utf-8"))
         self.assertTrue(manifest["config_flow"])
         self.assertTrue((manifests[0].parent / "brand/icon.png").exists())
+
+    def test_public_discovery_feed_matches_pinned_metadata(self):
+        feed = json.loads((ROOT / "catalog-feed.json").read_text("utf-8"))
+        self.assertEqual(feed["schema_version"], 1)
+        self.assertEqual(feed["integrations"], [
+            {key: item[key] for key in ("repository", "domain", "name", "version")}
+            for item in self.items
+        ])

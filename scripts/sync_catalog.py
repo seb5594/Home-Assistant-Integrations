@@ -51,6 +51,17 @@ def write_json(path, data):
     path.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", "utf-8")
 
 
+def write_public_feed(items):
+    """Small polling feed; component file hashes remain in the installer lock."""
+    write_json(ROOT / "catalog-feed.json", {
+        "schema_version": 1,
+        "integrations": [
+            {key: item[key] for key in ("repository", "domain", "name", "version")}
+            for item in items
+        ],
+    })
+
+
 def inspect_repository(repo):
     repository = repo["full_name"]
     commit = api(f"repos/{repository}/commits/{repo['default_branch']}")["sha"]
@@ -210,8 +221,13 @@ def main():
         if items != previous:
             manifest = json.loads((COMPONENT / "manifest.json").read_text("utf-8"))
             now = datetime.now(timezone.utc)
-            manifest["version"] = f"{now.year}.{now.month}.{now.day}.{now.hour * 3600 + now.minute * 60 + now.second}"
+            candidate = (now.year, now.month, now.day, now.hour * 3600 + now.minute * 60 + now.second)
+            previous_version = tuple(map(int, manifest["version"].split(".")))
+            if candidate <= previous_version:
+                candidate = previous_version[:-1] + (previous_version[-1] + 1,)
+            manifest["version"] = ".".join(map(str, candidate))
             write_json(COMPONENT / "manifest.json", manifest)
+    write_public_feed(items)
     (ROOT / "README.md").write_text(render_readme(items), "utf-8")
     sources = "# Brand assets\n\nSource graphics retain their original rights and licenses.\n\n" + "\n".join(
         f"- **{item['name']}** (`{item['logo']}`): {item['logo_source']}" for item in items

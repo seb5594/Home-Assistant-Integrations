@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "integrations": [
+    {
+      "repository": "seb5594/hass-upet_airrobo_robotail_meowant-integration",
+      "domain": "ubpet",
+      "name": "Cat Litter Hub – UPET / UBPet / AIRROBO / Robotail / Meowant",
+      "version": "2026.11.02.1"
+    },
+    {
+      "repository": "seb5594/hass-medication_tracker-integration",
+      "domain": "medication_tracker",
+      "name": "Medication Tracker",
+      "version": "2026.10.31.0"
+    },
+    {
+      "repository": "seb5594/hass-ninebot_e_scooters-integration",
+      "domain": "ninebot_e_scooters",
+      "name": "Ninebot E-Scooters",
+      "version": "1.0.0b3"
+    },
+    {
+      "repository": "seb5594/hass-pulseaudio_loopback_extended-integration",
+      "domain": "pulseaudio_loopback",
+      "name": "PulseAudio Loopback Extended",
+      "version": "1.0.0"
+    },
+    {
+      "repository": "seb5594/hass-vacuum_mapguard-integration",
+      "domain": "vacuum_mapguard",
+      "name": "Vacuum MapGuard",
+      "version": "1.1.1"
+    }
+  ]
+}
