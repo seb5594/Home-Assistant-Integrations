@@ -1,0 +1,60 @@
+{
+  "title": "Home Assistant Integration Catalog",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Install from the catalog",
+        "description": "Select components to install or update. HACS manages only this catalog. After installing/updating components, restart Home Assistant. Existing installations from other sources and locally modified files are refused. Deselecting does not uninstall.",
+        "data": {
+          "integrations": "Integrations",
+          "acknowledge": "I understand that this experimental installer downloads component files and requires a restart."
+        }
+      },
+      "failed": {
+        "title": "Installation failed",
+        "description": "{error}\n\nSubmit to return to the selection. See the catalog installation guide for recovery instructions."
+      },
+      "finish": {
+        "title": "Installation complete",
+        "description": "Installed/updated: {integrations}\n\nRestart Home Assistant if anything changed. Then configure the selected integrations under their original names. A dash means all selected snapshots were already installed."
+      }
+    },
+    "progress": {
+      "installing": "Downloading and verifying the selected components. Please wait."
+    },
+    "error": {
+      "acknowledge_required": "Please acknowledge the installer behavior.",
+      "select_required": "Select at least one integration."
+    },
+    "abort": {
+      "already_configured": "The catalog is already configured. Use Configure on its existing entry."
+    }
+  },
+  "options": {
+    "step": {
+      "failed": {
+        "title": "Installation failed",
+        "description": "{error}\n\nSubmit to return to the selection. See the catalog installation guide for recovery instructions."
+      },
+      "finish": {
+        "title": "Installation complete",
+        "description": "Installed/updated: {integrations}\n\nRestart Home Assistant if anything changed. Then configure the selected integrations under their original names. A dash means all selected snapshots were already installed."
+      },
+      "init": {
+        "title": "Install or update selected components",
+        "description": "Select components to install or update. HACS manages only this catalog. After installing/updating components, restart Home Assistant. Existing installations from other sources and locally modified files are refused. Deselecting does not uninstall.",
+        "data": {
+          "integrations": "Integrations",
+          "acknowledge": "I understand that this experimental installer downloads component files and requires a restart."
+        }
+      }
+    },
+    "progress": {
+      "installing": "Downloading and verifying the selected components. Please wait."
+    },
+    "error": {
+      "acknowledge_required": "Please acknowledge the installer behavior.",
+      "select_required": "Select at least one integration."
+    }
+  }
+}

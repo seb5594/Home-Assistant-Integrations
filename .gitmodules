@@ -1,0 +1,15 @@
+[submodule "ubpet"]
+	path = integrations/ubpet
+	url = https://github.com/seb5594/hass-upet_airrobo_robotail_meowant-integration.git
+[submodule "medication_tracker"]
+	path = integrations/medication_tracker
+	url = https://github.com/seb5594/hass-medication_tracker-integration.git
+[submodule "ninebot_e_scooters"]
+	path = integrations/ninebot_e_scooters
+	url = https://github.com/seb5594/hass-ninebot_e_scooters-integration.git
+[submodule "pulseaudio_loopback"]
+	path = integrations/pulseaudio_loopback
+	url = https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration.git
+[submodule "vacuum_mapguard"]
+	path = integrations/vacuum_mapguard
+	url = https://github.com/seb5594/hass-vacuum_mapguard-integration.git

@@ -1,0 +1,615 @@
+[
+  {
+    "repository": "seb5594/hass-upet_airrobo_robotail_meowant-integration",
+    "commit": "0212bb469bc4f99ae4a837d3f25bae0b1232c92c",
+    "domain": "ubpet",
+    "name": "Cat Litter Hub – UPET / UBPet / AIRROBO / Robotail / Meowant",
+    "version": "2026.11.02.1",
+    "homeassistant": "2023.6.0",
+    "description": "Custom Home Assistant integration for UPET / Airrobo / Robotail / Meowant smart cat litter boxes",
+    "branch": "main",
+    "changelog": "CHANGELOG.md",
+    "ci": "ci.yml",
+    "tests": "57 passed",
+    "logo": "assets/brands/ubpet.png",
+    "logo_source": "https://github.com/seb5594/hass-upet_airrobo_robotail_meowant-integration/blob/0212bb469bc4f99ae4a837d3f25bae0b1232c92c/custom_components/ubpet/brand/logo.png",
+    "files": {
+      "__init__.py": {
+        "path": "custom_components/ubpet/__init__.py",
+        "sha256": "b79679762c9bcb3ba8757c3734024f5155757f5c36d8fd6baf9e0b035bddf8d4"
+      },
+      "api.py": {
+        "path": "custom_components/ubpet/api.py",
+        "sha256": "4281ce4eb3ffe8b2f58db2546a7b7b7fefeaba3cd653ced70e7956698fe43e2b"
+      },
+      "binary_sensor.py": {
+        "path": "custom_components/ubpet/binary_sensor.py",
+        "sha256": "c29653be63ac6af5c604d72a69bf79ffd12d8d33e34d53cd9123cac7242f6aa0"
+      },
+      "brand/icon.png": {
+        "path": "custom_components/ubpet/brand/icon.png",
+        "sha256": "bdf16f9fa40ad7f0861170fb37fdcea296134361e86d2a33a1439c2c88b55030"
+      },
+      "brand/icon@2x.png": {
+        "path": "custom_components/ubpet/brand/icon@2x.png",
+        "sha256": "adb7b3419501b2d9f899e41b6d2a3bfa299cac73c610afaf69e66f81823e1acd"
+      },
+      "brand/logo.png": {
+        "path": "custom_components/ubpet/brand/logo.png",
+        "sha256": "bdf16f9fa40ad7f0861170fb37fdcea296134361e86d2a33a1439c2c88b55030"
+      },
+      "brand/logo@2x.png": {
+        "path": "custom_components/ubpet/brand/logo@2x.png",
+        "sha256": "adb7b3419501b2d9f899e41b6d2a3bfa299cac73c610afaf69e66f81823e1acd"
+      },
+      "button.py": {
+        "path": "custom_components/ubpet/button.py",
+        "sha256": "b85e40aa4ae8713c07afde99b3004056a88cade2cb2844a15d0e4236d1250dd6"
+      },
+      "compat.py": {
+        "path": "custom_components/ubpet/compat.py",
+        "sha256": "3d1da8f077e509dcebe1c12b59b092381e9bd2d62f6f2958da010408e17a21ca"
+      },
+      "config_flow.py": {
+        "path": "custom_components/ubpet/config_flow.py",
+        "sha256": "b31ca8d5c9f801ce9e38cd2fd2bf38a13d216fc8f32ad782e4f4e42fa1317b35"
+      },
+      "const.py": {
+        "path": "custom_components/ubpet/const.py",
+        "sha256": "d647d08d077758cfc9fbbe45e98977330192033c97d0cbf9e1e5dbb25d3d6ede"
+      },
+      "coordinator.py": {
+        "path": "custom_components/ubpet/coordinator.py",
+        "sha256": "be66b7e33ea0b9156fc7cec320540a29ade9d6da118ef2ce3a848808afbd02dc"
+      },
+      "diagnostics.py": {
+        "path": "custom_components/ubpet/diagnostics.py",
+        "sha256": "bc15d78637866685d10bfdb134ee1074c6dbeee3a1c9eaa4ff6de95aecfe556c"
+      },
+      "entities.py": {
+        "path": "custom_components/ubpet/entities.py",
+        "sha256": "905b9003d52745f7351ad3714d621b326b9e369f923d7aa45836aa65d2b21e66"
+      },
+      "history.py": {
+        "path": "custom_components/ubpet/history.py",
+        "sha256": "a368658b361c42e9063b327103d87be79b6ab3193ac9643014c1129b9c711721"
+      },
+      "manifest.json": {
+        "path": "custom_components/ubpet/manifest.json",
+        "sha256": "4ebd3942afc1aeafe8b99e7976229e3cf63bcd102e572e6b2b66e78f4726f6d2"
+      },
+      "mobile_apps.json": {
+        "path": "custom_components/ubpet/mobile_apps.json",
+        "sha256": "b3da57d0768b409712a375b512eeba136e1dbaeda3ee91e6cd1e90cce3d4d39f"
+      },
+      "mqtt.py": {
+        "path": "custom_components/ubpet/mqtt.py",
+        "sha256": "3d8180d5c201e5e27e6eaf862f9acd20f6b61f9fb979d1c3fa512ffd189c2179"
+      },
+      "number.py": {
+        "path": "custom_components/ubpet/number.py",
+        "sha256": "9b99984a4bafd490e636c41603e17ae4df5582c94cce6e42b992dd56bd3d57fe"
+      },
+      "privacy.py": {
+        "path": "custom_components/ubpet/privacy.py",
+        "sha256": "dc552299042e42adc025330891c92f8598d48e2fb39203e0685f165d0c8195c0"
+      },
+      "providers.py": {
+        "path": "custom_components/ubpet/providers.py",
+        "sha256": "0d66a406ac3646f7f93cdd90d57956eea5bee77cc0d1b919c3de21ad03eada6a"
+      },
+      "secrets.py": {
+        "path": "custom_components/ubpet/secrets.py",
+        "sha256": "0a545ab30553b1ab32739665168a2bbc540bc23f5c27f5e9e90b7c16e37a1172"
+      },
+      "secrets.py.example": {
+        "path": "custom_components/ubpet/secrets.py.example",
+        "sha256": "f1c6c3c182a0607510015689ccbc4f008b125d5f186e3446d587f16728eb5b02"
+      },
+      "select.py": {
+        "path": "custom_components/ubpet/select.py",
+        "sha256": "f0901ab61a037f61f94fb79781739add2fa1d85314d5e1b5ee432c4fabe486c4"
+      },
+      "sensor.py": {
+        "path": "custom_components/ubpet/sensor.py",
+        "sha256": "2cf3eca92c3da2169386a7f29589dfafd629644adfc1115dc124bf1c8087b266"
+      },
+      "strings.json": {
+        "path": "custom_components/ubpet/strings.json",
+        "sha256": "71352fe02d9d964ee0af86076208be402f5ac891637b6765572d2fb5c0a1b72f"
+      },
+      "switch.py": {
+        "path": "custom_components/ubpet/switch.py",
+        "sha256": "d143a6162162669e7abdee6040fccd86bf4aa932f3957c7f472c71e6a926a575"
+      },
+      "time.py": {
+        "path": "custom_components/ubpet/time.py",
+        "sha256": "6a5a63d94a4090e10b2df630bff8ad31365428aa7d8e9aac954e6ac09452e13f"
+      },
+      "translations/de.json": {
+        "path": "custom_components/ubpet/translations/de.json",
+        "sha256": "a219b39b12f8fe3ed39e670937ed183aa36f94dd04dac079a1134df9b2796c21"
+      },
+      "translations/en.json": {
+        "path": "custom_components/ubpet/translations/en.json",
+        "sha256": "71352fe02d9d964ee0af86076208be402f5ac891637b6765572d2fb5c0a1b72f"
+      },
+      "translations/uk.json": {
+        "path": "custom_components/ubpet/translations/uk.json",
+        "sha256": "abc4512146010c2088f4f4f7f03c97aa487eaab1ad4c5c07c2148af60ec4e450"
+      },
+      "transport.py": {
+        "path": "custom_components/ubpet/transport.py",
+        "sha256": "3355230ba5704500cccdf8f27f653fef36b74f2e4e61550feb0ea8aba1a42f71"
+      },
+      "writes.py": {
+        "path": "custom_components/ubpet/writes.py",
+        "sha256": "31f5196c24fbce0b8e2d8a0a888d24366aac4e28a79762ce90d93d64ca2715ca"
+      }
+    }
+  },
+  {
+    "repository": "seb5594/hass-medication_tracker-integration",
+    "commit": "c03cb2284966224197793dc7bc115d000f30db77",
+    "domain": "medication_tracker",
+    "name": "Medication Tracker",
+    "version": "2026.10.31.0",
+    "homeassistant": "2024.7.0",
+    "description": "Track medications, scheduled doses, streaks, and overdue alerts — entirely local, no cloud, no extra apps required.",
+    "branch": "main",
+    "changelog": "CHANGELOG.md",
+    "ci": "ci.yml",
+    "tests": "5 passed",
+    "logo": "assets/brands/medication_tracker.png",
+    "logo_source": "https://github.com/seb5594/hass-medication_tracker-integration/blob/c03cb2284966224197793dc7bc115d000f30db77/custom_components/medication_tracker/brand/icon.png",
+    "files": {
+      ".source-license/LICENSE": {
+        "path": "LICENSE",
+        "sha256": "32624115e80a238c39455c43be84eb7bcac5d890c89d16b030057cee1831c20f"
+      },
+      "__init__.py": {
+        "path": "custom_components/medication_tracker/__init__.py",
+        "sha256": "a641e00a85d477c3335222477389edb634e565576e272a420c46ec83b016b886"
+      },
+      "binary_sensor.py": {
+        "path": "custom_components/medication_tracker/binary_sensor.py",
+        "sha256": "ecf47eabf5886e5d8edbff30e636f5d7a6c7a1d59344c86ee6b8d68b4d5f769c"
+      },
+      "brand/icon.png": {
+        "path": "custom_components/medication_tracker/brand/icon.png",
+        "sha256": "5ba7cef83331203bdf192dab804e219340f027618b5ba30a890c3ab88d33f1b1"
+      },
+      "brand/icon@2x.png": {
+        "path": "custom_components/medication_tracker/brand/icon@2x.png",
+        "sha256": "4e2bf06f18f343cae3208ae34845a0f7f3a9923484df804868f6a55bad082cfc"
+      },
+      "button.py": {
+        "path": "custom_components/medication_tracker/button.py",
+        "sha256": "6bf64ae9951ccab94dab1fd642ec57895ceb11c445488ee674860a37090327cf"
+      },
+      "card.py": {
+        "path": "custom_components/medication_tracker/card.py",
+        "sha256": "03abbb9d0942d1ea70a1d2b7152429d6b67747720b92b89a3efdc48eeeb75de9"
+      },
+      "config_flow.py": {
+        "path": "custom_components/medication_tracker/config_flow.py",
+        "sha256": "b0c28d16a613be62b01d4021c56ed27d69ef77ce09832b384b4171992d029522"
+      },
+      "const.py": {
+        "path": "custom_components/medication_tracker/const.py",
+        "sha256": "2cb35f95d8f3369369a154feea39c99856a1e0a0cd000230736ee4ad8b61eee9"
+      },
+      "coordinator.py": {
+        "path": "custom_components/medication_tracker/coordinator.py",
+        "sha256": "d5501ea416552c2181dc901856342394a332afb5d57588caccace8d34b162153"
+      },
+      "manifest.json": {
+        "path": "custom_components/medication_tracker/manifest.json",
+        "sha256": "bfe3cea66904b6a65600af1655d0fb9c5b05863fbe953ea0abdb4bb1bbd14338"
+      },
+      "notification_text.py": {
+        "path": "custom_components/medication_tracker/notification_text.py",
+        "sha256": "44d2e10ea2a9bd81d03b2c4ba7227ba631ef9ede34383a1df13fd18eef4eb861"
+      },
+      "notify.py": {
+        "path": "custom_components/medication_tracker/notify.py",
+        "sha256": "f27c695a9dd89115e71c675c6f684b8317f22909c8b159e216001c03d7f0cd82"
+      },
+      "number.py": {
+        "path": "custom_components/medication_tracker/number.py",
+        "sha256": "7cd30fbfe0547d6e08272faa6e254d6893ee7aa87dd8e87798f3767f19b38c10"
+      },
+      "py.typed": {
+        "path": "custom_components/medication_tracker/py.typed",
+        "sha256": "19935243fd747acd885a132a039b936f0a8d4f6b4b0066ab77fc797dc717aa20"
+      },
+      "sensor.py": {
+        "path": "custom_components/medication_tracker/sensor.py",
+        "sha256": "ac18ae3340a3d69ffb4604cc8f59621b71e2ddcbb1a829a776f2fc815da2db3d"
+      },
+      "services.yaml": {
+        "path": "custom_components/medication_tracker/services.yaml",
+        "sha256": "ba8a77205db3451c1f93703a6c759bf6b6ecefb89021648ca490e1d51d48b8c4"
+      },
+      "strings.json": {
+        "path": "custom_components/medication_tracker/strings.json",
+        "sha256": "a9172ea75ca84573d17655e39a171ad2bdced8ecc8db634e8736186e6ff6435f"
+      },
+      "translations/de.json": {
+        "path": "custom_components/medication_tracker/translations/de.json",
+        "sha256": "90e7c668055a8851b4a1040c3c1e6533f1d06043742727397674581815bfe3f1"
+      },
+      "translations/en.json": {
+        "path": "custom_components/medication_tracker/translations/en.json",
+        "sha256": "a9172ea75ca84573d17655e39a171ad2bdced8ecc8db634e8736186e6ff6435f"
+      },
+      "www/medication-tracker-card.js": {
+        "path": "custom_components/medication_tracker/www/medication-tracker-card.js",
+        "sha256": "cb0c8782a49dcab0ff1f483a8de112726c16bc37d601da4d3bc63cb711d40a6d"
+      }
+    }
+  },
+  {
+    "repository": "seb5594/hass-ninebot_e_scooters-integration",
+    "commit": "6c5d14368e2e803bcc6532bb0281af69306fa9bf",
+    "domain": "ninebot_e_scooters",
+    "name": "Ninebot E-Scooters",
+    "version": "1.0.0b3",
+    "homeassistant": "2023.2.0",
+    "description": "A custom integration for Ninebot and Xiaomi E-Scooter's in Home Assistant",
+    "branch": "main",
+    "changelog": "CHANGELOG.md",
+    "ci": "ci.yml",
+    "tests": "221 passed",
+    "logo": "assets/brands/ninebot_e_scooters.png",
+    "logo_source": "https://github.com/seb5594/hass-ninebot_e_scooters-integration/blob/6c5d14368e2e803bcc6532bb0281af69306fa9bf/custom_components/ninebot_e_scooters/brand/logo.png",
+    "files": {
+      "NOTICE.md": {
+        "path": "custom_components/ninebot_e_scooters/NOTICE.md",
+        "sha256": "7d725f5a37b5fa6311f96e2869b7ba6d451d3ca309c49227052c827840d0ee5b"
+      },
+      "__init__.py": {
+        "path": "custom_components/ninebot_e_scooters/__init__.py",
+        "sha256": "87171a6587461ecfd8125fb860032b29e127f4cdd60df93c8723a31b58b266b8"
+      },
+      "assets/pairing_dialog.js": {
+        "path": "custom_components/ninebot_e_scooters/assets/pairing_dialog.js",
+        "sha256": "02369d82b6e08df5ddb986d79c37075f44ada078751bebc926263948222ec73b"
+      },
+      "assets/power_button.gif": {
+        "path": "custom_components/ninebot_e_scooters/assets/power_button.gif",
+        "sha256": "2f8ed4926b4ac394cd82420cf1c3f993bcc0ecd950bb1b382ed3f4e7ed5e5f17"
+      },
+      "binary_sensor.py": {
+        "path": "custom_components/ninebot_e_scooters/binary_sensor.py",
+        "sha256": "2a1a4588de4b04c519e0ae7d099103a7bc63c3ed0ef9a70efdba6f8d83878edc"
+      },
+      "brand/icon.png": {
+        "path": "custom_components/ninebot_e_scooters/brand/icon.png",
+        "sha256": "2f064d3322af13afc417c9b35fe3d37d9c0f56ed3500855ffa2930d08ca73d52"
+      },
+      "brand/icon@2x.png": {
+        "path": "custom_components/ninebot_e_scooters/brand/icon@2x.png",
+        "sha256": "f1cee7598ab8c3e735fe4f11df3dc953e69597d1477df19c475b1a9ca75342dc"
+      },
+      "brand/logo.png": {
+        "path": "custom_components/ninebot_e_scooters/brand/logo.png",
+        "sha256": "c80e8db4667e787bf4c9aba6aaacf32c5a06bc31af8749deb270c552b757a69e"
+      },
+      "brand/logo@2x.png": {
+        "path": "custom_components/ninebot_e_scooters/brand/logo@2x.png",
+        "sha256": "35296ccf563921c81c70b35de3eeaf36bff01f73458a1da294e32382f729b0cc"
+      },
+      "compat.py": {
+        "path": "custom_components/ninebot_e_scooters/compat.py",
+        "sha256": "acb62f3a760a80dabbfe54442cb6e4350480b5efe2873b9f34db68b0e2cf1778"
+      },
+      "config_flow.py": {
+        "path": "custom_components/ninebot_e_scooters/config_flow.py",
+        "sha256": "6405de35654ca0960a33f86474fb90cf3b4738885e8a4352e9de20e79ee68468"
+      },
+      "const.py": {
+        "path": "custom_components/ninebot_e_scooters/const.py",
+        "sha256": "8f527b682321ec19ccef382cf24adde9b2f917375dddd65915975425ed0171dd"
+      },
+      "coordinator.py": {
+        "path": "custom_components/ninebot_e_scooters/coordinator.py",
+        "sha256": "8045a0587b07b10d80ed57d3b42f0c107146ceea96bd405865f2d16b792397ad"
+      },
+      "diagnostics.py": {
+        "path": "custom_components/ninebot_e_scooters/diagnostics.py",
+        "sha256": "8d34908488a8e81ba50836117d2362d6d74784a132db9f1a6ec2f076792caa1e"
+      },
+      "discovery.py": {
+        "path": "custom_components/ninebot_e_scooters/discovery.py",
+        "sha256": "6653e7792fb9a6dd3c991a715aa143fd8fd77e66d78341a5798b4586a7b2e5e1"
+      },
+      "entity.py": {
+        "path": "custom_components/ninebot_e_scooters/entity.py",
+        "sha256": "6cf7ac675edd84b70ba1ac80becd098b9a17648fe6e5ae0a7e0631fa56775cd4"
+      },
+      "future_protocols.py": {
+        "path": "custom_components/ninebot_e_scooters/future_protocols.py",
+        "sha256": "e7c0fa32e18ef419f4b7902cb8af859f4a4df9dbd4f589c3b2cebb677bd3f4b5"
+      },
+      "legacy_transport.py": {
+        "path": "custom_components/ninebot_e_scooters/legacy_transport.py",
+        "sha256": "b2b54957d7b99e5c33d15646b6a8bec11142dc1e59df0b778bcfd25b522a8e4b"
+      },
+      "lock.py": {
+        "path": "custom_components/ninebot_e_scooters/lock.py",
+        "sha256": "02d68c5a08b21fa7af4cba1f2aef786530458fb3a859f209c21cc7752fe97469"
+      },
+      "manifest.json": {
+        "path": "custom_components/ninebot_e_scooters/manifest.json",
+        "sha256": "ab092ec83805ca9b2f1c79155e6473ae074f06c46aa8c1c73cec8c94e3005053"
+      },
+      "model_profiles.py": {
+        "path": "custom_components/ninebot_e_scooters/model_profiles.py",
+        "sha256": "4576b5f6ddfb0804305eaca887bfba1de08a89ea94b090a63590da4086201834"
+      },
+      "models/__init__.py": {
+        "path": "custom_components/ninebot_e_scooters/models/__init__.py",
+        "sha256": "7cb8729967c150d813e36613e104dfb7994e8931bd43b488262db3621274bbc6"
+      },
+      "models/profiles.py": {
+        "path": "custom_components/ninebot_e_scooters/models/profiles.py",
+        "sha256": "07bceed52e0f063680866883f461ec95e7001ac09f9e2ee180fcada7bdbcc93e"
+      },
+      "models/transports.py": {
+        "path": "custom_components/ninebot_e_scooters/models/transports.py",
+        "sha256": "bc85c2b6d21a06fa3053bb62961a686fa7d65012311a128af50a96f77d444dd2"
+      },
+      "ninebot_crypto.py": {
+        "path": "custom_components/ninebot_e_scooters/ninebot_crypto.py",
+        "sha256": "7ef9eceb409bdb43a7af8445fc0c4e5092c47f5e02883ee846993b3a3e1288eb"
+      },
+      "ninebot_packet.py": {
+        "path": "custom_components/ninebot_e_scooters/ninebot_packet.py",
+        "sha256": "4fc5e168b02f5067e39a766460d1790764f74d9e663ad6bc202dbde6c4a665f1"
+      },
+      "protocol.py": {
+        "path": "custom_components/ninebot_e_scooters/protocol.py",
+        "sha256": "6b60386f1903e28c3f6967fceecd6334ebe4f6d8930cfc960d9c53d10ee0f456"
+      },
+      "protocols/__init__.py": {
+        "path": "custom_components/ninebot_e_scooters/protocols/__init__.py",
+        "sha256": "0636774a6edaffca8c3a431fe7f9efa2ed2b99b82646790cae5ff90a9223d41e"
+      },
+      "protocols/constants.py": {
+        "path": "custom_components/ninebot_e_scooters/protocols/constants.py",
+        "sha256": "65ad267abff08d4eb3638e584c0a24fe287503607a0c65673f3c620496d75d38"
+      },
+      "protocols/data.py": {
+        "path": "custom_components/ninebot_e_scooters/protocols/data.py",
+        "sha256": "f643f8473e62d0f11ab4741f99ff499b9e7bd8a1b91e1fafe4858ef77e979c61"
+      },
+      "protocols/legacy.py": {
+        "path": "custom_components/ninebot_e_scooters/protocols/legacy.py",
+        "sha256": "7b83c7f6bcadae4cd0e894e7e97f792d929ee3e837cb9034d70492d0f97ee9a6"
+      },
+      "protocols/ninebot/__init__.py": {
+        "path": "custom_components/ninebot_e_scooters/protocols/ninebot/__init__.py",
+        "sha256": "f9d3c3c6b06471c73826541c90e0907ef8f9e1a390cedae0886cd6caacbe36bf"
+      },
+      "protocols/ninebot/crypto.py": {
+        "path": "custom_components/ninebot_e_scooters/protocols/ninebot/crypto.py",
+        "sha256": "ee6a6c6976195bf673799b92917595487fc05e38bebbe139aedf01e3f06e602a"
+      },
+      "protocols/ninebot/packet.py": {
+        "path": "custom_components/ninebot_e_scooters/protocols/ninebot/packet.py",
+        "sha256": "b34f0e5776e510fda584de4384cd319056c0682f2e3bc33c284c34601c22a587"
+      },
+      "protocols/ninebot/registers.py": {
+        "path": "custom_components/ninebot_e_scooters/protocols/ninebot/registers.py",
+        "sha256": "6553d7870193f4728cb4799393326f00a86e56792d04f3efcf3a9c8f10e8e53c"
+      },
+      "protocols/research.py": {
+        "path": "custom_components/ninebot_e_scooters/protocols/research.py",
+        "sha256": "f0f26b07353e892f46d2a6d366b87968761c13934816a471858da560b92267f4"
+      },
+      "protocols/xiaomi.py": {
+        "path": "custom_components/ninebot_e_scooters/protocols/xiaomi.py",
+        "sha256": "1c83d088dc04e107d50f2ddf91261868cb2343a1037ca20d9bb21c8e2f179018"
+      },
+      "runtime/__init__.py": {
+        "path": "custom_components/ninebot_e_scooters/runtime/__init__.py",
+        "sha256": "ab2e27cc8ff75b6af07894168adb2b07e3e05999a71dab708218d84c3f256c94"
+      },
+      "runtime/connection.py": {
+        "path": "custom_components/ninebot_e_scooters/runtime/connection.py",
+        "sha256": "c980bf4f0cc1f89a74e09d43c31bd395703a2100f7264a23f5c5414b13e0f5af"
+      },
+      "runtime/constants.py": {
+        "path": "custom_components/ninebot_e_scooters/runtime/constants.py",
+        "sha256": "2fb23db991a06d3c81ae2368edac48015ef314cfae4d73c581bb2f4bb57b85a0"
+      },
+      "runtime/controls.py": {
+        "path": "custom_components/ninebot_e_scooters/runtime/controls.py",
+        "sha256": "ca3a1e6e688426e88f7fb15955ce09392f736afb0808b2af65ec38a9e23fa78a"
+      },
+      "runtime/device.py": {
+        "path": "custom_components/ninebot_e_scooters/runtime/device.py",
+        "sha256": "6bcd58c0497fbe81c38af44610fcb6bb3e74f31e1b7388c6630deecae1087ee8"
+      },
+      "runtime/errors.py": {
+        "path": "custom_components/ninebot_e_scooters/runtime/errors.py",
+        "sha256": "aa1cf04bfd84fbe8164072dbe2d0c521b3d337c0cc940680ab3b37686279e372"
+      },
+      "runtime/ninebot.py": {
+        "path": "custom_components/ninebot_e_scooters/runtime/ninebot.py",
+        "sha256": "261f92b3de7692129cfcb45831180d72cc8d2863f598b75596a2d5feeb113307"
+      },
+      "runtime/requests.py": {
+        "path": "custom_components/ninebot_e_scooters/runtime/requests.py",
+        "sha256": "1b0472efa4d40b2057205bd781074d5dbc58bf935d5ce1fc777446b624c59a16"
+      },
+      "runtime/session.py": {
+        "path": "custom_components/ninebot_e_scooters/runtime/session.py",
+        "sha256": "796503f4918d6fa253f02d40a0721c3ace6d159208e5f51d6b25df46d667fd6b"
+      },
+      "runtime/telemetry.py": {
+        "path": "custom_components/ninebot_e_scooters/runtime/telemetry.py",
+        "sha256": "ab8d45afefe34fadd59bfd375753ae59f7d3494f9a75a9fe19abaea20cd53467"
+      },
+      "saved_state.py": {
+        "path": "custom_components/ninebot_e_scooters/saved_state.py",
+        "sha256": "9ac3d5f391947ceae09a81a80b7ed4c2b923a02b6e1b4d260fcda7938028bd68"
+      },
+      "select.py": {
+        "path": "custom_components/ninebot_e_scooters/select.py",
+        "sha256": "cd1cfb2fdbf57a30dc568813115dd45bdeb128d111de99a9462d0d0b3159882b"
+      },
+      "sensor.py": {
+        "path": "custom_components/ninebot_e_scooters/sensor.py",
+        "sha256": "1574ae03eb860bdaed905a3e9943ae2307a59d2d8f472c6e18d05c2e40cf2bcb"
+      },
+      "sensor_groups.py": {
+        "path": "custom_components/ninebot_e_scooters/sensor_groups.py",
+        "sha256": "018937a58428381c0a568ade713a9661fca755cfde180a40ab5acd1635f48d6b"
+      },
+      "storage.py": {
+        "path": "custom_components/ninebot_e_scooters/storage.py",
+        "sha256": "7e3eef6928ea495cc7663cc6df42dc832a675a9e7a387ef5523e85cf0288ce58"
+      },
+      "strings.json": {
+        "path": "custom_components/ninebot_e_scooters/strings.json",
+        "sha256": "dded6765f0e660620f2a4d28715980c35c004ddbf3f40766943764f3b6ad3a2f"
+      },
+      "switch.py": {
+        "path": "custom_components/ninebot_e_scooters/switch.py",
+        "sha256": "bd0a066c9482594f3242373c03abe24655ecaa2a8eccffc7c3a905a5e09d1342"
+      },
+      "translations/de.json": {
+        "path": "custom_components/ninebot_e_scooters/translations/de.json",
+        "sha256": "d398e02ffe9fc567a0436644304d308e4ccdc8fb94e0d34afacf8f91d40f2a06"
+      },
+      "translations/en.json": {
+        "path": "custom_components/ninebot_e_scooters/translations/en.json",
+        "sha256": "dded6765f0e660620f2a4d28715980c35c004ddbf3f40766943764f3b6ad3a2f"
+      },
+      "transport_profiles.py": {
+        "path": "custom_components/ninebot_e_scooters/transport_profiles.py",
+        "sha256": "32d1956aec47bcd6d747b159a536aa2d743eed8b2e2456d4d0af7cd03320fe39"
+      },
+      "utilities.py": {
+        "path": "custom_components/ninebot_e_scooters/utilities.py",
+        "sha256": "1679a040f07743eaa0ba1932cb982a02ddb84c57d57ce3b091030536a800d189"
+      }
+    }
+  },
+  {
+    "repository": "seb5594/hass-pulseaudio_loopback_extended-integration",
+    "commit": "43a9130d1a5fc35b4fc91ef494cea4ddd9fa40b9",
+    "domain": "pulseaudio_loopback",
+    "name": "PulseAudio Loopback Extended",
+    "version": "1.0.0",
+    "homeassistant": "2022.4.0",
+    "description": "A extended integration of the builtin pulseaudio_loopback component from home assistant core to fullfill my needs",
+    "branch": "main",
+    "changelog": "CHANGELOG.md",
+    "ci": "ci.yml",
+    "tests": "20 passed",
+    "logo": "assets/brands/pulseaudio_loopback.png",
+    "logo_source": "https://raw.githubusercontent.com/home-assistant/brands/2448af4760063a885f173080eb5381323b7ae9a4/core_integrations/pulseaudio_loopback/icon.png",
+    "files": {
+      ".source-license/LICENSE.md": {
+        "path": "LICENSE.md",
+        "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+      },
+      "__init__.py": {
+        "path": "custom_components/pulseaudio_loopback/__init__.py",
+        "sha256": "275e566bb900b1d4c36bbbea9a7df15113d3d5f11f1add76f3f116f333c8867b"
+      },
+      "arguments.py": {
+        "path": "custom_components/pulseaudio_loopback/arguments.py",
+        "sha256": "bb12384a86d6fad8a5ee18a9b3c8815a34114641550694f58d6add18b6bcb460"
+      },
+      "loopback.py": {
+        "path": "custom_components/pulseaudio_loopback/loopback.py",
+        "sha256": "1a3ba02645f31cccb509fc616ebeadf2bf010154353d0709a7d0c527cc55bbc0"
+      },
+      "manifest.json": {
+        "path": "custom_components/pulseaudio_loopback/manifest.json",
+        "sha256": "4407cf72769d04a3dd2f651d2f97e52dbbc2315127195c6656c106f667cdc512"
+      },
+      "switch.py": {
+        "path": "custom_components/pulseaudio_loopback/switch.py",
+        "sha256": "aea47d6618faa2d00766164b4aac775c7f56ba5845656a4cddf630049bf696a5"
+      }
+    }
+  },
+  {
+    "repository": "seb5594/hass-vacuum_mapguard-integration",
+    "commit": "b3474e2dad7deb6bf4b0a62742bb6b4132c710dc",
+    "domain": "vacuum_mapguard",
+    "name": "Vacuum MapGuard",
+    "version": "1.1.1",
+    "homeassistant": "2026.3.0",
+    "description": "Custom integration to prevent vacuum map changes by default vacuum.start action",
+    "branch": "main",
+    "changelog": "CHANGELOG.md",
+    "ci": "ci.yml",
+    "tests": "5 passed",
+    "logo": "assets/brands/vacuum_mapguard.png",
+    "logo_source": "https://github.com/seb5594/hass-vacuum_mapguard-integration/blob/b3474e2dad7deb6bf4b0a62742bb6b4132c710dc/custom_components/vacuum_mapguard/brand/logo.png",
+    "files": {
+      ".source-license/LICENSE": {
+        "path": "LICENSE",
+        "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+      },
+      "__init__.py": {
+        "path": "custom_components/vacuum_mapguard/__init__.py",
+        "sha256": "c03c41d5307b2c5b1387c43d186cc5b853615172334cda2e6458b142f5bfaba2"
+      },
+      "brand/icon.png": {
+        "path": "custom_components/vacuum_mapguard/brand/icon.png",
+        "sha256": "7e6fb5d3aa13cef62af5e1a68786ec6224a87f361c3b9c52805c018b3f789a25"
+      },
+      "brand/icon@2x.png": {
+        "path": "custom_components/vacuum_mapguard/brand/icon@2x.png",
+        "sha256": "841e38def27b39121bdaed67f45c0bf5555445bdbe08101d2d4035204fda01ad"
+      },
+      "brand/logo.png": {
+        "path": "custom_components/vacuum_mapguard/brand/logo.png",
+        "sha256": "af4af533f122b8df47ddc8900e220e7fe6925899afe2f96f0475db83a1fb14ea"
+      },
+      "brand/logo@2x.png": {
+        "path": "custom_components/vacuum_mapguard/brand/logo@2x.png",
+        "sha256": "7474d0c6eb95e5cc682d287f9a34c12b085ee44b53c6a81efde906ea7f1612c1"
+      },
+      "config_flow.py": {
+        "path": "custom_components/vacuum_mapguard/config_flow.py",
+        "sha256": "312f053f60c01be1031307e974c4b54072d4597f6c60aa8736f1c56a3fe68035"
+      },
+      "const.py": {
+        "path": "custom_components/vacuum_mapguard/const.py",
+        "sha256": "7e2087e53aff953fced819612c7c31f3d3196ec8f4cb1e19887e8ddb25c563e5"
+      },
+      "entity_swap.py": {
+        "path": "custom_components/vacuum_mapguard/entity_swap.py",
+        "sha256": "d09112d3d917819720afb31364352aa6babeff5a453f41ce7ff66f5bef317a02"
+      },
+      "manifest.json": {
+        "path": "custom_components/vacuum_mapguard/manifest.json",
+        "sha256": "2e879e6c9a2c144acff4468e7a9494969e4e54f1f05473aa10a54752e6fecde3"
+      },
+      "strings.json": {
+        "path": "custom_components/vacuum_mapguard/strings.json",
+        "sha256": "d119fe6fdf2ffee1ef462bc1d7b8fd1b4b8f576c0d5c552a92004d73b1621d38"
+      },
+      "translations/de.json": {
+        "path": "custom_components/vacuum_mapguard/translations/de.json",
+        "sha256": "f289004709fe9f8f2b1f0f2d9e78a2d0a6f9ed2c7a27aaeb59ff841cd03214b4"
+      },
+      "translations/en.json": {
+        "path": "custom_components/vacuum_mapguard/translations/en.json",
+        "sha256": "d119fe6fdf2ffee1ef462bc1d7b8fd1b4b8f576c0d5c552a92004d73b1621d38"
+      },
+      "vacuum.py": {
+        "path": "custom_components/vacuum_mapguard/vacuum.py",
+        "sha256": "edbf579fad9c89350ab3c8904963e6270f4056dea194ada687949bc70f552e0f"
+      }
+    }
+  }
+]
