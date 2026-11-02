@@ -12,6 +12,10 @@
     "commit": "43a9130d1a5fc35b4fc91ef494cea4ddd9fa40b9"
   },
   {
+    "repository": "seb5594/hass-upet_airrobo_robotail_meowant-integration",
+    "commit": "0212bb469bc4f99ae4a837d3f25bae0b1232c92c"
+  },
+  {
     "repository": "seb5594/hass-vacuum_mapguard-integration",
     "commit": "b3474e2dad7deb6bf4b0a62742bb6b4132c710dc"
   }
