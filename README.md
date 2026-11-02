@@ -1,6 +1,6 @@
 # Home Assistant Integrations by seb5594
 
-[![catalog sync](https://img.shields.io/github/actions/workflow/status/seb5594/Home-Assistant-Integrations/update.yml?branch=main&label=catalog%20sync&style=flat)](https://github.com/seb5594/Home-Assistant-Integrations/actions/workflows/update.yml) ![integrations](https://img.shields.io/static/v1?label=integrations&message=4&color=1877A5&style=flat)<br>
+[![catalog sync](https://img.shields.io/github/actions/workflow/status/seb5594/Home-Assistant-Integrations/update.yml?branch=main&label=catalog%20sync&style=flat)](https://github.com/seb5594/Home-Assistant-Integrations/actions/workflows/update.yml) ![integrations](https://img.shields.io/static/v1?label=integrations&message=5&color=1877A5&style=flat)<br>
 [![stars](https://img.shields.io/github/stars/seb5594/Home-Assistant-Integrations?label=stars&style=flat)](https://github.com/seb5594/Home-Assistant-Integrations/stargazers) [![synced](https://img.shields.io/github/last-commit/seb5594/Home-Assistant-Integrations?label=synced&style=flat)](https://github.com/seb5594/Home-Assistant-Integrations/commits/main)
 
 Custom integrations for Home Assistant, installable through HACS. Each integration lives in its
@@ -46,6 +46,16 @@ under **Settings → Devices & services**.
 [![downloads](https://img.shields.io/github/downloads/seb5594/hass-pulseaudio_loopback_extended-integration/v1.0.0/total?label=downloads&color=1877A5&style=flat)](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration/releases) [![issues](https://img.shields.io/github/issues/seb5594/hass-pulseaudio_loopback_extended-integration?label=issues&style=flat)](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration/issues) ![tests](https://img.shields.io/static/v1?label=tests&message=20%20passed&color=2F855A&style=flat) [![checks](https://img.shields.io/github/actions/workflow/status/seb5594/hass-pulseaudio_loopback_extended-integration/ci.yml?branch=main&label=checks&style=flat)](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration/actions/workflows/ci.yml)
 
 [Source & documentation](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration) · [Pinned commit `43a9130`](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration/commit/2d4a2dd036390c0effba059a8bdede7f12750271)
+
+### [upet_airrobo_robotail_meowant](https://github.com/seb5594/hass-upet_airrobo_robotail_meowant-integration) (2026.11.02.1)
+
+> Eine Home-Assistant-Integration für smarte Katzenklos mit der gemeinsamen UBTECH-/Airrobo-API: **UPET, UBPet, AIR PET, AIRROBO, Robotail und Meowant**. Mehrere Konten, Anbieter und Kontoregionen lassen sich nebeneinander einrichten.
+
+[Changelog](https://github.com/seb5594/hass-upet_airrobo_robotail_meowant-integration/blob/main/CHANGELOG.md)<br>
+[![home assistant](https://img.shields.io/static/v1?label=home%20assistant&message=%E2%89%A5%202023.6.0&color=1877A5&style=flat)](https://github.com/seb5594/hass-upet_airrobo_robotail_meowant-integration/actions/workflows/compat.yml) [![version](https://img.shields.io/static/v1?label=version&message=2026.11.02.1&color=1877A5&style=flat)](https://github.com/seb5594/hass-upet_airrobo_robotail_meowant-integration/releases/tag/v2026.11.02.1)<br>
+[![downloads](https://img.shields.io/github/downloads/seb5594/hass-upet_airrobo_robotail_meowant-integration/v2026.11.02.1/total?label=downloads&color=1877A5&style=flat)](https://github.com/seb5594/hass-upet_airrobo_robotail_meowant-integration/releases) [![issues](https://img.shields.io/github/issues/seb5594/hass-upet_airrobo_robotail_meowant-integration?label=issues&style=flat)](https://github.com/seb5594/hass-upet_airrobo_robotail_meowant-integration/issues) ![tests](https://img.shields.io/static/v1?label=tests&message=57%20passed&color=2F855A&style=flat) [![checks](https://img.shields.io/github/actions/workflow/status/seb5594/hass-upet_airrobo_robotail_meowant-integration/ci.yml?branch=main&label=checks&style=flat)](https://github.com/seb5594/hass-upet_airrobo_robotail_meowant-integration/actions/workflows/ci.yml)
+
+[Source & documentation](https://github.com/seb5594/hass-upet_airrobo_robotail_meowant-integration) · [Pinned commit `0212bb4`](https://github.com/seb5594/hass-upet_airrobo_robotail_meowant-integration/commit/0212bb469bc4f99ae4a837d3f25bae0b1232c92c)
 
 ### [vacuum_mapguard](https://github.com/seb5594/hass-vacuum_mapguard-integration) (1.1.1)
 
