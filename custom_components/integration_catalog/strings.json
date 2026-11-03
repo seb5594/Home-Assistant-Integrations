@@ -1,0 +1,37 @@
+{
+  "title": "seb5594's Integration Hub",
+  "config": {
+    "step": {
+      "user": {
+        "title": "seb5594's Integration Hub",
+        "description": "Add the individual catalog repositories to HACS and notify about newly listed integrations. HACS manages downloads and updates. No integrations are installed automatically. The HACS adapter uses an internal API and is experimental.",
+        "data": {
+          "auto_register": "Automatically add catalog repositories to HACS",
+          "notify_new": "Notify about new integrations"
+        }
+      }
+    },
+    "abort": {
+      "already_configured": "The catalog is already configured. Use Configure on its existing entry."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Hub settings",
+        "description": "Add the individual catalog repositories to HACS and notify about newly listed integrations. HACS manages downloads and updates. No integrations are installed automatically. The HACS adapter uses an internal API and is experimental.",
+        "data": {
+          "auto_register": "Automatically add catalog repositories to HACS",
+          "notify_new": "Notify about new integrations"
+        }
+      }
+    }
+  },
+  "entity": {
+    "button": {
+      "refresh_catalog": {
+        "name": "Refresh catalog"
+      }
+    }
+  }
+}
