@@ -15,7 +15,6 @@ import os
 import re
 import stat
 import subprocess
-from datetime import datetime, timezone
 from io import BytesIO
 from pathlib import Path
 from urllib.error import HTTPError
@@ -259,21 +258,13 @@ def main():
         if not items or len({item["domain"] for item in items}) != len(items):
             raise ValueError("Discovery returned no integrations or duplicate domains; refusing to replace catalog")
         items.sort(key=lambda item: item["name"].casefold())
-        previous = json.loads((COMPONENT / "catalog.json").read_text("utf-8")) if (COMPONENT / "catalog.json").exists() else None
         sync_submodules(items)
         write_json(COMPONENT / "catalog.json", items)
         write_json(ROOT / ".github/catalog.json", [
             {"repository": item["repository"], "commit": item["commit"]} for item in items
         ])
-        if items != previous:
-            manifest = json.loads((COMPONENT / "manifest.json").read_text("utf-8"))
-            now = datetime.now(timezone.utc)
-            candidate = (now.year, now.month, now.day, 0)
-            previous_version = tuple(map(int, manifest["version"].split(".")))
-            if candidate <= previous_version:
-                candidate = previous_version[:-1] + (previous_version[-1] + 1,)
-            manifest["version"] = ".".join(map(str, candidate))
-            write_json(COMPONENT / "manifest.json", manifest)
+        # Catalog metadata travels through the live feed. Only deliberate hub
+        # changes receive a new manifest version and a HACS release.
     write_public_feed(items)
     (ROOT / "README.md").write_text(render_readme(items), "utf-8")
     sources = "# Brand assets\n\nSource graphics retain their original rights and licenses.\n\n" + "\n".join(

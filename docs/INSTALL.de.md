@@ -7,13 +7,18 @@ Der Hub fügt veröffentlichte Integrationsrepos zu HACS hinzu und meldet neue P
 
 1. In **HACS → ⋮ → Benutzerdefinierte Repositories** die URL `https://github.com/seb5594/Home-Assistant-Integrations` als **Integration** hinzufügen.
 2. Das neueste Release von **seb5594's Integration Hub** herunterladen und Home Assistant neu starten.
-3. Unter **Einstellungen → Geräte & Dienste → Integration hinzufügen** nach **seb5594's Integration Hub** suchen.
+3. Unter **Einstellungen → Geräte & Dienste** bei der entdeckten Karte **seb5594's Integration Hub** auf **Konfigurieren** klicken. Fehlt die Karte, über **Integration hinzufügen** nach dem Hub suchen.
 4. Automatisches Hinzufügen zu HACS und Benachrichtigungen aktivieren oder die Einstellungen anpassen.
 5. HACS öffnen und dort die gewünschten Integrationen herunterladen. Anschließend den Neustart- und Einrichtungshinweisen von HACS und der jeweiligen Integration folgen.
 
 Voraussetzungen: Home Assistant **2025.1.0** oder neuer und ein eingerichtetes HACS für die automatische
 Registrierung. Die GitHub-Verbindung von HACS wird mitbenutzt; ein zusätzlicher Token oder Terminalzugriff
 ist nicht nötig. Der öffentliche Katalog wird von `raw.githubusercontent.com` geladen.
+
+Die automatische Entdeckung nutzt die mDNS-Ankündigung der eigenen Home-Assistant-Instanz.
+Zeroconf ist in der Standardkonfiguration aktiv. Nach der Installation ist ein Neustart nötig.
+Bereits eingerichtete oder ignorierte Hubs werden nicht erneut vorgeschlagen. Ohne Zeroconf oder
+bei blockiertem mDNS bleibt das manuelle Hinzufügen möglich.
 
 Die technische Domain des Hubs lautet `seb5594_integration_catalog`.
 Bei einer bestehenden Installation mit der bisherigen Domain `integration_catalog` den alten Hub-Eintrag
@@ -34,6 +39,8 @@ wenn eines veröffentlicht ist. Unveröffentlichte Branch-Stände werden nicht a
 HACS behält seine reguläre Release- und Update-Verwaltung. Der Hub überschreibt keine bereits vom Nutzer
 gewählten Versionen und pinnt HACS nicht dauerhaft auf einen veralteten Tag.
 Auch der Hub selbst wird als getaggtes Release mit `seb5594_integration_catalog.zip` verteilt.
+Reine Katalogänderungen erzeugen weder eine neue Hub-Version noch ein Hub-Release. Sie werden
+über den öffentlichen Feed geladen. Neue Hub-Versionen sind Änderungen an der Integration selbst vorbehalten.
 
 ## Benachrichtigungen und Einstellungen
 

@@ -5,15 +5,11 @@ on:
     branches: [main]
     paths:
       - 'custom_components/seb5594_integration_catalog/**'
+      - '!custom_components/seb5594_integration_catalog/catalog.json'
       - 'hacs.json'
       - 'scripts/build_release.py'
       - '.github/workflows/release.yml'
   workflow_dispatch:
-  # Catalog commits use GITHUB_TOKEN, which does not trigger another push workflow.
-  workflow_run:
-    workflows: ['Synchronize integration catalog']
-    types: [completed]
-    branches: [main]
 
 permissions:
   contents: write
@@ -24,9 +20,7 @@ concurrency:
 
 jobs:
   publish:
-    if: >-
-      github.ref == 'refs/heads/main' &&
-      (github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success')
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
@@ -53,7 +47,7 @@ jobs:
       - name: Validate before publishing
         if: steps.release.outputs.exists == 'false'
         run: |
-          pip install ruff pytest-homeassistant-custom-component==0.13.375
+          pip install ruff pytest-homeassistant-custom-component==0.13.375 zeroconf==0.151.5
           ruff check .
           python -m unittest discover -s tests -p 'test_*.py'
           python -m pytest -q tests_ha

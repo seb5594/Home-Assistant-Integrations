@@ -12,8 +12,10 @@
       }
     },
     "abort": {
-      "already_configured": "Der Katalog ist bereits eingerichtet. Beim vorhandenen Eintrag Konfigurieren wählen."
-    }
+      "already_configured": "Der Katalog ist bereits eingerichtet. Beim vorhandenen Eintrag Konfigurieren wählen.",
+      "not_local_instance": "Dies ist eine andere Home-Assistant-Instanz."
+    },
+    "flow_title": "{name}"
   },
   "options": {
     "step": {

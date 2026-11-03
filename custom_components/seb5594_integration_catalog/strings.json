@@ -12,8 +12,10 @@
       }
     },
     "abort": {
-      "already_configured": "The catalog is already configured. Use Configure on its existing entry."
-    }
+      "already_configured": "The catalog is already configured. Use Configure on its existing entry.",
+      "not_local_instance": "This is another Home Assistant instance."
+    },
+    "flow_title": "{name}"
   },
   "options": {
     "step": {

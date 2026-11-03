@@ -116,6 +116,35 @@ class ReleaseSelectionTests(unittest.TestCase):
 
 
 class HubPackageTests(unittest.TestCase):
+    def test_catalog_sync_preserves_hub_version_even_when_projects_change(self):
+        """New projects/releases update the feed without advertising a hub update."""
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            component = root / "custom_components/seb5594_integration_catalog"
+            component.mkdir(parents=True)
+            (root / "assets/brands").mkdir(parents=True)
+            manifest = component / "manifest.json"
+            original = '{"domain":"seb5594_integration_catalog","version":"2026.11.3.5"}\n'
+            manifest.write_text(original, "utf-8")
+            (component / "catalog.json").write_text("[]", "utf-8")
+            item = {"repository": "seb5594/hass-new-integration", "domain": "new",
+                "name": "New Project", "version": "2.0.0", "release_tag": "v2.0.0",
+                "release_url": "https://github.com/example/releases/tag/v2.0.0",
+                "package_url": "https://github.com/example/releases/download/v2.0.0/new.zip",
+                "commit": "a" * 40, "logo": "new.png", "logo_source": "Package"}
+            with patch.object(sync_catalog, "ROOT", root), patch.object(sync_catalog, "COMPONENT", component), \
+                patch("sys.argv", ["sync_catalog.py"]), \
+                patch.object(sync_catalog, "api", return_value=[{"name": "hass-new-integration", "full_name": item["repository"]}]), \
+                patch.object(sync_catalog, "inspect_repository", return_value=item), \
+                patch.object(sync_catalog, "sync_submodules"), \
+                patch.object(sync_catalog, "render_readme", return_value="Updated catalog"):
+                for version in ("2.0.0", "2.0.1"):
+                    item.update(version=version, release_tag=f"v{version}")
+                    sync_catalog.main()
+                    self.assertEqual(manifest.read_text("utf-8"), original)
+                    feed = json.loads((root / "catalog-feed.json").read_text("utf-8"))
+                    self.assertEqual(feed["integrations"][0]["version"], version)
+
     def test_hacs_package_is_flat_and_contains_no_installer(self):
         with tempfile.TemporaryDirectory() as directory:
             package = build_release(Path(directory))

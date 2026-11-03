@@ -7,13 +7,17 @@ The hub discovers released projects, adds their repositories to HACS, and notifi
 
 1. Add `https://github.com/seb5594/Home-Assistant-Integrations` under **HACS → ⋮ → Custom repositories**, category **Integration**.
 2. Download the latest release of **seb5594's Integration Hub**, then restart Home Assistant.
-3. Under **Settings → Devices & services → Add integration**, add **seb5594's Integration Hub**.
+3. Under **Settings → Devices & services**, select **Configure** on the discovered **seb5594's Integration Hub** card. If it is missing, use **Add integration** and search for the hub.
 4. Leave automatic HACS registration and new-integration notifications enabled, or adjust them.
 5. Open HACS and download the individual integrations you want. Follow HACS' restart instructions and their own setup guides.
 
 The hub requires Home Assistant **2025.1.0 or newer**. Automatic registration requires a configured HACS
 installation and reuses its GitHub connection. No additional token, shell, Supervisor or Git client is needed.
 The discovery feed is fetched from `raw.githubusercontent.com`.
+
+Automatic discovery uses this Home Assistant instance's own mDNS announcement. Zeroconf is enabled
+by default. A restart after installation is required. Configured or ignored hubs are not suggested
+again. If Zeroconf is disabled or mDNS is blocked, add the hub manually.
 
 The hub's integration domain is `seb5594_integration_catalog`. Existing installations using the old
 `integration_catalog` domain need the old hub configuration entry removed, the hub updated/redownloaded
@@ -34,6 +38,8 @@ user choices, pin a HACS integration permanently to an old release, or download 
 
 The hub itself is distributed as `seb5594_integration_catalog.zip` on a versioned `v<manifest version>` release.
 Its HACS manifest uses release ZIPs and hides the default branch from the normal download selector.
+Catalog-only changes never bump the hub version or publish a hub release; they arrive through the live feed.
+Maintainers bump the manifest version deliberately when the integration itself changes.
 
 ## New integration notifications
 

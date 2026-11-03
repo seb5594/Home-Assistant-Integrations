@@ -33,12 +33,14 @@ jobs:
         include:
           - python: '3.13'
             test-plugin: '0.13.201' # Home Assistant 2025.1.0, minimum supported version
+            zeroconf: '0.136.2' # Requirement of this HA version's zeroconf integration
           - python: '3.14'
             test-plugin: '0.13.375' # Home Assistant 2026.10.4
+            zeroconf: '0.151.5'
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
       - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
         with:
           python-version: ${{ matrix.python }}
-      - run: pip install pytest-homeassistant-custom-component==${{ matrix.test-plugin }}
+      - run: pip install pytest-homeassistant-custom-component==${{ matrix.test-plugin }} zeroconf==${{ matrix.zeroconf }}
       - run: pytest -q tests_ha
