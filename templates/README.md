@@ -39,6 +39,8 @@ Automatic registration uses HACS' internal runtime registry and is **experimenta
 
 **Home Assistant compatibility:** the hub supports **2024.1.2 or newer**, with CI coverage for 2024.1.2, 2024.12.4, 2025.1.0, 2025.12.4 and 2026.10.4. Individual catalog integrations retain their own minimum versions. [Compatibility details](docs/INSTALL.md#compatibility).
 
+**HACS → Marketplace:** HA 2026.11.0 and later require the new store; actual Marketplace detection also handles early installations. The hub checks readiness and API capabilities before writing repository metadata. [Transition policy and diagnostics](docs/HACS-MARKETPLACE.md).
+
 **Release packages only:** the catalog uses GitHub's latest published non-draft, non-prerelease release for each project. Version labels link to that exact tag, and package links point to its uploaded integration ZIP. Projects without a published release package are omitted until one is available. HACS remains the only installer and update manager.
 
 **[Installation, updates and removal →](docs/INSTALL.md)** · **[Deutsche Anleitung →](docs/INSTALL.de.md)** · [HACS repository requirements](https://www.hacs.dev/docs/publish/integration/)

@@ -147,10 +147,10 @@ class IntegrationHub:
                         if error not in {"HACS is still starting", "Marketplace is still starting"}:
                             persistent_notification.async_create(
                                 self.hass,
-                                "Repositories could not be added to HACS automatically: " + error
+                                "Repositories could not be added to HACS / Marketplace automatically: " + error
                                 + ". The hub will retry. You can still use the direct HACS links "
                                 "in the catalog; no component files were downloaded or changed.",
-                                title=f"{NAME}: HACS", notification_id=f"{DOMAIN}_hacs",
+                                title=f"{NAME}: HACS / Marketplace", notification_id=f"{DOMAIN}_hacs",
                             )
                     else:
                         persistent_notification.async_dismiss(self.hass, f"{DOMAIN}_hacs")
@@ -165,18 +165,19 @@ class IntegrationHub:
 
     def _notify_new(self, items: list[dict], registration):
         german = self.hass.config.language == "de"
+        backend = registration.backend if registration else "HACS / Marketplace"
         lines = []
         for item in items:
             registered = registration and item["repository"] in (registration.added + registration.existing)
-            status = ("bereits in HACS hinzugefügt" if german else "already added to HACS") if registered else ""
+            status = (f"bereits in {backend} hinzugefügt" if german else f"already added to {backend}") if registered else ""
             label = markdown_label(item["name"])
-            link_label = "In HACS öffnen" if german else "Open in HACS"
+            link_label = f"In {backend} öffnen" if german else f"Open in {backend}"
             lines.append(f"- **{label}** · [{markdown_label(item['release_tag'])}]({item['release_url']})"
                          f" · [ZIP]({item['package_url']}) · [{link_label}]({hacs_link(item['repository'])})"
                          + (f" — {status}" if status else ""))
         intro = "Neu im Integrationskatalog:" if german else "New in the integration catalog:"
-        footer = ("Die Integrationen wurden nicht automatisch heruntergeladen. Öffne HACS, um sie zu installieren."
-                  if german else "No integrations were automatically downloaded. Open HACS to install them.")
+        footer = (f"Die Integrationen wurden nicht automatisch heruntergeladen. Öffne {backend}, um sie zu installieren."
+                  if german else f"No integrations were automatically downloaded. Open {backend} to install them.")
         persistent_notification.async_create(
             self.hass, intro + "\n\n" + "\n".join(lines) + "\n\n" + footer,
             title=NAME, notification_id=f"{DOMAIN}_new_integrations",
