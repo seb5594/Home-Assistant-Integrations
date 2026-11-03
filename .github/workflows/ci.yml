@@ -1,0 +1,44 @@
+name: Catalog checks
+
+on:
+  pull_request:
+  push:
+    branches: [main, reorganize-integration-catalog]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  catalog:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: '3.14'
+      - run: pip install ruff
+      - run: ruff check .
+      - run: python -m unittest discover -s tests -p 'test_*.py' -v
+      - run: python scripts/build_release.py
+      - name: Check reproducible README
+        run: |
+          python scripts/sync_catalog.py --from-lock
+          git diff --exit-code -- README.md catalog-feed.json assets/brands/README.md
+  home-assistant:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    strategy:
+      matrix:
+        include:
+          - python: '3.13'
+            test-plugin: '0.13.201' # Home Assistant 2025.1.0, minimum supported version
+          - python: '3.14'
+            test-plugin: '0.13.375' # Home Assistant 2026.10.4
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: ${{ matrix.python }}
+      - run: pip install pytest-homeassistant-custom-component==${{ matrix.test-plugin }}
+      - run: pytest -q tests_ha
