@@ -4,6 +4,10 @@
     "commit": "f79e687b4414cfb09d985e72de97b41d96f72dc1"
   },
   {
+    "repository": "seb5594/hass-deepl_translator-integration",
+    "commit": "3cfc1bc79d2cca733db97e5bf23f7766cf88216c"
+  },
+  {
     "repository": "seb5594/hass-medication_tracker-integration",
     "commit": "aea343bc44d5521ce3bcce03dd1adeb882fb95cb"
   },
