@@ -23,6 +23,29 @@
     "logo_source": "https://github.com/seb5594/hass-ubpet_cat_litter_hub-integration/releases/tag/v2026.11.03.2 (ubpet_cat_litter_hub.zip: brand/logo.png)"
   },
   {
+    "repository": "seb5594/hass-deepl_translator-integration",
+    "commit": "3cfc1bc79d2cca733db97e5bf23f7766cf88216c",
+    "domain": "deepl_translator",
+    "name": "DeepL Translator",
+    "version": "1.0.0b2",
+    "release_tag": "v1.0.0b2",
+    "release_url": "https://github.com/seb5594/hass-deepl_translator-integration/releases/tag/v1.0.0b2",
+    "published_at": "2026-11-03T17:00:57Z",
+    "package_url": "https://github.com/seb5594/hass-deepl_translator-integration/releases/download/v1.0.0b2/deepl_translator.zip",
+    "package": {
+      "name": "deepl_translator.zip",
+      "url": "https://github.com/seb5594/hass-deepl_translator-integration/releases/download/v1.0.0b2/deepl_translator.zip",
+      "sha256": "8c265f4cbab321d1e86567e813e1d891c76b5a032e3ca080851e92f377b9c43a"
+    },
+    "homeassistant": "2023.7.0",
+    "description": "DeepL translation for Home Assistant: API and MCP backends, structured text translation, caching and usage sensors.",
+    "changelog": "CHANGELOG.md",
+    "ci": "ci.yml",
+    "tests": "",
+    "logo": "assets/brands/deepl_translator.png",
+    "logo_source": "https://github.com/seb5594/hass-deepl_translator-integration/releases/tag/v1.0.0b2 (deepl_translator.zip: brand/logo.png)"
+  },
+  {
     "repository": "seb5594/hass-medication_tracker-integration",
     "commit": "aea343bc44d5521ce3bcce03dd1adeb882fb95cb",
     "domain": "medication_tracker",
