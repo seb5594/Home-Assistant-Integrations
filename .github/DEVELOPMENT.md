@@ -20,7 +20,7 @@ Generated output:
 
 - `.gitmodules` and `integrations/<domain>` gitlinks, pinned to release commits;
 - `.github/catalog.json`, preserving the repository/commit format;
-- `custom_components/integration_catalog/catalog.json`, with release tags, exact URLs and package checksums;
+- `custom_components/seb5594_integration_catalog/catalog.json`, with release tags, exact URLs and package checksums;
 - `catalog-feed.json` (schema 2), a small release-only feed for installed hubs;
 - `assets/brands/` logos and attribution;
 - `README.md`, from `templates/README.md`.
@@ -33,7 +33,7 @@ minute 17 UTC, on demand, and on `update-integrations` dispatches. Unchanged out
 
 Changed release metadata bumps the hub's calendar version, with a monotonic counter for the same day.
 Increment `manifest.json` when changing hub behavior too. `scripts/build_release.py` builds
-`dist/integration_catalog.zip` with component files at the ZIP root and a `SHA256SUMS.txt` file.
+`dist/seb5594_integration_catalog.zip` with component files at the ZIP root and a `SHA256SUMS.txt` file.
 
 `.github/workflows/release.yml` checks the main branch and publishes `v<manifest version>` with those assets
 only after lint, catalog and real Home Assistant tests pass. It runs on relevant main-branch changes and

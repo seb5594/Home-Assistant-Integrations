@@ -12,7 +12,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 class CatalogTests(unittest.TestCase):
     def setUp(self):
-        self.items = json.loads((ROOT / "custom_components/integration_catalog/catalog.json").read_text("utf-8"))
+        self.items = json.loads((ROOT / "custom_components/seb5594_integration_catalog/catalog.json").read_text("utf-8"))
 
     def test_readme_is_reproducible_and_uses_friendly_names(self):
         rendered = render_readme(self.items)
@@ -36,8 +36,11 @@ class CatalogTests(unittest.TestCase):
 
     def test_hacs_layout_is_one_integration(self):
         manifests = list((ROOT / "custom_components").glob("*/manifest.json"))
-        self.assertEqual([path.parent.name for path in manifests], ["integration_catalog"])
+        self.assertEqual([path.parent.name for path in manifests], ["seb5594_integration_catalog"])
         manifest = json.loads(manifests[0].read_text("utf-8"))
+        self.assertEqual(manifest["domain"], "seb5594_integration_catalog")
+        hacs = json.loads((ROOT / "hacs.json").read_text("utf-8"))
+        self.assertEqual(hacs["filename"], manifest["domain"] + ".zip")
         self.assertTrue(manifest["config_flow"])
         self.assertTrue((manifests[0].parent / "brand/icon.png").exists())
 
