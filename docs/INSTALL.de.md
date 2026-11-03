@@ -11,7 +11,7 @@ Der Hub fügt veröffentlichte Integrationsrepos zu HACS hinzu und meldet neue P
 4. Automatisches Hinzufügen zu HACS und Benachrichtigungen aktivieren oder die Einstellungen anpassen.
 5. HACS öffnen und dort die gewünschten Integrationen herunterladen. Anschließend den Neustart- und Einrichtungshinweisen von HACS und der jeweiligen Integration folgen.
 
-Voraussetzungen: Home Assistant **2025.1.0** oder neuer und ein eingerichtetes HACS für die automatische
+Voraussetzungen: Home Assistant **2024.1.2** oder neuer und ein eingerichtetes HACS für die automatische
 Registrierung. Die GitHub-Verbindung von HACS wird mitbenutzt; ein zusätzlicher Token oder Terminalzugriff
 ist nicht nötig. Der öffentliche Katalog wird von `raw.githubusercontent.com` geladen.
 
@@ -25,6 +25,35 @@ Bei einer bestehenden Installation mit der bisherigen Domain `integration_catalo
 unter Geräte & Dienste entfernen, den Hub über HACS aktualisieren beziehungsweise erneut herunterladen,
 Home Assistant neu starten und den Hub erneut hinzufügen. Die einzelnen Integrationen und ihre
 HACS-Repositories bleiben dabei bestehen. Die beiden Hub-Einstellungen danach erneut setzen.
+
+## Kompatibilität
+
+Der Hub wird mit folgenden echten Home-Assistant-Versionen in CI geprüft:
+
+| Home Assistant | Python | Prüfung |
+| --- | --- | --- |
+| 2024.1.2 | 3.11 | Mindestversion, alter Einstellungsdialog |
+| 2024.12.4 | 3.12 | Übergang zur neuen OptionsFlow-Schnittstelle |
+| 2025.1.0 | 3.13 | Bisherige Mindestversion |
+| 2025.12.4 | 3.13 | Neuerer 2025er Stand |
+| 2026.10.4 | 3.14 | Aktueller stabiler Teststand |
+
+Geprüft werden Einrichtung, Discovery, Einstellungen, Hintergrundprüfungen,
+Entladen, Katalogvalidierung und Benachrichtigungen. Die Einstellungen wirken
+beim nächsten Abruf, ohne einen Neustart oder ein Neuladen des Hubs zu benötigen.
+Die einzelnen Katalogintegrationen behalten ihre eigenen Mindestversionen.
+
+Die HACS-Anbindung prüft die verfügbaren Methoden statt eine bestimmte
+HACS-Versionsnummer vorauszusetzen. Fehlt die passende Schnittstelle, bleiben
+Katalog und Benachrichtigungen verfügbar; die manuellen HACS-Links funktionieren weiter.
+HACS muss nicht vor dem Hub starten: Der Hub wiederholt die Registrierung nach
+60 Sekunden und anschließend stündlich.
+
+Für den [angekündigten eingebauten Marketplace ab HA 2026.11](https://contributors.home-assistant.io/marketplace/)
+ist zusätzlich die Manager-Erkennung über den geladenen Konfigurationseintrag
+vorbereitet. Dieser Adapter ist gegen den aktuellen Schnittstellenvertrag getestet;
+ein vollständiger Laufzeittest mit HA 2026.11 liegt noch nicht vor. Ein deaktivierter
+Marketplace wird nicht durch eine alte HACS-Instanz umgangen.
 
 ## Ausschließlich veröffentlichte Release-Pakete
 

@@ -1,22 +1,16 @@
 {
   "domain": "seb5594_integration_catalog",
   "name": "seb5594's Integration Hub",
-  "after_dependencies": [
-    "hacs"
-  ],
   "codeowners": [
     "@seb5594"
   ],
   "config_flow": true,
-  "dependencies": [
-    "persistent_notification"
-  ],
   "documentation": "https://github.com/seb5594/Home-Assistant-Integrations",
   "integration_type": "service",
   "iot_class": "cloud_polling",
   "issue_tracker": "https://github.com/seb5594/Home-Assistant-Integrations/issues",
   "requirements": [],
-  "version": "2026.11.3.5",
+  "version": "2026.11.3.6",
   "zeroconf": [
     {
       "type": "_home-assistant._tcp.local.",
