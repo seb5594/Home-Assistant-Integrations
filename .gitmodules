@@ -1,5 +1,5 @@
-[submodule "ubpet"]
-	path = integrations/ubpet
+[submodule "ubpet_cat_litter_hub"]
+	path = integrations/ubpet_cat_litter_hub
 	url = https://github.com/seb5594/hass-ubpet_cat_litter_hub-integration.git
 [submodule "medication_tracker"]
 	path = integrations/medication_tracker

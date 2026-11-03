@@ -3,12 +3,12 @@
   "integrations": [
     {
       "repository": "seb5594/hass-ubpet_cat_litter_hub-integration",
-      "domain": "ubpet",
+      "domain": "ubpet_cat_litter_hub",
       "name": "Cat Litter Hub – UPET / UBPet / AIRROBO / Robotail / Meowant",
-      "version": "2026.11.02.1",
-      "release_tag": "v2026.11.02.1",
-      "release_url": "https://github.com/seb5594/hass-ubpet_cat_litter_hub-integration/releases/tag/v2026.11.02.1",
-      "package_url": "https://github.com/seb5594/hass-ubpet_cat_litter_hub-integration/releases/download/v2026.11.02.1/ubpet.zip"
+      "version": "2026.11.03.2",
+      "release_tag": "v2026.11.03.2",
+      "release_url": "https://github.com/seb5594/hass-ubpet_cat_litter_hub-integration/releases/tag/v2026.11.03.2",
+      "package_url": "https://github.com/seb5594/hass-ubpet_cat_litter_hub-integration/releases/download/v2026.11.03.2/ubpet_cat_litter_hub.zip"
     },
     {
       "repository": "seb5594/hass-medication_tracker-integration",

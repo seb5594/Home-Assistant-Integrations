@@ -30,7 +30,7 @@ Automatic registration uses HACS' internal runtime registry and is **experimenta
 
 | | Integration | Latest release | Minimum Home Assistant | Direct HACS install |
 | :---: | --- | --- | --- | --- |
-| <img src="assets/brands/ubpet.png" height="44" alt=""> | **[Cat Litter Hub – UPET / UBPet / AIRROBO / Robotail / Meowant](https://github.com/seb5594/hass-ubpet_cat_litter_hub-integration)** | [v2026.11.02.1](https://github.com/seb5594/hass-ubpet_cat_litter_hub-integration/releases/tag/v2026.11.02.1) | 2023.6.0 | [Install](https://my.home-assistant.io/redirect/hacs_repository/?owner=seb5594&repository=hass-ubpet_cat_litter_hub-integration&category=integration) |
+| <img src="assets/brands/ubpet_cat_litter_hub.png" height="44" alt=""> | **[Cat Litter Hub – UPET / UBPet / AIRROBO / Robotail / Meowant](https://github.com/seb5594/hass-ubpet_cat_litter_hub-integration)** | [v2026.11.03.2](https://github.com/seb5594/hass-ubpet_cat_litter_hub-integration/releases/tag/v2026.11.03.2) | 2023.6.0 | [Install](https://my.home-assistant.io/redirect/hacs_repository/?owner=seb5594&repository=hass-ubpet_cat_litter_hub-integration&category=integration) |
 | <img src="assets/brands/medication_tracker.png" height="44" alt=""> | **[Medication Tracker](https://github.com/seb5594/hass-medication_tracker-integration)** | [v2026.10.31.0](https://github.com/seb5594/hass-medication_tracker-integration/releases/tag/v2026.10.31.0) | 2024.7.0 | [Install](https://my.home-assistant.io/redirect/hacs_repository/?owner=seb5594&repository=hass-medication_tracker-integration&category=integration) |
 | <img src="assets/brands/ninebot_e_scooters.png" height="44" alt=""> | **[Ninebot E-Scooters](https://github.com/seb5594/hass-ninebot_e_scooters-integration)** | [v1.0.0b3](https://github.com/seb5594/hass-ninebot_e_scooters-integration/releases/tag/v1.0.0b3) | 2023.2.0 | [Install](https://my.home-assistant.io/redirect/hacs_repository/?owner=seb5594&repository=hass-ninebot_e_scooters-integration&category=integration) |
 | <img src="assets/brands/pulseaudio_loopback.png" height="44" alt=""> | **[PulseAudio Loopback Extended](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration)** | [v1.0.0](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration/releases/tag/v1.0.0) | 2022.4.0 | [Install](https://my.home-assistant.io/redirect/hacs_repository/?owner=seb5594&repository=hass-pulseaudio_loopback_extended-integration&category=integration) |
@@ -42,22 +42,22 @@ Each project's logo, compatibility, version, checks and links stay together.
 Versions below are published release tags; unreleased branch changes are not offered by this catalog.
 Logos come from the source projects; PulseAudio uses its asset from Home Assistant Brands.
 
-### <img src="assets/brands/ubpet.png" height="48" alt=""> Cat Litter Hub – UPET / UBPet / AIRROBO / Robotail / Meowant
+### <img src="assets/brands/ubpet_cat_litter_hub.png" height="48" alt=""> Cat Litter Hub – UPET / UBPet / AIRROBO / Robotail / Meowant
 
 Home Assistant / HACS integration for smart cat litter boxes that use the UBPet / AIRROBO cloud: UPET, UBPet, AIR PET, AIRROBO, Robotail and Meowant. Multi-account, multi-region, 20 languages, MQTT push and visit statistics.
 
-[![release: v2026.11.02.1](https://img.shields.io/static/v1?label=release&message=v2026.11.02.1&color=1877A5&style=flat)](https://github.com/seb5594/hass-ubpet_cat_litter_hub-integration/releases/tag/v2026.11.02.1) ![Home Assistant: ≥ 2023.6.0](https://img.shields.io/static/v1?label=Home%20Assistant&message=%E2%89%A5%202023.6.0&color=1877A5&style=flat)<br>
-[![release checks](https://img.shields.io/github/check-runs/seb5594/hass-ubpet_cat_litter_hub-integration/62c34491587a4d12433826e8d250fcfe8117c172?label=release%20checks)](https://github.com/seb5594/hass-ubpet_cat_litter_hub-integration/commit/62c34491587a4d12433826e8d250fcfe8117c172/checks)  [![release downloads](https://img.shields.io/github/downloads/seb5594/hass-ubpet_cat_litter_hub-integration/v2026.11.02.1/total?label=downloads)](https://github.com/seb5594/hass-ubpet_cat_litter_hub-integration/releases/download/v2026.11.02.1/ubpet.zip) [![issues](https://img.shields.io/github/issues/seb5594/hass-ubpet_cat_litter_hub-integration?label=issues)](https://github.com/seb5594/hass-ubpet_cat_litter_hub-integration/issues)
+[![release: v2026.11.03.2](https://img.shields.io/static/v1?label=release&message=v2026.11.03.2&color=1877A5&style=flat)](https://github.com/seb5594/hass-ubpet_cat_litter_hub-integration/releases/tag/v2026.11.03.2) ![Home Assistant: ≥ 2023.6.0](https://img.shields.io/static/v1?label=Home%20Assistant&message=%E2%89%A5%202023.6.0&color=1877A5&style=flat)<br>
+[![release checks](https://img.shields.io/github/check-runs/seb5594/hass-ubpet_cat_litter_hub-integration/f79e687b4414cfb09d985e72de97b41d96f72dc1?label=release%20checks)](https://github.com/seb5594/hass-ubpet_cat_litter_hub-integration/commit/f79e687b4414cfb09d985e72de97b41d96f72dc1/checks) ![tests: 57 passed](https://img.shields.io/static/v1?label=tests&message=57%20passed&color=2F855A&style=flat) [![release downloads](https://img.shields.io/github/downloads/seb5594/hass-ubpet_cat_litter_hub-integration/v2026.11.03.2/total?label=downloads)](https://github.com/seb5594/hass-ubpet_cat_litter_hub-integration/releases/download/v2026.11.03.2/ubpet_cat_litter_hub.zip) [![issues](https://img.shields.io/github/issues/seb5594/hass-ubpet_cat_litter_hub-integration?label=issues)](https://github.com/seb5594/hass-ubpet_cat_litter_hub-integration/issues)
 
-[**Open in HACS**](https://my.home-assistant.io/redirect/hacs_repository/?owner=seb5594&repository=hass-ubpet_cat_litter_hub-integration&category=integration) · [Release package](https://github.com/seb5594/hass-ubpet_cat_litter_hub-integration/releases/download/v2026.11.02.1/ubpet.zip) · [Documentation](https://github.com/seb5594/hass-ubpet_cat_litter_hub-integration/tree/v2026.11.02.1) · [Changelog](https://github.com/seb5594/hass-ubpet_cat_litter_hub-integration/blob/v2026.11.02.1/CHANGELOG.md)
+[**Open in HACS**](https://my.home-assistant.io/redirect/hacs_repository/?owner=seb5594&repository=hass-ubpet_cat_litter_hub-integration&category=integration) · [Release package](https://github.com/seb5594/hass-ubpet_cat_litter_hub-integration/releases/download/v2026.11.03.2/ubpet_cat_litter_hub.zip) · [Documentation](https://github.com/seb5594/hass-ubpet_cat_litter_hub-integration/tree/v2026.11.03.2) · [Changelog](https://github.com/seb5594/hass-ubpet_cat_litter_hub-integration/blob/v2026.11.03.2/CHANGELOG.md)
 
 <details>
 <summary>Release and source details</summary>
 
-- Domain: `ubpet`
-- Published release: [v2026.11.02.1](https://github.com/seb5594/hass-ubpet_cat_litter_hub-integration/releases/tag/v2026.11.02.1)
-- Source: [`integrations/ubpet`](integrations/ubpet) (Git submodule)
-- Pinned commit: [`62c3449`](https://github.com/seb5594/hass-ubpet_cat_litter_hub-integration/commit/62c34491587a4d12433826e8d250fcfe8117c172)
+- Domain: `ubpet_cat_litter_hub`
+- Published release: [v2026.11.03.2](https://github.com/seb5594/hass-ubpet_cat_litter_hub-integration/releases/tag/v2026.11.03.2)
+- Source: [`integrations/ubpet_cat_litter_hub`](integrations/ubpet_cat_litter_hub) (Git submodule)
+- Pinned commit: [`f79e687`](https://github.com/seb5594/hass-ubpet_cat_litter_hub-integration/commit/f79e687b4414cfb09d985e72de97b41d96f72dc1)
 - Test count, when shown, is copied from the source README at this commit.
 
 </details>
