@@ -16,7 +16,9 @@ FETCH_CATALOG = IntegrationHub._async_fetch_catalog
 
 def addition():
     return {"repository": "seb5594/hass-next-integration", "domain": "next_integration",
-            "name": "The Next Integration", "version": "1.0.0"}
+            "name": "The Next Integration", "version": "1.0.0", "release_tag": "v1.0.0",
+            "release_url": "https://github.com/seb5594/hass-next-integration/releases/tag/v1.0.0",
+            "package_url": "https://github.com/seb5594/hass-next-integration/releases/download/v1.0.0/next_integration.zip"}
 
 
 async def make_hub(hass):
@@ -42,6 +44,8 @@ async def test_notifies_only_new_repositories_and_remembers_across_restart(hass,
         notify.assert_called_once()
         message = notify.call_args.args[1]
         assert "The Next Integration" in message
+        assert addition()["release_url"] in message
+        assert addition()["package_url"] in message
         assert "hacs_repository/?owner=seb5594" in message
         assert "No integrations were automatically downloaded" in message
         await hub.async_refresh()
@@ -115,19 +119,34 @@ async def test_announces_successful_hacs_registration_in_german(hass, catalog):
 @pytest.mark.parametrize("change", [
     {"repository": "somebody/hass-unsafe-integration"}, {"repository": "seb5594/unrelated"},
     {"domain": "../outside"}, {"name": ""}, {"version": None},
+    {"release_tag": "v9.9.9"},
+    {"release_url": "https://github.com/seb5594/hass-example-integration/tree/main"},
+    {"package_url": "https://github.com/seb5594/hass-example-integration/archive/refs/heads/main.zip"},
 ])
 def test_feed_rejects_unapproved_or_malformed_entries(catalog, change):
     bad = dict(catalog[0]) | change
     with pytest.raises(ValueError):
-        validate_feed({"schema_version": 1, "integrations": [bad]})
+        validate_feed({"schema_version": 2, "integrations": [bad]})
 
 
 def test_feed_rejects_partial_and_duplicate_payloads(catalog):
-    for payload in [None, {}, {"schema_version": 2, "integrations": catalog},
-                    {"schema_version": 1, "integrations": []},
-                    {"schema_version": 1, "integrations": catalog + catalog}]:
+    for payload in [None, {}, {"schema_version": 3, "integrations": catalog},
+                    {"schema_version": 2, "integrations": []},
+                    {"schema_version": 2, "integrations": catalog + catalog}]:
         with pytest.raises(ValueError):
             validate_feed(payload)
+
+
+async def test_old_branch_cache_is_replaced_by_bundled_release_metadata(hass, catalog):
+    hub, _ = await make_hub(hass)
+    legacy = {key: value for key, value in catalog[0].items()
+              if key not in {"release_tag", "release_url", "package_url"}}
+    with patch.object(hub.store, "async_load", return_value={
+        "seen": [catalog[0]["repository"]], "catalog": [legacy],
+    }):
+        await hub.async_initialize()
+    assert hub._catalog[0]["release_tag"] == "v1.0.0"
+    assert hub._seen == {catalog[0]["repository"]}
 
 
 class FeedResponse:
@@ -148,11 +167,11 @@ class FeedResponse:
 
 async def test_fetch_uses_public_bounded_feed_without_redirects(hass, catalog):
     hub, _ = await make_hub(hass)
-    response = FeedResponse(json.dumps({"schema_version": 1, "integrations": catalog}).encode())
+    response = FeedResponse(json.dumps({"schema_version": 2, "integrations": catalog}).encode())
     session = SimpleNamespace(get=Mock(return_value=response))
     with patch("custom_components.integration_catalog.hub.async_get_clientsession", return_value=session):
         result = await FETCH_CATALOG(hub)
-    assert result == validate_feed({"schema_version": 1, "integrations": catalog})
+    assert result == validate_feed({"schema_version": 2, "integrations": catalog})
     assert session.get.call_args.kwargs["allow_redirects"] is False
     assert session.get.call_args.args[0].endswith("/main/catalog-feed.json")
 

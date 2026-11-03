@@ -30,7 +30,7 @@ jobs:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
         with:
           ref: ${{ github.event.repository.default_branch }}
-          submodules: false # Source snapshots are inspected through immutable public archives.
+          submodules: false # Release commits and uploaded packages are inspected directly.
           fetch-depth: 1
       - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
         with:
@@ -39,7 +39,7 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: python scripts/sync_catalog.py
-      - name: Verify catalog and installer
+      - name: Verify release catalog
         run: python -m unittest discover -s tests -p 'test_*.py'
       - name: Commit changed catalog
         run: |
@@ -47,6 +47,6 @@ jobs:
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add .gitmodules .github/catalog.json catalog-feed.json README.md assets/brands custom_components/integration_catalog/catalog.json custom_components/integration_catalog/manifest.json
           if ! git diff --cached --quiet; then
-            git commit -m 'chore: synchronize integration catalog and source snapshots'
+            git commit -m 'chore: synchronize latest integration releases'
             git push
           fi

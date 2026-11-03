@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Discover public integrations; generate a README, installer lock and gitlinks.
+"""Discover published integration releases; generate metadata and gitlinks.
 
 No private workflow engine is needed. All generated metadata and file hashes
 come from an immutable source commit. A failed discovery never prunes entries.
@@ -13,10 +13,12 @@ import html
 import json
 import os
 import re
+import stat
 import subprocess
 from datetime import datetime, timezone
 from io import BytesIO
 from pathlib import Path
+from urllib.error import HTTPError
 from urllib.parse import quote, unquote
 from urllib.request import Request, urlopen
 from zipfile import ZipFile
@@ -52,11 +54,11 @@ def write_json(path, data):
 
 
 def write_public_feed(items):
-    """Small polling feed; component file hashes remain in the installer lock."""
+    """Small polling feed pointing to the latest published release packages."""
     write_json(ROOT / "catalog-feed.json", {
-        "schema_version": 1,
+        "schema_version": 2,
         "integrations": [
-            {key: item[key] for key in ("repository", "domain", "name", "version")}
+            {key: item[key] for key in ("repository", "domain", "name", "version", "release_tag", "release_url", "package_url")}
             for item in items
         ],
     })
@@ -64,7 +66,18 @@ def write_public_feed(items):
 
 def inspect_repository(repo):
     repository = repo["full_name"]
-    commit = api(f"repos/{repository}/commits/{repo['default_branch']}")["sha"]
+    try:
+        release = api(f"repos/{repository}/releases/latest")
+    except HTTPError as err:
+        if err.code == 404:
+            print(f"Skipping {repository}: no published stable release", flush=True)
+            return None
+        raise
+    if release.get("draft") or release.get("prerelease") or not release.get("published_at"):
+        return None
+    tag = release["tag_name"]
+    # Resolve the tag itself: target_commitish can be a moving branch name.
+    commit = api(f"repos/{repository}/commits/{quote(tag, safe='')}")["sha"]
     archive = ZipFile(BytesIO(fetch(f"https://codeload.github.com/{repository}/zip/{commit}")))
     root = archive.namelist()[0].split("/")[0] + "/"
     files = {name[len(root):]: archive.read(name) for name in archive.namelist()
@@ -77,31 +90,47 @@ def inspect_repository(repo):
     if len(manifests) != 1:
         raise ValueError(f"{repository}: expected exactly one integration")
     manifest_path = manifests[0]
-    manifest = json.loads(files[manifest_path])
-    domain = manifest["domain"]
+    source_manifest = json.loads(files[manifest_path])
+    domain = source_manifest["domain"]
     if manifest_path != f"custom_components/{domain}/manifest.json":
         raise ValueError(f"{repository}: manifest domain does not match its directory")
     if not re.fullmatch(r"[a-z][a-z0-9_]*", domain) or domain in {"hacs", "homeassistant", "integration_catalog"}:
         raise ValueError(f"{repository}: unsafe domain {domain}")
-    prefix = f"custom_components/{domain}/"
-    locked_files = {}
-    for path, content in files.items():
-        if path.startswith(prefix):
-            relative = path[len(prefix):]
-        elif re.fullmatch(r"(LICENSE|COPYING|NOTICE)(\.[^/]+)?", path, re.I):
-            relative = f".source-license/{path}"
-        else:
-            continue
-        locked_files[relative] = {"path": path, "sha256": hashlib.sha256(content).hexdigest()}
     hacs = json.loads(files.get("hacs.json", b"{}"))
+    filename = hacs.get("filename") or f"{domain}.zip"
+    asset = next((asset for asset in release.get("assets", [])
+                  if asset["name"] == filename and asset.get("state") == "uploaded"), None)
+    if asset is None:
+        print(f"Skipping {repository}: latest release has no uploaded {filename}", flush=True)
+        return None
+    package_url = f"https://github.com/{repository}/releases/download/{quote(tag, safe='')}/{quote(filename, safe='')}"
+    if asset["browser_download_url"] != package_url:
+        raise ValueError(f"{repository}: unexpected release package URL")
+    package_data = fetch(package_url)
+    package_hash = hashlib.sha256(package_data).hexdigest()
+    if asset.get("digest") and asset["digest"] != f"sha256:{package_hash}":
+        raise ValueError(f"{repository}: release package digest mismatch")
+    package_files = read_package(package_data)
+    package_manifests = [path for path in package_files if path == "manifest.json" or path.endswith("/manifest.json")]
+    if len(package_manifests) != 1:
+        raise ValueError(f"{repository}: release package must contain exactly one manifest")
+    package_manifest_path = package_manifests[0]
+    package_prefix = package_manifest_path.removesuffix("manifest.json")
+    manifest = json.loads(package_files[package_manifest_path])
+    if manifest.get("domain") != domain or tag.removeprefix("v") != manifest.get("version"):
+        raise ValueError(f"{repository}: release tag and packaged manifest disagree")
     readme = html.unescape(files.get("README.md", b"").decode("utf-8"))
     test_match = re.search(r"label=tests&message=([^&\s)\"]+)", readme)
     item = {
         "repository": repository, "commit": commit, "domain": domain,
         "name": manifest["name"], "version": manifest["version"],
+        "release_tag": tag,
+        "release_url": f"https://github.com/{repository}/releases/tag/{quote(tag, safe='')}",
+        "published_at": release["published_at"],
+        "package_url": package_url,
+        "package": {"name": filename, "url": package_url, "sha256": package_hash},
         "homeassistant": hacs.get("homeassistant", ""),
         "description": repo.get("description") or manifest["name"],
-        "branch": repo["default_branch"],
         "changelog": next((p for p in ("CHANGELOG.md", "CHANGES.md") if p in files), ""),
         "ci": next((p.split("/")[-1] for p in (
             ".github/workflows/ci.yml", ".github/workflows/test.yml"
@@ -109,15 +138,14 @@ def inspect_repository(repo):
         "tests": unquote(test_match[1]) if test_match else "",
         "logo": "assets/catalog.svg",
         "logo_source": "Original catalog fallback symbol; not a source project brand asset.",
-        "files": dict(sorted(locked_files.items())),
     }
     for logo in ("brand/logo.png", "brand/icon.png", "logo.png", "icon.png"):
-        if prefix + logo in files:
+        if package_prefix + logo in package_files:
             asset = f"assets/brands/{domain}.png"
             (ROOT / asset).parent.mkdir(parents=True, exist_ok=True)
-            (ROOT / asset).write_bytes(files[prefix + logo])
+            (ROOT / asset).write_bytes(package_files[package_prefix + logo])
             item["logo"] = asset
-            item["logo_source"] = f"https://github.com/{repository}/blob/{commit}/{prefix}{logo}"
+            item["logo_source"] = f"{item['release_url']} ({filename}: {logo})"
             break
     if item["logo"] == "assets/catalog.svg" and domain in BRAND_SOURCES:
         asset = f"assets/brands/{domain}.png"
@@ -125,6 +153,25 @@ def inspect_repository(repo):
         item["logo"] = asset
         item["logo_source"] = BRAND_SOURCES[domain]
     return item
+
+
+def read_package(data):
+    """Read release metadata and branding without extracting source files to disk."""
+    if len(data) > 64 * 1024 * 1024:
+        raise ValueError("Release package exceeds download limit")
+    with ZipFile(BytesIO(data)) as archive:
+        infos = archive.infolist()
+        if sum(info.file_size for info in infos) > 128 * 1024 * 1024:
+            raise ValueError("Release package exceeds expanded size limit")
+        if len({info.filename for info in infos}) != len(infos):
+            raise ValueError("Duplicate release package entries")
+        for info in infos:
+            name = info.filename.rstrip("/")
+            if any(part in {"", ".", ".."} or "\\" in part or ":" in part for part in name.split("/")):
+                raise ValueError("Unsafe release package path")
+            if stat.S_ISLNK(info.external_attr >> 16):
+                raise ValueError("Release package contains a symbolic link")
+        return {info.filename: archive.read(info) for info in infos if not info.is_dir()}
 
 
 def badge(label, message, color="1877A5", url=""):
@@ -142,24 +189,25 @@ def render_readme(items):
         hacs = f"https://my.home-assistant.io/redirect/hacs_repository/?owner={OWNER}&repository={repo.split('/')[1]}&category=integration"
         overview.append(
             f"| <img src=\"{item['logo']}\" height=\"44\" alt=\"\"> "
-            f"| **[{item['name']}]({url})** | {item['version']} "
+            f"| **[{item['name']}]({url})** | [{item['release_tag']}]({item['release_url']}) "
             f"| {item['homeassistant'] or 'See documentation'} | [Install]({hacs}) |"
         )
-        version = badge("version", item["version"], url=f"{url}/releases")
+        version = badge("release", item["release_tag"], url=item["release_url"])
         minimum = badge("Home Assistant", "≥ " + item["homeassistant"]) if item["homeassistant"] else ""
-        checks = (f"[![checks](https://img.shields.io/github/actions/workflow/status/{repo}/{item['ci']}?branch={quote(item['branch'])}&label=checks)]({url}/actions/workflows/{item['ci']})"
+        checks = (f"[![release checks](https://img.shields.io/github/check-runs/{repo}/{item['commit']}?label=release%20checks)]({url}/commit/{item['commit']}/checks)"
                   if item["ci"] else "")
         tests = badge("tests", item["tests"], "2F855A") if item["tests"] else ""
-        downloads = f"[![downloads](https://img.shields.io/github/downloads/{repo}/total?label=downloads)]({url}/releases)"
+        downloads = f"[![release downloads](https://img.shields.io/github/downloads/{repo}/{quote(item['release_tag'], safe='')}/total?label=downloads)]({item['package_url']})"
         issues = f"[![issues](https://img.shields.io/github/issues/{repo}?label=issues)]({url}/issues)"
-        changelog = f" · [Changelog]({url}/blob/{item['branch']}/{item['changelog']})" if item["changelog"] else ""
+        changelog = f" · [Changelog]({url}/blob/{quote(item['release_tag'], safe='')}/{item['changelog']})" if item["changelog"] else ""
         cards.append(
             f"### <img src=\"{item['logo']}\" height=\"48\" alt=\"\"> {item['name']}\n\n"
             f"{item['description']}\n\n"
             f"{version} {minimum}<br>\n{checks} {tests} {downloads} {issues}\n\n"
-            f"[**Open in HACS**]({hacs}) · [Documentation]({url}){changelog}\n\n"
-            f"<details>\n<summary>Source snapshot and technical details</summary>\n\n"
+            f"[**Open in HACS**]({hacs}) · [Release package]({item['package_url']}) · [Documentation]({url}/tree/{quote(item['release_tag'], safe='')}){changelog}\n\n"
+            f"<details>\n<summary>Release and source details</summary>\n\n"
             f"- Domain: `{item['domain']}`\n"
+            f"- Published release: [{item['release_tag']}]({item['release_url']})\n"
             f"- Source: [`integrations/{item['domain']}`](integrations/{item['domain']}) (Git submodule)\n"
             f"- Pinned commit: [`{item['commit'][:7]}`]({url}/commit/{item['commit']})\n"
             f"- Test count, when shown, is copied from the source README at this commit.\n\n"
@@ -221,7 +269,7 @@ def main():
         if items != previous:
             manifest = json.loads((COMPONENT / "manifest.json").read_text("utf-8"))
             now = datetime.now(timezone.utc)
-            candidate = (now.year, now.month, now.day, now.hour * 3600 + now.minute * 60 + now.second)
+            candidate = (now.year, now.month, now.day, 0)
             previous_version = tuple(map(int, manifest["version"].split(".")))
             if candidate <= previous_version:
                 candidate = previous_version[:-1] + (previous_version[-1] + 1,)

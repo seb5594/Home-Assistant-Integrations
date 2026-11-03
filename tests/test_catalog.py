@@ -32,10 +32,7 @@ class CatalogTests(unittest.TestCase):
             self.assertIn(f"url = https://github.com/{item['repository']}.git", modules)
             self.assertRegex(item["commit"], r"^[0-9a-f]{40}$")
             self.assertTrue(item["name"])
-            self.assertIn("__init__.py", item["files"])
-            self.assertIn("manifest.json", item["files"])
-            for source in item["files"].values():
-                self.assertTrue(re.fullmatch(r"[0-9a-f]{64}", source["sha256"]))
+            self.assertTrue(re.fullmatch(r"[0-9a-f]{64}", item["package"]["sha256"]))
 
     def test_hacs_layout_is_one_integration(self):
         manifests = list((ROOT / "custom_components").glob("*/manifest.json"))
@@ -46,8 +43,12 @@ class CatalogTests(unittest.TestCase):
 
     def test_public_discovery_feed_matches_pinned_metadata(self):
         feed = json.loads((ROOT / "catalog-feed.json").read_text("utf-8"))
-        self.assertEqual(feed["schema_version"], 1)
+        self.assertEqual(feed["schema_version"], 2)
         self.assertEqual(feed["integrations"], [
-            {key: item[key] for key in ("repository", "domain", "name", "version")}
+            {key: item[key] for key in ("repository", "domain", "name", "version", "release_tag", "release_url", "package_url")}
             for item in self.items
         ])
+        for item in self.items:
+            self.assertEqual(item["release_tag"].removeprefix("v"), item["version"])
+            self.assertIn(f"/releases/download/{item['release_tag']}/", item["package_url"])
+            self.assertRegex(item["package"]["sha256"], r"^[a-f0-9]{64}$")

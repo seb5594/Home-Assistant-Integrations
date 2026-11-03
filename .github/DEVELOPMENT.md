@@ -1,59 +1,54 @@
-# Catalog maintenance
+# Release catalog maintenance
 
-The catalog owns its generator: `scripts/sync_catalog.py`. It uses public GitHub APIs and archives.
-The private workflow engine and `ORCHESTRATION_PAT` checkout are no longer needed here.
+`scripts/sync_catalog.py` discovers public, active repositories owned by **seb5594**, named
+`hass-<project>-integration` or `Home-Assistant-<project>-Integration`. It uses public GitHub APIs and release
+assets; the private workflow engine and its token are not needed.
 
-## What gets listed
+## Release selection
 
-Public, active repositories owned by **[seb5594](https://github.com/seb5594)** named
-`hass-<project>-integration` or `Home-Assistant-<project>-Integration` that contain `custom_components/<domain>/manifest.json`.
-Private, archived and disabled repositories are skipped entirely, so they are neither listed nor
-pinned; a repository that turns private is removed on the next run.
+Use `GET /repos/<owner>/<repo>/releases/latest`, excluding drafts and prereleases. A source needs an uploaded
+integration ZIP named by its tagged `hacs.json` or `<domain>.zip`. Never fall back to the default branch, an
+arbitrary commit, an unpublished Git tag, or an older release when the latest release package is absent.
+Resolve the release tag itself to a commit; `target_commitish` can be a moving branch and is not a pin.
 
-## Updates
+Friendly names and versions come from the actual uploaded ZIP. The packaged manifest must match the release
+tag (apart from `v`). Verify the asset's digest where supplied. Logos are copied from the same ZIP. Source
+README/changelog metadata comes from the release commit. Failed requests stop the run instead of pruning
+an incomplete discovery result. Sources with no eligible release package are skipped.
 
-| Trigger | Behavior |
-| --- | --- |
-| Schedule | Every hour at minute 17, UTC |
-| Manual | **Actions → Synchronize integration catalog → Run workflow** |
-| integration release | The integration pipeline sends an `update-integrations` dispatch |
-| Edit of `update.yml` | For example a new engine pin |
+Generated output:
 
-Each run reads metadata at the default-branch commit and records it in `.github/catalog.json`.
-Unchanged results produce no commit. Requests failing partway stop the run instead of pruning a partial catalog.
-Duplicate domains also stop discovery. The synchronizer generates:
+- `.gitmodules` and `integrations/<domain>` gitlinks, pinned to release commits;
+- `.github/catalog.json`, preserving the repository/commit format;
+- `custom_components/integration_catalog/catalog.json`, with release tags, exact URLs and package checksums;
+- `catalog-feed.json` (schema 2), a small release-only feed for installed hubs;
+- `assets/brands/` logos and attribution;
+- `README.md`, from `templates/README.md`.
 
-- `.gitmodules` and `integrations/<domain>` gitlinks, pinned to source commits;
-- `.github/catalog.json`, retaining the repository/commit format;
-- `custom_components/integration_catalog/catalog.json`, with friendly names, minimum HA versions and a per-file SHA-256 allowlist;
-- `catalog-feed.json`, a small public feed polled by installed hubs independently of HACS hub updates;
-- `assets/brands/` source logos and attribution;
-- `README.md`, from the editable `templates/README.md` template.
+Run `python scripts/sync_catalog.py --from-lock` to regenerate presentation and feed offline. A full sync also
+stages submodule pins with `git update-index`; use a dedicated clean checkout. The workflow runs hourly at
+minute 17 UTC, on demand, and on `update-integrations` dispatches. Unchanged output produces no commit.
 
-Edit templates and generator code instead of generated output. `python scripts/sync_catalog.py --from-lock`
-renders the README offline without altering pins or the Git index. A full `python scripts/sync_catalog.py`
-stages gitlinks with `git update-index`; run it in a clean dedicated branch/checkout.
-The workflow stages only catalog paths, serializes runs and never force-pushes.
+## Hub releases
 
-## Versions
+Changed release metadata bumps the hub's calendar version, with a monotonic counter for the same day.
+Increment `manifest.json` when changing hub behavior too. `scripts/build_release.py` builds
+`dist/integration_catalog.zip` with component files at the ZIP root and a `SHA256SUMS.txt` file.
 
-Changed metadata bumps the installer's calendar version. HACS can install the default branch without
-a GitHub release. Increment `custom_components/integration_catalog/manifest.json`'s version when changing
-installer behavior too. Each source keeps its independent releases, licenses and CI.
-Root license and notice files are preserved under `.source-license/` when installing a component.
+`.github/workflows/release.yml` checks the main branch and publishes `v<manifest version>` with those assets
+only after lint, catalog and real Home Assistant tests pass. It runs on relevant main-branch changes and
+after successful catalog synchronizations. The latter trigger is needed because GITHUB_TOKEN-created
+catalog commits do not trigger ordinary push workflows. Existing releases are skipped, never overwritten.
+HACS uses the uploaded ZIP and hides the default branch from the normal download selector.
+
+## Runtime boundary
+
+HACS alone installs, updates and removes integrations. The hub contains no installer and never writes child
+component files. The adapter only registers repositories through HACS' runtime API, preserving validation
+and skip policies. This API is internal: keep it isolated in `hacs_bridge.py`, surface errors and retain manual links.
+The hub's own Store tracks seen repositories; it never directly edits HACS storage.
 
 ## Checks
 
-Run `python -m unittest discover -s tests -p "test_*.py"` for filesystem/archive and generator checks.
-CI also runs Ruff and tests the config/options flows with Home Assistant on Linux. The Windows
-checkout can run the standard-library tests without installing Home Assistant.
-
-## Design boundaries
-
-The hub registers source repositories through a capability-checked HACS runtime adapter, preserving normal
-HACS validation and skip policies. This internal API can change: keep it in `hacs_bridge.py`, surface errors
-and retain manual HACS links. Polling never downloads child components. Notifications are deduplicated by
-repository identity using the hub's own HA Store, not HACS storage. The first check establishes a baseline.
-
-The optional snapshot installer must not edit HACS storage files directly, import source code while installing,
-overwrite a directory it does not own, or mutate child component files on HA startup.
+Run `python -m unittest discover -s tests -p 'test_*.py'` for release selection, metadata and package checks.
+CI also runs Ruff, builds the HACS ZIP, verifies generated files, and runs the HA tests on 2025.1.0 and 2026.10.4.

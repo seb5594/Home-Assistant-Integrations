@@ -17,44 +17,14 @@
   },
   "options": {
     "step": {
-      "failed": {
-        "title": "Installation failed",
-        "description": "{error}\n\nSubmit to return to the selection. See the catalog installation guide for recovery instructions."
-      },
-      "finish": {
-        "title": "Installation complete",
-        "description": "Installed/updated: {integrations}\n\nRestart Home Assistant if anything changed. Then configure the selected integrations under their original names. A dash means all selected snapshots were already installed."
-      },
       "init": {
-        "title": "seb5594's Integration Hub",
-        "menu_options": {
-          "settings": "Hub settings",
-          "install_snapshots": "Install snapshots (advanced)"
-        }
-      },
-      "settings": {
         "title": "Hub settings",
         "description": "Add the individual catalog repositories to HACS and notify about newly listed integrations. HACS manages downloads and updates. No integrations are installed automatically. The HACS adapter uses an internal API and is experimental.",
         "data": {
           "auto_register": "Automatically add catalog repositories to HACS",
           "notify_new": "Notify about new integrations"
         }
-      },
-      "install_snapshots": {
-        "title": "Install snapshots (advanced)",
-        "description": "Select components to install or update. HACS manages only this catalog. After installing/updating components, restart Home Assistant. Existing installations from other sources and locally modified files are refused. Deselecting does not uninstall.",
-        "data": {
-          "integrations": "Integrations",
-          "acknowledge": "I understand that this experimental installer downloads component files and requires a restart."
-        }
       }
-    },
-    "progress": {
-      "installing": "Downloading and verifying the selected components. Please wait."
-    },
-    "error": {
-      "acknowledge_required": "Please acknowledge the installer behavior.",
-      "select_required": "Select at least one integration."
     }
   },
   "entity": {

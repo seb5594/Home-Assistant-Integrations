@@ -17,44 +17,14 @@
   },
   "options": {
     "step": {
-      "failed": {
-        "title": "Installation fehlgeschlagen",
-        "description": "{error}\n\nMit Absenden zur Auswahl zurückkehren. Hinweise zur Wiederherstellung stehen in der Installationsanleitung."
-      },
-      "finish": {
-        "title": "Installation abgeschlossen",
-        "description": "Installiert/aktualisiert: {integrations}\n\nHome Assistant bei Änderungen neu starten. Danach die Integrationen unter ihren ursprünglichen Namen einrichten. Ein Strich bedeutet, dass die ausgewählten Versionen bereits installiert waren."
-      },
       "init": {
-        "title": "seb5594's Integration Hub",
-        "menu_options": {
-          "settings": "Hub-Einstellungen",
-          "install_snapshots": "Snapshots installieren (erweitert)"
-        }
-      },
-      "settings": {
         "title": "Hub-Einstellungen",
         "description": "Der Hub fügt die Einzelrepositories in HACS hinzu und meldet neue Integrationen im Katalog. Downloads und Updates verwaltet HACS. Es werden keine Integrationen automatisch installiert. Die HACS-Anbindung verwendet eine interne Schnittstelle und ist experimentell.",
         "data": {
           "auto_register": "Katalog-Repositories automatisch in HACS hinzufügen",
           "notify_new": "Über neue Integrationen benachrichtigen"
         }
-      },
-      "install_snapshots": {
-        "title": "Snapshots installieren (erweitert)",
-        "description": "Wähle die Komponenten zum Installieren oder Aktualisieren aus. HACS verwaltet nur diesen Katalog. Nach Änderungen ist ein Neustart von Home Assistant erforderlich. Bestehende Installationen aus anderen Quellen und lokal veränderte Dateien werden abgelehnt. Abwählen deinstalliert nichts.",
-        "data": {
-          "integrations": "Integrationen",
-          "acknowledge": "Ich verstehe, dass dieser experimentelle Installer Komponentendateien herunterlädt und einen Neustart erfordert."
-        }
       }
-    },
-    "progress": {
-      "installing": "Die ausgewählten Komponenten werden heruntergeladen und geprüft. Bitte warten."
-    },
-    "error": {
-      "acknowledge_required": "Bitte den Hinweis zum Installer bestätigen.",
-      "select_required": "Mindestens eine Integration auswählen."
     }
   },
   "entity": {

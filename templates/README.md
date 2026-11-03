@@ -22,20 +22,20 @@ Browse by the name you see in Home Assistant, check each project's status, and i
 
 Automatic registration uses HACS' internal runtime registry and is **experimental**. If the API is unavailable, direct HACS links remain available and the hub retries. Both automatic registration and notifications can be disabled under **Configure → Hub settings**. A **Refresh catalog** button checks immediately. No HACS storage file is edited directly.
 
-The earlier verified snapshot installer remains under **Configure → Install snapshots (advanced)**. It is optional and manages child files outside HACS; see the installation guide before using it. Do not install the same component through both managers.
+**Release packages only:** the catalog uses GitHub's latest published non-draft, non-prerelease release for each project. Version labels link to that exact tag, and package links point to its uploaded integration ZIP. Projects without a published release package are omitted until one is available. HACS remains the only installer and update manager.
 
 **[Installation, updates, backups and removal →](docs/INSTALL.md)** · **[Deutsche Anleitung →](docs/INSTALL.de.md)** · [HACS repository requirements](https://www.hacs.dev/docs/publish/integration/)
 
 ## At a glance
 
-| | Integration | Version | Minimum Home Assistant | Direct HACS install |
+| | Integration | Latest release | Minimum Home Assistant | Direct HACS install |
 | :---: | --- | --- | --- | --- |
 {{OVERVIEW}}
 
 ## Integrations
 
 Each project's logo, compatibility, version, checks and links stay together.
-Versions below describe the pinned source snapshot; check the project's documentation for setup requirements.
+Versions below are published release tags; unreleased branch changes are not offered by this catalog.
 Logos come from the source projects; PulseAudio uses its asset from Home Assistant Brands.
 
 {{INTEGRATIONS}}
@@ -45,11 +45,10 @@ Logos come from the source projects; PulseAudio uses its asset from Home Assista
 ```text
 integrations/                         Original repositories, one pinned submodule per integration
 custom_components/integration_catalog/
-  catalog.json                        Pinned metadata and per-file SHA-256 checksums
+  catalog.json                        Latest release tags, package URLs and release commit pins
   hub.py                              Hourly discovery and deduplicated HA notifications
   hacs_bridge.py                      Capability-checked HACS repository registration
-  config_flow.py                      Hub settings and optional snapshot installation
-  installer.py                        Verified snapshot download, ownership checks and backups
+  config_flow.py                      Repository and notification settings
 catalog-feed.json                     Lightweight public discovery feed
 assets/brands/                        Source project logos and attribution
 docs/                                 Installation and maintenance notes
@@ -75,5 +74,4 @@ If my work helped you or turned out to be useful, show your appreciation with a 
 
 ## License
 
-Catalog and installer code: [MIT](LICENSE). Each source integration keeps its own license and brand rights.
-The installer preserves root license and notice files under `.source-license/` inside the installed component.
+Hub code: [MIT](LICENSE). Each source integration keeps its own license and brand rights.

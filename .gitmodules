@@ -1,6 +1,6 @@
 [submodule "ubpet"]
 	path = integrations/ubpet
-	url = https://github.com/seb5594/hass-upet_airrobo_robotail_meowant-integration.git
+	url = https://github.com/seb5594/hass-ubpet_cat_litter_hub-integration.git
 [submodule "medication_tracker"]
 	path = integrations/medication_tracker
 	url = https://github.com/seb5594/hass-medication_tracker-integration.git

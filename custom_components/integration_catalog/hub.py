@@ -6,7 +6,8 @@ import asyncio
 import json
 import logging
 import re
-from urllib.parse import urlencode
+from pathlib import Path
+from urllib.parse import quote, urlencode, urlsplit
 
 import aiohttp
 from homeassistant.components import persistent_notification
@@ -15,7 +16,6 @@ from homeassistant.helpers.storage import Store
 
 from .const import CONF_AUTO_REGISTER, CONF_NOTIFY_NEW, DOMAIN, FEED_URL, NAME
 from .hacs_bridge import HacsUnavailable, async_register_repositories
-from .installer import load_catalog
 
 _LOGGER = logging.getLogger(__name__)
 MAX_FEED_SIZE = 256 * 1024
@@ -24,9 +24,13 @@ REPOSITORY_PATTERN = re.compile(
 )
 
 
+def load_catalog() -> list[dict]:
+    return json.loads(Path(__file__).with_name("catalog.json").read_text("utf-8"))
+
+
 def validate_feed(payload: dict) -> list[dict]:
     """Accept only bounded metadata for this author's integration repositories."""
-    if not isinstance(payload, dict) or payload.get("schema_version") != 1:
+    if not isinstance(payload, dict) or payload.get("schema_version") != 2:
         raise ValueError("Unsupported catalog feed schema")
     entries = payload.get("integrations")
     if not isinstance(entries, list) or not entries or len(entries) > 200:
@@ -35,18 +39,31 @@ def validate_feed(payload: dict) -> list[dict]:
     for item in entries:
         if not isinstance(item, dict) or any(
             not isinstance(item.get(key), str) or not item[key] or len(item[key]) > 250
-            for key in ("repository", "domain", "name", "version")
+            for key in ("repository", "domain", "name", "version", "release_tag", "release_url", "package_url")
         ):
             raise ValueError("Incomplete catalog feed entry")
         if not REPOSITORY_PATTERN.fullmatch(item["repository"]):
             raise ValueError("Catalog entry is not an allowed seb5594 integration repository")
         if not re.fullmatch(r"[a-z][a-z0-9_]*", item["domain"]):
             raise ValueError("Invalid catalog domain")
+        tag, repository = item["release_tag"], item["repository"]
+        if tag.removeprefix("v") != item["version"]:
+            raise ValueError("Release tag does not match the packaged version")
+        if item["release_url"] != f"https://github.com/{repository}/releases/tag/{quote(tag, safe='')}":
+            raise ValueError("Invalid release URL")
+        package = urlsplit(item["package_url"])
+        expected_prefix = f"/{repository}/releases/download/{quote(tag, safe='')}/"
+        if (package.scheme != "https" or package.netloc != "github.com" or package.query or package.fragment
+            or not package.path.startswith(expected_prefix)
+            or not re.fullmatch(r"[A-Za-z0-9_.-]+\.zip", package.path[len(expected_prefix):])):
+            raise ValueError("Invalid release package URL")
         if item["repository"] in repositories or item["domain"] in domains:
             raise ValueError("Duplicate catalog repository or domain")
         repositories.add(item["repository"])
         domains.add(item["domain"])
-        result.append({key: item[key] for key in ("repository", "domain", "name", "version")})
+        result.append({key: item[key] for key in (
+            "repository", "domain", "name", "version", "release_tag", "release_url", "package_url",
+        )})
     return sorted(result, key=lambda item: item["repository"])
 
 
@@ -79,12 +96,15 @@ class IntegrationHub:
 
     async def async_initialize(self):
         bundled = await self.hass.async_add_executor_job(load_catalog)
-        self._catalog = validate_feed({"schema_version": 1, "integrations": bundled})
+        self._catalog = validate_feed({"schema_version": 2, "integrations": bundled})
         saved = await self.store.async_load()
         if saved:
             self._seen = set(saved.get("seen", []))
             if saved.get("catalog"):
-                self._catalog = validate_feed({"schema_version": 1, "integrations": saved["catalog"]})
+                try:
+                    self._catalog = validate_feed({"schema_version": 2, "integrations": saved["catalog"]})
+                except ValueError:
+                    _LOGGER.info("Replacing the pre-release-policy cache with the bundled release catalog")
             self._last_saved = saved
 
     async def _async_fetch_catalog(self) -> list[dict]:
@@ -151,7 +171,9 @@ class IntegrationHub:
             status = ("bereits in HACS hinzugefügt" if german else "already added to HACS") if registered else ""
             label = markdown_label(item["name"])
             link_label = "In HACS öffnen" if german else "Open in HACS"
-            lines.append(f"- **{label}** · {item['version']} · [{link_label}]({hacs_link(item['repository'])})" + (f" — {status}" if status else ""))
+            lines.append(f"- **{label}** · [{markdown_label(item['release_tag'])}]({item['release_url']})"
+                         f" · [ZIP]({item['package_url']}) · [{link_label}]({hacs_link(item['repository'])})"
+                         + (f" — {status}" if status else ""))
         intro = "Neu im Integrationskatalog:" if german else "New in the integration catalog:"
         footer = ("Die Integrationen wurden nicht automatisch heruntergeladen. Öffne HACS, um sie zu installieren."
                   if german else "No integrations were automatically downloaded. Open HACS to install them.")

@@ -1,4 +1,4 @@
-"""Constants for the catalog installer."""
+"""Constants for release discovery and HACS repository registration."""
 
 DOMAIN = "integration_catalog"
 NAME = "seb5594's Integration Hub"
