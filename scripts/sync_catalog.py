@@ -24,7 +24,7 @@ from urllib.request import Request, urlopen
 from zipfile import ZipFile
 
 ROOT = Path(__file__).resolve().parents[1]
-COMPONENT = ROOT / "custom_components/integration_catalog"
+COMPONENT = ROOT / "custom_components/seb5594_integration_catalog"
 OWNER = "seb5594"
 HUB = f"{OWNER}/Home-Assistant-Integrations"
 REPO_PATTERN = re.compile(r"^(hass-.+-integration|Home-Assistant-.+-Integration)$", re.I)
@@ -94,7 +94,7 @@ def inspect_repository(repo):
     domain = source_manifest["domain"]
     if manifest_path != f"custom_components/{domain}/manifest.json":
         raise ValueError(f"{repository}: manifest domain does not match its directory")
-    if not re.fullmatch(r"[a-z][a-z0-9_]*", domain) or domain in {"hacs", "homeassistant", "integration_catalog"}:
+    if not re.fullmatch(r"[a-z][a-z0-9_]*", domain) or domain in {"hacs", "homeassistant", "seb5594_integration_catalog"}:
         raise ValueError(f"{repository}: unsafe domain {domain}")
     hacs = json.loads(files.get("hacs.json", b"{}"))
     filename = hacs.get("filename") or f"{domain}.zip"

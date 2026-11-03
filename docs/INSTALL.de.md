@@ -15,6 +15,12 @@ Voraussetzungen: Home Assistant **2025.1.0** oder neuer und ein eingerichtetes H
 Registrierung. Die GitHub-Verbindung von HACS wird mitbenutzt; ein zusätzlicher Token oder Terminalzugriff
 ist nicht nötig. Der öffentliche Katalog wird von `raw.githubusercontent.com` geladen.
 
+Die technische Domain des Hubs lautet `seb5594_integration_catalog`.
+Bei einer bestehenden Installation mit der bisherigen Domain `integration_catalog` den alten Hub-Eintrag
+unter Geräte & Dienste entfernen, den Hub über HACS aktualisieren beziehungsweise erneut herunterladen,
+Home Assistant neu starten und den Hub erneut hinzufügen. Die einzelnen Integrationen und ihre
+HACS-Repositories bleiben dabei bestehen. Die beiden Hub-Einstellungen danach erneut setzen.
+
 ## Ausschließlich veröffentlichte Release-Pakete
 
 Der Katalog verwendet jeweils das **neueste veröffentlichte GitHub-Release**. Entwürfe und als Prerelease
@@ -27,7 +33,7 @@ wenn eines veröffentlicht ist. Unveröffentlichte Branch-Stände werden nicht a
 
 HACS behält seine reguläre Release- und Update-Verwaltung. Der Hub überschreibt keine bereits vom Nutzer
 gewählten Versionen und pinnt HACS nicht dauerhaft auf einen veralteten Tag.
-Auch der Hub selbst wird als getaggtes Release mit `integration_catalog.zip` verteilt.
+Auch der Hub selbst wird als getaggtes Release mit `seb5594_integration_catalog.zip` verteilt.
 
 ## Benachrichtigungen und Einstellungen
 
