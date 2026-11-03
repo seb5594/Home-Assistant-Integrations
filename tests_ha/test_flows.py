@@ -1,16 +1,101 @@
 """Exercise hub-only setup, settings and background scheduling in real HA."""
 
 from datetime import timedelta
+from inspect import signature
+from ipaddress import ip_address
 from unittest.mock import AsyncMock, patch
 
 from homeassistant import config_entries
 from homeassistant.data_entry_flow import FlowResultType
+from homeassistant.helpers import instance_id
 from homeassistant.util import dt as dt_util
 from pytest_homeassistant_custom_component.common import MockConfigEntry, async_fire_time_changed
 
 from custom_components.seb5594_integration_catalog.const import NAME
 
+try:
+    from homeassistant.helpers.service_info.zeroconf import ZeroconfServiceInfo
+except ImportError:  # Home Assistant 2025.1 predates the helper module.
+    from homeassistant.components.zeroconf import ZeroconfServiceInfo
+
 DOMAIN = "seb5594_integration_catalog"
+
+
+async def local_advertisement(hass, uuid=None):
+    return ZeroconfServiceInfo(
+        ip_address=ip_address("192.168.1.2"), ip_addresses=[ip_address("192.168.1.2")],
+        hostname="homeassistant.local.", port=8123, type="_home-assistant._tcp.local.",
+        name="Home._home-assistant._tcp.local.",
+        properties={"uuid": uuid or await instance_id.async_get(hass)},
+    )
+
+
+async def test_local_discovery_suggests_setup_without_installing(hass, catalog):
+    result = await hass.config_entries.flow.async_init(
+        DOMAIN, context={"source": config_entries.SOURCE_ZEROCONF}, data=await local_advertisement(hass),
+    )
+    assert result["type"] is FlowResultType.FORM
+    assert result["step_id"] == "user"
+    assert hass.config_entries.flow.async_progress_by_handler(DOMAIN)[0]["context"]["unique_id"] == DOMAIN
+    assert hass.config_entries.async_entries(DOMAIN) == []
+    duplicate = await hass.config_entries.flow.async_init(
+        DOMAIN, context={"source": config_entries.SOURCE_ZEROCONF}, data=await local_advertisement(hass),
+    )
+    assert duplicate["type"] is FlowResultType.ABORT
+    assert duplicate["reason"] == "already_in_progress"
+    result = await hass.config_entries.flow.async_configure(result["flow_id"], {
+        "auto_register": False, "notify_new": True,
+    })
+    assert result["type"] is FlowResultType.CREATE_ENTRY
+    assert result["title"] == NAME
+    await hass.async_block_till_done()
+
+
+async def test_discovery_does_not_suggest_other_home_assistant_instances(hass):
+    result = await hass.config_entries.flow.async_init(
+        DOMAIN, context={"source": config_entries.SOURCE_ZEROCONF},
+        data=await local_advertisement(hass, "another-instance"),
+    )
+    assert result["type"] is FlowResultType.ABORT
+    assert result["reason"] == "not_local_instance"
+
+
+async def test_discovery_respects_existing_and_ignored_hubs(hass):
+    for source in (config_entries.SOURCE_USER, config_entries.SOURCE_IGNORE):
+        entry = MockConfigEntry(domain=DOMAIN, source=source, unique_id=DOMAIN)
+        entry.add_to_hass(hass)
+        result = await hass.config_entries.flow.async_init(
+            DOMAIN, context={"source": config_entries.SOURCE_ZEROCONF}, data=await local_advertisement(hass),
+        )
+        assert result["type"] is FlowResultType.ABORT
+        assert result["reason"] == "already_configured"
+        await hass.config_entries.async_remove(entry.entry_id)
+
+
+async def test_manifest_matcher_routes_local_advertisement_to_setup(hass):
+    """Exercise HA's discovery router, not just a manually initiated flow."""
+    from homeassistant.components.zeroconf import ZeroconfDiscovery
+    from homeassistant.loader import async_get_zeroconf
+    from zeroconf.asyncio import AsyncServiceInfo
+
+    uuid = await instance_id.async_get(hass)
+    service_type = "_home-assistant._tcp.local."
+    service = AsyncServiceInfo(
+        service_type, f"Home.{service_type}", addresses=[ip_address("192.168.1.2").packed],
+        port=8123, properties={"uuid": uuid}, server=f"{uuid}.local.",
+    )
+    matchers = await async_get_zeroconf(hass)
+    assert any(matcher["domain"] == DOMAIN for matcher in matchers[service_type])
+    await hass.async_start()
+    # HA added local service conflict checks after the minimum supported version.
+    kwargs = {"local_service_info": service} if "local_service_info" in signature(ZeroconfDiscovery).parameters else {}
+    discovery = ZeroconfDiscovery(hass, None, {service_type: matchers[service_type]}, {}, {}, **kwargs)
+    discovery._async_process_service_update(service, service_type, service.name)
+    await hass.async_block_till_done(wait_background_tasks=True)
+    flows = hass.config_entries.flow.async_progress_by_handler(DOMAIN)
+    assert len(flows) == 1
+    assert flows[0]["context"]["source"] == config_entries.SOURCE_ZEROCONF
+    assert flows[0]["step_id"] == "user"
 
 
 async def test_hub_config_flow_and_single_instance(hass, catalog):
