@@ -68,11 +68,16 @@ async def test_version_changes_are_left_to_hacs_not_announced_as_new(hass, catal
     with patch.object(hub, "_async_fetch_catalog", return_value=catalog):
         await hub.async_refresh()
     updated = deepcopy(catalog)
-    updated[0]["version"] = "2.0.0"
+    updated[0].update({
+        "version": "2.0.0", "release_tag": "v2.0.0",
+        "release_url": catalog[0]["release_url"].replace("v1.0.0", "v2.0.0"),
+        "package_url": catalog[0]["package_url"].replace("v1.0.0", "v2.0.0"),
+    })
     with patch.object(hub, "_async_fetch_catalog", return_value=updated), patch(
         "custom_components.seb5594_integration_catalog.hub.persistent_notification.async_create"
     ) as notify:
         await hub.async_refresh()
+        assert hub._catalog[0]["version"] == "2.0.0"
         notify.assert_not_called()
 
 
