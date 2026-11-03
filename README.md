@@ -9,7 +9,7 @@
   <a href="https://github.com/seb5594/Home-Assistant-Integrations/releases/latest"><img src="https://img.shields.io/github/v/release/seb5594/Home-Assistant-Integrations?display_name=tag&amp;label=hub%20release&amp;color=1877A5" alt="Latest hub release"></a>
   <a href="https://github.com/seb5594/Home-Assistant-Integrations/releases"><img src="https://img.shields.io/github/downloads/seb5594/Home-Assistant-Integrations/total?label=hub%20downloads&amp;color=1877A5" alt="Hub release downloads"></a>
   <a href="https://github.com/seb5594/Home-Assistant-Integrations/stargazers"><img src="https://img.shields.io/github/stars/seb5594/Home-Assistant-Integrations?label=stars" alt="GitHub stars"></a><br>
-  <img src="https://img.shields.io/badge/integrations-5-1877A5" alt="5 integrations">
+  <img src="https://img.shields.io/badge/integrations-6-1877A5" alt="6 integrations">
   <a href="https://github.com/seb5594/Home-Assistant-Integrations/actions/workflows/ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/seb5594/Home-Assistant-Integrations/ci.yml?branch=main&amp;label=catalog%20checks" alt="Catalog checks"></a>
   <a href="https://github.com/seb5594/Home-Assistant-Integrations/actions/workflows/update.yml"><img src="https://img.shields.io/github/actions/workflow/status/seb5594/Home-Assistant-Integrations/update.yml?branch=main&amp;label=catalog%20sync" alt="Catalog sync"></a>
 </p>
@@ -50,6 +50,7 @@ Automatic registration uses HACS' internal runtime registry and is **experimenta
 | | Integration | Latest release | Minimum Home Assistant | Direct HACS install |
 | :---: | --- | --- | --- | --- |
 | <img src="assets/brands/ubpet_cat_litter_hub.png" height="44" alt=""> | **[Cat Litter Hub – UPET / UBPet / AIRROBO / Robotail / Meowant](https://github.com/seb5594/hass-ubpet_cat_litter_hub-integration)** | [v2026.11.03.2](https://github.com/seb5594/hass-ubpet_cat_litter_hub-integration/releases/tag/v2026.11.03.2) | 2023.6.0 | [Install](https://my.home-assistant.io/redirect/hacs_repository/?owner=seb5594&repository=hass-ubpet_cat_litter_hub-integration&category=integration) |
+| <img src="assets/brands/deepl_translator.png" height="44" alt=""> | **[DeepL Translator](https://github.com/seb5594/hass-deepl_translator-integration)** | [v1.0.0b2](https://github.com/seb5594/hass-deepl_translator-integration/releases/tag/v1.0.0b2) | 2023.7.0 | [Install](https://my.home-assistant.io/redirect/hacs_repository/?owner=seb5594&repository=hass-deepl_translator-integration&category=integration) |
 | <img src="assets/brands/medication_tracker.png" height="44" alt=""> | **[Medication Tracker](https://github.com/seb5594/hass-medication_tracker-integration)** | [v2026.10.31.0](https://github.com/seb5594/hass-medication_tracker-integration/releases/tag/v2026.10.31.0) | 2024.7.0 | [Install](https://my.home-assistant.io/redirect/hacs_repository/?owner=seb5594&repository=hass-medication_tracker-integration&category=integration) |
 | <img src="assets/brands/ninebot_e_scooters.png" height="44" alt=""> | **[Ninebot E-Scooters](https://github.com/seb5594/hass-ninebot_e_scooters-integration)** | [v1.0.0b3](https://github.com/seb5594/hass-ninebot_e_scooters-integration/releases/tag/v1.0.0b3) | 2023.2.0 | [Install](https://my.home-assistant.io/redirect/hacs_repository/?owner=seb5594&repository=hass-ninebot_e_scooters-integration&category=integration) |
 | <img src="assets/brands/pulseaudio_loopback.png" height="44" alt=""> | **[PulseAudio Loopback Extended](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration)** | [v1.0.0](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration/releases/tag/v1.0.0) | 2022.4.0 | [Install](https://my.home-assistant.io/redirect/hacs_repository/?owner=seb5594&repository=hass-pulseaudio_loopback_extended-integration&category=integration) |
@@ -79,6 +80,27 @@ Home Assistant / HACS integration for smart cat litter boxes that use the UBPet 
 - Published release: [v2026.11.03.2](https://github.com/seb5594/hass-ubpet_cat_litter_hub-integration/releases/tag/v2026.11.03.2)
 - Source: [`integrations/ubpet_cat_litter_hub`](integrations/ubpet_cat_litter_hub) (Git submodule)
 - Pinned commit: [`f79e687`](https://github.com/seb5594/hass-ubpet_cat_litter_hub-integration/commit/f79e687b4414cfb09d985e72de97b41d96f72dc1)
+
+</details>
+
+---
+
+### <img src="assets/brands/deepl_translator.png" height="48" alt=""> DeepL Translator
+
+DeepL translation for Home Assistant: API and MCP backends, structured text translation, caching and usage sensors.
+
+[![release: v1.0.0b2](https://img.shields.io/static/v1?label=release&message=v1.0.0b2&color=1877A5&style=flat)](https://github.com/seb5594/hass-deepl_translator-integration/releases/tag/v1.0.0b2) ![Home Assistant: ≥ 2023.7.0](https://img.shields.io/static/v1?label=Home%20Assistant&message=%E2%89%A5%202023.7.0&color=1877A5&style=flat)<br>
+[![release checks](https://img.shields.io/github/check-runs/seb5594/hass-deepl_translator-integration/3cfc1bc79d2cca733db97e5bf23f7766cf88216c?label=release%20checks)](https://github.com/seb5594/hass-deepl_translator-integration/commit/3cfc1bc79d2cca733db97e5bf23f7766cf88216c/checks)  [![release downloads](https://img.shields.io/github/downloads/seb5594/hass-deepl_translator-integration/v1.0.0b2/total?label=downloads)](https://github.com/seb5594/hass-deepl_translator-integration/releases/download/v1.0.0b2/deepl_translator.zip) [![issues](https://img.shields.io/github/issues/seb5594/hass-deepl_translator-integration?label=issues)](https://github.com/seb5594/hass-deepl_translator-integration/issues)
+
+[**Open in HACS**](https://my.home-assistant.io/redirect/hacs_repository/?owner=seb5594&repository=hass-deepl_translator-integration&category=integration) · [Release package](https://github.com/seb5594/hass-deepl_translator-integration/releases/download/v1.0.0b2/deepl_translator.zip) · [Documentation](https://github.com/seb5594/hass-deepl_translator-integration/tree/v1.0.0b2) · [Changelog](https://github.com/seb5594/hass-deepl_translator-integration/blob/v1.0.0b2/CHANGELOG.md)
+
+<details>
+<summary>Release and source details</summary>
+
+- Domain: `deepl_translator`
+- Published release: [v1.0.0b2](https://github.com/seb5594/hass-deepl_translator-integration/releases/tag/v1.0.0b2)
+- Source: [`integrations/deepl_translator`](integrations/deepl_translator) (Git submodule)
+- Pinned commit: [`3cfc1bc`](https://github.com/seb5594/hass-deepl_translator-integration/commit/3cfc1bc79d2cca733db97e5bf23f7766cf88216c)
 
 </details>
 
