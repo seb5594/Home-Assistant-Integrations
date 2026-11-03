@@ -44,7 +44,7 @@ Logos come from the source projects; PulseAudio uses its asset from Home Assista
 
 ```text
 integrations/                         Original repositories, one pinned submodule per integration
-custom_components/integration_catalog/
+custom_components/seb5594_integration_catalog/
   catalog.json                        Latest release tags, package URLs and release commit pins
   hub.py                              Hourly discovery and deduplicated HA notifications
   hacs_bridge.py                      Capability-checked HACS repository registration

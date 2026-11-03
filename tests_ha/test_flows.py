@@ -8,9 +8,9 @@ from homeassistant.data_entry_flow import FlowResultType
 from homeassistant.util import dt as dt_util
 from pytest_homeassistant_custom_component.common import MockConfigEntry, async_fire_time_changed
 
-from custom_components.integration_catalog.const import NAME
+from custom_components.seb5594_integration_catalog.const import NAME
 
-DOMAIN = "integration_catalog"
+DOMAIN = "seb5594_integration_catalog"
 
 
 async def test_hub_config_flow_and_single_instance(hass, catalog):
@@ -56,7 +56,7 @@ async def test_legacy_title_migrates_without_changing_domain(hass, catalog):
 async def test_refresh_runs_on_startup_retry_hourly_and_stops_on_unload(hass, catalog, freezer):
     entry = MockConfigEntry(domain=DOMAIN, data={"auto_register": False}, unique_id=DOMAIN)
     entry.add_to_hass(hass)
-    with patch("custom_components.integration_catalog.hub.IntegrationHub.async_refresh", new_callable=AsyncMock) as refresh:
+    with patch("custom_components.seb5594_integration_catalog.hub.IntegrationHub.async_refresh", new_callable=AsyncMock) as refresh:
         assert await hass.config_entries.async_setup(entry.entry_id)
         await hass.async_block_till_done()
         assert refresh.await_count == 1

@@ -6,7 +6,7 @@ from unittest.mock import AsyncMock
 
 import pytest
 
-from custom_components.integration_catalog.hacs_bridge import (
+from custom_components.seb5594_integration_catalog.hacs_bridge import (
     HacsUnavailable,
     async_register_repositories,
 )
