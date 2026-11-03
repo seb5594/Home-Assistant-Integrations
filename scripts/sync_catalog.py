@@ -209,13 +209,12 @@ def render_readme(items):
             f"- Domain: `{item['domain']}`\n"
             f"- Published release: [{item['release_tag']}]({item['release_url']})\n"
             f"- Source: [`integrations/{item['domain']}`](integrations/{item['domain']}) (Git submodule)\n"
-            f"- Pinned commit: [`{item['commit'][:7]}`]({url}/commit/{item['commit']})\n"
-            f"- Test count, when shown, is copied from the source README at this commit.\n\n"
+            f"- Pinned commit: [`{item['commit'][:7]}`]({url}/commit/{item['commit']})\n\n"
             f"</details>\n"
         )
     body = body.replace("{{COUNT}}", str(len(items)))
     body = body.replace("{{OVERVIEW}}", "\n".join(overview))
-    return body.replace("{{INTEGRATIONS}}", "\n".join(cards))
+    return body.replace("{{INTEGRATIONS}}", "\n---\n\n".join(cards))
 
 
 def sync_submodules(items):
