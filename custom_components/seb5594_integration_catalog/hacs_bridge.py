@@ -1,6 +1,6 @@
-"""Small capability-checked adapter to the same registry used by HACS' add UI.
+"""Capability-checked adapter to HACS and the built-in Marketplace registry.
 
-HACS exposes no stable integration API for this operation. Keep its internal
+Neither store promises a stable integration API for this operation. Keep internal
 runtime calls here; never modify .storage files or bypass repository validation.
 """
 
@@ -9,11 +9,16 @@ from __future__ import annotations
 import inspect
 from dataclasses import dataclass, field
 
+from awesomeversion import AwesomeVersion, AwesomeVersionException
+from homeassistant import const as ha_const
+from homeassistant import loader
 from homeassistant.config_entries import ConfigEntryState
+
+MARKETPLACE_FROM = "2026.11.0"
 
 
 class HacsUnavailable(Exception):
-    """HACS is absent, still starting, disabled or has an incompatible API."""
+    """The selected store is absent, starting, disabled or has a changed API."""
 
 
 @dataclass
@@ -21,32 +26,72 @@ class RegistrationResult:
     added: list[str] = field(default_factory=list)
     existing: list[str] = field(default_factory=list)
     failed: dict[str, str] = field(default_factory=dict)
+    backend: str = "HACS"
 
 
-def repository_manager(hass):
-    """Find the configured store without importing optional integrations.
+@dataclass
+class StoreSelection:
+    name: str
+    ha_version: str
+    signals: list[str]
+    manager: object | None = field(default=None, repr=False)
+    error: str | None = None
 
-    HACS keeps its manager in hass.data. The built-in Marketplace uses its
-    loaded config entry's runtime_data instead. A disabled/new store must not
-    fall through to an obsolete HACS instance left behind during migration.
+    def diagnostics(self):
+        """Export only policy information, never a manager or its credentials."""
+        return {"backend": self.name, "home_assistant_version": self.ha_version,
+                "marketplace_from": MARKETPLACE_FROM, "signals": self.signals,
+                "available": False, "reason": self.error}
+
+
+async def async_select_store(hass) -> StoreSelection:
+    """Use the new store once required by version or detected in this install.
+
+    Version is the announced stable cutover. Actual core metadata and entries
+    also cover betas/backports before that date. No optional component code is
+    imported, and detection is repeated on every refresh.
     """
+    version, signals = ha_const.__version__, []
+    try:
+        if AwesomeVersion(version) >= AwesomeVersion(MARKETPLACE_FROM):
+            signals.append("ha_version")
+    except AwesomeVersionException:
+        # Custom/dev version strings still use the actual installation signals.
+        pass
+    replacement = getattr(loader, "BLOCKED_CUSTOM_INTEGRATIONS", {}).get("hacs")
+    if getattr(replacement, "replaced_by", None) == "marketplace":
+        signals.append("core_replacement")
+    try:
+        integration = await loader.async_get_integration(hass, "marketplace")
+    except loader.IntegrationNotFound:
+        pass
+    else:
+        if integration.is_built_in:
+            signals.append("builtin_integration")
     entries = hass.config_entries.async_entries("marketplace")
     if entries:
+        signals.append("config_entry")
+    selected = StoreSelection("Marketplace" if signals else "HACS", version, signals)
+    if signals:
         for entry in entries:
-            if entry.state is ConfigEntryState.LOADED:
+            if entry.state is ConfigEntryState.LOADED and not getattr(entry, "disabled_by", None):
                 manager = getattr(entry, "runtime_data", None)
                 if manager is not None:
-                    return manager, "Marketplace"
-        raise HacsUnavailable("Marketplace is not loaded")
-    manager = hass.data.get("hacs")
-    if manager is None:
-        raise HacsUnavailable("HACS is not loaded")
-    return manager, "HACS"
+                    selected.manager = manager
+                    return selected
+        selected.error = "Marketplace is not loaded" if entries else "Marketplace is required but not configured"
+    else:
+        selected.manager = hass.data.get("hacs")
+        if selected.manager is None:
+            selected.error = "HACS is not loaded"
+    return selected
 
 
-async def async_register_repositories(hass, catalog: list[dict]) -> RegistrationResult:
-    """Register and persist repository metadata, without downloading components."""
-    hacs, name = repository_manager(hass)
+def registry_api(selection):
+    """Validate the entire call contract before any repository can be changed."""
+    if selection.error:
+        raise HacsUnavailable(selection.error)
+    hacs, name = selection.manager, selection.name
     if getattr(getattr(hacs, "system", None), "disabled", False):
         raise HacsUnavailable(f"{name} is disabled")
     if getattr(getattr(hacs, "status", None), "startup", False):
@@ -54,17 +99,43 @@ async def async_register_repositories(hass, catalog: list[dict]) -> Registration
     register = getattr(hacs, "async_register_repository", None)
     lookup = getattr(getattr(hacs, "repositories", None), "get_by_full_name", None)
     save = getattr(getattr(hacs, "data", None), "async_write", None)
-    categories = getattr(getattr(hacs, "common", None), "categories", ())
+    categories = getattr(getattr(hacs, "common", None), "categories", ()) or ()
     if not callable(register) or not callable(lookup) or not callable(save) or "integration" not in categories:
         raise HacsUnavailable(f"This {name} version does not provide the expected registry API")
     try:
         inspect.signature(register).bind(
             repository_full_name="seb5594/example", category="integration", check=True,
         )
+        inspect.signature(lookup).bind("seb5594/example")
+        inspect.signature(save).bind()
+        if (not inspect.iscoroutinefunction(register) or not inspect.iscoroutinefunction(save)
+            or inspect.iscoroutinefunction(lookup)):
+            raise TypeError("Registration/persistence must be async and lookup must be sync")
     except (TypeError, ValueError) as err:
         raise HacsUnavailable(f"The {name} repository registration API has changed") from err
+    return register, lookup, save
 
-    result = RegistrationResult()
+
+async def async_store_diagnostics(hass):
+    """Explain selection and readiness without modifying or registering anything."""
+    selected = await async_select_store(hass)
+    data = selected.diagnostics()
+    try:
+        registry_api(selected)
+    except HacsUnavailable as err:
+        data["reason"] = str(err)
+    else:
+        data["available"] = True
+    return data
+
+
+async def async_register_repositories(hass, catalog: list[dict]) -> RegistrationResult:
+    """Register and persist repository metadata, without downloading components."""
+    selected = await async_select_store(hass)
+    register, lookup, save = registry_api(selected)
+    hacs = selected.manager
+
+    result = RegistrationResult(backend=selected.name)
     try:
         for item in catalog:
             repository = item["repository"]
@@ -80,7 +151,7 @@ async def async_register_repositories(hass, catalog: list[dict]) -> Registration
                     repository_full_name=repository, category="integration", check=True,
                 )
                 if lookup(lookup_name) is None:
-                    result.failed[repository] = str(errors or "HACS did not register the repository")
+                    result.failed[repository] = str(errors or f"{selected.name} did not register the repository")
                 else:
                     result.added.append(repository)
             except Exception as err:
