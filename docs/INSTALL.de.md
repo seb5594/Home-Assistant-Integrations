@@ -49,11 +49,16 @@ Katalog und Benachrichtigungen verfügbar; die manuellen HACS-Links funktioniere
 HACS muss nicht vor dem Hub starten: Der Hub wiederholt die Registrierung nach
 60 Sekunden und anschließend stündlich.
 
-Für den [angekündigten eingebauten Marketplace ab HA 2026.11](https://contributors.home-assistant.io/marketplace/)
-ist zusätzlich die Manager-Erkennung über den geladenen Konfigurationseintrag
-vorbereitet. Dieser Adapter ist gegen den aktuellen Schnittstellenvertrag getestet;
-ein vollständiger Laufzeittest mit HA 2026.11 liegt noch nicht vor. Ein deaktivierter
-Marketplace wird nicht durch eine alte HACS-Instanz umgangen.
+Der Wechsel zu Marketplace ist für HA **2026.11.0** vorbereitet: Ab dieser Version
+wird ausschließlich die neue Anbindung verwendet. Schon vorher haben ein eingebauter
+Marketplace, die Core-Ersetzungsregel für HACS oder ein Marketplace-Konfigurationseintrag
+Vorrang. Bei fehlender Bereitschaft oder inkompatibler API wartet der Hub und nutzt keine
+alte HACS-Instanz. Die Entscheidung wird bei jedem Abruf neu getroffen.
+
+**Diagnosedaten herunterladen** am Hub-Eintrag zeigt Store, HA-Version, Erkennungsgründe,
+Bereitschaft und eine gegebenenfalls fehlende Voraussetzung. Zugangsdaten werden nicht exportiert.
+Die Marketplace-Anbindung ist mit Vertragstests vorbereitet, noch nicht mit einem vollständigen
+HA-2026.11-Lauf. [Auswahlregeln, Quellen und späterer Release-Check](HACS-MARKETPLACE.md).
 
 ## Ausschließlich veröffentlichte Release-Pakete
 

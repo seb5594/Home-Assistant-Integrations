@@ -45,10 +45,15 @@ version. If the required registry API is unavailable, the catalog, notifications
 and manual HACS links remain available. HACS need not start before the hub:
 registration retries after 60 seconds and then hourly.
 
-Manager lookup for the [upcoming built-in Marketplace in HA 2026.11](https://contributors.home-assistant.io/marketplace/)
-is also prepared, using the loaded entry's runtime data. This adapter has contract
-tests against the current API shape; HA 2026.11 has not received a full runtime test.
-A disabled Marketplace never falls through to an obsolete HACS manager.
+The Marketplace transition is prepared for HA **2026.11.0**: this version and later
+require the new adapter. A built-in Marketplace, Core's HACS replacement rule or an
+existing Marketplace entry also select it before that version. An unavailable or
+incompatible Marketplace never falls back to stale HACS. Selection repeats on every refresh.
+
+**Download diagnostics** on the hub entry shows the selected store, HA version, detection
+signals, readiness and any missing prerequisite. No store credentials are exported.
+Marketplace has contract tests, but no full HA 2026.11 runtime test yet.
+[Decision rules, primary sources and release validation](HACS-MARKETPLACE.md).
 
 ## Published releases only
 

@@ -110,18 +110,19 @@ async def test_automatic_registration_and_notification_can_be_disabled(hass, cat
         assert addition()["repository"] in hub._seen
 
 
-async def test_announces_successful_hacs_registration_in_german(hass, catalog):
+@pytest.mark.parametrize("backend", ["HACS", "Marketplace"])
+async def test_announces_successful_hacs_registration_in_german(hass, catalog, backend):
     hub, entry = await make_hub(hass)
     hass.config_entries.async_update_entry(entry, options={"auto_register": True})
     hass.config.language = "de"
     hub._seen = {catalog[0]["repository"]}
     with patch.object(hub, "_async_fetch_catalog", return_value=catalog + [addition()]), patch(
         "custom_components.seb5594_integration_catalog.hub.async_register_repositories",
-        new=AsyncMock(return_value=RegistrationResult(added=[addition()["repository"]])),
+        new=AsyncMock(return_value=RegistrationResult(added=[addition()["repository"]], backend=backend)),
     ) as register, patch("custom_components.seb5594_integration_catalog.hub.persistent_notification.async_create") as notify:
         await hub.async_refresh()
         register.assert_awaited_once()
-        assert "bereits in HACS hinzugefügt" in notify.call_args.args[1]
+        assert f"bereits in {backend} hinzugefügt" in notify.call_args.args[1]
         assert "Neu im Integrationskatalog" in notify.call_args.args[1]
 
 
