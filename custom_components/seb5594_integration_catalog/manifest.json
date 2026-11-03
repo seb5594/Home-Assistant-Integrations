@@ -1,5 +1,5 @@
 {
-  "domain": "integration_catalog",
+  "domain": "seb5594_integration_catalog",
   "name": "seb5594's Integration Hub",
   "after_dependencies": [
     "hacs"
@@ -16,5 +16,5 @@
   "iot_class": "cloud_polling",
   "issue_tracker": "https://github.com/seb5594/Home-Assistant-Integrations/issues",
   "requirements": [],
-  "version": "2026.11.3.2"
+  "version": "2026.11.3.3"
 }

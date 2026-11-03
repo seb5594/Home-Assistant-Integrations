@@ -15,6 +15,11 @@ The hub requires Home Assistant **2025.1.0 or newer**. Automatic registration re
 installation and reuses its GitHub connection. No additional token, shell, Supervisor or Git client is needed.
 The discovery feed is fetched from `raw.githubusercontent.com`.
 
+The hub's integration domain is `seb5594_integration_catalog`. Existing installations using the old
+`integration_catalog` domain need the old hub configuration entry removed, the hub updated/redownloaded
+through HACS, a Home Assistant restart, and the hub added again. Reapply the two hub settings afterward.
+The individual integrations and their HACS repositories are retained.
+
 ## Published releases only
 
 The catalog uses GitHub's **latest published release**, excluding drafts and releases marked as prereleases.
@@ -27,7 +32,7 @@ or arbitrary-commit fallback. The displayed version, release page, package downl
 refer to that latest release. HACS keeps its normal release management; the hub does not override existing
 user choices, pin a HACS integration permanently to an old release, or download its files.
 
-The hub itself is distributed as `integration_catalog.zip` on a versioned `v<manifest version>` release.
+The hub itself is distributed as `seb5594_integration_catalog.zip` on a versioned `v<manifest version>` release.
 Its HACS manifest uses release ZIPs and hides the default branch from the normal download selector.
 
 ## New integration notifications

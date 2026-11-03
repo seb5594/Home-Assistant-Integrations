@@ -4,7 +4,7 @@ from unittest.mock import patch
 
 import pytest
 
-from custom_components.integration_catalog import hub
+from custom_components.seb5594_integration_catalog import hub
 
 
 @pytest.fixture(autouse=True)

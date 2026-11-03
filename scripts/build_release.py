@@ -8,13 +8,13 @@ from pathlib import Path
 from zipfile import ZIP_DEFLATED, ZipFile
 
 ROOT = Path(__file__).resolve().parents[1]
-COMPONENT = ROOT / "custom_components/integration_catalog"
+COMPONENT = ROOT / "custom_components/seb5594_integration_catalog"
 
 
 def build_release(output: Path):
     manifest = json.loads((COMPONENT / "manifest.json").read_text("utf-8"))
     output.mkdir(parents=True, exist_ok=True)
-    package = output / "integration_catalog.zip"
+    package = output / "seb5594_integration_catalog.zip"
     with ZipFile(package, "w", compression=ZIP_DEFLATED) as archive:
         for path in sorted(COMPONENT.rglob("*")):
             relative = path.relative_to(COMPONENT)
