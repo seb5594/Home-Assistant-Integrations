@@ -144,7 +144,7 @@ class IntegrationHub:
                 if error != self._bridge_error:
                     if error:
                         _LOGGER.warning("HACS repository synchronization: %s", error)
-                        if error != "HACS is still starting":
+                        if error not in {"HACS is still starting", "Marketplace is still starting"}:
                             persistent_notification.async_create(
                                 self.hass,
                                 "Repositories could not be added to HACS automatically: " + error

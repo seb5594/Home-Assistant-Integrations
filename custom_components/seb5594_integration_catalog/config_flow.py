@@ -48,12 +48,17 @@ class CatalogConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
     @staticmethod
     @callback
     def async_get_options_flow(config_entry):
-        return CatalogOptionsFlow()
+        return CatalogOptionsFlow(config_entry)
 
 
 class CatalogOptionsFlow(config_entries.OptionsFlow):
+    def __init__(self, entry):
+        # Older HA does not expose OptionsFlow.config_entry; newer HA forbids
+        # assigning it. Keep our own reference without overriding that property.
+        self._catalog_entry = entry
+
     async def async_step_init(self, user_input=None):
-        settings = dict(self.config_entry.data) | dict(self.config_entry.options)
+        settings = dict(self._catalog_entry.data) | dict(self._catalog_entry.options)
         if user_input is not None:
             return self.async_create_entry(title="", data=user_input)
         return self.async_show_form(step_id="init", data_schema=settings_schema(settings))
