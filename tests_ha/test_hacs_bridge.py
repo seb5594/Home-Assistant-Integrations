@@ -2,9 +2,10 @@
 
 import asyncio
 from types import SimpleNamespace
-from unittest.mock import AsyncMock
+from unittest.mock import AsyncMock, patch
 
 import pytest
+from homeassistant.config_entries import ConfigEntryState
 
 from custom_components.seb5594_integration_catalog.hacs_bridge import (
     HacsUnavailable,
@@ -96,3 +97,36 @@ async def test_cancellation_persists_successful_prior_registrations(hass, catalo
     with pytest.raises(asyncio.CancelledError):
         await async_register_repositories(hass, catalog + [{"repository": "seb5594/hass-next-integration"}])
     hacs.data.async_write.assert_awaited_once()
+
+
+async def test_marketplace_uses_loaded_entry_runtime_data_instead_of_legacy_hacs(hass, catalog):
+    """Exercise the manager contract used by HA's upcoming built-in store."""
+    marketplace, registry = hacs_stub(hass)
+    hass.data["hacs"] = object()  # A stale manager must not win after migration.
+    entry = SimpleNamespace(state=ConfigEntryState.LOADED, runtime_data=marketplace)
+    with patch.object(hass.config_entries, "async_entries", return_value=[entry]) as entries:
+        result = await async_register_repositories(hass, catalog)
+    entries.assert_called_once_with("marketplace")
+    assert result.added == [catalog[0]["repository"]]
+    assert len(registry) == 1
+    marketplace.data.async_write.assert_awaited_once()
+
+
+@pytest.mark.parametrize("state, runtime", [
+    (ConfigEntryState.NOT_LOADED, None), (ConfigEntryState.LOADED, None),
+])
+async def test_marketplace_not_ready_does_not_use_old_hacs(hass, catalog, state, runtime):
+    hacs, registry = hacs_stub(hass)
+    with patch.object(hass.config_entries, "async_entries", return_value=[
+        SimpleNamespace(state=state, runtime_data=runtime),
+    ]), pytest.raises(HacsUnavailable, match="Marketplace is not loaded"):
+        await async_register_repositories(hass, catalog)
+    assert not registry
+    hacs.data.async_write.assert_not_awaited()
+
+
+async def test_marketplace_also_validates_its_registry_capabilities(hass, catalog):
+    entry = SimpleNamespace(state=ConfigEntryState.LOADED, runtime_data=object())
+    with patch.object(hass.config_entries, "async_entries", return_value=[entry]), \
+        pytest.raises(HacsUnavailable, match="Marketplace version"):
+        await async_register_repositories(hass, catalog)

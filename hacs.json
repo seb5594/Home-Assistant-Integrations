@@ -1,6 +1,6 @@
 {
   "name": "seb5594's Integration Hub",
-  "homeassistant": "2025.1.0",
+  "homeassistant": "2024.1.2",
   "hide_default_branch": true,
   "zip_release": true,
   "filename": "seb5594_integration_catalog.zip"

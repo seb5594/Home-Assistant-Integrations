@@ -9,6 +9,8 @@ from __future__ import annotations
 import inspect
 from dataclasses import dataclass, field
 
+from homeassistant.config_entries import ConfigEntryState
+
 
 class HacsUnavailable(Exception):
     """HACS is absent, still starting, disabled or has an incompatible API."""
@@ -21,27 +23,46 @@ class RegistrationResult:
     failed: dict[str, str] = field(default_factory=dict)
 
 
+def repository_manager(hass):
+    """Find the configured store without importing optional integrations.
+
+    HACS keeps its manager in hass.data. The built-in Marketplace uses its
+    loaded config entry's runtime_data instead. A disabled/new store must not
+    fall through to an obsolete HACS instance left behind during migration.
+    """
+    entries = hass.config_entries.async_entries("marketplace")
+    if entries:
+        for entry in entries:
+            if entry.state is ConfigEntryState.LOADED:
+                manager = getattr(entry, "runtime_data", None)
+                if manager is not None:
+                    return manager, "Marketplace"
+        raise HacsUnavailable("Marketplace is not loaded")
+    manager = hass.data.get("hacs")
+    if manager is None:
+        raise HacsUnavailable("HACS is not loaded")
+    return manager, "HACS"
+
+
 async def async_register_repositories(hass, catalog: list[dict]) -> RegistrationResult:
     """Register and persist repository metadata, without downloading components."""
-    hacs = hass.data.get("hacs")
-    if hacs is None:
-        raise HacsUnavailable("HACS is not loaded")
+    hacs, name = repository_manager(hass)
     if getattr(getattr(hacs, "system", None), "disabled", False):
-        raise HacsUnavailable("HACS is disabled")
+        raise HacsUnavailable(f"{name} is disabled")
     if getattr(getattr(hacs, "status", None), "startup", False):
-        raise HacsUnavailable("HACS is still starting")
+        raise HacsUnavailable(f"{name} is still starting")
     register = getattr(hacs, "async_register_repository", None)
     lookup = getattr(getattr(hacs, "repositories", None), "get_by_full_name", None)
     save = getattr(getattr(hacs, "data", None), "async_write", None)
     categories = getattr(getattr(hacs, "common", None), "categories", ())
     if not callable(register) or not callable(lookup) or not callable(save) or "integration" not in categories:
-        raise HacsUnavailable("This HACS version does not provide the expected registry API")
+        raise HacsUnavailable(f"This {name} version does not provide the expected registry API")
     try:
         inspect.signature(register).bind(
             repository_full_name="seb5594/example", category="integration", check=True,
         )
     except (TypeError, ValueError) as err:
-        raise HacsUnavailable("The HACS repository registration API has changed") from err
+        raise HacsUnavailable(f"The {name} repository registration API has changed") from err
 
     result = RegistrationResult()
     try:
