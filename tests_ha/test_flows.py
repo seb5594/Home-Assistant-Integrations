@@ -91,7 +91,8 @@ async def test_manifest_matcher_routes_local_advertisement_to_setup(hass):
     kwargs = {"local_service_info": service} if "local_service_info" in signature(ZeroconfDiscovery).parameters else {}
     discovery = ZeroconfDiscovery(hass, None, {service_type: matchers[service_type]}, {}, {}, **kwargs)
     discovery._async_process_service_update(service, service_type, service.name)
-    await hass.async_block_till_done(wait_background_tasks=True)
+    wait_kwargs = {"wait_background_tasks": True} if "wait_background_tasks" in signature(hass.async_block_till_done).parameters else {}
+    await hass.async_block_till_done(**wait_kwargs)
     flows = hass.config_entries.flow.async_progress_by_handler(DOMAIN)
     assert len(flows) == 1
     assert flows[0]["context"]["source"] == config_entries.SOURCE_ZEROCONF
@@ -117,6 +118,7 @@ async def test_hub_options_only_offer_registration_and_notifications(hass, catal
     entry = MockConfigEntry(domain=DOMAIN, data={"auto_register": True, "notify_new": True}, unique_id=DOMAIN)
     entry.add_to_hass(hass)
     assert await hass.config_entries.async_setup(entry.entry_id)
+    hub = hass.data[DOMAIN][entry.entry_id]
     result = await hass.config_entries.options.async_init(entry.entry_id)
     assert result["type"] is FlowResultType.FORM
     assert {str(key) for key in result["data_schema"].schema} == {"auto_register", "notify_new"}
@@ -126,6 +128,9 @@ async def test_hub_options_only_offer_registration_and_notifications(hass, catal
     assert result["type"] is FlowResultType.CREATE_ENTRY
     assert entry.options == {"auto_register": False, "notify_new": False}
     await hass.async_block_till_done()
+    assert hass.data[DOMAIN][entry.entry_id] is hub
+    assert not hub.enabled("auto_register")
+    assert not hub.enabled("notify_new")
 
 
 async def test_legacy_title_migrates_without_changing_domain(hass, catalog):

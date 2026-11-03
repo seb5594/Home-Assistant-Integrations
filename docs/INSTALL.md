@@ -11,7 +11,7 @@ The hub discovers released projects, adds their repositories to HACS, and notifi
 4. Leave automatic HACS registration and new-integration notifications enabled, or adjust them.
 5. Open HACS and download the individual integrations you want. Follow HACS' restart instructions and their own setup guides.
 
-The hub requires Home Assistant **2025.1.0 or newer**. Automatic registration requires a configured HACS
+The hub requires Home Assistant **2024.1.2 or newer**. Automatic registration requires a configured HACS
 installation and reuses its GitHub connection. No additional token, shell, Supervisor or Git client is needed.
 The discovery feed is fetched from `raw.githubusercontent.com`.
 
@@ -23,6 +23,32 @@ The hub's integration domain is `seb5594_integration_catalog`. Existing installa
 `integration_catalog` domain need the old hub configuration entry removed, the hub updated/redownloaded
 through HACS, a Home Assistant restart, and the hub added again. Reapply the two hub settings afterward.
 The individual integrations and their HACS repositories are retained.
+
+## Compatibility
+
+The hub is tested in CI against these real Home Assistant versions:
+
+| Home Assistant | Python | Coverage |
+| --- | --- | --- |
+| 2024.1.2 | 3.11 | Minimum version, legacy options flow |
+| 2024.12.4 | 3.12 | OptionsFlow API transition |
+| 2025.1.0 | 3.13 | Previous minimum |
+| 2025.12.4 | 3.13 | Later 2025 release |
+| 2026.10.4 | 3.14 | Current stable test baseline |
+
+Checks cover setup, discovery, options, background checks, unloading, catalog
+validation and notifications. Settings take effect at the next refresh without
+reloading or restarting the hub. Catalog integrations retain their own minimum versions.
+
+The HACS adapter checks available capabilities rather than enforcing one HACS
+version. If the required registry API is unavailable, the catalog, notifications
+and manual HACS links remain available. HACS need not start before the hub:
+registration retries after 60 seconds and then hourly.
+
+Manager lookup for the [upcoming built-in Marketplace in HA 2026.11](https://contributors.home-assistant.io/marketplace/)
+is also prepared, using the loaded entry's runtime data. This adapter has contract
+tests against the current API shape; HA 2026.11 has not received a full runtime test.
+A disabled Marketplace never falls through to an obsolete HACS manager.
 
 ## Published releases only
 
