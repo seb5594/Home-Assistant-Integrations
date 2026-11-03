@@ -1,22 +1,22 @@
 [
   {
+    "repository": "seb5594/hass-ubpet_cat_litter_hub-integration",
+    "commit": "62c34491587a4d12433826e8d250fcfe8117c172"
+  },
+  {
     "repository": "seb5594/hass-medication_tracker-integration",
-    "commit": "c03cb2284966224197793dc7bc115d000f30db77"
+    "commit": "aea343bc44d5521ce3bcce03dd1adeb882fb95cb"
   },
   {
     "repository": "seb5594/hass-ninebot_e_scooters-integration",
-    "commit": "9da6998660193a6b0f7277ca9f24ed105c02a613"
+    "commit": "831df42badf0061a58d4dd7ccdaf01b5ab8393ff"
   },
   {
     "repository": "seb5594/hass-pulseaudio_loopback_extended-integration",
-    "commit": "2d4a2dd036390c0effba059a8bdede7f12750271"
-  },
-  {
-    "repository": "seb5594/hass-upet_airrobo_robotail_meowant-integration",
-    "commit": "0212bb469bc4f99ae4a837d3f25bae0b1232c92c"
+    "commit": "7ddd0f352cf62804f2a15a14b19c0a95a0a2a10c"
   },
   {
     "repository": "seb5594/hass-vacuum_mapguard-integration",
-    "commit": "49d312aa356b826e5aec42f6278ab4f96a7a94b9"
+    "commit": "80a39310619e85ebcf475cb682ee2505c478ebfe"
   }
 ]

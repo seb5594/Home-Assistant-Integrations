@@ -1,0 +1,117 @@
+[
+  {
+    "repository": "seb5594/hass-ubpet_cat_litter_hub-integration",
+    "commit": "62c34491587a4d12433826e8d250fcfe8117c172",
+    "domain": "ubpet",
+    "name": "Cat Litter Hub – UPET / UBPet / AIRROBO / Robotail / Meowant",
+    "version": "2026.11.02.1",
+    "release_tag": "v2026.11.02.1",
+    "release_url": "https://github.com/seb5594/hass-ubpet_cat_litter_hub-integration/releases/tag/v2026.11.02.1",
+    "published_at": "2026-11-02T22:00:14Z",
+    "package_url": "https://github.com/seb5594/hass-ubpet_cat_litter_hub-integration/releases/download/v2026.11.02.1/ubpet.zip",
+    "package": {
+      "name": "ubpet.zip",
+      "url": "https://github.com/seb5594/hass-ubpet_cat_litter_hub-integration/releases/download/v2026.11.02.1/ubpet.zip",
+      "sha256": "38ca24d4f2aa1254f105990565138b83b0c8e9486a1b37d3eb4ee08aafe4b5e9"
+    },
+    "homeassistant": "2023.6.0",
+    "description": "Home Assistant / HACS integration for smart cat litter boxes that use the UBPet / AIRROBO cloud: UPET, UBPet, AIR PET, AIRROBO, Robotail and Meowant. Multi-account, multi-region, 20 languages, MQTT push and visit statistics.",
+    "changelog": "CHANGELOG.md",
+    "ci": "ci.yml",
+    "tests": "",
+    "logo": "assets/brands/ubpet.png",
+    "logo_source": "https://github.com/seb5594/hass-ubpet_cat_litter_hub-integration/releases/tag/v2026.11.02.1 (ubpet.zip: brand/logo.png)"
+  },
+  {
+    "repository": "seb5594/hass-medication_tracker-integration",
+    "commit": "aea343bc44d5521ce3bcce03dd1adeb882fb95cb",
+    "domain": "medication_tracker",
+    "name": "Medication Tracker",
+    "version": "2026.10.31.0",
+    "release_tag": "v2026.10.31.0",
+    "release_url": "https://github.com/seb5594/hass-medication_tracker-integration/releases/tag/v2026.10.31.0",
+    "published_at": "2026-10-31T10:18:01Z",
+    "package_url": "https://github.com/seb5594/hass-medication_tracker-integration/releases/download/v2026.10.31.0/medication_tracker.zip",
+    "package": {
+      "name": "medication_tracker.zip",
+      "url": "https://github.com/seb5594/hass-medication_tracker-integration/releases/download/v2026.10.31.0/medication_tracker.zip",
+      "sha256": "67adbdb8f21c904883ac37bfdd914aedcfbe7aa4e7178125daeef7adb1da99de"
+    },
+    "homeassistant": "2024.7.0",
+    "description": "Track medications, scheduled doses, streaks, and overdue alerts — entirely local, no cloud, no extra apps required.",
+    "changelog": "CHANGELOG.md",
+    "ci": "ci.yml",
+    "tests": "5 passed",
+    "logo": "assets/brands/medication_tracker.png",
+    "logo_source": "https://github.com/seb5594/hass-medication_tracker-integration/releases/tag/v2026.10.31.0 (medication_tracker.zip: brand/icon.png)"
+  },
+  {
+    "repository": "seb5594/hass-ninebot_e_scooters-integration",
+    "commit": "831df42badf0061a58d4dd7ccdaf01b5ab8393ff",
+    "domain": "ninebot_e_scooters",
+    "name": "Ninebot E-Scooters",
+    "version": "1.0.0b3",
+    "release_tag": "v1.0.0b3",
+    "release_url": "https://github.com/seb5594/hass-ninebot_e_scooters-integration/releases/tag/v1.0.0b3",
+    "published_at": "2026-10-15T21:02:37Z",
+    "package_url": "https://github.com/seb5594/hass-ninebot_e_scooters-integration/releases/download/v1.0.0b3/ninebot_e_scooters.zip",
+    "package": {
+      "name": "ninebot_e_scooters.zip",
+      "url": "https://github.com/seb5594/hass-ninebot_e_scooters-integration/releases/download/v1.0.0b3/ninebot_e_scooters.zip",
+      "sha256": "364447aeaa063ab0c9e35b8ac162dbbc81b06944fef048e51540184b55286d93"
+    },
+    "homeassistant": "2023.2.0",
+    "description": "A custom integration for Ninebot and Xiaomi E-Scooter's in Home Assistant",
+    "changelog": "CHANGELOG.md",
+    "ci": "ci.yml",
+    "tests": "",
+    "logo": "assets/brands/ninebot_e_scooters.png",
+    "logo_source": "https://github.com/seb5594/hass-ninebot_e_scooters-integration/releases/tag/v1.0.0b3 (ninebot_e_scooters.zip: brand/logo.png)"
+  },
+  {
+    "repository": "seb5594/hass-pulseaudio_loopback_extended-integration",
+    "commit": "7ddd0f352cf62804f2a15a14b19c0a95a0a2a10c",
+    "domain": "pulseaudio_loopback",
+    "name": "PulseAudio Loopback Extended",
+    "version": "1.0.0",
+    "release_tag": "v1.0.0",
+    "release_url": "https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration/releases/tag/v1.0.0",
+    "published_at": "2026-10-11T18:07:16Z",
+    "package_url": "https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration/releases/download/v1.0.0/pulseaudio_loopback.zip",
+    "package": {
+      "name": "pulseaudio_loopback.zip",
+      "url": "https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration/releases/download/v1.0.0/pulseaudio_loopback.zip",
+      "sha256": "f01642f2c72338f2db8188afe3be8ac4c3b2f3ab4723f9df7870f27d84357ab7"
+    },
+    "homeassistant": "2022.4.0",
+    "description": "A extended integration of the builtin pulseaudio_loopback component from home assistant core to fullfill my needs",
+    "changelog": "CHANGELOG.md",
+    "ci": "ci.yml",
+    "tests": "",
+    "logo": "assets/brands/pulseaudio_loopback.png",
+    "logo_source": "https://raw.githubusercontent.com/home-assistant/brands/2448af4760063a885f173080eb5381323b7ae9a4/core_integrations/pulseaudio_loopback/icon.png"
+  },
+  {
+    "repository": "seb5594/hass-vacuum_mapguard-integration",
+    "commit": "80a39310619e85ebcf475cb682ee2505c478ebfe",
+    "domain": "vacuum_mapguard",
+    "name": "Vacuum MapGuard",
+    "version": "1.1.1",
+    "release_tag": "v1.1.1",
+    "release_url": "https://github.com/seb5594/hass-vacuum_mapguard-integration/releases/tag/v1.1.1",
+    "published_at": "2026-10-18T19:35:13Z",
+    "package_url": "https://github.com/seb5594/hass-vacuum_mapguard-integration/releases/download/v1.1.1/vacuum_mapguard.zip",
+    "package": {
+      "name": "vacuum_mapguard.zip",
+      "url": "https://github.com/seb5594/hass-vacuum_mapguard-integration/releases/download/v1.1.1/vacuum_mapguard.zip",
+      "sha256": "e24f4e24c5e553beb7e4fddf2e5064f90ce58db6aef1b80dba28f0aca57ff4d3"
+    },
+    "homeassistant": "2026.3.0",
+    "description": "Custom integration to prevent vacuum map changes by default vacuum.start action",
+    "changelog": "CHANGELOG.md",
+    "ci": "ci.yml",
+    "tests": "",
+    "logo": "assets/brands/vacuum_mapguard.png",
+    "logo_source": "https://github.com/seb5594/hass-vacuum_mapguard-integration/releases/tag/v1.1.1 (vacuum_mapguard.zip: brand/logo.png)"
+  }
+]

@@ -1,0 +1,50 @@
+{
+  "schema_version": 2,
+  "integrations": [
+    {
+      "repository": "seb5594/hass-ubpet_cat_litter_hub-integration",
+      "domain": "ubpet",
+      "name": "Cat Litter Hub – UPET / UBPet / AIRROBO / Robotail / Meowant",
+      "version": "2026.11.02.1",
+      "release_tag": "v2026.11.02.1",
+      "release_url": "https://github.com/seb5594/hass-ubpet_cat_litter_hub-integration/releases/tag/v2026.11.02.1",
+      "package_url": "https://github.com/seb5594/hass-ubpet_cat_litter_hub-integration/releases/download/v2026.11.02.1/ubpet.zip"
+    },
+    {
+      "repository": "seb5594/hass-medication_tracker-integration",
+      "domain": "medication_tracker",
+      "name": "Medication Tracker",
+      "version": "2026.10.31.0",
+      "release_tag": "v2026.10.31.0",
+      "release_url": "https://github.com/seb5594/hass-medication_tracker-integration/releases/tag/v2026.10.31.0",
+      "package_url": "https://github.com/seb5594/hass-medication_tracker-integration/releases/download/v2026.10.31.0/medication_tracker.zip"
+    },
+    {
+      "repository": "seb5594/hass-ninebot_e_scooters-integration",
+      "domain": "ninebot_e_scooters",
+      "name": "Ninebot E-Scooters",
+      "version": "1.0.0b3",
+      "release_tag": "v1.0.0b3",
+      "release_url": "https://github.com/seb5594/hass-ninebot_e_scooters-integration/releases/tag/v1.0.0b3",
+      "package_url": "https://github.com/seb5594/hass-ninebot_e_scooters-integration/releases/download/v1.0.0b3/ninebot_e_scooters.zip"
+    },
+    {
+      "repository": "seb5594/hass-pulseaudio_loopback_extended-integration",
+      "domain": "pulseaudio_loopback",
+      "name": "PulseAudio Loopback Extended",
+      "version": "1.0.0",
+      "release_tag": "v1.0.0",
+      "release_url": "https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration/releases/tag/v1.0.0",
+      "package_url": "https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration/releases/download/v1.0.0/pulseaudio_loopback.zip"
+    },
+    {
+      "repository": "seb5594/hass-vacuum_mapguard-integration",
+      "domain": "vacuum_mapguard",
+      "name": "Vacuum MapGuard",
+      "version": "1.1.1",
+      "release_tag": "v1.1.1",
+      "release_url": "https://github.com/seb5594/hass-vacuum_mapguard-integration/releases/tag/v1.1.1",
+      "package_url": "https://github.com/seb5594/hass-vacuum_mapguard-integration/releases/download/v1.1.1/vacuum_mapguard.zip"
+    }
+  ]
+}

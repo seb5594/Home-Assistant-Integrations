@@ -1,0 +1,37 @@
+{
+  "title": "seb5594's Integration Hub",
+  "config": {
+    "step": {
+      "user": {
+        "title": "seb5594's Integration Hub",
+        "description": "Der Hub fügt die Einzelrepositories in HACS hinzu und meldet neue Integrationen im Katalog. Downloads und Updates verwaltet HACS. Es werden keine Integrationen automatisch installiert. Die HACS-Anbindung verwendet eine interne Schnittstelle und ist experimentell.",
+        "data": {
+          "auto_register": "Katalog-Repositories automatisch in HACS hinzufügen",
+          "notify_new": "Über neue Integrationen benachrichtigen"
+        }
+      }
+    },
+    "abort": {
+      "already_configured": "Der Katalog ist bereits eingerichtet. Beim vorhandenen Eintrag Konfigurieren wählen."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Hub-Einstellungen",
+        "description": "Der Hub fügt die Einzelrepositories in HACS hinzu und meldet neue Integrationen im Katalog. Downloads und Updates verwaltet HACS. Es werden keine Integrationen automatisch installiert. Die HACS-Anbindung verwendet eine interne Schnittstelle und ist experimentell.",
+        "data": {
+          "auto_register": "Katalog-Repositories automatisch in HACS hinzufügen",
+          "notify_new": "Über neue Integrationen benachrichtigen"
+        }
+      }
+    }
+  },
+  "entity": {
+    "button": {
+      "refresh_catalog": {
+        "name": "Katalog aktualisieren"
+      }
+    }
+  }
+}
