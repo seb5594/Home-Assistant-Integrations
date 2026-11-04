@@ -1,9 +1,9 @@
-name: Catalog checks
+name: Home Assistant CI
 
 on:
   pull_request:
   push:
-    branches: [main, reorganize-integration-catalog]
+    branches: [main]
   workflow_dispatch:
 
 permissions:
