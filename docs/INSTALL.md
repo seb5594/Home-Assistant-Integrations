@@ -1,5 +1,7 @@
 # seb5594's Integration Hub
 
+**🇬🇧 English** · [🇩🇪 Deutsch](INSTALL.de.md)
+
 The hub discovers released projects, adds their repositories to HACS, and notifies you about new integrations.
 **HACS alone installs, updates and removes integration files.** The hub has no component installer.
 

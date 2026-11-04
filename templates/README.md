@@ -15,7 +15,7 @@
 </p>
 
 <p align="center">
-  <a href="#install">Install</a> · <a href="#at-a-glance">Overview</a> · <a href="#integrations">Integrations</a> · <a href="docs/INSTALL.de.md">Deutsche Anleitung</a>
+  <a href="#install">Install</a> · <a href="#at-a-glance">Overview</a> · <a href="#integrations">Integrations</a> · <a href="docs/INSTALL.de.md">🇩🇪 Deutsche Anleitung</a>
 </p>
 
 Custom integrations by **[seb5594](https://github.com/seb5594)**, in one place.
@@ -43,7 +43,7 @@ Automatic registration uses HACS' internal runtime registry and is **experimenta
 
 **Release packages only:** the catalog uses GitHub's latest published non-draft, non-prerelease release for each project. Version labels link to that exact tag, and package links point to its uploaded integration ZIP. Projects without a published release package are omitted until one is available. HACS remains the only installer and update manager.
 
-**[Installation, updates and removal →](docs/INSTALL.md)** · **[Deutsche Anleitung →](docs/INSTALL.de.md)** · [HACS repository requirements](https://www.hacs.dev/docs/publish/integration/)
+**[🇬🇧 Installation, updates and removal →](docs/INSTALL.md)** · **[🇩🇪 Deutsche Anleitung →](docs/INSTALL.de.md)** · [HACS repository requirements](https://www.hacs.dev/docs/publish/integration/)
 
 ## At a glance
 

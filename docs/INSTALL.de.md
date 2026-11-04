@@ -1,5 +1,7 @@
 # seb5594's Integration Hub
 
+[🇬🇧 English](INSTALL.md) · **🇩🇪 Deutsch**
+
 Der Hub fügt veröffentlichte Integrationsrepos zu HACS hinzu und meldet neue Projekte.
 **Installation, Updates und Deinstallation bleiben vollständig bei HACS.** Es gibt keinen eigenen Installer.
 
