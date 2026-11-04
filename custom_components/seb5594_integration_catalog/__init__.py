@@ -3,7 +3,7 @@
 from datetime import timedelta
 
 from homeassistant.config_entries import ConfigEntry
-from homeassistant.const import Platform
+from homeassistant.const import MAJOR_VERSION, MINOR_VERSION, Platform
 from homeassistant.core import HomeAssistant, callback
 from homeassistant.helpers.event import async_call_later, async_track_time_interval
 
@@ -13,7 +13,7 @@ from .hub import IntegrationHub
 PLATFORMS = [Platform.BUTTON]
 
 
-async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
+async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool | None:
     """Start metadata synchronization; never download component source at startup."""
     hub = IntegrationHub(hass, entry)
     await hub.async_initialize()
@@ -31,12 +31,16 @@ async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
     # Settings are read from the entry on every refresh, so options do not need
     # an update listener or a reload (deprecated by newer HA versions).
     schedule_refresh()
-    return True
+    return True if (MAJOR_VERSION, MINOR_VERSION) < (2026, 11) else None
 
 
-async def async_unload_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
+async def async_unload_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool | None:
     """Removing the hub leaves HACS repositories and their integrations intact."""
-    if await hass.config_entries.async_unload_platforms(entry, PLATFORMS):
+    if (MAJOR_VERSION, MINOR_VERSION) >= (2026, 11):
+        await hass.config_entries.async_unload_platforms_or_raise(entry, PLATFORMS)
         hass.data[DOMAIN].pop(entry.entry_id)
-        return True
-    return False
+        return None
+    if not await hass.config_entries.async_unload_platforms(entry, PLATFORMS):
+        return False
+    hass.data[DOMAIN].pop(entry.entry_id)
+    return True
