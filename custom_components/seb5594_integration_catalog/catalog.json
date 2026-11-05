@@ -24,26 +24,26 @@
   },
   {
     "repository": "seb5594/hass-deepl_translator-integration",
-    "commit": "3cfc1bc79d2cca733db97e5bf23f7766cf88216c",
+    "commit": "1ea9059b5f1e9310b31c2e8dfefeecfa0f5d3a73",
     "domain": "deepl_translator",
     "name": "DeepL Translator",
-    "version": "1.0.0b2",
-    "release_tag": "v1.0.0b2",
-    "release_url": "https://github.com/seb5594/hass-deepl_translator-integration/releases/tag/v1.0.0b2",
-    "published_at": "2026-11-03T17:00:57Z",
-    "package_url": "https://github.com/seb5594/hass-deepl_translator-integration/releases/download/v1.0.0b2/deepl_translator.zip",
+    "version": "1.0.0b3",
+    "release_tag": "v1.0.0b3",
+    "release_url": "https://github.com/seb5594/hass-deepl_translator-integration/releases/tag/v1.0.0b3",
+    "published_at": "2026-11-05T12:49:29Z",
+    "package_url": "https://github.com/seb5594/hass-deepl_translator-integration/releases/download/v1.0.0b3/deepl_translator.zip",
     "package": {
       "name": "deepl_translator.zip",
-      "url": "https://github.com/seb5594/hass-deepl_translator-integration/releases/download/v1.0.0b2/deepl_translator.zip",
-      "sha256": "8c265f4cbab321d1e86567e813e1d891c76b5a032e3ca080851e92f377b9c43a"
+      "url": "https://github.com/seb5594/hass-deepl_translator-integration/releases/download/v1.0.0b3/deepl_translator.zip",
+      "sha256": "ce456ffa5a93297adee98f864e29ffa0b063a6870d5a4f8131a80232b683712a"
     },
     "homeassistant": "2023.7.0",
     "description": "DeepL translation for Home Assistant: API and MCP backends, structured text translation, caching and usage sensors.",
     "changelog": "CHANGELOG.md",
     "ci": "ci.yml",
-    "tests": "",
+    "tests": "40 passed",
     "logo": "assets/brands/deepl_translator.png",
-    "logo_source": "https://github.com/seb5594/hass-deepl_translator-integration/releases/tag/v1.0.0b2 (deepl_translator.zip: brand/logo.png)"
+    "logo_source": "https://github.com/seb5594/hass-deepl_translator-integration/releases/tag/v1.0.0b3 (deepl_translator.zip: brand/logo.png)"
   },
   {
     "repository": "seb5594/hass-medication_tracker-integration",
