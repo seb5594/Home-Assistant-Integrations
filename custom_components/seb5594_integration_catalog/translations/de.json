@@ -4,9 +4,9 @@
     "step": {
       "user": {
         "title": "seb5594's Integration Hub",
-        "description": "Der Hub fügt die Einzelrepositories in HACS hinzu und meldet neue Integrationen im Katalog. Downloads und Updates verwaltet HACS. Es werden keine Integrationen automatisch installiert. Die HACS-Anbindung verwendet eine interne Schnittstelle und ist experimentell.",
+        "description": "Der Hub fügt die Einzelrepositories in HACS / Marketplace hinzu und meldet neue Integrationen im Katalog. Downloads und Updates verwaltet HACS / Marketplace. Es werden keine Integrationen automatisch installiert. Die HACS / Marketplace-Anbindung verwendet eine interne Schnittstelle und ist experimentell.",
         "data": {
-          "auto_register": "Katalog-Repositories automatisch in HACS hinzufügen",
+          "auto_register": "Katalog-Repositories automatisch in HACS / Marketplace hinzufügen",
           "notify_new": "Über neue Integrationen benachrichtigen"
         }
       }
@@ -21,9 +21,9 @@
     "step": {
       "init": {
         "title": "Hub-Einstellungen",
-        "description": "Der Hub fügt die Einzelrepositories in HACS hinzu und meldet neue Integrationen im Katalog. Downloads und Updates verwaltet HACS. Es werden keine Integrationen automatisch installiert. Die HACS-Anbindung verwendet eine interne Schnittstelle und ist experimentell.",
+        "description": "Der Hub fügt die Einzelrepositories in HACS / Marketplace hinzu und meldet neue Integrationen im Katalog. Downloads und Updates verwaltet HACS / Marketplace. Es werden keine Integrationen automatisch installiert. Die HACS / Marketplace-Anbindung verwendet eine interne Schnittstelle und ist experimentell.",
         "data": {
-          "auto_register": "Katalog-Repositories automatisch in HACS hinzufügen",
+          "auto_register": "Katalog-Repositories automatisch in HACS / Marketplace hinzufügen",
           "notify_new": "Über neue Integrationen benachrichtigen"
         }
       }

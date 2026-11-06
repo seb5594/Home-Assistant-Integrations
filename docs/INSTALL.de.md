@@ -1,11 +1,23 @@
 # seb5594's Integration Hub
 
+## Marketplace ab Home Assistant 2026.11
+
+Unter **Einstellungen → Marketplace → Über Link hinzufügen** dieses Repository hinzufügen.
+GitHub verbinden und den Hinweis zur Erstnutzung bestätigen. Den Hub auf **2026.11.6.1**
+oder neuer aktualisieren und den vom Marketplace verlangten Neustart ausführen.
+Der Hub verwendet anschließend automatisch den Marketplace. Unter **Geräte & Dienste**
+den Hub konfigurieren und bei Bedarf **Katalog aktualisieren** drücken.
+
+Die frühere Meldung „HACS is not loaded“ aus Hub-Version 2026.11.3.4 wird beim
+nächsten erfolgreichen Abgleich entfernt.
+
+
 [🇬🇧 English](INSTALL.md) · **🇩🇪 Deutsch**
 
 Der Hub fügt veröffentlichte Integrationsrepos zu HACS hinzu und meldet neue Projekte.
 **Installation, Updates und Deinstallation bleiben vollständig bei HACS.** Es gibt keinen eigenen Installer.
 
-## Einrichten
+## HACS vor Home Assistant 2026.11
 
 1. In **HACS → ⋮ → Benutzerdefinierte Repositories** die URL `https://github.com/seb5594/Home-Assistant-Integrations` als **Integration** hinzufügen.
 2. Das neueste Release von **seb5594's Integration Hub** herunterladen und Home Assistant neu starten.
