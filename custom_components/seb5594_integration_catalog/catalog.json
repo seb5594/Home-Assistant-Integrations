@@ -69,29 +69,6 @@
     "logo_source": "https://github.com/seb5594/hass-medication_tracker-integration/releases/tag/v2026.10.31.0 (medication_tracker.zip: brand/icon.png)"
   },
   {
-    "repository": "seb5594/hass-ninebot_e_scooters-integration",
-    "commit": "ba05a9a2979a7728e71c80d2ec280a9b6049aedb",
-    "domain": "ninebot_e_scooters",
-    "name": "Ninebot E-Scooters",
-    "version": "1.0.0",
-    "release_tag": "v1.0.0",
-    "release_url": "https://github.com/seb5594/hass-ninebot_e_scooters-integration/releases/tag/v1.0.0",
-    "published_at": "2026-11-06T15:50:51Z",
-    "package_url": "https://github.com/seb5594/hass-ninebot_e_scooters-integration/releases/download/v1.0.0/ninebot_e_scooters.zip",
-    "package": {
-      "name": "ninebot_e_scooters.zip",
-      "url": "https://github.com/seb5594/hass-ninebot_e_scooters-integration/releases/download/v1.0.0/ninebot_e_scooters.zip",
-      "sha256": "a8ef437bed18cb799374a514f0bf10bef3103d1c5db45c45bd25253f1b5141ed"
-    },
-    "homeassistant": "2023.2.0",
-    "description": "A custom integration for Ninebot and Xiaomi E-Scooter's in Home Assistant",
-    "changelog": "CHANGELOG.md",
-    "ci": "ci.yml",
-    "tests": "229 passed",
-    "logo": "assets/brands/ninebot_e_scooters.png",
-    "logo_source": "https://github.com/seb5594/hass-ninebot_e_scooters-integration/releases/tag/v1.0.0 (ninebot_e_scooters.zip: brand/logo.png)"
-  },
-  {
     "repository": "seb5594/hass-pulseaudio_loopback_extended-integration",
     "commit": "7ddd0f352cf62804f2a15a14b19c0a95a0a2a10c",
     "domain": "pulseaudio_loopback",
