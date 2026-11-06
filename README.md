@@ -9,7 +9,7 @@
   <a href="https://github.com/seb5594/Home-Assistant-Integrations/releases/latest"><img src="https://img.shields.io/github/v/release/seb5594/Home-Assistant-Integrations?display_name=tag&amp;label=hub%20release&amp;color=1877A5" alt="Latest hub release"></a>
   <a href="https://github.com/seb5594/Home-Assistant-Integrations/releases"><img src="https://img.shields.io/github/downloads/seb5594/Home-Assistant-Integrations/total?label=hub%20downloads&amp;color=1877A5" alt="Hub release downloads"></a>
   <a href="https://github.com/seb5594/Home-Assistant-Integrations/stargazers"><img src="https://img.shields.io/github/stars/seb5594/Home-Assistant-Integrations?label=stars" alt="GitHub stars"></a><br>
-  <img src="https://img.shields.io/badge/integrations-6-1877A5" alt="6 integrations">
+  <img src="https://img.shields.io/badge/integrations-7-1877A5" alt="7 integrations">
   <a href="https://github.com/seb5594/Home-Assistant-Integrations/actions/workflows/ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/seb5594/Home-Assistant-Integrations/ci.yml?branch=main&amp;label=catalog%20checks" alt="Catalog checks"></a>
   <a href="https://github.com/seb5594/Home-Assistant-Integrations/actions/workflows/update.yml"><img src="https://img.shields.io/github/actions/workflow/status/seb5594/Home-Assistant-Integrations/update.yml?branch=main&amp;label=catalog%20sync" alt="Catalog sync"></a>
 </p>
@@ -50,6 +50,7 @@ Automatic registration uses HACS' internal runtime registry and is **experimenta
 | | Integration | Latest release | Minimum Home Assistant | Direct HACS install |
 | :---: | --- | --- | --- | --- |
 | <img src="assets/brands/ubpet_cat_litter_hub.png" height="44" alt=""> | **[Cat Litter Hub – UPET / UBPet / AIRROBO / Robotail / Meowant](https://github.com/seb5594/hass-ubpet_cat_litter_hub-integration)** | [v2026.11.03.2](https://github.com/seb5594/hass-ubpet_cat_litter_hub-integration/releases/tag/v2026.11.03.2) | 2023.6.0 | [Install](https://my.home-assistant.io/redirect/hacs_repository/?owner=seb5594&repository=hass-ubpet_cat_litter_hub-integration&category=integration) |
+| <img src="assets/brands/custom_integration_translator.png" height="44" alt=""> | **[Custom Integration Translator](https://github.com/seb5594/hass-custom_integrations_translator-integration)** | [v2026.11.05.8](https://github.com/seb5594/hass-custom_integrations_translator-integration/releases/tag/v2026.11.05.8) | 2023.7.0 | [Install](https://my.home-assistant.io/redirect/hacs_repository/?owner=seb5594&repository=hass-custom_integrations_translator-integration&category=integration) |
 | <img src="assets/brands/deepl_translator.png" height="44" alt=""> | **[DeepL Translator](https://github.com/seb5594/hass-deepl_translator-integration)** | [v1.0.0b4](https://github.com/seb5594/hass-deepl_translator-integration/releases/tag/v1.0.0b4) | 2023.7.0 | [Install](https://my.home-assistant.io/redirect/hacs_repository/?owner=seb5594&repository=hass-deepl_translator-integration&category=integration) |
 | <img src="assets/brands/medication_tracker.png" height="44" alt=""> | **[Medication Tracker](https://github.com/seb5594/hass-medication_tracker-integration)** | [v2026.10.31.0](https://github.com/seb5594/hass-medication_tracker-integration/releases/tag/v2026.10.31.0) | 2024.7.0 | [Install](https://my.home-assistant.io/redirect/hacs_repository/?owner=seb5594&repository=hass-medication_tracker-integration&category=integration) |
 | <img src="assets/brands/ninebot_e_scooters.png" height="44" alt=""> | **[Ninebot E-Scooters](https://github.com/seb5594/hass-ninebot_e_scooters-integration)** | [v1.0.0b4](https://github.com/seb5594/hass-ninebot_e_scooters-integration/releases/tag/v1.0.0b4) | 2023.2.0 | [Install](https://my.home-assistant.io/redirect/hacs_repository/?owner=seb5594&repository=hass-ninebot_e_scooters-integration&category=integration) |
@@ -80,6 +81,27 @@ Home Assistant / HACS integration for smart cat litter boxes that use the UBPet 
 - Published release: [v2026.11.03.2](https://github.com/seb5594/hass-ubpet_cat_litter_hub-integration/releases/tag/v2026.11.03.2)
 - Source: [`integrations/ubpet_cat_litter_hub`](integrations/ubpet_cat_litter_hub) (Git submodule)
 - Pinned commit: [`f79e687`](https://github.com/seb5594/hass-ubpet_cat_litter_hub-integration/commit/f79e687b4414cfb09d985e72de97b41d96f72dc1)
+
+</details>
+
+---
+
+### <img src="assets/brands/custom_integration_translator.png" height="48" alt=""> Custom Integration Translator
+
+Custom Integration Translator
+
+[![release: v2026.11.05.8](https://img.shields.io/static/v1?label=release&message=v2026.11.05.8&color=1877A5&style=flat)](https://github.com/seb5594/hass-custom_integrations_translator-integration/releases/tag/v2026.11.05.8) ![Home Assistant: ≥ 2023.7.0](https://img.shields.io/static/v1?label=Home%20Assistant&message=%E2%89%A5%202023.7.0&color=1877A5&style=flat)<br>
+[![release checks](https://img.shields.io/github/check-runs/seb5594/hass-custom_integrations_translator-integration/9d811592463d0dc8bdb61b462c8421dbe3f43358?label=release%20checks)](https://github.com/seb5594/hass-custom_integrations_translator-integration/commit/9d811592463d0dc8bdb61b462c8421dbe3f43358/checks)  [![release downloads](https://img.shields.io/github/downloads/seb5594/hass-custom_integrations_translator-integration/v2026.11.05.8/total?label=downloads)](https://github.com/seb5594/hass-custom_integrations_translator-integration/releases/download/v2026.11.05.8/custom_integration_translator.zip) [![issues](https://img.shields.io/github/issues/seb5594/hass-custom_integrations_translator-integration?label=issues)](https://github.com/seb5594/hass-custom_integrations_translator-integration/issues)
+
+[**Open in HACS**](https://my.home-assistant.io/redirect/hacs_repository/?owner=seb5594&repository=hass-custom_integrations_translator-integration&category=integration) · [Release package](https://github.com/seb5594/hass-custom_integrations_translator-integration/releases/download/v2026.11.05.8/custom_integration_translator.zip) · [Documentation](https://github.com/seb5594/hass-custom_integrations_translator-integration/tree/v2026.11.05.8) · [Changelog](https://github.com/seb5594/hass-custom_integrations_translator-integration/blob/v2026.11.05.8/CHANGELOG.md)
+
+<details>
+<summary>Release and source details</summary>
+
+- Domain: `custom_integration_translator`
+- Published release: [v2026.11.05.8](https://github.com/seb5594/hass-custom_integrations_translator-integration/releases/tag/v2026.11.05.8)
+- Source: [`integrations/custom_integration_translator`](integrations/custom_integration_translator) (Git submodule)
+- Pinned commit: [`9d81159`](https://github.com/seb5594/hass-custom_integrations_translator-integration/commit/9d811592463d0dc8bdb61b462c8421dbe3f43358)
 
 </details>
 

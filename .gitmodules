@@ -1,6 +1,9 @@
 [submodule "ubpet_cat_litter_hub"]
 	path = integrations/ubpet_cat_litter_hub
 	url = https://github.com/seb5594/hass-ubpet_cat_litter_hub-integration.git
+[submodule "custom_integration_translator"]
+	path = integrations/custom_integration_translator
+	url = https://github.com/seb5594/hass-custom_integrations_translator-integration.git
 [submodule "deepl_translator"]
 	path = integrations/deepl_translator
 	url = https://github.com/seb5594/hass-deepl_translator-integration.git
