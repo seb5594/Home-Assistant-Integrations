@@ -7,6 +7,7 @@ runtime calls here; never modify .storage files or bypass repository validation.
 from __future__ import annotations
 
 import inspect
+import sys
 from dataclasses import dataclass, field
 
 from awesomeversion import AwesomeVersion, AwesomeVersionException
@@ -15,6 +16,11 @@ from homeassistant import loader
 from homeassistant.config_entries import ConfigEntryState
 
 MARKETPLACE_FROM = "2026.11.0"
+SIGNATURE_OPTIONS = {}
+if sys.version_info >= (3, 14):
+    from annotationlib import Format
+
+    SIGNATURE_OPTIONS["annotation_format"] = Format.STRING
 
 
 class HacsUnavailable(Exception):
@@ -103,16 +109,21 @@ def registry_api(selection):
     if not callable(register) or not callable(lookup) or not callable(save) or "integration" not in categories:
         raise HacsUnavailable(f"This {name} version does not provide the expected registry API")
     try:
-        inspect.signature(register).bind(
+        inspect.signature(register, **SIGNATURE_OPTIONS).bind(
             repository_full_name="seb5594/example", category="integration", check=True,
         )
-        inspect.signature(lookup).bind("seb5594/example")
-        inspect.signature(save).bind()
+        inspect.signature(lookup, **SIGNATURE_OPTIONS).bind("seb5594/example")
+        inspect.signature(save, **SIGNATURE_OPTIONS).bind()
         if (not inspect.iscoroutinefunction(register) or not inspect.iscoroutinefunction(save)
             or inspect.iscoroutinefunction(lookup)):
             raise TypeError("Registration/persistence must be async and lookup must be sync")
     except (TypeError, ValueError) as err:
         raise HacsUnavailable(f"The {name} repository registration API has changed") from err
+    if name == "Marketplace":
+        if not getattr(hacs, "github_connected", False):
+            raise HacsUnavailable("Open Settings > Marketplace and connect GitHub before adding catalog repositories")
+        if not getattr(hacs, "warning_acceptances", {}):
+            raise HacsUnavailable("Open Settings > Marketplace and accept the first-use notice before adding catalog repositories")
     return register, lookup, save
 
 
