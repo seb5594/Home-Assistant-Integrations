@@ -9,7 +9,7 @@
   <a href="https://github.com/seb5594/Home-Assistant-Integrations/releases/latest"><img src="https://img.shields.io/github/v/release/seb5594/Home-Assistant-Integrations?display_name=tag&amp;label=hub%20release&amp;color=1877A5" alt="Latest hub release"></a>
   <a href="https://github.com/seb5594/Home-Assistant-Integrations/releases"><img src="https://img.shields.io/github/downloads/seb5594/Home-Assistant-Integrations/total?label=hub%20downloads&amp;color=1877A5" alt="Hub release downloads"></a>
   <a href="https://github.com/seb5594/Home-Assistant-Integrations/stargazers"><img src="https://img.shields.io/github/stars/seb5594/Home-Assistant-Integrations?label=stars" alt="GitHub stars"></a><br>
-  <img src="https://img.shields.io/badge/integrations-6-1877A5" alt="6 integrations">
+  <img src="https://img.shields.io/badge/integrations-5-1877A5" alt="5 integrations">
   <a href="https://github.com/seb5594/Home-Assistant-Integrations/actions/workflows/ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/seb5594/Home-Assistant-Integrations/ci.yml?branch=main&amp;label=catalog%20checks" alt="Catalog checks"></a>
   <a href="https://github.com/seb5594/Home-Assistant-Integrations/actions/workflows/update.yml"><img src="https://img.shields.io/github/actions/workflow/status/seb5594/Home-Assistant-Integrations/update.yml?branch=main&amp;label=catalog%20sync" alt="Catalog sync"></a>
 </p>
@@ -52,7 +52,6 @@ Automatic registration uses HACS' internal runtime registry and is **experimenta
 | <img src="assets/brands/ubpet_cat_litter_hub.png" height="44" alt=""> | **[Cat Litter Hub – UPET / UBPet / AIRROBO / Robotail / Meowant](https://github.com/seb5594/hass-ubpet_cat_litter_hub-integration)** | [v2026.11.03.2](https://github.com/seb5594/hass-ubpet_cat_litter_hub-integration/releases/tag/v2026.11.03.2) | 2023.6.0 | [Install](https://my.home-assistant.io/redirect/hacs_repository/?owner=seb5594&repository=hass-ubpet_cat_litter_hub-integration&category=integration) |
 | <img src="assets/brands/deepl_translator.png" height="44" alt=""> | **[DeepL Translator](https://github.com/seb5594/hass-deepl_translator-integration)** | [v1.0.0b4](https://github.com/seb5594/hass-deepl_translator-integration/releases/tag/v1.0.0b4) | 2023.7.0 | [Install](https://my.home-assistant.io/redirect/hacs_repository/?owner=seb5594&repository=hass-deepl_translator-integration&category=integration) |
 | <img src="assets/brands/medication_tracker.png" height="44" alt=""> | **[Medication Tracker](https://github.com/seb5594/hass-medication_tracker-integration)** | [v2026.10.31.0](https://github.com/seb5594/hass-medication_tracker-integration/releases/tag/v2026.10.31.0) | 2024.7.0 | [Install](https://my.home-assistant.io/redirect/hacs_repository/?owner=seb5594&repository=hass-medication_tracker-integration&category=integration) |
-| <img src="assets/brands/ninebot_e_scooters.png" height="44" alt=""> | **[Ninebot E-Scooters](https://github.com/seb5594/hass-ninebot_e_scooters-integration)** | [v1.0.0](https://github.com/seb5594/hass-ninebot_e_scooters-integration/releases/tag/v1.0.0) | 2023.2.0 | [Install](https://my.home-assistant.io/redirect/hacs_repository/?owner=seb5594&repository=hass-ninebot_e_scooters-integration&category=integration) |
 | <img src="assets/brands/pulseaudio_loopback.png" height="44" alt=""> | **[PulseAudio Loopback Extended](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration)** | [v1.0.0](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration/releases/tag/v1.0.0) | 2022.4.0 | [Install](https://my.home-assistant.io/redirect/hacs_repository/?owner=seb5594&repository=hass-pulseaudio_loopback_extended-integration&category=integration) |
 | <img src="assets/brands/vacuum_mapguard.png" height="44" alt=""> | **[Vacuum MapGuard](https://github.com/seb5594/hass-vacuum_mapguard-integration)** | [v1.1.1](https://github.com/seb5594/hass-vacuum_mapguard-integration/releases/tag/v1.1.1) | 2026.3.0 | [Install](https://my.home-assistant.io/redirect/hacs_repository/?owner=seb5594&repository=hass-vacuum_mapguard-integration&category=integration) |
 
@@ -122,27 +121,6 @@ Track medications, scheduled doses, streaks, and overdue alerts — entirely loc
 - Published release: [v2026.10.31.0](https://github.com/seb5594/hass-medication_tracker-integration/releases/tag/v2026.10.31.0)
 - Source: [`integrations/medication_tracker`](integrations/medication_tracker) (Git submodule)
 - Pinned commit: [`aea343b`](https://github.com/seb5594/hass-medication_tracker-integration/commit/aea343bc44d5521ce3bcce03dd1adeb882fb95cb)
-
-</details>
-
----
-
-### <img src="assets/brands/ninebot_e_scooters.png" height="48" alt=""> Ninebot E-Scooters
-
-A custom integration for Ninebot and Xiaomi E-Scooter's in Home Assistant
-
-[![release: v1.0.0](https://img.shields.io/static/v1?label=release&message=v1.0.0&color=1877A5&style=flat)](https://github.com/seb5594/hass-ninebot_e_scooters-integration/releases/tag/v1.0.0) ![Home Assistant: ≥ 2023.2.0](https://img.shields.io/static/v1?label=Home%20Assistant&message=%E2%89%A5%202023.2.0&color=1877A5&style=flat)<br>
-[![release checks](https://img.shields.io/github/check-runs/seb5594/hass-ninebot_e_scooters-integration/ba05a9a2979a7728e71c80d2ec280a9b6049aedb?label=release%20checks)](https://github.com/seb5594/hass-ninebot_e_scooters-integration/commit/ba05a9a2979a7728e71c80d2ec280a9b6049aedb/checks) ![tests: 229 passed](https://img.shields.io/static/v1?label=tests&message=229%20passed&color=2F855A&style=flat) [![release downloads](https://img.shields.io/github/downloads/seb5594/hass-ninebot_e_scooters-integration/v1.0.0/total?label=downloads)](https://github.com/seb5594/hass-ninebot_e_scooters-integration/releases/download/v1.0.0/ninebot_e_scooters.zip) [![issues](https://img.shields.io/github/issues/seb5594/hass-ninebot_e_scooters-integration?label=issues)](https://github.com/seb5594/hass-ninebot_e_scooters-integration/issues)
-
-[**Open in HACS**](https://my.home-assistant.io/redirect/hacs_repository/?owner=seb5594&repository=hass-ninebot_e_scooters-integration&category=integration) · [Release package](https://github.com/seb5594/hass-ninebot_e_scooters-integration/releases/download/v1.0.0/ninebot_e_scooters.zip) · [Documentation](https://github.com/seb5594/hass-ninebot_e_scooters-integration/tree/v1.0.0) · [Changelog](https://github.com/seb5594/hass-ninebot_e_scooters-integration/blob/v1.0.0/CHANGELOG.md)
-
-<details>
-<summary>Release and source details</summary>
-
-- Domain: `ninebot_e_scooters`
-- Published release: [v1.0.0](https://github.com/seb5594/hass-ninebot_e_scooters-integration/releases/tag/v1.0.0)
-- Source: [`integrations/ninebot_e_scooters`](integrations/ninebot_e_scooters) (Git submodule)
-- Pinned commit: [`ba05a9a`](https://github.com/seb5594/hass-ninebot_e_scooters-integration/commit/ba05a9a2979a7728e71c80d2ec280a9b6049aedb)
 
 </details>
 
