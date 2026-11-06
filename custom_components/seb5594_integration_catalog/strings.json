@@ -4,9 +4,9 @@
     "step": {
       "user": {
         "title": "seb5594's Integration Hub",
-        "description": "Add the individual catalog repositories to HACS and notify about newly listed integrations. HACS manages downloads and updates. No integrations are installed automatically. The HACS adapter uses an internal API and is experimental.",
+        "description": "Add the individual catalog repositories to HACS / Marketplace and notify about newly listed integrations. HACS / Marketplace manages downloads and updates. No integrations are installed automatically. The HACS / Marketplace adapter uses an internal API and is experimental.",
         "data": {
-          "auto_register": "Automatically add catalog repositories to HACS",
+          "auto_register": "Automatically add catalog repositories to HACS / Marketplace",
           "notify_new": "Notify about new integrations"
         }
       }
@@ -21,9 +21,9 @@
     "step": {
       "init": {
         "title": "Hub settings",
-        "description": "Add the individual catalog repositories to HACS and notify about newly listed integrations. HACS manages downloads and updates. No integrations are installed automatically. The HACS adapter uses an internal API and is experimental.",
+        "description": "Add the individual catalog repositories to HACS / Marketplace and notify about newly listed integrations. HACS / Marketplace manages downloads and updates. No integrations are installed automatically. The HACS / Marketplace adapter uses an internal API and is experimental.",
         "data": {
-          "auto_register": "Automatically add catalog repositories to HACS",
+          "auto_register": "Automatically add catalog repositories to HACS / Marketplace",
           "notify_new": "Notify about new integrations"
         }
       }
