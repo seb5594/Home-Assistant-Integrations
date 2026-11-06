@@ -139,17 +139,17 @@ class IntegrationHub:
                 except HacsUnavailable as err:
                     error = str(err)
                 except Exception as err:
-                    _LOGGER.exception("HACS catalog synchronization failed")
+                    _LOGGER.exception("Repository store synchronization failed")
                     error = str(err)
                 if error != self._bridge_error:
                     if error:
-                        _LOGGER.warning("HACS repository synchronization: %s", error)
+                        _LOGGER.warning("Repository store synchronization: %s", error)
                         if error not in {"HACS is still starting", "Marketplace is still starting"}:
                             persistent_notification.async_create(
                                 self.hass,
                                 "Repositories could not be added to HACS / Marketplace automatically: " + error
-                                + ". The hub will retry. You can still use the direct HACS links "
-                                "in the catalog; no component files were downloaded or changed.",
+                                + ". Open Settings > Marketplace on Home Assistant 2026.11 or newer, "
+                                "or HACS on older versions. The hub will retry automatically.",
                                 title=f"{NAME}: HACS / Marketplace", notification_id=f"{DOMAIN}_hacs",
                             )
                     else:

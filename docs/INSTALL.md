@@ -1,5 +1,17 @@
 # seb5594's Integration Hub
 
+## Marketplace on Home Assistant 2026.11 and newer
+
+Open **Settings → Marketplace → Add from link** and add this repository.
+Connect GitHub and accept the first-use notice. Update the hub to **2026.11.6.1**
+or newer and follow the Marketplace restart instructions. The hub selects the
+Marketplace automatically. Configure it under **Devices & services** and press
+**Refresh catalog** to retry immediately.
+
+The old “HACS is not loaded” notification from hub 2026.11.3.4 is dismissed after
+the next successful synchronization.
+
+
 **🇬🇧 English** · [🇩🇪 Deutsch](INSTALL.de.md)
 
 The hub discovers released projects, adds their repositories to HACS, and notifies you about new integrations.
