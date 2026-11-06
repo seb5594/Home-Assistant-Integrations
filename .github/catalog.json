@@ -4,6 +4,10 @@
     "commit": "f79e687b4414cfb09d985e72de97b41d96f72dc1"
   },
   {
+    "repository": "seb5594/hass-custom_integrations_translator-integration",
+    "commit": "9d811592463d0dc8bdb61b462c8421dbe3f43358"
+  },
+  {
     "repository": "seb5594/hass-deepl_translator-integration",
     "commit": "5d6164092737da48331b2edd8422856d94418665"
   },
