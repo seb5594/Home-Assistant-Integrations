@@ -41,6 +41,7 @@ def hacs_stub(hass):
 
     hacs = SimpleNamespace(
         common=SimpleNamespace(categories={"integration"}),
+        github_connected=True, warning_acceptances={"admin": "accepted"},
         status=SimpleNamespace(startup=False), system=SimpleNamespace(disabled=False),
         repositories=SimpleNamespace(get_by_full_name=registry.get),
         data=SimpleNamespace(async_write=AsyncMock()),
@@ -241,3 +242,32 @@ async def test_diagnostics_explain_version_gate_and_missing_marketplace(hass):
     assert "ha_version" in data["signals"]
     assert data["marketplace_from"] == "2026.11.0"
     assert "not configured" in data["reason"]
+
+
+@pytest.mark.parametrize("attribute,message", [
+    ("github_connected", "connect GitHub"),
+    ("warning_acceptances", "first-use notice"),
+])
+async def test_marketplace_requires_account_and_notice(hass, catalog, attribute, message):
+    manager, registry = hacs_stub(hass)
+    setattr(manager, attribute, False)
+    entry = SimpleNamespace(state=ConfigEntryState.LOADED, runtime_data=manager)
+    with patch.object(hass.config_entries, "async_entries", return_value=[entry]):
+        with pytest.raises(HacsUnavailable, match=message):
+            await async_register_repositories(hass, catalog)
+    assert not registry
+    manager.data.async_write.assert_not_awaited()
+
+
+def test_actual_marketplace_signatures():
+    """Core uses deferred annotations referencing TYPE_CHECKING-only names."""
+    base = pytest.importorskip("homeassistant.components.marketplace.base")
+    manager = SimpleNamespace(
+        common=SimpleNamespace(categories={"integration"}),
+        github_connected=True, warning_acceptances={"admin": "accepted"},
+        async_register_repository=base.MarketplaceManager.async_register_repository.__get__(object()),
+        repositories=base.Repositories(),
+        data=SimpleNamespace(async_write=base.MarketplaceData.async_write.__get__(object())),
+    )
+    selection = hacs_bridge.StoreSelection("Marketplace", "2026.11.0", [], manager)
+    assert len(hacs_bridge.registry_api(selection)) == 3
