@@ -129,7 +129,7 @@ Track medications, scheduled doses, streaks, and overdue alerts — entirely loc
 
 ### <img src="assets/brands/ninebot_e_scooters.png" height="48" alt=""> Ninebot E-Scooters
 
-A custom integration for Ninebot and Xiaomi E-Scooter's in Home Assistant
+A custom integration for legacy Ninebot and Xiaomi E-Scooter's in Home Assistant
 
 [![release: v1.0.0b4](https://img.shields.io/static/v1?label=release&message=v1.0.0b4&color=1877A5&style=flat)](https://github.com/seb5594/hass-ninebot_e_scooters-integration/releases/tag/v1.0.0b4) ![Home Assistant: ≥ 2023.2.0](https://img.shields.io/static/v1?label=Home%20Assistant&message=%E2%89%A5%202023.2.0&color=1877A5&style=flat)<br>
 [![release checks](https://img.shields.io/github/check-runs/seb5594/hass-ninebot_e_scooters-integration/e0b687cd73e635093189f4c0c1d9b08e6c968dbd?label=release%20checks)](https://github.com/seb5594/hass-ninebot_e_scooters-integration/commit/e0b687cd73e635093189f4c0c1d9b08e6c968dbd/checks) ![tests: 221 passed](https://img.shields.io/static/v1?label=tests&message=221%20passed&color=2F855A&style=flat) [![release downloads](https://img.shields.io/github/downloads/seb5594/hass-ninebot_e_scooters-integration/v1.0.0b4/total?label=downloads)](https://github.com/seb5594/hass-ninebot_e_scooters-integration/releases/download/v1.0.0b4/ninebot_e_scooters.zip) [![issues](https://img.shields.io/github/issues/seb5594/hass-ninebot_e_scooters-integration?label=issues)](https://github.com/seb5594/hass-ninebot_e_scooters-integration/issues)
