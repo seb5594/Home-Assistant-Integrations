@@ -132,7 +132,7 @@ Track medications, scheduled doses, streaks, and overdue alerts — entirely loc
 A custom integration for legacy Ninebot and Xiaomi E-Scooter's in Home Assistant
 
 [![release: v1.0.0b4](https://img.shields.io/static/v1?label=release&message=v1.0.0b4&color=1877A5&style=flat)](https://github.com/seb5594/hass-ninebot_e_scooters-integration/releases/tag/v1.0.0b4) ![Home Assistant: ≥ 2023.2.0](https://img.shields.io/static/v1?label=Home%20Assistant&message=%E2%89%A5%202023.2.0&color=1877A5&style=flat)<br>
-[![release checks](https://img.shields.io/github/check-runs/seb5594/hass-ninebot_e_scooters-integration/e0b687cd73e635093189f4c0c1d9b08e6c968dbd?label=release%20checks)](https://github.com/seb5594/hass-ninebot_e_scooters-integration/commit/e0b687cd73e635093189f4c0c1d9b08e6c968dbd/checks) ![tests: 221 passed](https://img.shields.io/static/v1?label=tests&message=221%20passed&color=2F855A&style=flat) [![release downloads](https://img.shields.io/github/downloads/seb5594/hass-ninebot_e_scooters-integration/v1.0.0b4/total?label=downloads)](https://github.com/seb5594/hass-ninebot_e_scooters-integration/releases/download/v1.0.0b4/ninebot_e_scooters.zip) [![issues](https://img.shields.io/github/issues/seb5594/hass-ninebot_e_scooters-integration?label=issues)](https://github.com/seb5594/hass-ninebot_e_scooters-integration/issues)
+[![release checks](https://img.shields.io/github/check-runs/seb5594/hass-ninebot_e_scooters-integration/4e5377cf00f93cc8e2440eac16efa910af46012c?label=release%20checks)](https://github.com/seb5594/hass-ninebot_e_scooters-integration/commit/4e5377cf00f93cc8e2440eac16efa910af46012c/checks) ![tests: 221 passed](https://img.shields.io/static/v1?label=tests&message=221%20passed&color=2F855A&style=flat) [![release downloads](https://img.shields.io/github/downloads/seb5594/hass-ninebot_e_scooters-integration/v1.0.0b4/total?label=downloads)](https://github.com/seb5594/hass-ninebot_e_scooters-integration/releases/download/v1.0.0b4/ninebot_e_scooters.zip) [![issues](https://img.shields.io/github/issues/seb5594/hass-ninebot_e_scooters-integration?label=issues)](https://github.com/seb5594/hass-ninebot_e_scooters-integration/issues)
 
 [**Open in HACS**](https://my.home-assistant.io/redirect/hacs_repository/?owner=seb5594&repository=hass-ninebot_e_scooters-integration&category=integration) · [Release package](https://github.com/seb5594/hass-ninebot_e_scooters-integration/releases/download/v1.0.0b4/ninebot_e_scooters.zip) · [Documentation](https://github.com/seb5594/hass-ninebot_e_scooters-integration/tree/v1.0.0b4) · [Changelog](https://github.com/seb5594/hass-ninebot_e_scooters-integration/blob/v1.0.0b4/CHANGELOG.md)
 
@@ -142,7 +142,7 @@ A custom integration for legacy Ninebot and Xiaomi E-Scooter's in Home Assistant
 - Domain: `ninebot_e_scooters`
 - Published release: [v1.0.0b4](https://github.com/seb5594/hass-ninebot_e_scooters-integration/releases/tag/v1.0.0b4)
 - Source: [`integrations/ninebot_e_scooters`](integrations/ninebot_e_scooters) (Git submodule)
-- Pinned commit: [`4e5377c`](https://github.com/seb5594/hass-ninebot_e_scooters-integration/commit/e0b687cd73e635093189f4c0c1d9b08e6c968dbd)
+- Pinned commit: [`4e5377c`](https://github.com/seb5594/hass-ninebot_e_scooters-integration/commit/4e5377cf00f93cc8e2440eac16efa910af46012c)
 
 </details>
 
@@ -153,7 +153,7 @@ A custom integration for legacy Ninebot and Xiaomi E-Scooter's in Home Assistant
 A extended integration of the builtin pulseaudio_loopback component from home assistant core to fullfill my needs
 
 [![release: v1.0.0](https://img.shields.io/static/v1?label=release&message=v1.0.0&color=1877A5&style=flat)](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration/releases/tag/v1.0.0) ![Home Assistant: ≥ 2022.4.0](https://img.shields.io/static/v1?label=Home%20Assistant&message=%E2%89%A5%202022.4.0&color=1877A5&style=flat)<br>
-[![release checks](https://img.shields.io/github/check-runs/seb5594/hass-pulseaudio_loopback_extended-integration/7ddd0f352cf62804f2a15a14b19c0a95a0a2a10c?label=release%20checks)](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration/commit/7ddd0f352cf62804f2a15a14b19c0a95a0a2a10c/checks)  [![release downloads](https://img.shields.io/github/downloads/seb5594/hass-pulseaudio_loopback_extended-integration/v1.0.0/total?label=downloads)](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration/releases/download/v1.0.0/pulseaudio_loopback.zip) [![issues](https://img.shields.io/github/issues/seb5594/hass-pulseaudio_loopback_extended-integration?label=issues)](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration/issues)
+[![release checks](https://img.shields.io/github/check-runs/seb5594/hass-pulseaudio_loopback_extended-integration/e5ae68c4dd650afa5e3118ebfc83461084dd373f?label=release%20checks)](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration/commit/e5ae68c4dd650afa5e3118ebfc83461084dd373f/checks)  [![release downloads](https://img.shields.io/github/downloads/seb5594/hass-pulseaudio_loopback_extended-integration/v1.0.0/total?label=downloads)](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration/releases/download/v1.0.0/pulseaudio_loopback.zip) [![issues](https://img.shields.io/github/issues/seb5594/hass-pulseaudio_loopback_extended-integration?label=issues)](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration/issues)
 
 [**Open in HACS**](https://my.home-assistant.io/redirect/hacs_repository/?owner=seb5594&repository=hass-pulseaudio_loopback_extended-integration&category=integration) · [Release package](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration/releases/download/v1.0.0/pulseaudio_loopback.zip) · [Documentation](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration/tree/v1.0.0) · [Changelog](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration/blob/v1.0.0/CHANGELOG.md)
 
@@ -163,7 +163,7 @@ A extended integration of the builtin pulseaudio_loopback component from home as
 - Domain: `pulseaudio_loopback`
 - Published release: [v1.0.0](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration/releases/tag/v1.0.0)
 - Source: [`integrations/pulseaudio_loopback`](integrations/pulseaudio_loopback) (Git submodule)
-- Pinned commit: [`e5ae68c`](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration/commit/7ddd0f352cf62804f2a15a14b19c0a95a0a2a10c)
+- Pinned commit: [`e5ae68c`](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration/commit/e5ae68c4dd650afa5e3118ebfc83461084dd373f)
 
 </details>
 
@@ -174,7 +174,7 @@ A extended integration of the builtin pulseaudio_loopback component from home as
 Custom integration to prevent vacuum map changes by default vacuum.start action
 
 [![release: v1.1.1](https://img.shields.io/static/v1?label=release&message=v1.1.1&color=1877A5&style=flat)](https://github.com/seb5594/hass-vacuum_mapguard-integration/releases/tag/v1.1.1) ![Home Assistant: ≥ 2026.3.0](https://img.shields.io/static/v1?label=Home%20Assistant&message=%E2%89%A5%202026.3.0&color=1877A5&style=flat)<br>
-[![release checks](https://img.shields.io/github/check-runs/seb5594/hass-vacuum_mapguard-integration/80a39310619e85ebcf475cb682ee2505c478ebfe?label=release%20checks)](https://github.com/seb5594/hass-vacuum_mapguard-integration/commit/80a39310619e85ebcf475cb682ee2505c478ebfe/checks)  [![release downloads](https://img.shields.io/github/downloads/seb5594/hass-vacuum_mapguard-integration/v1.1.1/total?label=downloads)](https://github.com/seb5594/hass-vacuum_mapguard-integration/releases/download/v1.1.1/vacuum_mapguard.zip) [![issues](https://img.shields.io/github/issues/seb5594/hass-vacuum_mapguard-integration?label=issues)](https://github.com/seb5594/hass-vacuum_mapguard-integration/issues)
+[![release checks](https://img.shields.io/github/check-runs/seb5594/hass-vacuum_mapguard-integration/1edacb50ca7178139400004568580a5edd7cb0be?label=release%20checks)](https://github.com/seb5594/hass-vacuum_mapguard-integration/commit/1edacb50ca7178139400004568580a5edd7cb0be/checks)  [![release downloads](https://img.shields.io/github/downloads/seb5594/hass-vacuum_mapguard-integration/v1.1.1/total?label=downloads)](https://github.com/seb5594/hass-vacuum_mapguard-integration/releases/download/v1.1.1/vacuum_mapguard.zip) [![issues](https://img.shields.io/github/issues/seb5594/hass-vacuum_mapguard-integration?label=issues)](https://github.com/seb5594/hass-vacuum_mapguard-integration/issues)
 
 [**Open in HACS**](https://my.home-assistant.io/redirect/hacs_repository/?owner=seb5594&repository=hass-vacuum_mapguard-integration&category=integration) · [Release package](https://github.com/seb5594/hass-vacuum_mapguard-integration/releases/download/v1.1.1/vacuum_mapguard.zip) · [Documentation](https://github.com/seb5594/hass-vacuum_mapguard-integration/tree/v1.1.1) · [Changelog](https://github.com/seb5594/hass-vacuum_mapguard-integration/blob/v1.1.1/CHANGELOG.md)
 
@@ -184,7 +184,7 @@ Custom integration to prevent vacuum map changes by default vacuum.start action
 - Domain: `vacuum_mapguard`
 - Published release: [v1.1.1](https://github.com/seb5594/hass-vacuum_mapguard-integration/releases/tag/v1.1.1)
 - Source: [`integrations/vacuum_mapguard`](integrations/vacuum_mapguard) (Git submodule)
-- Pinned commit: [`1edacb5`](https://github.com/seb5594/hass-vacuum_mapguard-integration/commit/80a39310619e85ebcf475cb682ee2505c478ebfe)
+- Pinned commit: [`1edacb5`](https://github.com/seb5594/hass-vacuum_mapguard-integration/commit/1edacb50ca7178139400004568580a5edd7cb0be)
 
 </details>
 
