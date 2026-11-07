@@ -14,10 +14,10 @@
       "repository": "seb5594/hass-custom_integrations_translator-integration",
       "domain": "custom_integration_translator",
       "name": "Custom Integration Translator",
-      "version": "2026.11.05.8",
-      "release_tag": "v2026.11.05.8",
-      "release_url": "https://github.com/seb5594/hass-custom_integrations_translator-integration/releases/tag/v2026.11.05.8",
-      "package_url": "https://github.com/seb5594/hass-custom_integrations_translator-integration/releases/download/v2026.11.05.8/custom_integration_translator.zip"
+      "version": "2026.11.06.1",
+      "release_tag": "v2026.11.06.1",
+      "release_url": "https://github.com/seb5594/hass-custom_integrations_translator-integration/releases/tag/v2026.11.06.1",
+      "package_url": "https://github.com/seb5594/hass-custom_integrations_translator-integration/releases/download/v2026.11.06.1/custom_integration_translator.zip"
     },
     {
       "repository": "seb5594/hass-deepl_translator-integration",
