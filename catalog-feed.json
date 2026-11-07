@@ -59,10 +59,10 @@
       "repository": "seb5594/hass-vacuum_mapguard-integration",
       "domain": "vacuum_mapguard",
       "name": "Vacuum MapGuard",
-      "version": "1.1.1",
-      "release_tag": "v1.1.1",
-      "release_url": "https://github.com/seb5594/hass-vacuum_mapguard-integration/releases/tag/v1.1.1",
-      "package_url": "https://github.com/seb5594/hass-vacuum_mapguard-integration/releases/download/v1.1.1/vacuum_mapguard.zip"
+      "version": "1.1.2",
+      "release_tag": "v1.1.2",
+      "release_url": "https://github.com/seb5594/hass-vacuum_mapguard-integration/releases/tag/v1.1.2",
+      "package_url": "https://github.com/seb5594/hass-vacuum_mapguard-integration/releases/download/v1.1.2/vacuum_mapguard.zip"
     }
   ]
 }

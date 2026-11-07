@@ -55,7 +55,7 @@ Automatic registration uses HACS' internal runtime registry and is **experimenta
 | <img src="assets/brands/medication_tracker.png" height="44" alt=""> | **[Medication Tracker](https://github.com/seb5594/hass-medication_tracker-integration)** | [v2026.10.31.0](https://github.com/seb5594/hass-medication_tracker-integration/releases/tag/v2026.10.31.0) | 2024.7.0 | [Install](https://my.home-assistant.io/redirect/hacs_repository/?owner=seb5594&repository=hass-medication_tracker-integration&category=integration) |
 | <img src="assets/brands/ninebot_e_scooters.png" height="44" alt=""> | **[Ninebot E-Scooters](https://github.com/seb5594/hass-ninebot_e_scooters-integration)** | [v1.0.0b4](https://github.com/seb5594/hass-ninebot_e_scooters-integration/releases/tag/v1.0.0b4) | 2023.2.0 | [Install](https://my.home-assistant.io/redirect/hacs_repository/?owner=seb5594&repository=hass-ninebot_e_scooters-integration&category=integration) |
 | <img src="assets/brands/pulseaudio_loopback.png" height="44" alt=""> | **[PulseAudio Loopback Extended](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration)** | [v1.0.0](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration/releases/tag/v1.0.0) | 2022.4.0 | [Install](https://my.home-assistant.io/redirect/hacs_repository/?owner=seb5594&repository=hass-pulseaudio_loopback_extended-integration&category=integration) |
-| <img src="assets/brands/vacuum_mapguard.png" height="44" alt=""> | **[Vacuum MapGuard](https://github.com/seb5594/hass-vacuum_mapguard-integration)** | [v1.1.1](https://github.com/seb5594/hass-vacuum_mapguard-integration/releases/tag/v1.1.1) | 2026.3.0 | [Install](https://my.home-assistant.io/redirect/hacs_repository/?owner=seb5594&repository=hass-vacuum_mapguard-integration&category=integration) |
+| <img src="assets/brands/vacuum_mapguard.png" height="44" alt=""> | **[Vacuum MapGuard](https://github.com/seb5594/hass-vacuum_mapguard-integration)** | [v1.1.2](https://github.com/seb5594/hass-vacuum_mapguard-integration/releases/tag/v1.1.2) | 2026.3.0 | [Install](https://my.home-assistant.io/redirect/hacs_repository/?owner=seb5594&repository=hass-vacuum_mapguard-integration&category=integration) |
 
 ## Integrations
 
@@ -195,18 +195,18 @@ A extended integration of the builtin pulseaudio_loopback component from home as
 
 Custom integration to prevent vacuum map changes by default vacuum.start action
 
-[![release: v1.1.1](https://img.shields.io/static/v1?label=release&message=v1.1.1&color=1877A5&style=flat)](https://github.com/seb5594/hass-vacuum_mapguard-integration/releases/tag/v1.1.1) ![Home Assistant: ≥ 2026.3.0](https://img.shields.io/static/v1?label=Home%20Assistant&message=%E2%89%A5%202026.3.0&color=1877A5&style=flat)<br>
-[![release checks](https://img.shields.io/github/check-runs/seb5594/hass-vacuum_mapguard-integration/1edacb50ca7178139400004568580a5edd7cb0be?label=release%20checks)](https://github.com/seb5594/hass-vacuum_mapguard-integration/commit/1edacb50ca7178139400004568580a5edd7cb0be/checks)  [![release downloads](https://img.shields.io/github/downloads/seb5594/hass-vacuum_mapguard-integration/v1.1.1/total?label=downloads)](https://github.com/seb5594/hass-vacuum_mapguard-integration/releases/download/v1.1.1/vacuum_mapguard.zip) [![issues](https://img.shields.io/github/issues/seb5594/hass-vacuum_mapguard-integration?label=issues)](https://github.com/seb5594/hass-vacuum_mapguard-integration/issues)
+[![release: v1.1.2](https://img.shields.io/static/v1?label=release&message=v1.1.2&color=1877A5&style=flat)](https://github.com/seb5594/hass-vacuum_mapguard-integration/releases/tag/v1.1.2) ![Home Assistant: ≥ 2026.3.0](https://img.shields.io/static/v1?label=Home%20Assistant&message=%E2%89%A5%202026.3.0&color=1877A5&style=flat)<br>
+[![release checks](https://img.shields.io/github/check-runs/seb5594/hass-vacuum_mapguard-integration/c0c25d3c9c745a8217bfbe3c66eedd641e3bacf8?label=release%20checks)](https://github.com/seb5594/hass-vacuum_mapguard-integration/commit/c0c25d3c9c745a8217bfbe3c66eedd641e3bacf8/checks) ![tests: 5 passed](https://img.shields.io/static/v1?label=tests&message=5%20passed&color=2F855A&style=flat) [![release downloads](https://img.shields.io/github/downloads/seb5594/hass-vacuum_mapguard-integration/v1.1.2/total?label=downloads)](https://github.com/seb5594/hass-vacuum_mapguard-integration/releases/download/v1.1.2/vacuum_mapguard.zip) [![issues](https://img.shields.io/github/issues/seb5594/hass-vacuum_mapguard-integration?label=issues)](https://github.com/seb5594/hass-vacuum_mapguard-integration/issues)
 
-[**Open in HACS**](https://my.home-assistant.io/redirect/hacs_repository/?owner=seb5594&repository=hass-vacuum_mapguard-integration&category=integration) · [Release package](https://github.com/seb5594/hass-vacuum_mapguard-integration/releases/download/v1.1.1/vacuum_mapguard.zip) · [Documentation](https://github.com/seb5594/hass-vacuum_mapguard-integration/tree/v1.1.1) · [Changelog](https://github.com/seb5594/hass-vacuum_mapguard-integration/blob/v1.1.1/CHANGELOG.md)
+[**Open in HACS**](https://my.home-assistant.io/redirect/hacs_repository/?owner=seb5594&repository=hass-vacuum_mapguard-integration&category=integration) · [Release package](https://github.com/seb5594/hass-vacuum_mapguard-integration/releases/download/v1.1.2/vacuum_mapguard.zip) · [Documentation](https://github.com/seb5594/hass-vacuum_mapguard-integration/tree/v1.1.2) · [Changelog](https://github.com/seb5594/hass-vacuum_mapguard-integration/blob/v1.1.2/CHANGELOG.md)
 
 <details>
 <summary>Release and source details</summary>
 
 - Domain: `vacuum_mapguard`
-- Published release: [v1.1.1](https://github.com/seb5594/hass-vacuum_mapguard-integration/releases/tag/v1.1.1)
+- Published release: [v1.1.2](https://github.com/seb5594/hass-vacuum_mapguard-integration/releases/tag/v1.1.2)
 - Source: [`integrations/vacuum_mapguard`](integrations/vacuum_mapguard) (Git submodule)
-- Pinned commit: [`1edacb5`](https://github.com/seb5594/hass-vacuum_mapguard-integration/commit/1edacb50ca7178139400004568580a5edd7cb0be)
+- Pinned commit: [`c0c25d3`](https://github.com/seb5594/hass-vacuum_mapguard-integration/commit/c0c25d3c9c745a8217bfbe3c66eedd641e3bacf8)
 
 </details>
 
