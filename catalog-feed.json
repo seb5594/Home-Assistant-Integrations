@@ -23,10 +23,10 @@
       "repository": "seb5594/hass-deepl_translator-integration",
       "domain": "deepl_translator",
       "name": "DeepL Translator",
-      "version": "1.0.0b5",
-      "release_tag": "v1.0.0b5",
-      "release_url": "https://github.com/seb5594/hass-deepl_translator-integration/releases/tag/v1.0.0b5",
-      "package_url": "https://github.com/seb5594/hass-deepl_translator-integration/releases/download/v1.0.0b5/deepl_translator.zip"
+      "version": "2026.11.06.1",
+      "release_tag": "v2026.11.06.1",
+      "release_url": "https://github.com/seb5594/hass-deepl_translator-integration/releases/tag/v2026.11.06.1",
+      "package_url": "https://github.com/seb5594/hass-deepl_translator-integration/releases/download/v2026.11.06.1/deepl_translator.zip"
     },
     {
       "repository": "seb5594/hass-medication_tracker-integration",
