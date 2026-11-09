@@ -2,7 +2,7 @@
 
 Source graphics retain their original rights and licenses.
 
-- **Cat Litter Hub – UPET / UBPet / AIRROBO / Robotail / Meowant** (`assets/brands/ubpet_cat_litter_hub.png`): https://github.com/seb5594/hass-ubpet_cat_litter_hub-integration/releases/tag/v2026.11.03.2 (ubpet_cat_litter_hub.zip: brand/logo.png)
+- **Cat Litter Hub – UPET / UBPet / AIRROBO / Robotail / Meowant** (`assets/brands/ubpet_cat_litter_hub.png`): https://github.com/seb5594/hass-ubpet_cat_litter_hub-integration/releases/tag/2026.11.09.1 (ubpet_cat_litter_hub.zip: brand/logo.png)
 - **Custom Integration Translator** (`assets/brands/custom_integration_translator.png`): https://github.com/seb5594/hass-custom_integrations_translator-integration/releases/tag/v2026.11.06.1 (custom_integration_translator.zip: brand/icon.png)
 - **DeepL Translator** (`assets/brands/deepl_translator.png`): https://github.com/seb5594/hass-deepl_translator-integration/releases/tag/2026.11.07.1 (deepl_translator.zip: brand/logo.png)
 - **Medication Tracker** (`assets/brands/medication_tracker.png`): https://github.com/seb5594/hass-medication_tracker-integration/releases/tag/v2026.10.31.0 (medication_tracker.zip: brand/icon.png)
