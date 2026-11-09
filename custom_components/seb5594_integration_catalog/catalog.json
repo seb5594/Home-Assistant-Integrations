@@ -93,26 +93,26 @@
   },
   {
     "repository": "seb5594/hass-ninebot_e_scooters-integration",
-    "commit": "4e5377cf00f93cc8e2440eac16efa910af46012c",
+    "commit": "1ad2b2025e1552135f2c9a8807e01398726c48aa",
     "domain": "ninebot_e_scooters",
     "name": "Ninebot E-Scooters",
-    "version": "1.0.0b4",
-    "release_tag": "v1.0.0b4",
-    "release_url": "https://github.com/seb5594/hass-ninebot_e_scooters-integration/releases/tag/v1.0.0b4",
-    "published_at": "2026-11-04T16:51:38Z",
-    "package_url": "https://github.com/seb5594/hass-ninebot_e_scooters-integration/releases/download/v1.0.0b4/ninebot_e_scooters.zip",
+    "version": "1.0.0b5",
+    "release_tag": "v1.0.0b5",
+    "release_url": "https://github.com/seb5594/hass-ninebot_e_scooters-integration/releases/tag/v1.0.0b5",
+    "published_at": "2026-11-09T20:21:12Z",
+    "package_url": "https://github.com/seb5594/hass-ninebot_e_scooters-integration/releases/download/v1.0.0b5/ninebot_e_scooters.zip",
     "package": {
       "name": "ninebot_e_scooters.zip",
-      "url": "https://github.com/seb5594/hass-ninebot_e_scooters-integration/releases/download/v1.0.0b4/ninebot_e_scooters.zip",
-      "sha256": "19027cdf1cd80147bb18c491bc41fd96bc4ecbec3a42f17dc16e9b4c77b93a4b"
+      "url": "https://github.com/seb5594/hass-ninebot_e_scooters-integration/releases/download/v1.0.0b5/ninebot_e_scooters.zip",
+      "sha256": "30b443d41989a000d863a11c32912e04808fecf9be9f4ff1f779bc6b1fbb1435"
     },
     "homeassistant": "2023.2.0",
     "description": "A custom integration for legacy Ninebot and Xiaomi E-Scooter's in Home Assistant",
     "changelog": "CHANGELOG.md",
     "ci": "ci.yml",
-    "tests": "221 passed",
+    "tests": "229 passed",
     "logo": "assets/brands/ninebot_e_scooters.png",
-    "logo_source": "https://github.com/seb5594/hass-ninebot_e_scooters-integration/releases/tag/v1.0.0b4 (ninebot_e_scooters.zip: brand/logo.png)"
+    "logo_source": "https://github.com/seb5594/hass-ninebot_e_scooters-integration/releases/tag/v1.0.0b5 (ninebot_e_scooters.zip: brand/logo.png)"
   },
   {
     "repository": "seb5594/hass-pulseaudio_loopback_extended-integration",
