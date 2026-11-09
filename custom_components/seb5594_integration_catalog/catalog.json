@@ -1,26 +1,26 @@
 [
   {
     "repository": "seb5594/hass-ubpet_cat_litter_hub-integration",
-    "commit": "f79e687b4414cfb09d985e72de97b41d96f72dc1",
+    "commit": "6009dd41aaa61e044652c5f49f783199666a12da",
     "domain": "ubpet_cat_litter_hub",
     "name": "Cat Litter Hub – UPET / UBPet / AIRROBO / Robotail / Meowant",
-    "version": "2026.11.03.2",
-    "release_tag": "v2026.11.03.2",
-    "release_url": "https://github.com/seb5594/hass-ubpet_cat_litter_hub-integration/releases/tag/v2026.11.03.2",
-    "published_at": "2026-11-03T03:26:56Z",
-    "package_url": "https://github.com/seb5594/hass-ubpet_cat_litter_hub-integration/releases/download/v2026.11.03.2/ubpet_cat_litter_hub.zip",
+    "version": "2026.11.09.1",
+    "release_tag": "2026.11.09.1",
+    "release_url": "https://github.com/seb5594/hass-ubpet_cat_litter_hub-integration/releases/tag/2026.11.09.1",
+    "published_at": "2026-11-09T22:06:04Z",
+    "package_url": "https://github.com/seb5594/hass-ubpet_cat_litter_hub-integration/releases/download/2026.11.09.1/ubpet_cat_litter_hub.zip",
     "package": {
       "name": "ubpet_cat_litter_hub.zip",
-      "url": "https://github.com/seb5594/hass-ubpet_cat_litter_hub-integration/releases/download/v2026.11.03.2/ubpet_cat_litter_hub.zip",
-      "sha256": "087fd8715a6171c12a8e58410b446fec7fc98a65864056d40661e6aeeb1271d3"
+      "url": "https://github.com/seb5594/hass-ubpet_cat_litter_hub-integration/releases/download/2026.11.09.1/ubpet_cat_litter_hub.zip",
+      "sha256": "c48bcd3964287de84ee17356f1d12c4d5ed6e2a3f1ba719b0face16839c78454"
     },
     "homeassistant": "2023.6.0",
     "description": "Home Assistant / HACS integration for smart cat litter boxes that use the UBPet / AIRROBO cloud: UPET, UBPet, AIR PET, AIRROBO, Robotail and Meowant. Multi-account, multi-region, 20 languages, MQTT push and visit statistics.",
     "changelog": "CHANGELOG.md",
     "ci": "ci.yml",
-    "tests": "57 passed",
+    "tests": "78 passed",
     "logo": "assets/brands/ubpet_cat_litter_hub.png",
-    "logo_source": "https://github.com/seb5594/hass-ubpet_cat_litter_hub-integration/releases/tag/v2026.11.03.2 (ubpet_cat_litter_hub.zip: brand/logo.png)"
+    "logo_source": "https://github.com/seb5594/hass-ubpet_cat_litter_hub-integration/releases/tag/2026.11.09.1 (ubpet_cat_litter_hub.zip: brand/logo.png)"
   },
   {
     "repository": "seb5594/hass-custom_integrations_translator-integration",
