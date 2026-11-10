@@ -5,10 +5,10 @@
       "repository": "seb5594/hass-ubpet_cat_litter_hub-integration",
       "domain": "ubpet_cat_litter_hub",
       "name": "Cat Litter Hub – UPET / UBPet / AIRROBO / Robotail / Meowant",
-      "version": "2026.11.09.1",
-      "release_tag": "2026.11.09.1",
-      "release_url": "https://github.com/seb5594/hass-ubpet_cat_litter_hub-integration/releases/tag/2026.11.09.1",
-      "package_url": "https://github.com/seb5594/hass-ubpet_cat_litter_hub-integration/releases/download/2026.11.09.1/ubpet_cat_litter_hub.zip"
+      "version": "2026.11.10.1",
+      "release_tag": "2026.11.10.1",
+      "release_url": "https://github.com/seb5594/hass-ubpet_cat_litter_hub-integration/releases/tag/2026.11.10.1",
+      "package_url": "https://github.com/seb5594/hass-ubpet_cat_litter_hub-integration/releases/download/2026.11.10.1/ubpet_cat_litter_hub.zip"
     },
     {
       "repository": "seb5594/hass-custom_integrations_translator-integration",
