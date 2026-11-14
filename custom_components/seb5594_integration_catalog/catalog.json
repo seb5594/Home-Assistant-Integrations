@@ -24,26 +24,26 @@
   },
   {
     "repository": "seb5594/hass-custom_integrations_translator-integration",
-    "commit": "532c1282a960dcd9039bb3dc52dcdd2078bf1813",
+    "commit": "f5b00320d7ccc808eef10be14e2d0157379b0e44",
     "domain": "custom_integration_translator",
     "name": "Custom Integration Translator",
-    "version": "2026.11.06.1",
-    "release_tag": "v2026.11.06.1",
-    "release_url": "https://github.com/seb5594/hass-custom_integrations_translator-integration/releases/tag/v2026.11.06.1",
-    "published_at": "2026-11-07T07:58:17Z",
-    "package_url": "https://github.com/seb5594/hass-custom_integrations_translator-integration/releases/download/v2026.11.06.1/custom_integration_translator.zip",
+    "version": "2026.11.14.1",
+    "release_tag": "v2026.11.14.1",
+    "release_url": "https://github.com/seb5594/hass-custom_integrations_translator-integration/releases/tag/v2026.11.14.1",
+    "published_at": "2026-11-14T14:26:55Z",
+    "package_url": "https://github.com/seb5594/hass-custom_integrations_translator-integration/releases/download/v2026.11.14.1/custom_integration_translator.zip",
     "package": {
       "name": "custom_integration_translator.zip",
-      "url": "https://github.com/seb5594/hass-custom_integrations_translator-integration/releases/download/v2026.11.06.1/custom_integration_translator.zip",
-      "sha256": "6a74d718d55fadbe2a296035c4d2a11e81cad479e9d46dd112e7c08acc23b5e4"
+      "url": "https://github.com/seb5594/hass-custom_integrations_translator-integration/releases/download/v2026.11.14.1/custom_integration_translator.zip",
+      "sha256": "3c3c3bba8f1bd468f3c615a7391dba27f3e6865146f780e8ef1f863c03ded2f7"
     },
     "homeassistant": "2023.7.0",
     "description": "Translate custom Home Assistant integrations with DeepL, phrase selection, usage previews and recoverable originals.",
     "changelog": "CHANGELOG.md",
     "ci": "ci.yml",
-    "tests": "",
+    "tests": "12 passed",
     "logo": "assets/brands/custom_integration_translator.png",
-    "logo_source": "https://github.com/seb5594/hass-custom_integrations_translator-integration/releases/tag/v2026.11.06.1 (custom_integration_translator.zip: brand/icon.png)"
+    "logo_source": "https://github.com/seb5594/hass-custom_integrations_translator-integration/releases/tag/v2026.11.14.1 (custom_integration_translator.zip: brand/icon.png)"
   },
   {
     "repository": "seb5594/hass-deepl_translator-integration",
