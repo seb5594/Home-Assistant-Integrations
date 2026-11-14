@@ -107,7 +107,7 @@
       "sha256": "3fb83f8321823d7e2d662581580e63dabfc8791e8426e5399a119c55b2829450"
     },
     "homeassistant": "2023.2.0",
-    "description": "A custom integration for legacy Ninebot and Xiaomi E-Scooter's in Home Assistant",
+    "description": "A custom integration for Ninebot and Xiaomi E-Scooter's in Home Assistant",
     "changelog": "CHANGELOG.md",
     "ci": "ci.yml",
     "tests": "304 passed",
