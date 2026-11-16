@@ -32,10 +32,10 @@
       "repository": "seb5594/hass-medication_tracker-integration",
       "domain": "medication_tracker",
       "name": "Medication Tracker",
-      "version": "2026.10.31.0",
-      "release_tag": "v2026.10.31.0",
-      "release_url": "https://github.com/seb5594/hass-medication_tracker-integration/releases/tag/v2026.10.31.0",
-      "package_url": "https://github.com/seb5594/hass-medication_tracker-integration/releases/download/v2026.10.31.0/medication_tracker.zip"
+      "version": "2026.11.16.0",
+      "release_tag": "v2026.11.16.0",
+      "release_url": "https://github.com/seb5594/hass-medication_tracker-integration/releases/tag/v2026.11.16.0",
+      "package_url": "https://github.com/seb5594/hass-medication_tracker-integration/releases/download/v2026.11.16.0/medication_tracker.zip"
     },
     {
       "repository": "seb5594/hass-ninebot_e_scooters-integration",

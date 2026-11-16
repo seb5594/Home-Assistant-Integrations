@@ -70,18 +70,18 @@
   },
   {
     "repository": "seb5594/hass-medication_tracker-integration",
-    "commit": "aea343bc44d5521ce3bcce03dd1adeb882fb95cb",
+    "commit": "f75867e0c12fc793f4ef63a2117b401be44e6acc",
     "domain": "medication_tracker",
     "name": "Medication Tracker",
-    "version": "2026.10.31.0",
-    "release_tag": "v2026.10.31.0",
-    "release_url": "https://github.com/seb5594/hass-medication_tracker-integration/releases/tag/v2026.10.31.0",
-    "published_at": "2026-10-31T10:18:01Z",
-    "package_url": "https://github.com/seb5594/hass-medication_tracker-integration/releases/download/v2026.10.31.0/medication_tracker.zip",
+    "version": "2026.11.16.0",
+    "release_tag": "v2026.11.16.0",
+    "release_url": "https://github.com/seb5594/hass-medication_tracker-integration/releases/tag/v2026.11.16.0",
+    "published_at": "2026-11-16T15:18:16Z",
+    "package_url": "https://github.com/seb5594/hass-medication_tracker-integration/releases/download/v2026.11.16.0/medication_tracker.zip",
     "package": {
       "name": "medication_tracker.zip",
-      "url": "https://github.com/seb5594/hass-medication_tracker-integration/releases/download/v2026.10.31.0/medication_tracker.zip",
-      "sha256": "67adbdb8f21c904883ac37bfdd914aedcfbe7aa4e7178125daeef7adb1da99de"
+      "url": "https://github.com/seb5594/hass-medication_tracker-integration/releases/download/v2026.11.16.0/medication_tracker.zip",
+      "sha256": "4c06640d780819d178d5e2a8bc6d06f322997409b4b17242790d8a7ef90157a3"
     },
     "homeassistant": "2024.7.0",
     "description": "Track medications, scheduled doses, streaks, and overdue alerts — entirely local, no cloud, no extra apps required.",
@@ -89,7 +89,7 @@
     "ci": "ci.yml",
     "tests": "5 passed",
     "logo": "assets/brands/medication_tracker.png",
-    "logo_source": "https://github.com/seb5594/hass-medication_tracker-integration/releases/tag/v2026.10.31.0 (medication_tracker.zip: brand/icon.png)"
+    "logo_source": "https://github.com/seb5594/hass-medication_tracker-integration/releases/tag/v2026.11.16.0 (medication_tracker.zip: brand/icon.png)"
   },
   {
     "repository": "seb5594/hass-ninebot_e_scooters-integration",
