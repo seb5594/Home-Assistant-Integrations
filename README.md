@@ -9,7 +9,7 @@
   <a href="https://github.com/seb5594/Home-Assistant-Integrations/releases/latest"><img src="https://img.shields.io/github/v/release/seb5594/Home-Assistant-Integrations?display_name=tag&amp;label=hub%20release&amp;color=1877A5" alt="Latest hub release"></a>
   <a href="https://github.com/seb5594/Home-Assistant-Integrations/releases"><img src="https://img.shields.io/github/downloads/seb5594/Home-Assistant-Integrations/total?label=hub%20downloads&amp;color=1877A5" alt="Hub release downloads"></a>
   <a href="https://github.com/seb5594/Home-Assistant-Integrations/stargazers"><img src="https://img.shields.io/github/stars/seb5594/Home-Assistant-Integrations?label=stars" alt="GitHub stars"></a><br>
-  <img src="https://img.shields.io/badge/integrations-7-1877A5" alt="7 integrations">
+  <img src="https://img.shields.io/badge/integrations-8-1877A5" alt="8 integrations">
   <a href="https://github.com/seb5594/Home-Assistant-Integrations/actions/workflows/ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/seb5594/Home-Assistant-Integrations/ci.yml?branch=main&amp;label=catalog%20checks" alt="Catalog checks"></a>
   <a href="https://github.com/seb5594/Home-Assistant-Integrations/actions/workflows/update.yml"><img src="https://img.shields.io/github/actions/workflow/status/seb5594/Home-Assistant-Integrations/update.yml?branch=main&amp;label=catalog%20sync" alt="Catalog sync"></a>
 </p>
@@ -49,10 +49,11 @@ Automatic registration uses HACS' internal runtime registry and is **experimenta
 
 | | Integration | Latest release | Minimum Home Assistant | Direct HACS install |
 | :---: | --- | --- | --- | --- |
+| <img src="assets/brands/car_tires_season.png" height="44" alt=""> | **[Car Tires Season](https://github.com/seb5594/hass-car_tires_season-integration)** | [v2026.11.17.0](https://github.com/seb5594/hass-car_tires_season-integration/releases/tag/v2026.11.17.0) | 2022.4.0 | [Install](https://my.home-assistant.io/redirect/hacs_repository/?owner=seb5594&repository=hass-car_tires_season-integration&category=integration) |
 | <img src="assets/brands/ubpet_cat_litter_hub.png" height="44" alt=""> | **[Cat Litter Hub – UPET / UBPet / AIRROBO / Robotail / Meowant](https://github.com/seb5594/hass-ubpet_cat_litter_hub-integration)** | [2026.11.10.1](https://github.com/seb5594/hass-ubpet_cat_litter_hub-integration/releases/tag/2026.11.10.1) | 2023.6.0 | [Install](https://my.home-assistant.io/redirect/hacs_repository/?owner=seb5594&repository=hass-ubpet_cat_litter_hub-integration&category=integration) |
 | <img src="assets/brands/custom_integration_translator.png" height="44" alt=""> | **[Custom Integration Translator](https://github.com/seb5594/hass-custom_integrations_translator-integration)** | [v2026.11.16.1](https://github.com/seb5594/hass-custom_integrations_translator-integration/releases/tag/v2026.11.16.1) | 2023.7.0 | [Install](https://my.home-assistant.io/redirect/hacs_repository/?owner=seb5594&repository=hass-custom_integrations_translator-integration&category=integration) |
 | <img src="assets/brands/deepl_translator.png" height="44" alt=""> | **[DeepL Translator](https://github.com/seb5594/hass-deepl_translator-integration)** | [2026.11.14.1](https://github.com/seb5594/hass-deepl_translator-integration/releases/tag/2026.11.14.1) | 2023.7.0 | [Install](https://my.home-assistant.io/redirect/hacs_repository/?owner=seb5594&repository=hass-deepl_translator-integration&category=integration) |
-| <img src="assets/brands/medication_monitoring.png" height="44" alt=""> | **[Medication Monitoring](https://github.com/seb5594/hass-medication_tracker-integration)** | [v2026.11.17.0](https://github.com/seb5594/hass-medication_tracker-integration/releases/tag/v2026.11.17.0) | 2021.12.10 | [Install](https://my.home-assistant.io/redirect/hacs_repository/?owner=seb5594&repository=hass-medication_tracker-integration&category=integration) |
+| <img src="assets/brands/medication_monitoring.png" height="44" alt=""> | **[Medication Monitoring](https://github.com/seb5594/hass-medication_monitoring-integration)** | [v2026.11.17.0](https://github.com/seb5594/hass-medication_monitoring-integration/releases/tag/v2026.11.17.0) | 2021.12.10 | [Install](https://my.home-assistant.io/redirect/hacs_repository/?owner=seb5594&repository=hass-medication_monitoring-integration&category=integration) |
 | <img src="assets/brands/ninebot_e_scooters.png" height="44" alt=""> | **[Ninebot E-Scooters](https://github.com/seb5594/hass-ninebot_e_scooters-integration)** | [v2026.11.14.2](https://github.com/seb5594/hass-ninebot_e_scooters-integration/releases/tag/v2026.11.14.2) | 2023.2.0 | [Install](https://my.home-assistant.io/redirect/hacs_repository/?owner=seb5594&repository=hass-ninebot_e_scooters-integration&category=integration) |
 | <img src="assets/brands/pulseaudio_loopback.png" height="44" alt=""> | **[PulseAudio Loopback Extended](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration)** | [v1.0.0](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration/releases/tag/v1.0.0) | 2022.4.0 | [Install](https://my.home-assistant.io/redirect/hacs_repository/?owner=seb5594&repository=hass-pulseaudio_loopback_extended-integration&category=integration) |
 | <img src="assets/brands/vacuum_mapguard.png" height="44" alt=""> | **[Vacuum MapGuard](https://github.com/seb5594/hass-vacuum_mapguard-integration)** | [v1.1.3](https://github.com/seb5594/hass-vacuum_mapguard-integration/releases/tag/v1.1.3) | 2026.3.0 | [Install](https://my.home-assistant.io/redirect/hacs_repository/?owner=seb5594&repository=hass-vacuum_mapguard-integration&category=integration) |
@@ -62,6 +63,27 @@ Automatic registration uses HACS' internal runtime registry and is **experimenta
 Each project's logo, compatibility, version, checks and links stay together.
 Versions below are published release tags; unreleased branch changes are not offered by this catalog.
 Logos come from the source projects; PulseAudio uses its asset from Home Assistant Brands.
+
+---
+
+### <img src="assets/brands/car_tires_season.png" height="48" alt=""> Car Tires Season
+
+A custom Home Assistant component for predicting when to change car tires based on the season
+
+[![release: v2026.11.17.0](https://img.shields.io/static/v1?label=release&message=v2026.11.17.0&color=1877A5&style=flat)](https://github.com/seb5594/hass-car_tires_season-integration/releases/tag/v2026.11.17.0) ![Home Assistant: ≥ 2022.4.0](https://img.shields.io/static/v1?label=Home%20Assistant&message=%E2%89%A5%202022.4.0&color=1877A5&style=flat)<br>
+[![release checks](https://img.shields.io/github/check-runs/seb5594/hass-car_tires_season-integration/b6425bf24c122a46b7326318ab09dcb6dfd10d61?label=release%20checks)](https://github.com/seb5594/hass-car_tires_season-integration/commit/b6425bf24c122a46b7326318ab09dcb6dfd10d61/checks)  [![release downloads](https://img.shields.io/github/downloads/seb5594/hass-car_tires_season-integration/v2026.11.17.0/total?label=downloads)](https://github.com/seb5594/hass-car_tires_season-integration/releases/download/v2026.11.17.0/car_tires_season.zip) [![issues](https://img.shields.io/github/issues/seb5594/hass-car_tires_season-integration?label=issues)](https://github.com/seb5594/hass-car_tires_season-integration/issues)
+
+[**Open in HACS**](https://my.home-assistant.io/redirect/hacs_repository/?owner=seb5594&repository=hass-car_tires_season-integration&category=integration) · [Release package](https://github.com/seb5594/hass-car_tires_season-integration/releases/download/v2026.11.17.0/car_tires_season.zip) · [Documentation](https://github.com/seb5594/hass-car_tires_season-integration/tree/v2026.11.17.0) · [Changelog](https://github.com/seb5594/hass-car_tires_season-integration/blob/v2026.11.17.0/CHANGELOG.md)
+
+<details>
+<summary>Release and source details</summary>
+
+- Domain: `car_tires_season`
+- Published release: [v2026.11.17.0](https://github.com/seb5594/hass-car_tires_season-integration/releases/tag/v2026.11.17.0)
+- Source: [`integrations/car_tires_season`](integrations/car_tires_season) (Git submodule)
+- Pinned commit: [`b6425bf`](https://github.com/seb5594/hass-car_tires_season-integration/commit/b6425bf24c122a46b7326318ab09dcb6dfd10d61)
+
+</details>
 
 ---
 
@@ -132,18 +154,18 @@ DeepL translation for Home Assistant: API and MCP backends, structured text tran
 
 Track medications, scheduled doses, streaks, and overdue alerts — entirely local, no cloud, no extra apps required.
 
-[![release: v2026.11.17.0](https://img.shields.io/static/v1?label=release&message=v2026.11.17.0&color=1877A5&style=flat)](https://github.com/seb5594/hass-medication_tracker-integration/releases/tag/v2026.11.17.0) ![Home Assistant: ≥ 2021.12.10](https://img.shields.io/static/v1?label=Home%20Assistant&message=%E2%89%A5%202021.12.10&color=1877A5&style=flat)<br>
-[![release checks](https://img.shields.io/github/check-runs/seb5594/hass-medication_tracker-integration/71d631a67f015f7a9eb76925c34258d7a7542f00?label=release%20checks)](https://github.com/seb5594/hass-medication_tracker-integration/commit/71d631a67f015f7a9eb76925c34258d7a7542f00/checks) ![tests: 5 passed](https://img.shields.io/static/v1?label=tests&message=5%20passed&color=2F855A&style=flat) [![release downloads](https://img.shields.io/github/downloads/seb5594/hass-medication_tracker-integration/v2026.11.17.0/total?label=downloads)](https://github.com/seb5594/hass-medication_tracker-integration/releases/download/v2026.11.17.0/medication_monitoring.zip) [![issues](https://img.shields.io/github/issues/seb5594/hass-medication_tracker-integration?label=issues)](https://github.com/seb5594/hass-medication_tracker-integration/issues)
+[![release: v2026.11.17.0](https://img.shields.io/static/v1?label=release&message=v2026.11.17.0&color=1877A5&style=flat)](https://github.com/seb5594/hass-medication_monitoring-integration/releases/tag/v2026.11.17.0) ![Home Assistant: ≥ 2021.12.10](https://img.shields.io/static/v1?label=Home%20Assistant&message=%E2%89%A5%202021.12.10&color=1877A5&style=flat)<br>
+[![release checks](https://img.shields.io/github/check-runs/seb5594/hass-medication_monitoring-integration/71d631a67f015f7a9eb76925c34258d7a7542f00?label=release%20checks)](https://github.com/seb5594/hass-medication_monitoring-integration/commit/71d631a67f015f7a9eb76925c34258d7a7542f00/checks) ![tests: 5 passed](https://img.shields.io/static/v1?label=tests&message=5%20passed&color=2F855A&style=flat) [![release downloads](https://img.shields.io/github/downloads/seb5594/hass-medication_monitoring-integration/v2026.11.17.0/total?label=downloads)](https://github.com/seb5594/hass-medication_monitoring-integration/releases/download/v2026.11.17.0/medication_monitoring.zip) [![issues](https://img.shields.io/github/issues/seb5594/hass-medication_monitoring-integration?label=issues)](https://github.com/seb5594/hass-medication_monitoring-integration/issues)
 
-[**Open in HACS**](https://my.home-assistant.io/redirect/hacs_repository/?owner=seb5594&repository=hass-medication_tracker-integration&category=integration) · [Release package](https://github.com/seb5594/hass-medication_tracker-integration/releases/download/v2026.11.17.0/medication_monitoring.zip) · [Documentation](https://github.com/seb5594/hass-medication_tracker-integration/tree/v2026.11.17.0) · [Changelog](https://github.com/seb5594/hass-medication_tracker-integration/blob/v2026.11.17.0/CHANGELOG.md)
+[**Open in HACS**](https://my.home-assistant.io/redirect/hacs_repository/?owner=seb5594&repository=hass-medication_monitoring-integration&category=integration) · [Release package](https://github.com/seb5594/hass-medication_monitoring-integration/releases/download/v2026.11.17.0/medication_monitoring.zip) · [Documentation](https://github.com/seb5594/hass-medication_monitoring-integration/tree/v2026.11.17.0) · [Changelog](https://github.com/seb5594/hass-medication_monitoring-integration/blob/v2026.11.17.0/CHANGELOG.md)
 
 <details>
 <summary>Release and source details</summary>
 
 - Domain: `medication_monitoring`
-- Published release: [v2026.11.17.0](https://github.com/seb5594/hass-medication_tracker-integration/releases/tag/v2026.11.17.0)
+- Published release: [v2026.11.17.0](https://github.com/seb5594/hass-medication_monitoring-integration/releases/tag/v2026.11.17.0)
 - Source: [`integrations/medication_monitoring`](integrations/medication_monitoring) (Git submodule)
-- Pinned commit: [`71d631a`](https://github.com/seb5594/hass-medication_tracker-integration/commit/71d631a67f015f7a9eb76925c34258d7a7542f00)
+- Pinned commit: [`71d631a`](https://github.com/seb5594/hass-medication_monitoring-integration/commit/71d631a67f015f7a9eb76925c34258d7a7542f00)
 
 </details>
 

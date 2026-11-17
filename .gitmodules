@@ -1,3 +1,6 @@
+[submodule "car_tires_season"]
+	path = integrations/car_tires_season
+	url = https://github.com/seb5594/hass-car_tires_season-integration.git
 [submodule "ubpet_cat_litter_hub"]
 	path = integrations/ubpet_cat_litter_hub
 	url = https://github.com/seb5594/hass-ubpet_cat_litter_hub-integration.git
@@ -9,7 +12,7 @@
 	url = https://github.com/seb5594/hass-deepl_translator-integration.git
 [submodule "medication_monitoring"]
 	path = integrations/medication_monitoring
-	url = https://github.com/seb5594/hass-medication_tracker-integration.git
+	url = https://github.com/seb5594/hass-medication_monitoring-integration.git
 [submodule "ninebot_e_scooters"]
 	path = integrations/ninebot_e_scooters
 	url = https://github.com/seb5594/hass-ninebot_e_scooters-integration.git

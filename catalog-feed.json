@@ -2,6 +2,15 @@
   "schema_version": 2,
   "integrations": [
     {
+      "repository": "seb5594/hass-car_tires_season-integration",
+      "domain": "car_tires_season",
+      "name": "Car Tires Season",
+      "version": "2026.11.17.0",
+      "release_tag": "v2026.11.17.0",
+      "release_url": "https://github.com/seb5594/hass-car_tires_season-integration/releases/tag/v2026.11.17.0",
+      "package_url": "https://github.com/seb5594/hass-car_tires_season-integration/releases/download/v2026.11.17.0/car_tires_season.zip"
+    },
+    {
       "repository": "seb5594/hass-ubpet_cat_litter_hub-integration",
       "domain": "ubpet_cat_litter_hub",
       "name": "Cat Litter Hub – UPET / UBPet / AIRROBO / Robotail / Meowant",
@@ -29,13 +38,13 @@
       "package_url": "https://github.com/seb5594/hass-deepl_translator-integration/releases/download/2026.11.14.1/deepl_translator.zip"
     },
     {
-      "repository": "seb5594/hass-medication_tracker-integration",
+      "repository": "seb5594/hass-medication_monitoring-integration",
       "domain": "medication_monitoring",
       "name": "Medication Monitoring",
       "version": "2026.11.17.0",
       "release_tag": "v2026.11.17.0",
-      "release_url": "https://github.com/seb5594/hass-medication_tracker-integration/releases/tag/v2026.11.17.0",
-      "package_url": "https://github.com/seb5594/hass-medication_tracker-integration/releases/download/v2026.11.17.0/medication_monitoring.zip"
+      "release_url": "https://github.com/seb5594/hass-medication_monitoring-integration/releases/tag/v2026.11.17.0",
+      "package_url": "https://github.com/seb5594/hass-medication_monitoring-integration/releases/download/v2026.11.17.0/medication_monitoring.zip"
     },
     {
       "repository": "seb5594/hass-ninebot_e_scooters-integration",

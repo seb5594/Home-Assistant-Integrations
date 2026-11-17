@@ -1,5 +1,9 @@
 [
   {
+    "repository": "seb5594/hass-car_tires_season-integration",
+    "commit": "b6425bf24c122a46b7326318ab09dcb6dfd10d61"
+  },
+  {
     "repository": "seb5594/hass-ubpet_cat_litter_hub-integration",
     "commit": "295191925f2f9192f2fb22a53b4dc75beb60f135"
   },
@@ -12,7 +16,7 @@
     "commit": "c803677403f1143e1bab0f3fe9bdb956795a937a"
   },
   {
-    "repository": "seb5594/hass-medication_tracker-integration",
+    "repository": "seb5594/hass-medication_monitoring-integration",
     "commit": "71d631a67f015f7a9eb76925c34258d7a7542f00"
   },
   {

@@ -1,5 +1,28 @@
 [
   {
+    "repository": "seb5594/hass-car_tires_season-integration",
+    "commit": "b6425bf24c122a46b7326318ab09dcb6dfd10d61",
+    "domain": "car_tires_season",
+    "name": "Car Tires Season",
+    "version": "2026.11.17.0",
+    "release_tag": "v2026.11.17.0",
+    "release_url": "https://github.com/seb5594/hass-car_tires_season-integration/releases/tag/v2026.11.17.0",
+    "published_at": "2026-11-17T15:01:27Z",
+    "package_url": "https://github.com/seb5594/hass-car_tires_season-integration/releases/download/v2026.11.17.0/car_tires_season.zip",
+    "package": {
+      "name": "car_tires_season.zip",
+      "url": "https://github.com/seb5594/hass-car_tires_season-integration/releases/download/v2026.11.17.0/car_tires_season.zip",
+      "sha256": "76c5590c9dcf46044df7f210e15be2c8bd1aea276788e24753c8a205dfaba4e1"
+    },
+    "homeassistant": "2022.4.0",
+    "description": "A custom Home Assistant component for predicting when to change car tires based on the season",
+    "changelog": "CHANGELOG.md",
+    "ci": "ci.yml",
+    "tests": "",
+    "logo": "assets/brands/car_tires_season.png",
+    "logo_source": "https://github.com/seb5594/hass-car_tires_season-integration/releases/tag/v2026.11.17.0 (car_tires_season.zip: brand/icon.png)"
+  },
+  {
     "repository": "seb5594/hass-ubpet_cat_litter_hub-integration",
     "commit": "295191925f2f9192f2fb22a53b4dc75beb60f135",
     "domain": "ubpet_cat_litter_hub",
@@ -69,18 +92,18 @@
     "logo_source": "https://github.com/seb5594/hass-deepl_translator-integration/releases/tag/2026.11.14.1 (deepl_translator.zip: brand/logo.png)"
   },
   {
-    "repository": "seb5594/hass-medication_tracker-integration",
+    "repository": "seb5594/hass-medication_monitoring-integration",
     "commit": "71d631a67f015f7a9eb76925c34258d7a7542f00",
     "domain": "medication_monitoring",
     "name": "Medication Monitoring",
     "version": "2026.11.17.0",
     "release_tag": "v2026.11.17.0",
-    "release_url": "https://github.com/seb5594/hass-medication_tracker-integration/releases/tag/v2026.11.17.0",
+    "release_url": "https://github.com/seb5594/hass-medication_monitoring-integration/releases/tag/v2026.11.17.0",
     "published_at": "2026-11-17T11:32:19Z",
-    "package_url": "https://github.com/seb5594/hass-medication_tracker-integration/releases/download/v2026.11.17.0/medication_monitoring.zip",
+    "package_url": "https://github.com/seb5594/hass-medication_monitoring-integration/releases/download/v2026.11.17.0/medication_monitoring.zip",
     "package": {
       "name": "medication_monitoring.zip",
-      "url": "https://github.com/seb5594/hass-medication_tracker-integration/releases/download/v2026.11.17.0/medication_monitoring.zip",
+      "url": "https://github.com/seb5594/hass-medication_monitoring-integration/releases/download/v2026.11.17.0/medication_monitoring.zip",
       "sha256": "8c7ee8934b4814c7d8f4fe12c7dc612dc98361005a39268fe96eb3d38fc7cfef"
     },
     "homeassistant": "2021.12.10",
@@ -89,7 +112,7 @@
     "ci": "ci.yml",
     "tests": "5 passed",
     "logo": "assets/brands/medication_monitoring.png",
-    "logo_source": "https://github.com/seb5594/hass-medication_tracker-integration/releases/tag/v2026.11.17.0 (medication_monitoring.zip: brand/icon.png)"
+    "logo_source": "https://github.com/seb5594/hass-medication_monitoring-integration/releases/tag/v2026.11.17.0 (medication_monitoring.zip: brand/icon.png)"
   },
   {
     "repository": "seb5594/hass-ninebot_e_scooters-integration",
