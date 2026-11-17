@@ -92,6 +92,29 @@
     "logo_source": "https://github.com/seb5594/hass-deepl_translator-integration/releases/tag/2026.11.17.1 (deepl_translator.zip: brand/logo.png)"
   },
   {
+    "repository": "seb5594/hass-google_translator-integration",
+    "commit": "033e4a8571a9a1eb4e48eacd8546aae0cfd0f232",
+    "domain": "google_translator",
+    "name": "Google Translator",
+    "version": "2026.11.17.1",
+    "release_tag": "v2026.11.17.1",
+    "release_url": "https://github.com/seb5594/hass-google_translator-integration/releases/tag/v2026.11.17.1",
+    "published_at": "2026-11-17T22:44:56Z",
+    "package_url": "https://github.com/seb5594/hass-google_translator-integration/releases/download/v2026.11.17.1/google_translator.zip",
+    "package": {
+      "name": "google_translator.zip",
+      "url": "https://github.com/seb5594/hass-google_translator-integration/releases/download/v2026.11.17.1/google_translator.zip",
+      "sha256": "f78c1275d32ebd8439cce7c4067baf1141575be3b5de3ebc5c576f6da200cc24"
+    },
+    "homeassistant": "2023.7.0",
+    "description": "Google Translator for Home Assistant",
+    "changelog": "CHANGELOG.md",
+    "ci": "ci.yml",
+    "tests": "",
+    "logo": "assets/brands/google_translator.png",
+    "logo_source": "https://github.com/seb5594/hass-google_translator-integration/releases/tag/v2026.11.17.1 (google_translator.zip: brand/icon.png)"
+  },
+  {
     "repository": "seb5594/hass-medication_monitoring-integration",
     "commit": "71d631a67f015f7a9eb76925c34258d7a7542f00",
     "domain": "medication_monitoring",

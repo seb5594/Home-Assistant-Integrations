@@ -16,6 +16,10 @@
     "commit": "305fd67c7885a959ced0deefbd2100c0e1726e41"
   },
   {
+    "repository": "seb5594/hass-google_translator-integration",
+    "commit": "033e4a8571a9a1eb4e48eacd8546aae0cfd0f232"
+  },
+  {
     "repository": "seb5594/hass-medication_monitoring-integration",
     "commit": "71d631a67f015f7a9eb76925c34258d7a7542f00"
   },
