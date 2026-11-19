@@ -5,10 +5,10 @@
       "repository": "seb5594/hass-car_tires_season-integration",
       "domain": "car_tires_season",
       "name": "Car Tires Season",
-      "version": "2026.11.19.2",
-      "release_tag": "2026.11.19.2",
-      "release_url": "https://github.com/seb5594/hass-car_tires_season-integration/releases/tag/2026.11.19.2",
-      "package_url": "https://github.com/seb5594/hass-car_tires_season-integration/releases/download/2026.11.19.2/car_tires_season.zip"
+      "version": "2026.11.19",
+      "release_tag": "2026.11.19",
+      "release_url": "https://github.com/seb5594/hass-car_tires_season-integration/releases/tag/2026.11.19",
+      "package_url": "https://github.com/seb5594/hass-car_tires_season-integration/releases/download/2026.11.19/car_tires_season.zip"
     },
     {
       "repository": "seb5594/hass-ubpet_cat_litter_hub-integration",

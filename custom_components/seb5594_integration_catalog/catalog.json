@@ -1,18 +1,18 @@
 [
   {
     "repository": "seb5594/hass-car_tires_season-integration",
-    "commit": "69ed2fb8f28ccb04fd0e07005451d335c0a7cff2",
+    "commit": "8c52ca0792bb35ae622b3b28618a310e8519f142",
     "domain": "car_tires_season",
     "name": "Car Tires Season",
-    "version": "2026.11.19.2",
-    "release_tag": "2026.11.19.2",
-    "release_url": "https://github.com/seb5594/hass-car_tires_season-integration/releases/tag/2026.11.19.2",
-    "published_at": "2026-11-19T19:29:20Z",
-    "package_url": "https://github.com/seb5594/hass-car_tires_season-integration/releases/download/2026.11.19.2/car_tires_season.zip",
+    "version": "2026.11.19",
+    "release_tag": "2026.11.19",
+    "release_url": "https://github.com/seb5594/hass-car_tires_season-integration/releases/tag/2026.11.19",
+    "published_at": "2026-11-19T19:33:13Z",
+    "package_url": "https://github.com/seb5594/hass-car_tires_season-integration/releases/download/2026.11.19/car_tires_season.zip",
     "package": {
       "name": "car_tires_season.zip",
-      "url": "https://github.com/seb5594/hass-car_tires_season-integration/releases/download/2026.11.19.2/car_tires_season.zip",
-      "sha256": "715637c2b95128b4e084d43c154e0ce7f78760ff87583012c1391897c737c6ce"
+      "url": "https://github.com/seb5594/hass-car_tires_season-integration/releases/download/2026.11.19/car_tires_season.zip",
+      "sha256": "456a8d45b3863533dc01afa1637268f5c4f16823cec27ad411a584abbeb1b2dd"
     },
     "homeassistant": "2022.8.0",
     "description": "A custom Home Assistant component for predicting when to change car tires based on the season",
@@ -20,7 +20,7 @@
     "ci": "ci.yml",
     "tests": "60 passed",
     "logo": "assets/brands/car_tires_season.png",
-    "logo_source": "https://github.com/seb5594/hass-car_tires_season-integration/releases/tag/2026.11.19.2 (car_tires_season.zip: brand/icon.png)"
+    "logo_source": "https://github.com/seb5594/hass-car_tires_season-integration/releases/tag/2026.11.19 (car_tires_season.zip: brand/icon.png)"
   },
   {
     "repository": "seb5594/hass-ubpet_cat_litter_hub-integration",
