@@ -9,7 +9,7 @@
   <a href="https://github.com/seb5594/Home-Assistant-Integrations/releases/latest"><img src="https://img.shields.io/github/v/release/seb5594/Home-Assistant-Integrations?display_name=tag&amp;label=hub%20release&amp;color=1877A5" alt="Latest hub release"></a>
   <a href="https://github.com/seb5594/Home-Assistant-Integrations/releases"><img src="https://img.shields.io/github/downloads/seb5594/Home-Assistant-Integrations/total?label=hub%20downloads&amp;color=1877A5" alt="Hub release downloads"></a>
   <a href="https://github.com/seb5594/Home-Assistant-Integrations/stargazers"><img src="https://img.shields.io/github/stars/seb5594/Home-Assistant-Integrations?label=stars" alt="GitHub stars"></a><br>
-  <img src="https://img.shields.io/badge/integrations-9-1877A5" alt="9 integrations">
+  <img src="https://img.shields.io/badge/integrations-10-1877A5" alt="10 integrations">
   <a href="https://github.com/seb5594/Home-Assistant-Integrations/actions/workflows/ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/seb5594/Home-Assistant-Integrations/ci.yml?branch=main&amp;label=catalog%20checks" alt="Catalog checks"></a>
   <a href="https://github.com/seb5594/Home-Assistant-Integrations/actions/workflows/update.yml"><img src="https://img.shields.io/github/actions/workflow/status/seb5594/Home-Assistant-Integrations/update.yml?branch=main&amp;label=catalog%20sync" alt="Catalog sync"></a>
 </p>
@@ -53,6 +53,7 @@ Automatic registration uses HACS' internal runtime registry and is **experimenta
 | <img src="assets/brands/ubpet_cat_litter_hub.png" height="44" alt=""> | **[Cat Litter Hub – UPET / UBPet / AIRROBO / Robotail / Meowant](https://github.com/seb5594/hass-ubpet_cat_litter_hub-integration)** | [2026.11.10.1](https://github.com/seb5594/hass-ubpet_cat_litter_hub-integration/releases/tag/2026.11.10.1) | 2023.6.0 | [Install](https://my.home-assistant.io/redirect/hacs_repository/?owner=seb5594&repository=hass-ubpet_cat_litter_hub-integration&category=integration) |
 | <img src="assets/brands/custom_integration_translator.png" height="44" alt=""> | **[Custom Integration Translator](https://github.com/seb5594/hass-custom_integrations_translator-integration)** | [v2026.11.16.1](https://github.com/seb5594/hass-custom_integrations_translator-integration/releases/tag/v2026.11.16.1) | 2023.7.0 | [Install](https://my.home-assistant.io/redirect/hacs_repository/?owner=seb5594&repository=hass-custom_integrations_translator-integration&category=integration) |
 | <img src="assets/brands/deepl_translator.png" height="44" alt=""> | **[DeepL Translator](https://github.com/seb5594/hass-deepl_translator-integration)** | [2026.11.17.1](https://github.com/seb5594/hass-deepl_translator-integration/releases/tag/2026.11.17.1) | 2023.7.0 | [Install](https://my.home-assistant.io/redirect/hacs_repository/?owner=seb5594&repository=hass-deepl_translator-integration&category=integration) |
+| <img src="assets/brands/escpos_designer.png" height="44" alt=""> | **[ESC/POS Thermal Printer Designer](https://github.com/seb5594/hass-escpos-thermal-printing-designer-integration)** | [v2026.11.19](https://github.com/seb5594/hass-escpos-thermal-printing-designer-integration/releases/tag/v2026.11.19) | 2025.1.0 | [Install](https://my.home-assistant.io/redirect/hacs_repository/?owner=seb5594&repository=hass-escpos-thermal-printing-designer-integration&category=integration) |
 | <img src="assets/brands/google_translator.png" height="44" alt=""> | **[Google Translator](https://github.com/seb5594/hass-google_translator-integration)** | [v2026.11.17.1](https://github.com/seb5594/hass-google_translator-integration/releases/tag/v2026.11.17.1) | 2023.7.0 | [Install](https://my.home-assistant.io/redirect/hacs_repository/?owner=seb5594&repository=hass-google_translator-integration&category=integration) |
 | <img src="assets/brands/medication_monitoring.png" height="44" alt=""> | **[Medication Monitoring](https://github.com/seb5594/hass-medication_monitoring-integration)** | [2026.11.19.0](https://github.com/seb5594/hass-medication_monitoring-integration/releases/tag/2026.11.19.0) | 2022.8.0 | [Install](https://my.home-assistant.io/redirect/hacs_repository/?owner=seb5594&repository=hass-medication_monitoring-integration&category=integration) |
 | <img src="assets/brands/ninebot_e_scooters.png" height="44" alt=""> | **[Ninebot E-Scooters](https://github.com/seb5594/hass-ninebot_e_scooters-integration)** | [v2026.11.18.1](https://github.com/seb5594/hass-ninebot_e_scooters-integration/releases/tag/v2026.11.18.1) | 2023.2.0 | [Install](https://my.home-assistant.io/redirect/hacs_repository/?owner=seb5594&repository=hass-ninebot_e_scooters-integration&category=integration) |
@@ -146,6 +147,27 @@ DeepL translation for Home Assistant: API and MCP backends, structured text tran
 - Published release: [2026.11.17.1](https://github.com/seb5594/hass-deepl_translator-integration/releases/tag/2026.11.17.1)
 - Source: [`integrations/deepl_translator`](integrations/deepl_translator) (Git submodule)
 - Pinned commit: [`305fd67`](https://github.com/seb5594/hass-deepl_translator-integration/commit/305fd67c7885a959ced0deefbd2100c0e1726e41)
+
+</details>
+
+---
+
+### <img src="assets/brands/escpos_designer.png" height="48" alt=""> ESC/POS Thermal Printer Designer
+
+Design and print labels, shopping lists, QR codes and notes on ESC/POS thermal printers – with a Material designer panel for Home Assistant
+
+[![release: v2026.11.19](https://img.shields.io/static/v1?label=release&message=v2026.11.19&color=1877A5&style=flat)](https://github.com/seb5594/hass-escpos-thermal-printing-designer-integration/releases/tag/v2026.11.19) ![Home Assistant: ≥ 2025.1.0](https://img.shields.io/static/v1?label=Home%20Assistant&message=%E2%89%A5%202025.1.0&color=1877A5&style=flat)<br>
+[![release checks](https://img.shields.io/github/check-runs/seb5594/hass-escpos-thermal-printing-designer-integration/ba31516e49dc980d69726efa4e6e9039345e1022?label=release%20checks)](https://github.com/seb5594/hass-escpos-thermal-printing-designer-integration/commit/ba31516e49dc980d69726efa4e6e9039345e1022/checks)  [![release downloads](https://img.shields.io/github/downloads/seb5594/hass-escpos-thermal-printing-designer-integration/v2026.11.19/total?label=downloads)](https://github.com/seb5594/hass-escpos-thermal-printing-designer-integration/releases/download/v2026.11.19/escpos_designer.zip) [![issues](https://img.shields.io/github/issues/seb5594/hass-escpos-thermal-printing-designer-integration?label=issues)](https://github.com/seb5594/hass-escpos-thermal-printing-designer-integration/issues)
+
+[**Open in HACS**](https://my.home-assistant.io/redirect/hacs_repository/?owner=seb5594&repository=hass-escpos-thermal-printing-designer-integration&category=integration) · [Release package](https://github.com/seb5594/hass-escpos-thermal-printing-designer-integration/releases/download/v2026.11.19/escpos_designer.zip) · [Documentation](https://github.com/seb5594/hass-escpos-thermal-printing-designer-integration/tree/v2026.11.19) · [Changelog](https://github.com/seb5594/hass-escpos-thermal-printing-designer-integration/blob/v2026.11.19/CHANGELOG.md)
+
+<details>
+<summary>Release and source details</summary>
+
+- Domain: `escpos_designer`
+- Published release: [v2026.11.19](https://github.com/seb5594/hass-escpos-thermal-printing-designer-integration/releases/tag/v2026.11.19)
+- Source: [`integrations/escpos_designer`](integrations/escpos_designer) (Git submodule)
+- Pinned commit: [`ba31516`](https://github.com/seb5594/hass-escpos-thermal-printing-designer-integration/commit/ba31516e49dc980d69726efa4e6e9039345e1022)
 
 </details>
 

@@ -10,6 +10,9 @@
 [submodule "deepl_translator"]
 	path = integrations/deepl_translator
 	url = https://github.com/seb5594/hass-deepl_translator-integration.git
+[submodule "escpos_designer"]
+	path = integrations/escpos_designer
+	url = https://github.com/seb5594/hass-escpos-thermal-printing-designer-integration.git
 [submodule "google_translator"]
 	path = integrations/google_translator
 	url = https://github.com/seb5594/hass-google_translator-integration.git

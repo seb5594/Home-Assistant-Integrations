@@ -16,6 +16,10 @@
     "commit": "305fd67c7885a959ced0deefbd2100c0e1726e41"
   },
   {
+    "repository": "seb5594/hass-escpos-thermal-printing-designer-integration",
+    "commit": "ba31516e49dc980d69726efa4e6e9039345e1022"
+  },
+  {
     "repository": "seb5594/hass-google_translator-integration",
     "commit": "033e4a8571a9a1eb4e48eacd8546aae0cfd0f232"
   },
