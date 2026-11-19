@@ -116,26 +116,26 @@
   },
   {
     "repository": "seb5594/hass-escpos-thermal-printing-designer-integration",
-    "commit": "ba31516e49dc980d69726efa4e6e9039345e1022",
+    "commit": "b5abb7744d60092142745cd9e7ed3c9475b465f5",
     "domain": "escpos_designer",
     "name": "ESC/POS Thermal Printer Designer",
-    "version": "2026.11.19",
-    "release_tag": "v2026.11.19",
-    "release_url": "https://github.com/seb5594/hass-escpos-thermal-printing-designer-integration/releases/tag/v2026.11.19",
-    "published_at": "2026-11-19T18:18:17Z",
-    "package_url": "https://github.com/seb5594/hass-escpos-thermal-printing-designer-integration/releases/download/v2026.11.19/escpos_designer.zip",
+    "version": "2026.11.19.1",
+    "release_tag": "v2026.11.19.1",
+    "release_url": "https://github.com/seb5594/hass-escpos-thermal-printing-designer-integration/releases/tag/v2026.11.19.1",
+    "published_at": "2026-11-19T20:19:00Z",
+    "package_url": "https://github.com/seb5594/hass-escpos-thermal-printing-designer-integration/releases/download/v2026.11.19.1/escpos_designer.zip",
     "package": {
       "name": "escpos_designer.zip",
-      "url": "https://github.com/seb5594/hass-escpos-thermal-printing-designer-integration/releases/download/v2026.11.19/escpos_designer.zip",
-      "sha256": "ed6c954aebe737e21528c7243f3edd20d216397f2379ed88edddd14f4e8545cc"
+      "url": "https://github.com/seb5594/hass-escpos-thermal-printing-designer-integration/releases/download/v2026.11.19.1/escpos_designer.zip",
+      "sha256": "bf4979ff1e4fa11cca307a0904f934c03053e7d13f9ed39a7379e3262b1fb617"
     },
     "homeassistant": "2025.1.0",
     "description": "Design and print labels, shopping lists, QR codes and notes on ESC/POS thermal printers – with a Material designer panel for Home Assistant",
     "changelog": "CHANGELOG.md",
     "ci": "ci.yml",
-    "tests": "",
+    "tests": "4 passed",
     "logo": "assets/brands/escpos_designer.png",
-    "logo_source": "https://github.com/seb5594/hass-escpos-thermal-printing-designer-integration/releases/tag/v2026.11.19 (escpos_designer.zip: brand/logo.png)"
+    "logo_source": "https://github.com/seb5594/hass-escpos-thermal-printing-designer-integration/releases/tag/v2026.11.19.1 (escpos_designer.zip: brand/logo.png)"
   },
   {
     "repository": "seb5594/hass-google_translator-integration",
