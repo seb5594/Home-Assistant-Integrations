@@ -9,7 +9,7 @@
   <a href="https://github.com/seb5594/Home-Assistant-Integrations/releases/latest"><img src="https://img.shields.io/github/v/release/seb5594/Home-Assistant-Integrations?display_name=tag&amp;label=hub%20release&amp;color=1877A5" alt="Latest hub release"></a>
   <a href="https://github.com/seb5594/Home-Assistant-Integrations/releases"><img src="https://img.shields.io/github/downloads/seb5594/Home-Assistant-Integrations/total?label=hub%20downloads&amp;color=1877A5" alt="Hub release downloads"></a>
   <a href="https://github.com/seb5594/Home-Assistant-Integrations/stargazers"><img src="https://img.shields.io/github/stars/seb5594/Home-Assistant-Integrations?label=stars" alt="GitHub stars"></a><br>
-  <img src="https://img.shields.io/badge/integrations-10-1877A5" alt="10 integrations">
+  <img src="https://img.shields.io/badge/integrations-11-1877A5" alt="11 integrations">
   <a href="https://github.com/seb5594/Home-Assistant-Integrations/actions/workflows/ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/seb5594/Home-Assistant-Integrations/ci.yml?branch=main&amp;label=catalog%20checks" alt="Catalog checks"></a>
   <a href="https://github.com/seb5594/Home-Assistant-Integrations/actions/workflows/update.yml"><img src="https://img.shields.io/github/actions/workflow/status/seb5594/Home-Assistant-Integrations/update.yml?branch=main&amp;label=catalog%20sync" alt="Catalog sync"></a>
 </p>
@@ -53,8 +53,9 @@ Automatic registration uses HACS' internal runtime registry and is **experimenta
 | <img src="assets/brands/ubpet_cat_litter_hub.png" height="44" alt=""> | **[Cat Litter Hub – UPET / UBPet / AIRROBO / Robotail / Meowant](https://github.com/seb5594/hass-ubpet_cat_litter_hub-integration)** | [2026.11.19.1](https://github.com/seb5594/hass-ubpet_cat_litter_hub-integration/releases/tag/2026.11.19.1) | 2023.6.0 | [Install](https://my.home-assistant.io/redirect/hacs_repository/?owner=seb5594&repository=hass-ubpet_cat_litter_hub-integration&category=integration) |
 | <img src="assets/brands/custom_integration_translator.png" height="44" alt=""> | **[Custom Integration Translator](https://github.com/seb5594/hass-custom_integrations_translator-integration)** | [v2026.11.19.1](https://github.com/seb5594/hass-custom_integrations_translator-integration/releases/tag/v2026.11.19.1) | 2023.7.0 | [Install](https://my.home-assistant.io/redirect/hacs_repository/?owner=seb5594&repository=hass-custom_integrations_translator-integration&category=integration) |
 | <img src="assets/brands/deepl_translator.png" height="44" alt=""> | **[DeepL Translator](https://github.com/seb5594/hass-deepl_translator-integration)** | [2026.11.17.1](https://github.com/seb5594/hass-deepl_translator-integration/releases/tag/2026.11.17.1) | 2023.7.0 | [Install](https://my.home-assistant.io/redirect/hacs_repository/?owner=seb5594&repository=hass-deepl_translator-integration&category=integration) |
+| <img src="assets/brands/escpos_printer.png" height="44" alt=""> | **[ESC/POS Thermal Printer](https://github.com/seb5594/hass-escpos-thermal-printer-integration)** | [2026.11.19](https://github.com/seb5594/hass-escpos-thermal-printer-integration/releases/tag/2026.11.19) | 2026.5.0 | [Install](https://my.home-assistant.io/redirect/hacs_repository/?owner=seb5594&repository=hass-escpos-thermal-printer-integration&category=integration) |
 | <img src="assets/brands/escpos_designer.png" height="44" alt=""> | **[ESC/POS Thermal Printer Designer](https://github.com/seb5594/hass-escpos-thermal-printing-designer-integration)** | [v2026.11.19](https://github.com/seb5594/hass-escpos-thermal-printing-designer-integration/releases/tag/v2026.11.19) | 2025.1.0 | [Install](https://my.home-assistant.io/redirect/hacs_repository/?owner=seb5594&repository=hass-escpos-thermal-printing-designer-integration&category=integration) |
-| <img src="assets/brands/google_translator.png" height="44" alt=""> | **[Google Translator](https://github.com/seb5594/hass-google_translator-integration)** | [v2026.11.17.1](https://github.com/seb5594/hass-google_translator-integration/releases/tag/v2026.11.17.1) | 2023.7.0 | [Install](https://my.home-assistant.io/redirect/hacs_repository/?owner=seb5594&repository=hass-google_translator-integration&category=integration) |
+| <img src="assets/brands/google_translator.png" height="44" alt=""> | **[Google Translator](https://github.com/seb5594/hass-google_translator-integration)** | [2026.19.11](https://github.com/seb5594/hass-google_translator-integration/releases/tag/2026.19.11) | 2023.7.0 | [Install](https://my.home-assistant.io/redirect/hacs_repository/?owner=seb5594&repository=hass-google_translator-integration&category=integration) |
 | <img src="assets/brands/medication_monitoring.png" height="44" alt=""> | **[Medication Monitoring](https://github.com/seb5594/hass-medication_monitoring-integration)** | [2026.11.19.0](https://github.com/seb5594/hass-medication_monitoring-integration/releases/tag/2026.11.19.0) | 2022.8.0 | [Install](https://my.home-assistant.io/redirect/hacs_repository/?owner=seb5594&repository=hass-medication_monitoring-integration&category=integration) |
 | <img src="assets/brands/ninebot_e_scooters.png" height="44" alt=""> | **[Ninebot E-Scooters](https://github.com/seb5594/hass-ninebot_e_scooters-integration)** | [v2026.11.18.1](https://github.com/seb5594/hass-ninebot_e_scooters-integration/releases/tag/v2026.11.18.1) | 2023.2.0 | [Install](https://my.home-assistant.io/redirect/hacs_repository/?owner=seb5594&repository=hass-ninebot_e_scooters-integration&category=integration) |
 | <img src="assets/brands/pulseaudio_loopback.png" height="44" alt=""> | **[PulseAudio Loopback Extended](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration)** | [v1.0.0](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration/releases/tag/v1.0.0) | 2022.4.0 | [Install](https://my.home-assistant.io/redirect/hacs_repository/?owner=seb5594&repository=hass-pulseaudio_loopback_extended-integration&category=integration) |
@@ -152,6 +153,27 @@ DeepL translation for Home Assistant: API and MCP backends, structured text tran
 
 ---
 
+### <img src="assets/brands/escpos_printer.png" height="48" alt=""> ESC/POS Thermal Printer
+
+Home Assistant / HACS integration for network/usb/serial/bluetooth  thermal printers
+
+[![release: 2026.11.19](https://img.shields.io/static/v1?label=release&message=2026.11.19&color=1877A5&style=flat)](https://github.com/seb5594/hass-escpos-thermal-printer-integration/releases/tag/2026.11.19) ![Home Assistant: ≥ 2026.5.0](https://img.shields.io/static/v1?label=Home%20Assistant&message=%E2%89%A5%202026.5.0&color=1877A5&style=flat)<br>
+  [![release downloads](https://img.shields.io/github/downloads/seb5594/hass-escpos-thermal-printer-integration/2026.11.19/total?label=downloads)](https://github.com/seb5594/hass-escpos-thermal-printer-integration/releases/download/2026.11.19/escpos_printer.zip) [![issues](https://img.shields.io/github/issues/seb5594/hass-escpos-thermal-printer-integration?label=issues)](https://github.com/seb5594/hass-escpos-thermal-printer-integration/issues)
+
+[**Open in HACS**](https://my.home-assistant.io/redirect/hacs_repository/?owner=seb5594&repository=hass-escpos-thermal-printer-integration&category=integration) · [Release package](https://github.com/seb5594/hass-escpos-thermal-printer-integration/releases/download/2026.11.19/escpos_printer.zip) · [Documentation](https://github.com/seb5594/hass-escpos-thermal-printer-integration/tree/2026.11.19) · [Changelog](https://github.com/seb5594/hass-escpos-thermal-printer-integration/blob/2026.11.19/CHANGELOG.md)
+
+<details>
+<summary>Release and source details</summary>
+
+- Domain: `escpos_printer`
+- Published release: [2026.11.19](https://github.com/seb5594/hass-escpos-thermal-printer-integration/releases/tag/2026.11.19)
+- Source: [`integrations/escpos_printer`](integrations/escpos_printer) (Git submodule)
+- Pinned commit: [`e067463`](https://github.com/seb5594/hass-escpos-thermal-printer-integration/commit/e067463a3a8fbaae91698fe354cdd9d73e0fbc4a)
+
+</details>
+
+---
+
 ### <img src="assets/brands/escpos_designer.png" height="48" alt=""> ESC/POS Thermal Printer Designer
 
 Design and print labels, shopping lists, QR codes and notes on ESC/POS thermal printers – with a Material designer panel for Home Assistant
@@ -177,18 +199,18 @@ Design and print labels, shopping lists, QR codes and notes on ESC/POS thermal p
 
 Google Translator for Home Assistant
 
-[![release: v2026.11.17.1](https://img.shields.io/static/v1?label=release&message=v2026.11.17.1&color=1877A5&style=flat)](https://github.com/seb5594/hass-google_translator-integration/releases/tag/v2026.11.17.1) ![Home Assistant: ≥ 2023.7.0](https://img.shields.io/static/v1?label=Home%20Assistant&message=%E2%89%A5%202023.7.0&color=1877A5&style=flat)<br>
-[![release checks](https://img.shields.io/github/check-runs/seb5594/hass-google_translator-integration/033e4a8571a9a1eb4e48eacd8546aae0cfd0f232?label=release%20checks)](https://github.com/seb5594/hass-google_translator-integration/commit/033e4a8571a9a1eb4e48eacd8546aae0cfd0f232/checks)  [![release downloads](https://img.shields.io/github/downloads/seb5594/hass-google_translator-integration/v2026.11.17.1/total?label=downloads)](https://github.com/seb5594/hass-google_translator-integration/releases/download/v2026.11.17.1/google_translator.zip) [![issues](https://img.shields.io/github/issues/seb5594/hass-google_translator-integration?label=issues)](https://github.com/seb5594/hass-google_translator-integration/issues)
+[![release: 2026.19.11](https://img.shields.io/static/v1?label=release&message=2026.19.11&color=1877A5&style=flat)](https://github.com/seb5594/hass-google_translator-integration/releases/tag/2026.19.11) ![Home Assistant: ≥ 2023.7.0](https://img.shields.io/static/v1?label=Home%20Assistant&message=%E2%89%A5%202023.7.0&color=1877A5&style=flat)<br>
+[![release checks](https://img.shields.io/github/check-runs/seb5594/hass-google_translator-integration/20df6243f5149f64bbe7f1849bb0e907e5f38424?label=release%20checks)](https://github.com/seb5594/hass-google_translator-integration/commit/20df6243f5149f64bbe7f1849bb0e907e5f38424/checks) ![tests: 23 passed](https://img.shields.io/static/v1?label=tests&message=23%20passed&color=2F855A&style=flat) [![release downloads](https://img.shields.io/github/downloads/seb5594/hass-google_translator-integration/2026.19.11/total?label=downloads)](https://github.com/seb5594/hass-google_translator-integration/releases/download/2026.19.11/google_translator.zip) [![issues](https://img.shields.io/github/issues/seb5594/hass-google_translator-integration?label=issues)](https://github.com/seb5594/hass-google_translator-integration/issues)
 
-[**Open in HACS**](https://my.home-assistant.io/redirect/hacs_repository/?owner=seb5594&repository=hass-google_translator-integration&category=integration) · [Release package](https://github.com/seb5594/hass-google_translator-integration/releases/download/v2026.11.17.1/google_translator.zip) · [Documentation](https://github.com/seb5594/hass-google_translator-integration/tree/v2026.11.17.1) · [Changelog](https://github.com/seb5594/hass-google_translator-integration/blob/v2026.11.17.1/CHANGELOG.md)
+[**Open in HACS**](https://my.home-assistant.io/redirect/hacs_repository/?owner=seb5594&repository=hass-google_translator-integration&category=integration) · [Release package](https://github.com/seb5594/hass-google_translator-integration/releases/download/2026.19.11/google_translator.zip) · [Documentation](https://github.com/seb5594/hass-google_translator-integration/tree/2026.19.11) · [Changelog](https://github.com/seb5594/hass-google_translator-integration/blob/2026.19.11/CHANGELOG.md)
 
 <details>
 <summary>Release and source details</summary>
 
 - Domain: `google_translator`
-- Published release: [v2026.11.17.1](https://github.com/seb5594/hass-google_translator-integration/releases/tag/v2026.11.17.1)
+- Published release: [2026.19.11](https://github.com/seb5594/hass-google_translator-integration/releases/tag/2026.19.11)
 - Source: [`integrations/google_translator`](integrations/google_translator) (Git submodule)
-- Pinned commit: [`033e4a8`](https://github.com/seb5594/hass-google_translator-integration/commit/033e4a8571a9a1eb4e48eacd8546aae0cfd0f232)
+- Pinned commit: [`20df624`](https://github.com/seb5594/hass-google_translator-integration/commit/20df6243f5149f64bbe7f1849bb0e907e5f38424)
 
 </details>
 

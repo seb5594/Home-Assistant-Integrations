@@ -38,6 +38,15 @@
       "package_url": "https://github.com/seb5594/hass-deepl_translator-integration/releases/download/2026.11.17.1/deepl_translator.zip"
     },
     {
+      "repository": "seb5594/hass-escpos-thermal-printer-integration",
+      "domain": "escpos_printer",
+      "name": "ESC/POS Thermal Printer",
+      "version": "2026.11.19",
+      "release_tag": "2026.11.19",
+      "release_url": "https://github.com/seb5594/hass-escpos-thermal-printer-integration/releases/tag/2026.11.19",
+      "package_url": "https://github.com/seb5594/hass-escpos-thermal-printer-integration/releases/download/2026.11.19/escpos_printer.zip"
+    },
+    {
       "repository": "seb5594/hass-escpos-thermal-printing-designer-integration",
       "domain": "escpos_designer",
       "name": "ESC/POS Thermal Printer Designer",
@@ -50,10 +59,10 @@
       "repository": "seb5594/hass-google_translator-integration",
       "domain": "google_translator",
       "name": "Google Translator",
-      "version": "2026.11.17.1",
-      "release_tag": "v2026.11.17.1",
-      "release_url": "https://github.com/seb5594/hass-google_translator-integration/releases/tag/v2026.11.17.1",
-      "package_url": "https://github.com/seb5594/hass-google_translator-integration/releases/download/v2026.11.17.1/google_translator.zip"
+      "version": "2026.19.11",
+      "release_tag": "2026.19.11",
+      "release_url": "https://github.com/seb5594/hass-google_translator-integration/releases/tag/2026.19.11",
+      "package_url": "https://github.com/seb5594/hass-google_translator-integration/releases/download/2026.19.11/google_translator.zip"
     },
     {
       "repository": "seb5594/hass-medication_monitoring-integration",

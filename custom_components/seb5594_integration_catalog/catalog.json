@@ -92,6 +92,29 @@
     "logo_source": "https://github.com/seb5594/hass-deepl_translator-integration/releases/tag/2026.11.17.1 (deepl_translator.zip: brand/logo.png)"
   },
   {
+    "repository": "seb5594/hass-escpos-thermal-printer-integration",
+    "commit": "e067463a3a8fbaae91698fe354cdd9d73e0fbc4a",
+    "domain": "escpos_printer",
+    "name": "ESC/POS Thermal Printer",
+    "version": "2026.11.19",
+    "release_tag": "2026.11.19",
+    "release_url": "https://github.com/seb5594/hass-escpos-thermal-printer-integration/releases/tag/2026.11.19",
+    "published_at": "2026-11-19T19:49:23Z",
+    "package_url": "https://github.com/seb5594/hass-escpos-thermal-printer-integration/releases/download/2026.11.19/escpos_printer.zip",
+    "package": {
+      "name": "escpos_printer.zip",
+      "url": "https://github.com/seb5594/hass-escpos-thermal-printer-integration/releases/download/2026.11.19/escpos_printer.zip",
+      "sha256": "8555db8c6bd34d08f3e47741cfbb49fa69b82d8edf35953804a0fcc382963818"
+    },
+    "homeassistant": "2026.5.0",
+    "description": "Home Assistant / HACS integration for network/usb/serial/bluetooth  thermal printers",
+    "changelog": "CHANGELOG.md",
+    "ci": "",
+    "tests": "",
+    "logo": "assets/brands/escpos_printer.png",
+    "logo_source": "https://github.com/seb5594/hass-escpos-thermal-printer-integration/releases/tag/2026.11.19 (escpos_printer.zip: brand/logo.png)"
+  },
+  {
     "repository": "seb5594/hass-escpos-thermal-printing-designer-integration",
     "commit": "ba31516e49dc980d69726efa4e6e9039345e1022",
     "domain": "escpos_designer",
@@ -116,26 +139,26 @@
   },
   {
     "repository": "seb5594/hass-google_translator-integration",
-    "commit": "033e4a8571a9a1eb4e48eacd8546aae0cfd0f232",
+    "commit": "20df6243f5149f64bbe7f1849bb0e907e5f38424",
     "domain": "google_translator",
     "name": "Google Translator",
-    "version": "2026.11.17.1",
-    "release_tag": "v2026.11.17.1",
-    "release_url": "https://github.com/seb5594/hass-google_translator-integration/releases/tag/v2026.11.17.1",
-    "published_at": "2026-11-17T22:44:56Z",
-    "package_url": "https://github.com/seb5594/hass-google_translator-integration/releases/download/v2026.11.17.1/google_translator.zip",
+    "version": "2026.19.11",
+    "release_tag": "2026.19.11",
+    "release_url": "https://github.com/seb5594/hass-google_translator-integration/releases/tag/2026.19.11",
+    "published_at": "2026-11-19T19:56:35Z",
+    "package_url": "https://github.com/seb5594/hass-google_translator-integration/releases/download/2026.19.11/google_translator.zip",
     "package": {
       "name": "google_translator.zip",
-      "url": "https://github.com/seb5594/hass-google_translator-integration/releases/download/v2026.11.17.1/google_translator.zip",
-      "sha256": "f78c1275d32ebd8439cce7c4067baf1141575be3b5de3ebc5c576f6da200cc24"
+      "url": "https://github.com/seb5594/hass-google_translator-integration/releases/download/2026.19.11/google_translator.zip",
+      "sha256": "4bdb72026bec24a32a29058d22043413f9ddd91ebc9acea54b1cfb1359d6e78f"
     },
     "homeassistant": "2023.7.0",
     "description": "Google Translator for Home Assistant",
     "changelog": "CHANGELOG.md",
     "ci": "ci.yml",
-    "tests": "",
+    "tests": "23 passed",
     "logo": "assets/brands/google_translator.png",
-    "logo_source": "https://github.com/seb5594/hass-google_translator-integration/releases/tag/v2026.11.17.1 (google_translator.zip: brand/icon.png)"
+    "logo_source": "https://github.com/seb5594/hass-google_translator-integration/releases/tag/2026.19.11 (google_translator.zip: brand/icon.png)"
   },
   {
     "repository": "seb5594/hass-medication_monitoring-integration",
