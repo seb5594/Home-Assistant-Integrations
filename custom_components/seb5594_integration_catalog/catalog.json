@@ -120,13 +120,13 @@
     "domain": "medication_monitoring",
     "name": "Medication Monitoring",
     "version": "2026.11.19.0",
-    "release_tag": "v2026.11.19.0",
-    "release_url": "https://github.com/seb5594/hass-medication_monitoring-integration/releases/tag/v2026.11.19.0",
+    "release_tag": "2026.11.19.0",
+    "release_url": "https://github.com/seb5594/hass-medication_monitoring-integration/releases/tag/2026.11.19.0",
     "published_at": "2026-11-19T17:31:59Z",
-    "package_url": "https://github.com/seb5594/hass-medication_monitoring-integration/releases/download/v2026.11.19.0/medication_monitoring.zip",
+    "package_url": "https://github.com/seb5594/hass-medication_monitoring-integration/releases/download/2026.11.19.0/medication_monitoring.zip",
     "package": {
       "name": "medication_monitoring.zip",
-      "url": "https://github.com/seb5594/hass-medication_monitoring-integration/releases/download/v2026.11.19.0/medication_monitoring.zip",
+      "url": "https://github.com/seb5594/hass-medication_monitoring-integration/releases/download/2026.11.19.0/medication_monitoring.zip",
       "sha256": "c63d9c28447acc08956eba53501ecc22d26df47cfdda885a5b949d8540e1af5b"
     },
     "homeassistant": "2022.8.0",
@@ -135,7 +135,7 @@
     "ci": "ci.yml",
     "tests": "12 passed",
     "logo": "assets/brands/medication_monitoring.png",
-    "logo_source": "https://github.com/seb5594/hass-medication_monitoring-integration/releases/tag/v2026.11.19.0 (medication_monitoring.zip: brand/icon.png)"
+    "logo_source": "https://github.com/seb5594/hass-medication_monitoring-integration/releases/tag/2026.11.19.0 (medication_monitoring.zip: brand/icon.png)"
   },
   {
     "repository": "seb5594/hass-ninebot_e_scooters-integration",
