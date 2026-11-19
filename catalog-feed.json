@@ -59,10 +59,10 @@
       "repository": "seb5594/hass-ninebot_e_scooters-integration",
       "domain": "ninebot_e_scooters",
       "name": "Ninebot E-Scooters",
-      "version": "2026.11.14.2",
-      "release_tag": "v2026.11.14.2",
-      "release_url": "https://github.com/seb5594/hass-ninebot_e_scooters-integration/releases/tag/v2026.11.14.2",
-      "package_url": "https://github.com/seb5594/hass-ninebot_e_scooters-integration/releases/download/v2026.11.14.2/ninebot_e_scooters.zip"
+      "version": "2026.11.18.1",
+      "release_tag": "v2026.11.18.1",
+      "release_url": "https://github.com/seb5594/hass-ninebot_e_scooters-integration/releases/tag/v2026.11.18.1",
+      "package_url": "https://github.com/seb5594/hass-ninebot_e_scooters-integration/releases/download/v2026.11.18.1/ninebot_e_scooters.zip"
     },
     {
       "repository": "seb5594/hass-pulseaudio_loopback_extended-integration",
