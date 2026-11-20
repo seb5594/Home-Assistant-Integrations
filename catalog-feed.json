@@ -41,10 +41,10 @@
       "repository": "seb5594/hass-escpos-thermal-printer-integration",
       "domain": "escpos_printer",
       "name": "ESC/POS Thermal Printer",
-      "version": "2026.11.19",
-      "release_tag": "2026.11.19",
-      "release_url": "https://github.com/seb5594/hass-escpos-thermal-printer-integration/releases/tag/2026.11.19",
-      "package_url": "https://github.com/seb5594/hass-escpos-thermal-printer-integration/releases/download/2026.11.19/escpos_printer.zip"
+      "version": "2026.11.19.2",
+      "release_tag": "2026.11.19.2",
+      "release_url": "https://github.com/seb5594/hass-escpos-thermal-printer-integration/releases/tag/2026.11.19.2",
+      "package_url": "https://github.com/seb5594/hass-escpos-thermal-printer-integration/releases/download/2026.11.19.2/escpos_printer.zip"
     },
     {
       "repository": "seb5594/hass-escpos-thermal-printing-designer-integration",

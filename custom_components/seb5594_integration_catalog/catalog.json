@@ -93,18 +93,18 @@
   },
   {
     "repository": "seb5594/hass-escpos-thermal-printer-integration",
-    "commit": "e067463a3a8fbaae91698fe354cdd9d73e0fbc4a",
+    "commit": "6f2b3b471deba44a69e306c5cd4cccdbfcb66062",
     "domain": "escpos_printer",
     "name": "ESC/POS Thermal Printer",
-    "version": "2026.11.19",
-    "release_tag": "2026.11.19",
-    "release_url": "https://github.com/seb5594/hass-escpos-thermal-printer-integration/releases/tag/2026.11.19",
-    "published_at": "2026-11-19T19:49:23Z",
-    "package_url": "https://github.com/seb5594/hass-escpos-thermal-printer-integration/releases/download/2026.11.19/escpos_printer.zip",
+    "version": "2026.11.19.2",
+    "release_tag": "2026.11.19.2",
+    "release_url": "https://github.com/seb5594/hass-escpos-thermal-printer-integration/releases/tag/2026.11.19.2",
+    "published_at": "2026-11-19T23:26:59Z",
+    "package_url": "https://github.com/seb5594/hass-escpos-thermal-printer-integration/releases/download/2026.11.19.2/escpos_printer.zip",
     "package": {
       "name": "escpos_printer.zip",
-      "url": "https://github.com/seb5594/hass-escpos-thermal-printer-integration/releases/download/2026.11.19/escpos_printer.zip",
-      "sha256": "8555db8c6bd34d08f3e47741cfbb49fa69b82d8edf35953804a0fcc382963818"
+      "url": "https://github.com/seb5594/hass-escpos-thermal-printer-integration/releases/download/2026.11.19.2/escpos_printer.zip",
+      "sha256": "6b0fb7bf7c673a74a1c1ef11c2208c2fd8a2a542fb4ef1286cf366c0704e6376"
     },
     "homeassistant": "2026.5.0",
     "description": "Home Assistant / HACS integration for network/usb/serial/bluetooth  thermal printers",
@@ -112,7 +112,7 @@
     "ci": "",
     "tests": "",
     "logo": "assets/brands/escpos_printer.png",
-    "logo_source": "https://github.com/seb5594/hass-escpos-thermal-printer-integration/releases/tag/2026.11.19 (escpos_printer.zip: brand/logo.png)"
+    "logo_source": "https://github.com/seb5594/hass-escpos-thermal-printer-integration/releases/tag/2026.11.19.2 (escpos_printer.zip: brand/logo.png)"
   },
   {
     "repository": "seb5594/hass-escpos-thermal-printing-designer-integration",
