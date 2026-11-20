@@ -130,7 +130,7 @@
       "sha256": "146bb29aa37a0f0a1cb955198caebe39b68a4b127022dc8022896d7eb7925c33"
     },
     "homeassistant": "2024.12.0",
-    "description": "Design and print labels, shopping lists, QR codes and notes on ESC/POS thermal printers – with a Material designer panel for Home Assistant",
+    "description": "Design and print labels, shopping lists, QR codes and notes on ESC/POS thermal printers – with a Material designer panel for Home Assistant.",
     "changelog": "CHANGELOG.md",
     "ci": "ci.yml",
     "tests": "4 passed",
