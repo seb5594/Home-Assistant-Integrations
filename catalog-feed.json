@@ -59,10 +59,10 @@
       "repository": "seb5594/hass-google_translator-integration",
       "domain": "google_translator",
       "name": "Google Translator",
-      "version": "2026.19.11",
-      "release_tag": "2026.19.11",
-      "release_url": "https://github.com/seb5594/hass-google_translator-integration/releases/tag/2026.19.11",
-      "package_url": "https://github.com/seb5594/hass-google_translator-integration/releases/download/2026.19.11/google_translator.zip"
+      "version": "2026.11.20",
+      "release_tag": "2026.11.20",
+      "release_url": "https://github.com/seb5594/hass-google_translator-integration/releases/tag/2026.11.20",
+      "package_url": "https://github.com/seb5594/hass-google_translator-integration/releases/download/2026.11.20/google_translator.zip"
     },
     {
       "repository": "seb5594/hass-medication_monitoring-integration",
