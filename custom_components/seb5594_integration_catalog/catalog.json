@@ -185,26 +185,26 @@
   },
   {
     "repository": "seb5594/hass-ninebot_e_scooters-integration",
-    "commit": "572768aa2ce5797bab4748ea29cf768539132f48",
+    "commit": "3bdb2802f5743e64b5a689fee3285cf8e516a3e8",
     "domain": "ninebot_e_scooters",
     "name": "Ninebot E-Scooters",
-    "version": "2026.11.18.1",
-    "release_tag": "v2026.11.18.1",
-    "release_url": "https://github.com/seb5594/hass-ninebot_e_scooters-integration/releases/tag/v2026.11.18.1",
-    "published_at": "2026-11-19T13:34:40Z",
-    "package_url": "https://github.com/seb5594/hass-ninebot_e_scooters-integration/releases/download/v2026.11.18.1/ninebot_e_scooters.zip",
+    "version": "2026.11.20",
+    "release_tag": "2026.11.20",
+    "release_url": "https://github.com/seb5594/hass-ninebot_e_scooters-integration/releases/tag/2026.11.20",
+    "published_at": "2026-11-20T00:16:10Z",
+    "package_url": "https://github.com/seb5594/hass-ninebot_e_scooters-integration/releases/download/2026.11.20/ninebot_e_scooters.zip",
     "package": {
       "name": "ninebot_e_scooters.zip",
-      "url": "https://github.com/seb5594/hass-ninebot_e_scooters-integration/releases/download/v2026.11.18.1/ninebot_e_scooters.zip",
-      "sha256": "897a0b58fdaca5965913f3aff0b446b7ddb0f7910d59977fa903dc2ff601782e"
+      "url": "https://github.com/seb5594/hass-ninebot_e_scooters-integration/releases/download/2026.11.20/ninebot_e_scooters.zip",
+      "sha256": "9a588eca52b3146d297653e0b1a1aeaf7cbd35e4046dc0c22117787295814c37"
     },
     "homeassistant": "2023.2.0",
     "description": "A custom integration for Ninebot and Xiaomi E-Scooter's in Home Assistant",
     "changelog": "CHANGELOG.md",
     "ci": "ci.yml",
-    "tests": "332 passed",
+    "tests": "328 passed",
     "logo": "assets/brands/ninebot_e_scooters.png",
-    "logo_source": "https://github.com/seb5594/hass-ninebot_e_scooters-integration/releases/tag/v2026.11.18.1 (ninebot_e_scooters.zip: brand/logo.png)"
+    "logo_source": "https://github.com/seb5594/hass-ninebot_e_scooters-integration/releases/tag/2026.11.20 (ninebot_e_scooters.zip: brand/logo.png)"
   },
   {
     "repository": "seb5594/hass-pulseaudio_loopback_extended-integration",
