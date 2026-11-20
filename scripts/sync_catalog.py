@@ -8,6 +8,7 @@ come from an immutable source commit. A failed discovery never prunes entries.
 from __future__ import annotations
 
 import argparse
+import base64
 import hashlib
 import html
 import json
@@ -15,6 +16,7 @@ import os
 import re
 import stat
 import subprocess
+from datetime import datetime, timezone
 from io import BytesIO
 from pathlib import Path
 from urllib.error import HTTPError
@@ -173,23 +175,83 @@ def read_package(data):
         return {info.filename: archive.read(info) for info in infos if not info.is_dir()}
 
 
+def collect_statistics(items):
+    """Snapshot catalog membership and all published release asset downloads."""
+    commit = api("repos/hacs/default/commits/master")["sha"]
+    listing = api(f"repos/hacs/default/contents/integration?ref={commit}")
+    defaults = {name.casefold() for name in json.loads(base64.b64decode(listing["content"]))}
+    repositories = {}
+    for item in items:
+        repository = item["repository"]
+        total = 0
+        for page in range(1, 10000):
+            releases = api(f"repos/{repository}/releases?per_page=100&page={page}")
+            for release in releases:
+                if release["draft"]:
+                    continue
+                assets = release["assets"]
+                if len(assets) >= 30:
+                    assets = []
+                    asset_page = 1
+                    while True:
+                        batch = api(
+                            f"repos/{repository}/releases/{release['id']}/assets"
+                            f"?per_page=100&page={asset_page}"
+                        )
+                        assets.extend(batch)
+                        if len(batch) < 100:
+                            break
+                        asset_page += 1
+                total += sum(asset["download_count"] for asset in assets)
+            if len(releases) < 100:
+                break
+        repositories[repository] = {
+            "marketplace": repository.casefold() in defaults,
+            "downloads": total,
+        }
+    return {
+        "date": datetime.now(timezone.utc).date().isoformat(),
+        "catalog_commit": commit,
+        "repositories": repositories,
+    }
+
+
+def read_statistics():
+    """Use the checked-in snapshot when rendering without network access."""
+    path = ROOT / ".github/catalog-statistics.json"
+    return json.loads(path.read_text("utf-8")) if path.exists() else {}
+
+
+
 def badge(label, message, color="1877A5", url=""):
     src = f"https://img.shields.io/static/v1?label={quote(label)}&message={quote(message)}&color={color}&style=flat"
     image = f"![{label}: {message}]({src})"
     return f"[{image}]({url})" if url else image
 
 
-def render_readme(items):
+def render_readme(items, statistics=None):
     body = (ROOT / "templates/README.md").read_text("utf-8")
+    statistics = read_statistics() if statistics is None else statistics
+    repository_statistics = statistics.get("repositories", {})
     overview, cards = [], []
+    totals, listed = [], 0
     for item in items:
         repo = item["repository"]
         url = f"https://github.com/{repo}"
         hacs = f"https://my.home-assistant.io/redirect/hacs_repository/?owner={OWNER}&repository={repo.split('/')[1]}&category=integration"
+        stats = repository_statistics.get(repo, {})
+        membership = stats.get("marketplace")
+        marketplace = {True: "☑", False: "☐", None: "—"}[membership]
+        count = stats.get("downloads")
+        count_text = f"{count:,}" if count is not None else "—"
+        if count is not None:
+            totals.append(count)
+        listed += membership is True
         overview.append(
             f"| <img src=\"{item['logo']}\" height=\"44\" alt=\"\"> "
             f"| **[{item['name']}]({url})** | [{item['release_tag']}]({item['release_url']}) "
-            f"| {item['homeassistant'] or 'See documentation'} | [Install]({hacs}) |"
+            f"| {item['homeassistant'] or 'See documentation'} | {marketplace} "
+            f"| [{count_text}]({url}/releases) | [Install]({hacs}) |"
         )
         version = badge("release", item["release_tag"], url=item["release_url"])
         minimum = badge("Home Assistant", "≥ " + item["homeassistant"]) if item["homeassistant"] else ""
@@ -211,6 +273,23 @@ def render_readme(items):
             f"- Pinned commit: [`{item['commit'][:7]}`]({url}/commit/{item['commit']})\n\n"
             f"</details>\n"
         )
+    if len(totals) == len(items):
+        overview.append(
+            f"| | **Total · {len(items)} integrations** | | | **{listed} / {len(items)}** "
+            f"| **{sum(totals):,}** | |"
+        )
+    source = statistics.get("catalog_commit", "master")
+    summary = (
+        f"☑ Listed in the [official HACS / Marketplace catalog]"
+        f"(https://github.com/hacs/default/blob/{source}/integration). "
+        "☐ Available through a custom repository.\n\n"
+        "Downloads count release asset downloads across all published GitHub releases, including "
+        "pre-releases. GitHub-generated source archives are excluded. Repeat downloads count "
+        "again, so these figures do not measure unique users or active installations."
+    )
+    if statistics.get("date"):
+        summary += f" Data checked on {statistics['date']} (UTC), refreshed by the hourly catalog sync."
+    body = body.replace("{{STATISTICS}}", summary)
     body = body.replace("{{COUNT}}", str(len(items)))
     body = body.replace("{{OVERVIEW}}", "\n".join(overview))
     return body.replace("{{INTEGRATIONS}}", "\n---\n\n".join(cards))
@@ -258,7 +337,9 @@ def main():
         if not items or len({item["domain"] for item in items}) != len(items):
             raise ValueError("Discovery returned no integrations or duplicate domains; refusing to replace catalog")
         items.sort(key=lambda item: item["name"].casefold())
+        statistics = collect_statistics(items)
         sync_submodules(items)
+        write_json(ROOT / ".github/catalog-statistics.json", statistics)
         write_json(COMPONENT / "catalog.json", items)
         write_json(ROOT / ".github/catalog.json", [
             {"repository": item["repository"], "commit": item["commit"]} for item in items

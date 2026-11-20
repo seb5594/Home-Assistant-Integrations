@@ -47,9 +47,11 @@ Automatic registration uses HACS' internal runtime registry and is **experimenta
 
 ## At a glance
 
-| | Integration | Latest release | Minimum Home Assistant | Direct HACS install |
-| :---: | --- | --- | --- | --- |
+| | Integration | Latest release | Minimum Home Assistant | Marketplace | Downloads | Direct HACS install |
+| :---: | --- | --- | --- | :---: | ---: | --- |
 {{OVERVIEW}}
+
+{{STATISTICS}}
 
 ## Integrations
 

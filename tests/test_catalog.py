@@ -22,6 +22,27 @@ class CatalogTests(unittest.TestCase):
             self.assertNotIn(f"### [{item['domain']}]", rendered)
             self.assertTrue((ROOT / item["logo"]).is_file())
 
+    def test_marketplace_and_download_totals_use_the_snapshot(self):
+        items = self.items[:2]
+        statistics = {
+            "date": "2026-11-20",
+            "catalog_commit": "a" * 40,
+            "repositories": {
+                items[0]["repository"]: {"marketplace": True, "downloads": 1200},
+                items[1]["repository"]: {"marketplace": False, "downloads": 34},
+            },
+        }
+        rendered = render_readme(items, statistics)
+        self.assertIn("| ☑ | [1,200]", rendered)
+        self.assertIn("| ☐ | [34]", rendered)
+        self.assertIn("**1 / 2** | **1,234**", rendered)
+        self.assertIn("2026-11-20", rendered)
+
+    def test_missing_statistics_are_unknown_instead_of_zero(self):
+        rendered = render_readme(self.items[:1], {})
+        self.assertIn("| — | [—]", rendered)
+        self.assertNotIn("**Total", rendered)
+
     def test_lock_and_gitmodules_agree(self):
         legacy = json.loads((ROOT / ".github/catalog.json").read_text("utf-8"))
         self.assertEqual(legacy, [{"repository": x["repository"], "commit": x["commit"]} for x in self.items])

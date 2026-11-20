@@ -136,6 +136,7 @@ class HubPackageTests(unittest.TestCase):
                 patch("sys.argv", ["sync_catalog.py"]), \
                 patch.object(sync_catalog, "api", return_value=[{"name": "hass-new-integration", "full_name": item["repository"]}]), \
                 patch.object(sync_catalog, "inspect_repository", return_value=item), \
+                patch.object(sync_catalog, "collect_statistics", return_value={}), \
                 patch.object(sync_catalog, "sync_submodules"), \
                 patch.object(sync_catalog, "render_readme", return_value="Updated catalog"):
                 for version in ("2.0.0", "2.0.1"):
@@ -157,3 +158,29 @@ class HubPackageTests(unittest.TestCase):
                 self.assertFalse(any(name.startswith("custom_components/") for name in names))
             checksum = hashlib.sha256(package.read_bytes()).hexdigest()
             self.assertEqual((Path(directory) / "SHA256SUMS.txt").read_text().split()[0], checksum)
+
+
+class StatisticsTests(unittest.TestCase):
+    def test_downloads_include_all_pages_and_skip_drafts(self):
+        import base64
+
+        def response(path):
+            if path == "repos/hacs/default/commits/master":
+                return {"sha": "a" * 40}
+            if "/contents/integration?" in path:
+                return {"content": base64.b64encode(b'["seb5594/example"]').decode()}
+            if path.endswith("page=1"):
+                return [{"draft": False, "assets": [{"download_count": 2}]}] * 100
+            if path.endswith("page=2"):
+                return [
+                    {"draft": True, "assets": [{"download_count": 999}]},
+                    {"draft": False, "prerelease": True, "assets": [{"download_count": 3}]},
+                ]
+            raise AssertionError(path)
+
+        with patch.object(sync_catalog, "api", side_effect=response):
+            result = sync_catalog.collect_statistics([{"repository": "seb5594/example"}])
+        self.assertEqual(
+            result["repositories"]["seb5594/example"],
+            {"marketplace": True, "downloads": 203},
+        )
