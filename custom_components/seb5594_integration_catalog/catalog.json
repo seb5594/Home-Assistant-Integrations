@@ -47,18 +47,18 @@
   },
   {
     "repository": "seb5594/hass-custom_integrations_translator-integration",
-    "commit": "cf6b60adc66ad29b9b34451cd9fa692d76a6c79c",
+    "commit": "062eb6ad9e6351cc82f73b69c927805c6b06222b",
     "domain": "custom_integration_translator",
     "name": "Custom Integration Translator",
-    "version": "2026.11.19.1",
-    "release_tag": "2026.11.19.1",
-    "release_url": "https://github.com/seb5594/hass-custom_integrations_translator-integration/releases/tag/2026.11.19.1",
-    "published_at": "2026-11-20T00:15:16Z",
-    "package_url": "https://github.com/seb5594/hass-custom_integrations_translator-integration/releases/download/2026.11.19.1/custom_integration_translator.zip",
+    "version": "2026.11.20",
+    "release_tag": "2026.11.20",
+    "release_url": "https://github.com/seb5594/hass-custom_integrations_translator-integration/releases/tag/2026.11.20",
+    "published_at": "2026-11-20T00:39:01Z",
+    "package_url": "https://github.com/seb5594/hass-custom_integrations_translator-integration/releases/download/2026.11.20/custom_integration_translator.zip",
     "package": {
       "name": "custom_integration_translator.zip",
-      "url": "https://github.com/seb5594/hass-custom_integrations_translator-integration/releases/download/2026.11.19.1/custom_integration_translator.zip",
-      "sha256": "f8a070741d82479601996dda5216f0f74c560cafb321cea18ac130490b7b874e"
+      "url": "https://github.com/seb5594/hass-custom_integrations_translator-integration/releases/download/2026.11.20/custom_integration_translator.zip",
+      "sha256": "3c872250b8afeaa4ff184db44bd84595a400f1a54367bee0c9d9b5b7073b3f7c"
     },
     "homeassistant": "2023.7.0",
     "description": "Translate custom Home Assistant integrations with DeepL, phrase selection, usage previews and recoverable originals.",
@@ -66,22 +66,22 @@
     "ci": "ci.yml",
     "tests": "14 passed",
     "logo": "assets/brands/custom_integration_translator.png",
-    "logo_source": "https://github.com/seb5594/hass-custom_integrations_translator-integration/releases/tag/2026.11.19.1 (custom_integration_translator.zip: brand/icon.png)"
+    "logo_source": "https://github.com/seb5594/hass-custom_integrations_translator-integration/releases/tag/2026.11.20 (custom_integration_translator.zip: brand/icon.png)"
   },
   {
     "repository": "seb5594/hass-deepl_translator-integration",
-    "commit": "305fd67c7885a959ced0deefbd2100c0e1726e41",
+    "commit": "2a39e2aaa061d432a8ff7fa9df2a88d39e5e7109",
     "domain": "deepl_translator",
     "name": "DeepL Translator",
-    "version": "2026.11.17.1",
-    "release_tag": "2026.11.17.1",
-    "release_url": "https://github.com/seb5594/hass-deepl_translator-integration/releases/tag/2026.11.17.1",
-    "published_at": "2026-11-17T16:04:08Z",
-    "package_url": "https://github.com/seb5594/hass-deepl_translator-integration/releases/download/2026.11.17.1/deepl_translator.zip",
+    "version": "2026.11.20",
+    "release_tag": "2026.11.20",
+    "release_url": "https://github.com/seb5594/hass-deepl_translator-integration/releases/tag/2026.11.20",
+    "published_at": "2026-11-20T00:38:57Z",
+    "package_url": "https://github.com/seb5594/hass-deepl_translator-integration/releases/download/2026.11.20/deepl_translator.zip",
     "package": {
       "name": "deepl_translator.zip",
-      "url": "https://github.com/seb5594/hass-deepl_translator-integration/releases/download/2026.11.17.1/deepl_translator.zip",
-      "sha256": "3ba087d9c910ff0f316ca793d8b6e5b63c2787a1e94a65ca50e4b851a1455713"
+      "url": "https://github.com/seb5594/hass-deepl_translator-integration/releases/download/2026.11.20/deepl_translator.zip",
+      "sha256": "696f97bda83720527435ee53df169cf365fe6c44a3d37ee8c9933ab295d29389"
     },
     "homeassistant": "2023.7.0",
     "description": "DeepL translation for Home Assistant: API and MCP backends, structured text translation, caching and usage sensors.",
@@ -89,7 +89,7 @@
     "ci": "ci.yml",
     "tests": "40 passed",
     "logo": "assets/brands/deepl_translator.png",
-    "logo_source": "https://github.com/seb5594/hass-deepl_translator-integration/releases/tag/2026.11.17.1 (deepl_translator.zip: brand/logo.png)"
+    "logo_source": "https://github.com/seb5594/hass-deepl_translator-integration/releases/tag/2026.11.20 (deepl_translator.zip: brand/logo.png)"
   },
   {
     "repository": "seb5594/hass-escpos-thermal-printer-integration",

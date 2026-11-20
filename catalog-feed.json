@@ -23,19 +23,19 @@
       "repository": "seb5594/hass-custom_integrations_translator-integration",
       "domain": "custom_integration_translator",
       "name": "Custom Integration Translator",
-      "version": "2026.11.19.1",
-      "release_tag": "2026.11.19.1",
-      "release_url": "https://github.com/seb5594/hass-custom_integrations_translator-integration/releases/tag/2026.11.19.1",
-      "package_url": "https://github.com/seb5594/hass-custom_integrations_translator-integration/releases/download/2026.11.19.1/custom_integration_translator.zip"
+      "version": "2026.11.20",
+      "release_tag": "2026.11.20",
+      "release_url": "https://github.com/seb5594/hass-custom_integrations_translator-integration/releases/tag/2026.11.20",
+      "package_url": "https://github.com/seb5594/hass-custom_integrations_translator-integration/releases/download/2026.11.20/custom_integration_translator.zip"
     },
     {
       "repository": "seb5594/hass-deepl_translator-integration",
       "domain": "deepl_translator",
       "name": "DeepL Translator",
-      "version": "2026.11.17.1",
-      "release_tag": "2026.11.17.1",
-      "release_url": "https://github.com/seb5594/hass-deepl_translator-integration/releases/tag/2026.11.17.1",
-      "package_url": "https://github.com/seb5594/hass-deepl_translator-integration/releases/download/2026.11.17.1/deepl_translator.zip"
+      "version": "2026.11.20",
+      "release_tag": "2026.11.20",
+      "release_url": "https://github.com/seb5594/hass-deepl_translator-integration/releases/tag/2026.11.20",
+      "package_url": "https://github.com/seb5594/hass-deepl_translator-integration/releases/download/2026.11.20/deepl_translator.zip"
     },
     {
       "repository": "seb5594/hass-escpos-thermal-printer-integration",

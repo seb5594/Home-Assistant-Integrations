@@ -4,8 +4,8 @@ Source graphics retain their original rights and licenses.
 
 - **Car Tires Season** (`assets/brands/car_tires_season.png`): https://github.com/seb5594/hass-car_tires_season-integration/releases/tag/2026.11.19 (car_tires_season.zip: brand/icon.png)
 - **Cat Litter Hub – UPET / UBPet / AIRROBO / Robotail / Meowant** (`assets/brands/ubpet_cat_litter_hub.png`): https://github.com/seb5594/hass-ubpet_cat_litter_hub-integration/releases/tag/2026.11.19.1 (ubpet_cat_litter_hub.zip: brand/logo.png)
-- **Custom Integration Translator** (`assets/brands/custom_integration_translator.png`): https://github.com/seb5594/hass-custom_integrations_translator-integration/releases/tag/2026.11.19.1 (custom_integration_translator.zip: brand/icon.png)
-- **DeepL Translator** (`assets/brands/deepl_translator.png`): https://github.com/seb5594/hass-deepl_translator-integration/releases/tag/2026.11.17.1 (deepl_translator.zip: brand/logo.png)
+- **Custom Integration Translator** (`assets/brands/custom_integration_translator.png`): https://github.com/seb5594/hass-custom_integrations_translator-integration/releases/tag/2026.11.20 (custom_integration_translator.zip: brand/icon.png)
+- **DeepL Translator** (`assets/brands/deepl_translator.png`): https://github.com/seb5594/hass-deepl_translator-integration/releases/tag/2026.11.20 (deepl_translator.zip: brand/logo.png)
 - **ESC/POS Thermal Printer** (`assets/brands/escpos_printer.png`): https://github.com/seb5594/hass-escpos-thermal-printer-integration/releases/tag/2026.11.19.2 (escpos_printer.zip: brand/logo.png)
 - **ESC/POS Thermal Printer Designer** (`assets/brands/escpos_designer.png`): https://github.com/seb5594/hass-escpos-thermal-printing-designer-integration/releases/tag/2026.11.19.1 (escpos_designer.zip: brand/logo.png)
 - **Google Translator** (`assets/brands/google_translator.png`): https://github.com/seb5594/hass-google_translator-integration/releases/tag/2026.11.20 (google_translator.zip: brand/icon.png)

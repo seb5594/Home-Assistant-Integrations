@@ -9,11 +9,11 @@
   },
   {
     "repository": "seb5594/hass-custom_integrations_translator-integration",
-    "commit": "cf6b60adc66ad29b9b34451cd9fa692d76a6c79c"
+    "commit": "062eb6ad9e6351cc82f73b69c927805c6b06222b"
   },
   {
     "repository": "seb5594/hass-deepl_translator-integration",
-    "commit": "305fd67c7885a959ced0deefbd2100c0e1726e41"
+    "commit": "2a39e2aaa061d432a8ff7fa9df2a88d39e5e7109"
   },
   {
     "repository": "seb5594/hass-escpos-thermal-printer-integration",
