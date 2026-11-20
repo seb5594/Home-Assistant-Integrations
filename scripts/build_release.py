@@ -29,7 +29,7 @@ def build_release(output: Path):
             raise ValueError("Invalid HACS package layout")
     checksum = hashlib.sha256(package.read_bytes()).hexdigest()
     (output / "SHA256SUMS.txt").write_text(f"{checksum}  {package.name}\n", "utf-8")
-    print(f"v{manifest['version']}: {package}")
+    print(f"{manifest['version']}: {package}")
     return package
 
 
