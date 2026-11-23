@@ -4,55 +4,55 @@
   "repositories": {
     "seb5594/hass-car_tires_season-integration": {
       "marketplace": true,
-      "downloads": 109
+      "downloads": 111
     },
     "seb5594/hass-ubpet_cat_litter_hub-integration": {
       "marketplace": false,
-      "downloads": 275
+      "downloads": 277
     },
     "seb5594/hass-cigarette_vending_finder-integration": {
       "marketplace": false,
-      "downloads": 5
+      "downloads": 7
     },
     "seb5594/hass-custom_integrations_translator-integration": {
       "marketplace": true,
-      "downloads": 219
+      "downloads": 221
     },
     "seb5594/hass-deepl_translator-integration": {
       "marketplace": true,
-      "downloads": 251
+      "downloads": 253
     },
     "seb5594/hass-escpos-thermal-printer-integration": {
       "marketplace": false,
-      "downloads": 51
+      "downloads": 53
     },
     "seb5594/hass-escpos-thermal-printing-designer-integration": {
       "marketplace": false,
-      "downloads": 39
+      "downloads": 41
     },
     "seb5594/hass-google_translator-integration": {
       "marketplace": false,
-      "downloads": 99
+      "downloads": 101
     },
     "seb5594/hass-medication_monitoring-integration": {
       "marketplace": false,
-      "downloads": 263
+      "downloads": 265
     },
     "seb5594/hass-ninebot_e_scooters-integration": {
       "marketplace": true,
-      "downloads": 415
+      "downloads": 417
     },
     "seb5594/hass-perdis_roster-integration": {
       "marketplace": false,
-      "downloads": 15
+      "downloads": 21
     },
     "seb5594/hass-pulseaudio_loopback_extended-integration": {
       "marketplace": false,
-      "downloads": 243
+      "downloads": 245
     },
     "seb5594/hass-vacuum_mapguard-integration": {
       "marketplace": false,
-      "downloads": 261
+      "downloads": 263
     }
   }
 }
