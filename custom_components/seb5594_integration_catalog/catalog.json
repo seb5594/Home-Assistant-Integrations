@@ -208,26 +208,26 @@
   },
   {
     "repository": "seb5594/hass-init_perdis-integration",
-    "commit": "2d5b3f30c9a96aff4c89fd82370842df571958a1",
+    "commit": "49ed2224c930269d910291bb753b572ea1dd57c0",
     "domain": "perdis",
     "name": "Perdis Duty Roster",
-    "version": "2026.11.23",
-    "release_tag": "2026.11.23",
-    "release_url": "https://github.com/seb5594/hass-init_perdis-integration/releases/tag/2026.11.23",
-    "published_at": "2026-11-23T06:26:01Z",
-    "package_url": "https://github.com/seb5594/hass-init_perdis-integration/releases/download/2026.11.23/perdis.zip",
+    "version": "2026.11.23.1",
+    "release_tag": "2026.11.23.1",
+    "release_url": "https://github.com/seb5594/hass-init_perdis-integration/releases/tag/2026.11.23.1",
+    "published_at": "2026-11-23T06:33:56Z",
+    "package_url": "https://github.com/seb5594/hass-init_perdis-integration/releases/download/2026.11.23.1/perdis.zip",
     "package": {
       "name": "perdis.zip",
-      "url": "https://github.com/seb5594/hass-init_perdis-integration/releases/download/2026.11.23/perdis.zip",
-      "sha256": "b8cb7dddf215f751df4225c25dc1e90c87a754b31ca967df31402997b807c9bf"
+      "url": "https://github.com/seb5594/hass-init_perdis-integration/releases/download/2026.11.23.1/perdis.zip",
+      "sha256": "fdc50c7bf65ff9f181a16e9fc74974a1c0868bbe40d1c0e85161ce707d19e6fc"
     },
     "homeassistant": "2025.1.0",
     "description": "Home Assistant custom component for the enterprise software Perdis by INIT",
     "changelog": "CHANGELOG.md",
     "ci": "ci.yml",
-    "tests": "",
+    "tests": "42 passed",
     "logo": "assets/brands/perdis.png",
-    "logo_source": "https://github.com/seb5594/hass-init_perdis-integration/releases/tag/2026.11.23 (perdis.zip: brand/logo.png)"
+    "logo_source": "https://github.com/seb5594/hass-init_perdis-integration/releases/tag/2026.11.23.1 (perdis.zip: brand/logo.png)"
   },
   {
     "repository": "seb5594/hass-pulseaudio_loopback_extended-integration",

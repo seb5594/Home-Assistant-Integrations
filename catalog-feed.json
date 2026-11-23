@@ -86,10 +86,10 @@
       "repository": "seb5594/hass-init_perdis-integration",
       "domain": "perdis",
       "name": "Perdis Duty Roster",
-      "version": "2026.11.23",
-      "release_tag": "2026.11.23",
-      "release_url": "https://github.com/seb5594/hass-init_perdis-integration/releases/tag/2026.11.23",
-      "package_url": "https://github.com/seb5594/hass-init_perdis-integration/releases/download/2026.11.23/perdis.zip"
+      "version": "2026.11.23.1",
+      "release_tag": "2026.11.23.1",
+      "release_url": "https://github.com/seb5594/hass-init_perdis-integration/releases/tag/2026.11.23.1",
+      "package_url": "https://github.com/seb5594/hass-init_perdis-integration/releases/download/2026.11.23.1/perdis.zip"
     },
     {
       "repository": "seb5594/hass-pulseaudio_loopback_extended-integration",
