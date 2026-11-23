@@ -8,6 +8,10 @@
     "commit": "63bdae70134f0f9c41dd0e267ea598341f8fb9c5"
   },
   {
+    "repository": "seb5594/hass-cigarette_vending_finder-integration",
+    "commit": "bea22cb86bc8a6f39bd230c1cc61a7c7f11505a2"
+  },
+  {
     "repository": "seb5594/hass-custom_integrations_translator-integration",
     "commit": "062eb6ad9e6351cc82f73b69c927805c6b06222b"
   },

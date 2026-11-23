@@ -46,6 +46,29 @@
     "logo_source": "https://github.com/seb5594/hass-ubpet_cat_litter_hub-integration/releases/tag/2026.11.20 (ubpet_cat_litter_hub.zip: brand/logo.png)"
   },
   {
+    "repository": "seb5594/hass-cigarette_vending_finder-integration",
+    "commit": "bea22cb86bc8a6f39bd230c1cc61a7c7f11505a2",
+    "domain": "cigarette_vending_finder",
+    "name": "Cigarette Vending Finder",
+    "version": "2026.11.23",
+    "release_tag": "2026.11.23",
+    "release_url": "https://github.com/seb5594/hass-cigarette_vending_finder-integration/releases/tag/2026.11.23",
+    "published_at": "2026-11-23T07:35:18Z",
+    "package_url": "https://github.com/seb5594/hass-cigarette_vending_finder-integration/releases/download/2026.11.23/cigarette_vending_finder.zip",
+    "package": {
+      "name": "cigarette_vending_finder.zip",
+      "url": "https://github.com/seb5594/hass-cigarette_vending_finder-integration/releases/download/2026.11.23/cigarette_vending_finder.zip",
+      "sha256": "6a5ad91c287c3721ce1e6f63b59cdb9fb7513e27035df4ab49c2dcfa02ff0885"
+    },
+    "homeassistant": "2026.9.4",
+    "description": "Home Assistant custom component to find cigarettes vending machines around your home location or next one by person entity",
+    "changelog": "CHANGELOG.md",
+    "ci": "ci.yml",
+    "tests": "",
+    "logo": "assets/catalog.svg",
+    "logo_source": "Original catalog fallback symbol; not a source project brand asset."
+  },
+  {
     "repository": "seb5594/hass-custom_integrations_translator-integration",
     "commit": "062eb6ad9e6351cc82f73b69c927805c6b06222b",
     "domain": "custom_integration_translator",

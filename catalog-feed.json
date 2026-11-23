@@ -20,6 +20,15 @@
       "package_url": "https://github.com/seb5594/hass-ubpet_cat_litter_hub-integration/releases/download/2026.11.20/ubpet_cat_litter_hub.zip"
     },
     {
+      "repository": "seb5594/hass-cigarette_vending_finder-integration",
+      "domain": "cigarette_vending_finder",
+      "name": "Cigarette Vending Finder",
+      "version": "2026.11.23",
+      "release_tag": "2026.11.23",
+      "release_url": "https://github.com/seb5594/hass-cigarette_vending_finder-integration/releases/tag/2026.11.23",
+      "package_url": "https://github.com/seb5594/hass-cigarette_vending_finder-integration/releases/download/2026.11.23/cigarette_vending_finder.zip"
+    },
+    {
       "repository": "seb5594/hass-custom_integrations_translator-integration",
       "domain": "custom_integration_translator",
       "name": "Custom Integration Translator",
