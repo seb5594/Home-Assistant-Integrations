@@ -36,8 +36,8 @@
     "commit": "3bdb2802f5743e64b5a689fee3285cf8e516a3e8"
   },
   {
-    "repository": "seb5594/hass-init_perdis-integration",
-    "commit": "49ed2224c930269d910291bb753b572ea1dd57c0"
+    "repository": "seb5594/hass-perdis_roster-integration",
+    "commit": "1a89c0b5eea26d8c7be23da52a3b401859312b59"
   },
   {
     "repository": "seb5594/hass-pulseaudio_loopback_extended-integration",

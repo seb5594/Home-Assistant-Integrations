@@ -58,10 +58,10 @@ Automatic registration uses HACS' internal runtime registry and is **experimenta
 | <img src="assets/brands/google_translator.png" height="44" alt=""> | **[Google Translator](https://github.com/seb5594/hass-google_translator-integration)** | [2026.11.20](https://github.com/seb5594/hass-google_translator-integration/releases/tag/2026.11.20) | 2023.7.0 | ☐ | [93](https://github.com/seb5594/hass-google_translator-integration/releases) | [Install](https://my.home-assistant.io/redirect/hacs_repository/?owner=seb5594&repository=hass-google_translator-integration&category=integration) |
 | <img src="assets/brands/medication_monitoring.png" height="44" alt=""> | **[Medication Monitoring](https://github.com/seb5594/hass-medication_monitoring-integration)** | [2026.11.20](https://github.com/seb5594/hass-medication_monitoring-integration/releases/tag/2026.11.20) | 2022.8.0 | ☐ | [257](https://github.com/seb5594/hass-medication_monitoring-integration/releases) | [Install](https://my.home-assistant.io/redirect/hacs_repository/?owner=seb5594&repository=hass-medication_monitoring-integration&category=integration) |
 | <img src="assets/brands/ninebot_e_scooters.png" height="44" alt=""> | **[Ninebot E-Scooters](https://github.com/seb5594/hass-ninebot_e_scooters-integration)** | [2026.11.20](https://github.com/seb5594/hass-ninebot_e_scooters-integration/releases/tag/2026.11.20) | 2023.2.0 | ☑ | [408](https://github.com/seb5594/hass-ninebot_e_scooters-integration/releases) | [Install](https://my.home-assistant.io/redirect/hacs_repository/?owner=seb5594&repository=hass-ninebot_e_scooters-integration&category=integration) |
-| <img src="assets/brands/perdis.png" height="44" alt=""> | **[Perdis Duty Roster](https://github.com/seb5594/hass-init_perdis-integration)** | [2026.11.23.1](https://github.com/seb5594/hass-init_perdis-integration/releases/tag/2026.11.23.1) | 2025.1.0 | ☐ | [1](https://github.com/seb5594/hass-init_perdis-integration/releases) | [Install](https://my.home-assistant.io/redirect/hacs_repository/?owner=seb5594&repository=hass-init_perdis-integration&category=integration) |
+| <img src="assets/brands/perdis_roster.png" height="44" alt=""> | **[Perdis Duty Roster](https://github.com/seb5594/hass-perdis_roster-integration)** | [2026.11.23.2](https://github.com/seb5594/hass-perdis_roster-integration/releases/tag/2026.11.23.2) | 2024.12.0 | ☐ | [2](https://github.com/seb5594/hass-perdis_roster-integration/releases) | [Install](https://my.home-assistant.io/redirect/hacs_repository/?owner=seb5594&repository=hass-perdis_roster-integration&category=integration) |
 | <img src="assets/brands/pulseaudio_loopback.png" height="44" alt=""> | **[PulseAudio Loopback Extended](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration)** | [v1.0.0](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration/releases/tag/v1.0.0) | 2022.4.0 | ☐ | [237](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration/releases) | [Install](https://my.home-assistant.io/redirect/hacs_repository/?owner=seb5594&repository=hass-pulseaudio_loopback_extended-integration&category=integration) |
 | <img src="assets/brands/vacuum_mapguard.png" height="44" alt=""> | **[Vacuum MapGuard](https://github.com/seb5594/hass-vacuum_mapguard-integration)** | [v1.1.3](https://github.com/seb5594/hass-vacuum_mapguard-integration/releases/tag/v1.1.3) | 2026.3.0 | ☐ | [255](https://github.com/seb5594/hass-vacuum_mapguard-integration/releases) | [Install](https://my.home-assistant.io/redirect/hacs_repository/?owner=seb5594&repository=hass-vacuum_mapguard-integration&category=integration) |
-| | **Total · 12 integrations** | | | **4 / 12** | **2,157** | |
+| | **Total · 12 integrations** | | | **4 / 12** | **2,158** | |
 
 ☑ Listed in the [official HACS / Marketplace catalog](https://github.com/hacs/default/blob/36ae2126d0be87a1d0d776d0d1bb3f406e731e72/integration). ☐ Available through a custom repository.
 
@@ -264,22 +264,22 @@ A custom integration for Ninebot and Xiaomi E-Scooter's in Home Assistant
 
 ---
 
-### <img src="assets/brands/perdis.png" height="48" alt=""> Perdis Duty Roster
+### <img src="assets/brands/perdis_roster.png" height="48" alt=""> Perdis Duty Roster
 
 Home Assistant custom component for the enterprise software Perdis by INIT
 
-[![release: 2026.11.23.1](https://img.shields.io/static/v1?label=release&message=2026.11.23.1&color=1877A5&style=flat)](https://github.com/seb5594/hass-init_perdis-integration/releases/tag/2026.11.23.1) ![Home Assistant: ≥ 2025.1.0](https://img.shields.io/static/v1?label=Home%20Assistant&message=%E2%89%A5%202025.1.0&color=1877A5&style=flat)<br>
-[![release checks](https://img.shields.io/github/check-runs/seb5594/hass-init_perdis-integration/49ed2224c930269d910291bb753b572ea1dd57c0?label=release%20checks)](https://github.com/seb5594/hass-init_perdis-integration/commit/49ed2224c930269d910291bb753b572ea1dd57c0/checks) ![tests: 42 passed](https://img.shields.io/static/v1?label=tests&message=42%20passed&color=2F855A&style=flat) [![release downloads](https://img.shields.io/github/downloads/seb5594/hass-init_perdis-integration/2026.11.23.1/total?label=downloads)](https://github.com/seb5594/hass-init_perdis-integration/releases/download/2026.11.23.1/perdis.zip) [![issues](https://img.shields.io/github/issues/seb5594/hass-init_perdis-integration?label=issues)](https://github.com/seb5594/hass-init_perdis-integration/issues)
+[![release: 2026.11.23.2](https://img.shields.io/static/v1?label=release&message=2026.11.23.2&color=1877A5&style=flat)](https://github.com/seb5594/hass-perdis_roster-integration/releases/tag/2026.11.23.2) ![Home Assistant: ≥ 2024.12.0](https://img.shields.io/static/v1?label=Home%20Assistant&message=%E2%89%A5%202024.12.0&color=1877A5&style=flat)<br>
+[![release checks](https://img.shields.io/github/check-runs/seb5594/hass-perdis_roster-integration/1a89c0b5eea26d8c7be23da52a3b401859312b59?label=release%20checks)](https://github.com/seb5594/hass-perdis_roster-integration/commit/1a89c0b5eea26d8c7be23da52a3b401859312b59/checks) ![tests: 42 passed](https://img.shields.io/static/v1?label=tests&message=42%20passed&color=2F855A&style=flat) [![release downloads](https://img.shields.io/github/downloads/seb5594/hass-perdis_roster-integration/2026.11.23.2/total?label=downloads)](https://github.com/seb5594/hass-perdis_roster-integration/releases/download/2026.11.23.2/perdis_roster.zip) [![issues](https://img.shields.io/github/issues/seb5594/hass-perdis_roster-integration?label=issues)](https://github.com/seb5594/hass-perdis_roster-integration/issues)
 
-[**Open in HACS**](https://my.home-assistant.io/redirect/hacs_repository/?owner=seb5594&repository=hass-init_perdis-integration&category=integration) · [Release package](https://github.com/seb5594/hass-init_perdis-integration/releases/download/2026.11.23.1/perdis.zip) · [Documentation](https://github.com/seb5594/hass-init_perdis-integration/tree/2026.11.23.1) · [Changelog](https://github.com/seb5594/hass-init_perdis-integration/blob/2026.11.23.1/CHANGELOG.md)
+[**Open in HACS**](https://my.home-assistant.io/redirect/hacs_repository/?owner=seb5594&repository=hass-perdis_roster-integration&category=integration) · [Release package](https://github.com/seb5594/hass-perdis_roster-integration/releases/download/2026.11.23.2/perdis_roster.zip) · [Documentation](https://github.com/seb5594/hass-perdis_roster-integration/tree/2026.11.23.2) · [Changelog](https://github.com/seb5594/hass-perdis_roster-integration/blob/2026.11.23.2/CHANGELOG.md)
 
 <details>
 <summary>Release and source details</summary>
 
-- Domain: `perdis`
-- Published release: [2026.11.23.1](https://github.com/seb5594/hass-init_perdis-integration/releases/tag/2026.11.23.1)
-- Source: [`integrations/perdis`](integrations/perdis) (Git submodule)
-- Pinned commit: [`49ed222`](https://github.com/seb5594/hass-init_perdis-integration/commit/49ed2224c930269d910291bb753b572ea1dd57c0)
+- Domain: `perdis_roster`
+- Published release: [2026.11.23.2](https://github.com/seb5594/hass-perdis_roster-integration/releases/tag/2026.11.23.2)
+- Source: [`integrations/perdis_roster`](integrations/perdis_roster) (Git submodule)
+- Pinned commit: [`1a89c0b`](https://github.com/seb5594/hass-perdis_roster-integration/commit/1a89c0b5eea26d8c7be23da52a3b401859312b59)
 
 </details>
 

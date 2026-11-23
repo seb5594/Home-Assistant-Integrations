@@ -207,27 +207,27 @@
     "logo_source": "https://github.com/seb5594/hass-ninebot_e_scooters-integration/releases/tag/2026.11.20 (ninebot_e_scooters.zip: brand/logo.png)"
   },
   {
-    "repository": "seb5594/hass-init_perdis-integration",
-    "commit": "49ed2224c930269d910291bb753b572ea1dd57c0",
-    "domain": "perdis",
+    "repository": "seb5594/hass-perdis_roster-integration",
+    "commit": "1a89c0b5eea26d8c7be23da52a3b401859312b59",
+    "domain": "perdis_roster",
     "name": "Perdis Duty Roster",
-    "version": "2026.11.23.1",
-    "release_tag": "2026.11.23.1",
-    "release_url": "https://github.com/seb5594/hass-init_perdis-integration/releases/tag/2026.11.23.1",
-    "published_at": "2026-11-23T06:33:56Z",
-    "package_url": "https://github.com/seb5594/hass-init_perdis-integration/releases/download/2026.11.23.1/perdis.zip",
+    "version": "2026.11.23.2",
+    "release_tag": "2026.11.23.2",
+    "release_url": "https://github.com/seb5594/hass-perdis_roster-integration/releases/tag/2026.11.23.2",
+    "published_at": "2026-11-23T06:43:31Z",
+    "package_url": "https://github.com/seb5594/hass-perdis_roster-integration/releases/download/2026.11.23.2/perdis_roster.zip",
     "package": {
-      "name": "perdis.zip",
-      "url": "https://github.com/seb5594/hass-init_perdis-integration/releases/download/2026.11.23.1/perdis.zip",
-      "sha256": "fdc50c7bf65ff9f181a16e9fc74974a1c0868bbe40d1c0e85161ce707d19e6fc"
+      "name": "perdis_roster.zip",
+      "url": "https://github.com/seb5594/hass-perdis_roster-integration/releases/download/2026.11.23.2/perdis_roster.zip",
+      "sha256": "45aa308db2eb91eea535a2983dcf2f5a874b77c7ec13f8d83b50631531b0d7dd"
     },
-    "homeassistant": "2025.1.0",
+    "homeassistant": "2024.12.0",
     "description": "Home Assistant custom component for the enterprise software Perdis by INIT",
     "changelog": "CHANGELOG.md",
     "ci": "ci.yml",
     "tests": "42 passed",
-    "logo": "assets/brands/perdis.png",
-    "logo_source": "https://github.com/seb5594/hass-init_perdis-integration/releases/tag/2026.11.23.1 (perdis.zip: brand/logo.png)"
+    "logo": "assets/brands/perdis_roster.png",
+    "logo_source": "https://github.com/seb5594/hass-perdis_roster-integration/releases/tag/2026.11.23.2 (perdis_roster.zip: brand/logo.png)"
   },
   {
     "repository": "seb5594/hass-pulseaudio_loopback_extended-integration",
