@@ -231,18 +231,18 @@
   },
   {
     "repository": "seb5594/hass-perdis_roster-integration",
-    "commit": "14a55a15edce49a99af149d6056038ba0caa6218",
+    "commit": "162ea762d3cb3a9f8b2f30f2427c090dc95248aa",
     "domain": "perdis_roster",
     "name": "Perdis Duty Roster",
-    "version": "2026.11.23.4",
-    "release_tag": "2026.11.23.4",
-    "release_url": "https://github.com/seb5594/hass-perdis_roster-integration/releases/tag/2026.11.23.4",
-    "published_at": "2026-11-23T11:09:33Z",
-    "package_url": "https://github.com/seb5594/hass-perdis_roster-integration/releases/download/2026.11.23.4/perdis_roster.zip",
+    "version": "2026.11.23.5",
+    "release_tag": "2026.11.23.5",
+    "release_url": "https://github.com/seb5594/hass-perdis_roster-integration/releases/tag/2026.11.23.5",
+    "published_at": "2026-11-23T15:57:08Z",
+    "package_url": "https://github.com/seb5594/hass-perdis_roster-integration/releases/download/2026.11.23.5/perdis_roster.zip",
     "package": {
       "name": "perdis_roster.zip",
-      "url": "https://github.com/seb5594/hass-perdis_roster-integration/releases/download/2026.11.23.4/perdis_roster.zip",
-      "sha256": "00d2e108932c952c9352b27844cb1a2c75efbdcf1bd889520e50a49e6879451e"
+      "url": "https://github.com/seb5594/hass-perdis_roster-integration/releases/download/2026.11.23.5/perdis_roster.zip",
+      "sha256": "d5cd742a7a9499097b7e6bd6aa6fb6fe7214dcb8e9fd59c89aadf1d6377fd76c"
     },
     "homeassistant": "2024.12.0",
     "description": "Home Assistant custom component for the enterprise software Perdis by INIT",
@@ -250,7 +250,7 @@
     "ci": "ci.yml",
     "tests": "52 passed",
     "logo": "assets/brands/perdis_roster.png",
-    "logo_source": "https://github.com/seb5594/hass-perdis_roster-integration/releases/tag/2026.11.23.4 (perdis_roster.zip: brand/logo.png)"
+    "logo_source": "https://github.com/seb5594/hass-perdis_roster-integration/releases/tag/2026.11.23.5 (perdis_roster.zip: brand/logo.png)"
   },
   {
     "repository": "seb5594/hass-pulseaudio_loopback_extended-integration",
