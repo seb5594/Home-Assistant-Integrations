@@ -83,13 +83,13 @@
       "package_url": "https://github.com/seb5594/hass-ninebot_e_scooters-integration/releases/download/2026.11.20/ninebot_e_scooters.zip"
     },
     {
-      "repository": "seb5594/hass-perdis_duty_roaster-integration",
-      "domain": "perdis_duty_roaster",
-      "name": "PERDIS Duty Roster",
-      "version": "2026.11.22.1",
-      "release_tag": "2026.11.22.1",
-      "release_url": "https://github.com/seb5594/hass-perdis_duty_roaster-integration/releases/tag/2026.11.22.1",
-      "package_url": "https://github.com/seb5594/hass-perdis_duty_roaster-integration/releases/download/2026.11.22.1/perdis_duty_roaster.zip"
+      "repository": "seb5594/hass-init_perdis-integration",
+      "domain": "perdis",
+      "name": "Perdis Duty Roster",
+      "version": "2026.11.23",
+      "release_tag": "2026.11.23",
+      "release_url": "https://github.com/seb5594/hass-init_perdis-integration/releases/tag/2026.11.23",
+      "package_url": "https://github.com/seb5594/hass-init_perdis-integration/releases/download/2026.11.23/perdis.zip"
     },
     {
       "repository": "seb5594/hass-pulseaudio_loopback_extended-integration",

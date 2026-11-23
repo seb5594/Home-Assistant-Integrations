@@ -36,8 +36,8 @@
     "commit": "3bdb2802f5743e64b5a689fee3285cf8e516a3e8"
   },
   {
-    "repository": "seb5594/hass-perdis_duty_roaster-integration",
-    "commit": "7e78caa922f6e782b4d634d70070943f39a1f1fd"
+    "repository": "seb5594/hass-init_perdis-integration",
+    "commit": "2d5b3f30c9a96aff4c89fd82370842df571958a1"
   },
   {
     "repository": "seb5594/hass-pulseaudio_loopback_extended-integration",

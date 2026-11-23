@@ -207,27 +207,27 @@
     "logo_source": "https://github.com/seb5594/hass-ninebot_e_scooters-integration/releases/tag/2026.11.20 (ninebot_e_scooters.zip: brand/logo.png)"
   },
   {
-    "repository": "seb5594/hass-perdis_duty_roaster-integration",
-    "commit": "7e78caa922f6e782b4d634d70070943f39a1f1fd",
-    "domain": "perdis_duty_roaster",
-    "name": "PERDIS Duty Roster",
-    "version": "2026.11.22.1",
-    "release_tag": "2026.11.22.1",
-    "release_url": "https://github.com/seb5594/hass-perdis_duty_roaster-integration/releases/tag/2026.11.22.1",
-    "published_at": "2026-11-22T19:55:59Z",
-    "package_url": "https://github.com/seb5594/hass-perdis_duty_roaster-integration/releases/download/2026.11.22.1/perdis_duty_roaster.zip",
+    "repository": "seb5594/hass-init_perdis-integration",
+    "commit": "2d5b3f30c9a96aff4c89fd82370842df571958a1",
+    "domain": "perdis",
+    "name": "Perdis Duty Roster",
+    "version": "2026.11.23",
+    "release_tag": "2026.11.23",
+    "release_url": "https://github.com/seb5594/hass-init_perdis-integration/releases/tag/2026.11.23",
+    "published_at": "2026-11-23T06:26:01Z",
+    "package_url": "https://github.com/seb5594/hass-init_perdis-integration/releases/download/2026.11.23/perdis.zip",
     "package": {
-      "name": "perdis_duty_roaster.zip",
-      "url": "https://github.com/seb5594/hass-perdis_duty_roaster-integration/releases/download/2026.11.22.1/perdis_duty_roaster.zip",
-      "sha256": "225c4513a26d8e36343519eaa6cfd285c383146c66ccef7279497fe790c2fe72"
+      "name": "perdis.zip",
+      "url": "https://github.com/seb5594/hass-init_perdis-integration/releases/download/2026.11.23/perdis.zip",
+      "sha256": "b8cb7dddf215f751df4225c25dc1e90c87a754b31ca967df31402997b807c9bf"
     },
-    "homeassistant": "2024.11.0",
-    "description": "Home Assistant custom component for the duty roaster software \"Perdis\"",
+    "homeassistant": "2025.1.0",
+    "description": "Home Assistant custom component for the enterprise software Perdis by INIT",
     "changelog": "CHANGELOG.md",
     "ci": "ci.yml",
     "tests": "",
-    "logo": "assets/brands/perdis_duty_roaster.png",
-    "logo_source": "https://github.com/seb5594/hass-perdis_duty_roaster-integration/releases/tag/2026.11.22.1 (perdis_duty_roaster.zip: brand/logo.png)"
+    "logo": "assets/brands/perdis.png",
+    "logo_source": "https://github.com/seb5594/hass-init_perdis-integration/releases/tag/2026.11.23 (perdis.zip: brand/logo.png)"
   },
   {
     "repository": "seb5594/hass-pulseaudio_loopback_extended-integration",
