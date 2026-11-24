@@ -34,6 +34,9 @@
 [submodule "pulseaudio_loopback"]
 	path = integrations/pulseaudio_loopback
 	url = https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration.git
+[submodule "rockstar_companion"]
+	path = integrations/rockstar_companion
+	url = https://github.com/seb5594/hass-gta6-integration.git
 [submodule "vacuum_mapguard"]
 	path = integrations/vacuum_mapguard
 	url = https://github.com/seb5594/hass-vacuum_mapguard-integration.git

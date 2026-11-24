@@ -276,6 +276,29 @@
     "logo_source": "https://raw.githubusercontent.com/home-assistant/brands/2448af4760063a885f173080eb5381323b7ae9a4/core_integrations/pulseaudio_loopback/icon.png"
   },
   {
+    "repository": "seb5594/hass-gta6-integration",
+    "commit": "f847011148959560354e56068e6c5af80befa6d4",
+    "domain": "rockstar_companion",
+    "name": "Rockstar & Leonida Companion",
+    "version": "0.1.0",
+    "release_tag": "v0.1.0",
+    "release_url": "https://github.com/seb5594/hass-gta6-integration/releases/tag/v0.1.0",
+    "published_at": "2026-11-24T23:46:00Z",
+    "package_url": "https://github.com/seb5594/hass-gta6-integration/releases/download/v0.1.0/rockstar_companion.zip",
+    "package": {
+      "name": "rockstar_companion.zip",
+      "url": "https://github.com/seb5594/hass-gta6-integration/releases/download/v0.1.0/rockstar_companion.zip",
+      "sha256": "79fa5528be9dd291ab09b4f45f7e86b3873c48207ea2861e4c94822920d81056"
+    },
+    "homeassistant": "2026.11.0",
+    "description": "Home Assistant custom component for GTA 6 by Rockstar Games",
+    "changelog": "CHANGELOG.md",
+    "ci": "ci.yml",
+    "tests": "",
+    "logo": "assets/catalog.svg",
+    "logo_source": "Original catalog fallback symbol; not a source project brand asset."
+  },
+  {
     "repository": "seb5594/hass-vacuum_mapguard-integration",
     "commit": "994af665c73e3367b721b57d66ac2c5c2c7da48e",
     "domain": "vacuum_mapguard",

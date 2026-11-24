@@ -110,6 +110,15 @@
       "package_url": "https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration/releases/download/v1.0.0/pulseaudio_loopback.zip"
     },
     {
+      "repository": "seb5594/hass-gta6-integration",
+      "domain": "rockstar_companion",
+      "name": "Rockstar & Leonida Companion",
+      "version": "0.1.0",
+      "release_tag": "v0.1.0",
+      "release_url": "https://github.com/seb5594/hass-gta6-integration/releases/tag/v0.1.0",
+      "package_url": "https://github.com/seb5594/hass-gta6-integration/releases/download/v0.1.0/rockstar_companion.zip"
+    },
+    {
       "repository": "seb5594/hass-vacuum_mapguard-integration",
       "domain": "vacuum_mapguard",
       "name": "Vacuum MapGuard",

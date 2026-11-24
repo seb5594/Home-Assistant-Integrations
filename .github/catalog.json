@@ -48,6 +48,10 @@
     "commit": "e5ae68c4dd650afa5e3118ebfc83461084dd373f"
   },
   {
+    "repository": "seb5594/hass-gta6-integration",
+    "commit": "f847011148959560354e56068e6c5af80befa6d4"
+  },
+  {
     "repository": "seb5594/hass-vacuum_mapguard-integration",
     "commit": "994af665c73e3367b721b57d66ac2c5c2c7da48e"
   }
