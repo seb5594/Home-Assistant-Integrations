@@ -8,7 +8,7 @@ Source graphics retain their original rights and licenses.
 - **Custom Integration Translator** (`assets/brands/custom_integration_translator.png`): https://github.com/seb5594/hass-custom_integrations_translator-integration/releases/tag/2026.11.20 (custom_integration_translator.zip: brand/icon.png)
 - **DeepL Translator** (`assets/brands/deepl_translator.png`): https://github.com/seb5594/hass-deepl_translator-integration/releases/tag/2026.11.20 (deepl_translator.zip: brand/logo.png)
 - **ESC/POS Thermal Printer** (`assets/brands/escpos_printer.png`): https://github.com/seb5594/hass-escpos-thermal-printer-integration/releases/tag/2026.11.19.2 (escpos_printer.zip: brand/logo.png)
-- **ESC/POS Thermal Printer Designer** (`assets/brands/escpos_designer.png`): https://github.com/seb5594/hass-escpos-thermal-printing-designer-integration/releases/tag/2026.11.20.1 (escpos_designer.zip: brand/logo.png)
+- **ESC/POS Thermal Printer Designer** (`assets/brands/escpos_designer.png`): https://github.com/seb5594/hass-escpos-thermal-printing-designer-integration/releases/tag/2026.11.24 (escpos_designer.zip: brand/logo.png)
 - **Google Translator** (`assets/brands/google_translator.png`): https://github.com/seb5594/hass-google_translator-integration/releases/tag/2026.11.20 (google_translator.zip: brand/icon.png)
 - **Medication Monitoring** (`assets/brands/medication_monitoring.png`): https://github.com/seb5594/hass-medication_monitoring-integration/releases/tag/2026.11.20 (medication_monitoring.zip: brand/icon.png)
 - **Ninebot E-Scooters** (`assets/brands/ninebot_e_scooters.png`): https://github.com/seb5594/hass-ninebot_e_scooters-integration/releases/tag/2026.11.20 (ninebot_e_scooters.zip: brand/logo.png)
