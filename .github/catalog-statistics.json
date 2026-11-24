@@ -1,58 +1,58 @@
 {
-  "date": "2026-11-23",
-  "catalog_commit": "1d9c102baa0229112956ded5731c6f7855c70dab",
+  "date": "2026-11-24",
+  "catalog_commit": "c51cffbc42aaa15bf8c5775c78a9c6c9e5927c7b",
   "repositories": {
     "seb5594/hass-car_tires_season-integration": {
       "marketplace": true,
-      "downloads": 120
+      "downloads": 122
     },
     "seb5594/hass-ubpet_cat_litter_hub-integration": {
       "marketplace": false,
-      "downloads": 286
+      "downloads": 288
     },
     "seb5594/hass-cigarette_vending_finder-integration": {
       "marketplace": false,
-      "downloads": 16
+      "downloads": 17
     },
     "seb5594/hass-custom_integrations_translator-integration": {
       "marketplace": true,
-      "downloads": 230
+      "downloads": 231
     },
     "seb5594/hass-deepl_translator-integration": {
       "marketplace": true,
-      "downloads": 262
+      "downloads": 263
     },
     "seb5594/hass-escpos-thermal-printer-integration": {
       "marketplace": false,
-      "downloads": 62
+      "downloads": 64
     },
     "seb5594/hass-escpos-thermal-printing-designer-integration": {
       "marketplace": false,
-      "downloads": 50
+      "downloads": 51
     },
     "seb5594/hass-google_translator-integration": {
       "marketplace": false,
-      "downloads": 110
+      "downloads": 111
     },
     "seb5594/hass-medication_monitoring-integration": {
       "marketplace": false,
-      "downloads": 274
+      "downloads": 275
     },
     "seb5594/hass-ninebot_e_scooters-integration": {
       "marketplace": true,
-      "downloads": 426
+      "downloads": 427
     },
     "seb5594/hass-perdis_roster-integration": {
       "marketplace": false,
-      "downloads": 31
+      "downloads": 33
     },
     "seb5594/hass-pulseaudio_loopback_extended-integration": {
       "marketplace": false,
-      "downloads": 254
+      "downloads": 255
     },
     "seb5594/hass-vacuum_mapguard-integration": {
       "marketplace": false,
-      "downloads": 272
+      "downloads": 273
     }
   }
 }
