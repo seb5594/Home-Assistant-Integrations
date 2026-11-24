@@ -231,18 +231,18 @@
   },
   {
     "repository": "seb5594/hass-perdis_roster-integration",
-    "commit": "b2b2bf7982d934fbd5a1f28fcf72720d4b4f50a9",
+    "commit": "4476ddcf3fccad972b2807b5b97caaeef2ba7f11",
     "domain": "perdis_roster",
     "name": "Perdis Duty Roster",
-    "version": "2026.11.24",
-    "release_tag": "2026.11.24",
-    "release_url": "https://github.com/seb5594/hass-perdis_roster-integration/releases/tag/2026.11.24",
-    "published_at": "2026-11-24T12:36:41Z",
-    "package_url": "https://github.com/seb5594/hass-perdis_roster-integration/releases/download/2026.11.24/perdis_roster.zip",
+    "version": "2026.11.24.1",
+    "release_tag": "2026.11.24.1",
+    "release_url": "https://github.com/seb5594/hass-perdis_roster-integration/releases/tag/2026.11.24.1",
+    "published_at": "2026-11-24T17:03:17Z",
+    "package_url": "https://github.com/seb5594/hass-perdis_roster-integration/releases/download/2026.11.24.1/perdis_roster.zip",
     "package": {
       "name": "perdis_roster.zip",
-      "url": "https://github.com/seb5594/hass-perdis_roster-integration/releases/download/2026.11.24/perdis_roster.zip",
-      "sha256": "c3b45d67bd0e0cd93c1923279954f449e5a2cee92f8decd7aa31519c2cb65777"
+      "url": "https://github.com/seb5594/hass-perdis_roster-integration/releases/download/2026.11.24.1/perdis_roster.zip",
+      "sha256": "27282d67b8aa9de5226c789eabf4506e08c2caf56156db373fb70d1939ce76e1"
     },
     "homeassistant": "2024.12.0",
     "description": "Home Assistant custom component for the enterprise software Perdis by INIT",
@@ -250,7 +250,7 @@
     "ci": "ci.yml",
     "tests": "58 passed",
     "logo": "assets/brands/perdis_roster.png",
-    "logo_source": "https://github.com/seb5594/hass-perdis_roster-integration/releases/tag/2026.11.24 (perdis_roster.zip: brand/logo.png)"
+    "logo_source": "https://github.com/seb5594/hass-perdis_roster-integration/releases/tag/2026.11.24.1 (perdis_roster.zip: brand/logo.png)"
   },
   {
     "repository": "seb5594/hass-pulseaudio_loopback_extended-integration",
