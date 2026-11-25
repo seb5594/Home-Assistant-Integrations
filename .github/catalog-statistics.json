@@ -1,62 +1,62 @@
 {
   "date": "2026-11-25",
-  "catalog_commit": "8222b8ac4e6616bacfa31080fb7496a28d6d0bef",
+  "catalog_commit": "b7fabfbe28181a222722efd57a5a76fe48f27c03",
   "repositories": {
     "seb5594/hass-car_tires_season-integration": {
       "marketplace": true,
-      "downloads": 134
+      "downloads": 135
     },
     "seb5594/hass-ubpet_cat_litter_hub-integration": {
       "marketplace": false,
-      "downloads": 300
+      "downloads": 301
     },
     "seb5594/hass-cigarette_vending_finder-integration": {
       "marketplace": false,
-      "downloads": 29
+      "downloads": 30
     },
     "seb5594/hass-custom_integrations_translator-integration": {
       "marketplace": true,
-      "downloads": 243
+      "downloads": 244
     },
     "seb5594/hass-deepl_translator-integration": {
       "marketplace": true,
-      "downloads": 274
+      "downloads": 275
     },
     "seb5594/hass-escpos-thermal-printer-integration": {
       "marketplace": false,
-      "downloads": 75
+      "downloads": 76
     },
     "seb5594/hass-escpos-thermal-printing-designer-integration": {
       "marketplace": false,
-      "downloads": 66
+      "downloads": 67
     },
     "seb5594/hass-google_translator-integration": {
       "marketplace": false,
-      "downloads": 122
+      "downloads": 123
     },
     "seb5594/hass-medication_monitoring-integration": {
       "marketplace": false,
-      "downloads": 286
+      "downloads": 287
     },
     "seb5594/hass-ninebot_e_scooters-integration": {
       "marketplace": true,
-      "downloads": 440
+      "downloads": 441
     },
     "seb5594/hass-perdis_roster-integration": {
       "marketplace": false,
-      "downloads": 57
+      "downloads": 58
     },
     "seb5594/hass-pulseaudio_loopback_extended-integration": {
       "marketplace": false,
-      "downloads": 266
+      "downloads": 267
     },
     "seb5594/hass-gta6-integration": {
       "marketplace": false,
-      "downloads": 4
+      "downloads": 5
     },
     "seb5594/hass-vacuum_mapguard-integration": {
       "marketplace": false,
-      "downloads": 284
+      "downloads": 285
     }
   }
 }
