@@ -231,18 +231,18 @@
   },
   {
     "repository": "seb5594/hass-perdis_roster-integration",
-    "commit": "e305df4ec696460b251cd3f9d480e45b208bf007",
+    "commit": "fccc82b67883447a8bc65a40f06e854dfd495f8d",
     "domain": "perdis_roster",
     "name": "Perdis Duty Roster",
-    "version": "2026.11.25.4",
-    "release_tag": "2026.11.25.4",
-    "release_url": "https://github.com/seb5594/hass-perdis_roster-integration/releases/tag/2026.11.25.4",
-    "published_at": "2026-11-25T14:06:40Z",
-    "package_url": "https://github.com/seb5594/hass-perdis_roster-integration/releases/download/2026.11.25.4/perdis_roster.zip",
+    "version": "2026.11.25.5",
+    "release_tag": "2026.11.25.5",
+    "release_url": "https://github.com/seb5594/hass-perdis_roster-integration/releases/tag/2026.11.25.5",
+    "published_at": "2026-11-25T14:21:06Z",
+    "package_url": "https://github.com/seb5594/hass-perdis_roster-integration/releases/download/2026.11.25.5/perdis_roster.zip",
     "package": {
       "name": "perdis_roster.zip",
-      "url": "https://github.com/seb5594/hass-perdis_roster-integration/releases/download/2026.11.25.4/perdis_roster.zip",
-      "sha256": "bb2929ed07fd90f60bb3ab3c2ba99b5802cbcff2a3a5ee0090c386ee2e69058e"
+      "url": "https://github.com/seb5594/hass-perdis_roster-integration/releases/download/2026.11.25.5/perdis_roster.zip",
+      "sha256": "6606df55cacb3a1a08bd4b8af4b0b645bd628ef7f52bb438e3d0276fbf4b7dab"
     },
     "homeassistant": "2023.7.0",
     "description": "Home Assistant custom component for the enterprise software Perdis by INIT",
@@ -250,7 +250,7 @@
     "ci": "ci.yml",
     "tests": "71 passed",
     "logo": "assets/brands/perdis_roster.png",
-    "logo_source": "https://github.com/seb5594/hass-perdis_roster-integration/releases/tag/2026.11.25.4 (perdis_roster.zip: brand/logo.png)"
+    "logo_source": "https://github.com/seb5594/hass-perdis_roster-integration/releases/tag/2026.11.25.5 (perdis_roster.zip: brand/logo.png)"
   },
   {
     "repository": "seb5594/hass-pulseaudio_loopback_extended-integration",

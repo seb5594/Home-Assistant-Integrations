@@ -1,62 +1,62 @@
 {
   "date": "2026-11-25",
-  "catalog_commit": "592bbfb3983ddcd706bdca70306d68dae0f56533",
+  "catalog_commit": "2275b7b47fb27d3eb474c7b2c055798bd45cffb9",
   "repositories": {
     "seb5594/hass-car_tires_season-integration": {
       "marketplace": true,
-      "downloads": 139
+      "downloads": 140
     },
     "seb5594/hass-ubpet_cat_litter_hub-integration": {
-      "marketplace": false,
-      "downloads": 305
+      "marketplace": true,
+      "downloads": 306
     },
     "seb5594/hass-cigarette_vending_finder-integration": {
       "marketplace": false,
-      "downloads": 34
+      "downloads": 35
     },
     "seb5594/hass-custom_integrations_translator-integration": {
       "marketplace": true,
-      "downloads": 248
+      "downloads": 249
     },
     "seb5594/hass-deepl_translator-integration": {
       "marketplace": true,
-      "downloads": 279
+      "downloads": 280
     },
     "seb5594/hass-escpos-thermal-printer-integration": {
       "marketplace": false,
-      "downloads": 80
+      "downloads": 81
     },
     "seb5594/hass-escpos-thermal-printing-designer-integration": {
       "marketplace": false,
-      "downloads": 72
+      "downloads": 73
     },
     "seb5594/hass-google_translator-integration": {
       "marketplace": false,
-      "downloads": 127
+      "downloads": 128
     },
     "seb5594/hass-medication_monitoring-integration": {
       "marketplace": false,
-      "downloads": 291
+      "downloads": 292
     },
     "seb5594/hass-ninebot_e_scooters-integration": {
       "marketplace": true,
-      "downloads": 445
+      "downloads": 446
     },
     "seb5594/hass-perdis_roster-integration": {
       "marketplace": false,
-      "downloads": 71
+      "downloads": 73
     },
     "seb5594/hass-pulseaudio_loopback_extended-integration": {
       "marketplace": false,
-      "downloads": 271
+      "downloads": 272
     },
     "seb5594/hass-gta6-integration": {
       "marketplace": false,
-      "downloads": 10
+      "downloads": 11
     },
     "seb5594/hass-vacuum_mapguard-integration": {
       "marketplace": false,
-      "downloads": 289
+      "downloads": 290
     }
   }
 }
