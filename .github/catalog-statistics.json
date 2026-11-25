@@ -1,62 +1,62 @@
 {
-  "date": "2026-11-24",
+  "date": "2026-11-25",
   "catalog_commit": "8222b8ac4e6616bacfa31080fb7496a28d6d0bef",
   "repositories": {
     "seb5594/hass-car_tires_season-integration": {
       "marketplace": true,
-      "downloads": 133
+      "downloads": 134
     },
     "seb5594/hass-ubpet_cat_litter_hub-integration": {
       "marketplace": false,
-      "downloads": 299
+      "downloads": 300
     },
     "seb5594/hass-cigarette_vending_finder-integration": {
       "marketplace": false,
-      "downloads": 28
+      "downloads": 29
     },
     "seb5594/hass-custom_integrations_translator-integration": {
       "marketplace": true,
-      "downloads": 242
+      "downloads": 243
     },
     "seb5594/hass-deepl_translator-integration": {
       "marketplace": true,
-      "downloads": 273
+      "downloads": 274
     },
     "seb5594/hass-escpos-thermal-printer-integration": {
       "marketplace": false,
-      "downloads": 74
+      "downloads": 75
     },
     "seb5594/hass-escpos-thermal-printing-designer-integration": {
       "marketplace": false,
-      "downloads": 65
+      "downloads": 66
     },
     "seb5594/hass-google_translator-integration": {
       "marketplace": false,
-      "downloads": 121
+      "downloads": 122
     },
     "seb5594/hass-medication_monitoring-integration": {
       "marketplace": false,
-      "downloads": 285
+      "downloads": 286
     },
     "seb5594/hass-ninebot_e_scooters-integration": {
       "marketplace": true,
-      "downloads": 439
+      "downloads": 440
     },
     "seb5594/hass-perdis_roster-integration": {
       "marketplace": false,
-      "downloads": 55
+      "downloads": 57
     },
     "seb5594/hass-pulseaudio_loopback_extended-integration": {
       "marketplace": false,
-      "downloads": 265
+      "downloads": 266
     },
     "seb5594/hass-gta6-integration": {
       "marketplace": false,
-      "downloads": 0
+      "downloads": 4
     },
     "seb5594/hass-vacuum_mapguard-integration": {
       "marketplace": false,
-      "downloads": 283
+      "downloads": 284
     }
   }
 }
