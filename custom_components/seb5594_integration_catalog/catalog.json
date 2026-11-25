@@ -231,18 +231,18 @@
   },
   {
     "repository": "seb5594/hass-perdis_roster-integration",
-    "commit": "def80e0f268f3f2ffec575f9e0d286adb2e5698c",
+    "commit": "0c591a302c07fbf803dc4c288e0621a8afde0d34",
     "domain": "perdis_roster",
     "name": "Perdis Duty Roster",
-    "version": "2026.11.25.13",
-    "release_tag": "2026.11.25.13",
-    "release_url": "https://github.com/seb5594/hass-perdis_roster-integration/releases/tag/2026.11.25.13",
-    "published_at": "2026-11-25T20:44:32Z",
-    "package_url": "https://github.com/seb5594/hass-perdis_roster-integration/releases/download/2026.11.25.13/perdis_roster.zip",
+    "version": "2026.11.25.14",
+    "release_tag": "2026.11.25.14",
+    "release_url": "https://github.com/seb5594/hass-perdis_roster-integration/releases/tag/2026.11.25.14",
+    "published_at": "2026-11-25T23:15:16Z",
+    "package_url": "https://github.com/seb5594/hass-perdis_roster-integration/releases/download/2026.11.25.14/perdis_roster.zip",
     "package": {
       "name": "perdis_roster.zip",
-      "url": "https://github.com/seb5594/hass-perdis_roster-integration/releases/download/2026.11.25.13/perdis_roster.zip",
-      "sha256": "61fc144f2d9769117d607a88f00e7deffbc419e94dce103f84f7fff8c78fe1ac"
+      "url": "https://github.com/seb5594/hass-perdis_roster-integration/releases/download/2026.11.25.14/perdis_roster.zip",
+      "sha256": "a1169fdb121ba1e15f69c155f6597327f4b82b25a1ebe9135ce7f8557e8e643c"
     },
     "homeassistant": "2023.7.0",
     "description": "Home Assistant custom component for the enterprise software Perdis by INIT",
@@ -250,7 +250,7 @@
     "ci": "ci.yml",
     "tests": "73 passed",
     "logo": "assets/brands/perdis_roster.png",
-    "logo_source": "https://github.com/seb5594/hass-perdis_roster-integration/releases/tag/2026.11.25.13 (perdis_roster.zip: brand/logo.png)"
+    "logo_source": "https://github.com/seb5594/hass-perdis_roster-integration/releases/tag/2026.11.25.14 (perdis_roster.zip: brand/logo.png)"
   },
   {
     "repository": "seb5594/hass-pulseaudio_loopback_extended-integration",
