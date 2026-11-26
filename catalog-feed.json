@@ -112,11 +112,11 @@
     {
       "repository": "seb5594/hass-pwa_app_studio-integration",
       "domain": "pwa_app_studio",
-      "name": "PWA App Studio",
-      "version": "1.0.0",
-      "release_tag": "v1.0.0",
-      "release_url": "https://github.com/seb5594/hass-pwa_app_studio-integration/releases/tag/v1.0.0",
-      "package_url": "https://github.com/seb5594/hass-pwa_app_studio-integration/releases/download/v1.0.0/pwa_app_studio.zip"
+      "name": "PWA Web-App Studio",
+      "version": "2026.11.26",
+      "release_tag": "2026.11.26",
+      "release_url": "https://github.com/seb5594/hass-pwa_app_studio-integration/releases/tag/2026.11.26",
+      "package_url": "https://github.com/seb5594/hass-pwa_app_studio-integration/releases/download/2026.11.26/pwa_app_studio.zip"
     },
     {
       "repository": "seb5594/hass-gta6-integration",
