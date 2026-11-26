@@ -4,63 +4,63 @@
   "repositories": {
     "seb5594/hass-car_tires_season-integration": {
       "marketplace": true,
-      "downloads": 157
+      "downloads": 158
     },
     "seb5594/hass-ubpet_cat_litter_hub-integration": {
       "marketplace": true,
-      "downloads": 327
+      "downloads": 329
     },
     "seb5594/hass-cigarette_vending_finder-integration": {
       "marketplace": false,
-      "downloads": 52
+      "downloads": 53
     },
     "seb5594/hass-custom_integrations_translator-integration": {
       "marketplace": true,
-      "downloads": 266
+      "downloads": 267
     },
     "seb5594/hass-deepl_translator-integration": {
       "marketplace": true,
-      "downloads": 297
+      "downloads": 298
     },
     "seb5594/hass-escpos-thermal-printer-integration": {
       "marketplace": false,
-      "downloads": 98
+      "downloads": 100
     },
     "seb5594/hass-escpos-thermal-printing-designer-integration": {
       "marketplace": false,
-      "downloads": 90
+      "downloads": 92
     },
     "seb5594/hass-google_translator-integration": {
       "marketplace": false,
-      "downloads": 145
+      "downloads": 147
     },
     "seb5594/hass-medication_monitoring-integration": {
       "marketplace": false,
-      "downloads": 308
+      "downloads": 310
     },
     "seb5594/hass-ninebot_e_scooters-integration": {
       "marketplace": true,
-      "downloads": 466
+      "downloads": 468
     },
     "seb5594/hass-perdis_roster-integration": {
       "marketplace": false,
-      "downloads": 117
+      "downloads": 119
     },
     "seb5594/hass-pulseaudio_loopback_extended-integration": {
       "marketplace": false,
-      "downloads": 288
+      "downloads": 290
     },
     "seb5594/hass-pwa_app_studio-integration": {
       "marketplace": false,
-      "downloads": 9
+      "downloads": 12
     },
     "seb5594/hass-gta6-integration": {
       "marketplace": false,
-      "downloads": 29
+      "downloads": 31
     },
     "seb5594/hass-vacuum_mapguard-integration": {
       "marketplace": true,
-      "downloads": 306
+      "downloads": 307
     }
   }
 }
