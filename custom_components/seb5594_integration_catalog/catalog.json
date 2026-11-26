@@ -70,26 +70,26 @@
   },
   {
     "repository": "seb5594/hass-config_entry_panel-integration",
-    "commit": "b82916eab0083c0a4fa5d452335e2e581b522fe6",
+    "commit": "da162ac2c40b885a56679142fb33815d61f539d9",
     "domain": "config_entry_panel",
     "name": "Config Entry Panel",
-    "version": "2026.11.26.2",
-    "release_tag": "2026.11.26.2",
-    "release_url": "https://github.com/seb5594/hass-config_entry_panel-integration/releases/tag/2026.11.26.2",
-    "published_at": "2026-11-26T22:47:24Z",
-    "package_url": "https://github.com/seb5594/hass-config_entry_panel-integration/releases/download/2026.11.26.2/config_entry_panel.zip",
+    "version": "2026.11.26.3",
+    "release_tag": "2026.11.26.3",
+    "release_url": "https://github.com/seb5594/hass-config_entry_panel-integration/releases/tag/2026.11.26.3",
+    "published_at": "2026-11-26T23:03:20Z",
+    "package_url": "https://github.com/seb5594/hass-config_entry_panel-integration/releases/download/2026.11.26.3/config_entry_panel.zip",
     "package": {
       "name": "config_entry_panel.zip",
-      "url": "https://github.com/seb5594/hass-config_entry_panel-integration/releases/download/2026.11.26.2/config_entry_panel.zip",
-      "sha256": "4cc82208d9d113ecc528fc26a170b9f156f354a19da769853f4570a2122fbd5e"
+      "url": "https://github.com/seb5594/hass-config_entry_panel-integration/releases/download/2026.11.26.3/config_entry_panel.zip",
+      "sha256": "7976bb183c93ea895615d3fc53e8bb4d35b265967e4ed4f73000dcd9321943a2"
     },
     "homeassistant": "2024.7.0",
     "description": "A custom Home Assistant component to modify the config entry option permission hidden by a gear to allow regular users to see and set integration settings",
     "changelog": "CHANGELOG.md",
     "ci": "ci.yml",
-    "tests": "80 passed",
+    "tests": "90 passed",
     "logo": "assets/brands/config_entry_panel.png",
-    "logo_source": "https://github.com/seb5594/hass-config_entry_panel-integration/releases/tag/2026.11.26.2 (config_entry_panel.zip: brand/logo.png)"
+    "logo_source": "https://github.com/seb5594/hass-config_entry_panel-integration/releases/tag/2026.11.26.3 (config_entry_panel.zip: brand/logo.png)"
   },
   {
     "repository": "seb5594/hass-custom_integrations_translator-integration",
