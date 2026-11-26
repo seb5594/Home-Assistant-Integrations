@@ -12,6 +12,10 @@
     "commit": "013c4b79762dfb59ac85187c161313ca6e5aedfb"
   },
   {
+    "repository": "seb5594/hass-config_entry_panel-integration",
+    "commit": "729c2e184439d7fccc5159d834733c84e5c8055a"
+  },
+  {
     "repository": "seb5594/hass-custom_integrations_translator-integration",
     "commit": "062eb6ad9e6351cc82f73b69c927805c6b06222b"
   },

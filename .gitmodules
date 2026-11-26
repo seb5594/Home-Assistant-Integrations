@@ -7,6 +7,9 @@
 [submodule "cigarette_vending_finder"]
 	path = integrations/cigarette_vending_finder
 	url = https://github.com/seb5594/hass-cigarette_vending_finder-integration.git
+[submodule "config_entry_panel"]
+	path = integrations/config_entry_panel
+	url = https://github.com/seb5594/hass-config_entry_panel-integration.git
 [submodule "custom_integration_translator"]
 	path = integrations/custom_integration_translator
 	url = https://github.com/seb5594/hass-custom_integrations_translator-integration.git

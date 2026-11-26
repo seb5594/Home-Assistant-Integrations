@@ -29,6 +29,15 @@
       "package_url": "https://github.com/seb5594/hass-cigarette_vending_finder-integration/releases/download/2026.11.23.1/cigarette_vending_finder.zip"
     },
     {
+      "repository": "seb5594/hass-config_entry_panel-integration",
+      "domain": "config_entry_panel",
+      "name": "Config Entry Panel",
+      "version": "2026.11.26b1",
+      "release_tag": "v2026.11.26b1",
+      "release_url": "https://github.com/seb5594/hass-config_entry_panel-integration/releases/tag/v2026.11.26b1",
+      "package_url": "https://github.com/seb5594/hass-config_entry_panel-integration/releases/download/v2026.11.26b1/config_entry_panel.zip"
+    },
+    {
       "repository": "seb5594/hass-custom_integrations_translator-integration",
       "domain": "custom_integration_translator",
       "name": "Custom Integration Translator",
