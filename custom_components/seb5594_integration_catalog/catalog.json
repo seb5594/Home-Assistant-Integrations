@@ -277,18 +277,18 @@
   },
   {
     "repository": "seb5594/hass-pwa_app_studio-integration",
-    "commit": "fe7f57ecf6d1afe17405de18a88a1c00f5b2f52c",
+    "commit": "287fd4d71765430aef2d7da37a0cd2e0142a74b2",
     "domain": "pwa_app_studio",
     "name": "PWA Web-App Studio",
-    "version": "2026.11.26.93",
-    "release_tag": "2026.11.26.93",
-    "release_url": "https://github.com/seb5594/hass-pwa_app_studio-integration/releases/tag/2026.11.26.93",
-    "published_at": "2026-11-26T21:16:05Z",
-    "package_url": "https://github.com/seb5594/hass-pwa_app_studio-integration/releases/download/2026.11.26.93/pwa_app_studio.zip",
+    "version": "2026.11.26.94",
+    "release_tag": "2026.11.26.94",
+    "release_url": "https://github.com/seb5594/hass-pwa_app_studio-integration/releases/tag/2026.11.26.94",
+    "published_at": "2026-11-26T21:19:05Z",
+    "package_url": "https://github.com/seb5594/hass-pwa_app_studio-integration/releases/download/2026.11.26.94/pwa_app_studio.zip",
     "package": {
       "name": "pwa_app_studio.zip",
-      "url": "https://github.com/seb5594/hass-pwa_app_studio-integration/releases/download/2026.11.26.93/pwa_app_studio.zip",
-      "sha256": "bf0f6dd4b90f86ea934f7c9371c36b319bdc4ebd7c8dbbdf6474b88ed06ec742"
+      "url": "https://github.com/seb5594/hass-pwa_app_studio-integration/releases/download/2026.11.26.94/pwa_app_studio.zip",
+      "sha256": "48d5584dc828a4fab908a084d3e62a70f544b19570f4b61d0521fa15e4515a8f"
     },
     "homeassistant": "2021.12.0",
     "description": "Home Assistant custom integration to create progressive web apps (pwa)",
@@ -296,7 +296,7 @@
     "ci": "ci.yml",
     "tests": "2 passed",
     "logo": "assets/brands/pwa_app_studio.png",
-    "logo_source": "https://github.com/seb5594/hass-pwa_app_studio-integration/releases/tag/2026.11.26.93 (pwa_app_studio.zip: brand/icon.png)"
+    "logo_source": "https://github.com/seb5594/hass-pwa_app_studio-integration/releases/tag/2026.11.26.94 (pwa_app_studio.zip: brand/icon.png)"
   },
   {
     "repository": "seb5594/hass-gta6-integration",
