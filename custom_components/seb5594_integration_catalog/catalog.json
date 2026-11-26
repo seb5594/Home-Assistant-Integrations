@@ -231,26 +231,26 @@
   },
   {
     "repository": "seb5594/hass-perdis_roster-integration",
-    "commit": "f8957a2696a71bbeca529cbd503cafacf0bee121",
+    "commit": "8b50519bc8a3c1163f89c466007cf7a163c21c19",
     "domain": "perdis_roster",
     "name": "Perdis Duty Roster",
-    "version": "2026.11.26.5",
-    "release_tag": "2026.11.26.5",
-    "release_url": "https://github.com/seb5594/hass-perdis_roster-integration/releases/tag/2026.11.26.5",
-    "published_at": "2026-11-26T16:45:31Z",
-    "package_url": "https://github.com/seb5594/hass-perdis_roster-integration/releases/download/2026.11.26.5/perdis_roster.zip",
+    "version": "2026.11.26.6",
+    "release_tag": "2026.11.26.6",
+    "release_url": "https://github.com/seb5594/hass-perdis_roster-integration/releases/tag/2026.11.26.6",
+    "published_at": "2026-11-26T17:12:13Z",
+    "package_url": "https://github.com/seb5594/hass-perdis_roster-integration/releases/download/2026.11.26.6/perdis_roster.zip",
     "package": {
       "name": "perdis_roster.zip",
-      "url": "https://github.com/seb5594/hass-perdis_roster-integration/releases/download/2026.11.26.5/perdis_roster.zip",
-      "sha256": "61a8840bd8ff997c79504bf58b5ac8f5b8bfd0df7febd06b0081ec19496f24b4"
+      "url": "https://github.com/seb5594/hass-perdis_roster-integration/releases/download/2026.11.26.6/perdis_roster.zip",
+      "sha256": "633ab344726d58422353dd8f21ea46067ea07b824be3f0baf395fe1b3a812ce9"
     },
     "homeassistant": "2023.7.0",
     "description": "Home Assistant custom component for the enterprise software Perdis by INIT",
     "changelog": "CHANGELOG.md",
     "ci": "ci.yml",
-    "tests": "73 passed",
+    "tests": "74 passed",
     "logo": "assets/brands/perdis_roster.png",
-    "logo_source": "https://github.com/seb5594/hass-perdis_roster-integration/releases/tag/2026.11.26.5 (perdis_roster.zip: brand/logo.png)"
+    "logo_source": "https://github.com/seb5594/hass-perdis_roster-integration/releases/tag/2026.11.26.6 (perdis_roster.zip: brand/logo.png)"
   },
   {
     "repository": "seb5594/hass-pulseaudio_loopback_extended-integration",
