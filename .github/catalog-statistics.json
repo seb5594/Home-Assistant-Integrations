@@ -24,7 +24,7 @@
     },
     "seb5594/hass-escpos-thermal-printer-integration": {
       "marketplace": false,
-      "downloads": 108
+      "downloads": 111
     },
     "seb5594/hass-escpos-thermal-printing-designer-integration": {
       "marketplace": true,
@@ -52,7 +52,7 @@
     },
     "seb5594/hass-pwa_app_studio-integration": {
       "marketplace": false,
-      "downloads": 28
+      "downloads": 31
     },
     "seb5594/hass-gta6-integration": {
       "marketplace": false,

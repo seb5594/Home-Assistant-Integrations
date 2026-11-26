@@ -277,18 +277,18 @@
   },
   {
     "repository": "seb5594/hass-pwa_app_studio-integration",
-    "commit": "253f7c339d7c62088ffa5a4ef9f55ad58d0728c2",
+    "commit": "f9fc98a49dd3777d8a7c22c319ff9677b3730021",
     "domain": "pwa_app_studio",
     "name": "PWA Web-App Studio",
-    "version": "2026.11.26.8",
-    "release_tag": "2026.11.26.8",
-    "release_url": "https://github.com/seb5594/hass-pwa_app_studio-integration/releases/tag/2026.11.26.8",
-    "published_at": "2026-11-26T15:39:19Z",
-    "package_url": "https://github.com/seb5594/hass-pwa_app_studio-integration/releases/download/2026.11.26.8/pwa_app_studio.zip",
+    "version": "2026.11.26.9",
+    "release_tag": "2026.11.26.9",
+    "release_url": "https://github.com/seb5594/hass-pwa_app_studio-integration/releases/tag/2026.11.26.9",
+    "published_at": "2026-11-26T15:46:39Z",
+    "package_url": "https://github.com/seb5594/hass-pwa_app_studio-integration/releases/download/2026.11.26.9/pwa_app_studio.zip",
     "package": {
       "name": "pwa_app_studio.zip",
-      "url": "https://github.com/seb5594/hass-pwa_app_studio-integration/releases/download/2026.11.26.8/pwa_app_studio.zip",
-      "sha256": "2a0c18f662ab541b002bdfc3eaba1e4eb3c3e4b25128ab9632d76bb5983c4857"
+      "url": "https://github.com/seb5594/hass-pwa_app_studio-integration/releases/download/2026.11.26.9/pwa_app_studio.zip",
+      "sha256": "50e9499d6373d4cbb74fd6de0f77ee450daa979d56fc1de2b2f5f48f93131c22"
     },
     "homeassistant": "2021.12.0",
     "description": "Home Assistant custom integration to create progressive web apps (pwa)",
