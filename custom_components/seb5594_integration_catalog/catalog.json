@@ -323,18 +323,18 @@
   },
   {
     "repository": "seb5594/hass-vacuum_mapguard-integration",
-    "commit": "994af665c73e3367b721b57d66ac2c5c2c7da48e",
+    "commit": "7da509aa57121a11e7cc5a6db514f545c940eb6a",
     "domain": "vacuum_mapguard",
     "name": "Vacuum MapGuard",
-    "version": "1.1.3",
-    "release_tag": "v1.1.3",
-    "release_url": "https://github.com/seb5594/hass-vacuum_mapguard-integration/releases/tag/v1.1.3",
-    "published_at": "2026-11-16T15:23:06Z",
-    "package_url": "https://github.com/seb5594/hass-vacuum_mapguard-integration/releases/download/v1.1.3/vacuum_mapguard.zip",
+    "version": "1.1.4",
+    "release_tag": "v1.1.4",
+    "release_url": "https://github.com/seb5594/hass-vacuum_mapguard-integration/releases/tag/v1.1.4",
+    "published_at": "2026-11-26T10:31:35Z",
+    "package_url": "https://github.com/seb5594/hass-vacuum_mapguard-integration/releases/download/v1.1.4/vacuum_mapguard.zip",
     "package": {
       "name": "vacuum_mapguard.zip",
-      "url": "https://github.com/seb5594/hass-vacuum_mapguard-integration/releases/download/v1.1.3/vacuum_mapguard.zip",
-      "sha256": "40352db0d09463a4bc890c981f858c0c3a1adb5cfc0a0d1f18f3a7efb41044a9"
+      "url": "https://github.com/seb5594/hass-vacuum_mapguard-integration/releases/download/v1.1.4/vacuum_mapguard.zip",
+      "sha256": "997be708dd5f9d8dd0fd582461e11ad558e1ae5ae3216bb8e8ef8fa663b37211"
     },
     "homeassistant": "2026.3.0",
     "description": "Custom integration to prevent vacuum map changes by default vacuum.start action",
@@ -342,6 +342,6 @@
     "ci": "ci.yml",
     "tests": "5 passed",
     "logo": "assets/brands/vacuum_mapguard.png",
-    "logo_source": "https://github.com/seb5594/hass-vacuum_mapguard-integration/releases/tag/v1.1.3 (vacuum_mapguard.zip: brand/logo.png)"
+    "logo_source": "https://github.com/seb5594/hass-vacuum_mapguard-integration/releases/tag/v1.1.4 (vacuum_mapguard.zip: brand/logo.png)"
   }
 ]
