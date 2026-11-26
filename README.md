@@ -61,12 +61,12 @@ Automatic registration uses HACS' internal runtime registry and is **experimenta
 | <img src="assets/brands/ninebot_e_scooters.png" height="44" alt=""> | **[Ninebot E-Scooters](https://github.com/seb5594/hass-ninebot_e_scooters-integration)** | [2026.11.20](https://github.com/seb5594/hass-ninebot_e_scooters-integration/releases/tag/2026.11.20) | 2023.2.0 | ☑ | [492](https://github.com/seb5594/hass-ninebot_e_scooters-integration/releases) | [Install](https://my.home-assistant.io/redirect/hacs_repository/?owner=seb5594&repository=hass-ninebot_e_scooters-integration&category=integration) |
 | <img src="assets/brands/perdis_roster.png" height="44" alt=""> | **[PERDIS Duty Roster](https://github.com/seb5594/hass-perdis_roster-integration)** | [2026.11.26.7](https://github.com/seb5594/hass-perdis_roster-integration/releases/tag/2026.11.26.7) | 2023.7.0 | ☐ | [150](https://github.com/seb5594/hass-perdis_roster-integration/releases) | [Install](https://my.home-assistant.io/redirect/hacs_repository/?owner=seb5594&repository=hass-perdis_roster-integration&category=integration) |
 | <img src="assets/brands/pulseaudio_loopback.png" height="44" alt=""> | **[PulseAudio Loopback Extended](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration)** | [v1.0.0](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration/releases/tag/v1.0.0) | 2022.4.0 | ☐ | [311](https://github.com/seb5594/hass-pulseaudio_loopback_extended-integration/releases) | [Install](https://my.home-assistant.io/redirect/hacs_repository/?owner=seb5594&repository=hass-pulseaudio_loopback_extended-integration&category=integration) |
-| <img src="assets/catalog.svg" height="44" alt=""> | **[PWA Web-App Studio](https://github.com/seb5594/hass-pwa_app_studio-integration)** | [2026.11.26.92](https://github.com/seb5594/hass-pwa_app_studio-integration/releases/tag/2026.11.26.92) | 2021.12.0 | ☐ | [62](https://github.com/seb5594/hass-pwa_app_studio-integration/releases) | [Install](https://my.home-assistant.io/redirect/hacs_repository/?owner=seb5594&repository=hass-pwa_app_studio-integration&category=integration) |
+| <img src="assets/brands/pwa_app_studio.png" height="44" alt=""> | **[PWA Web-App Studio](https://github.com/seb5594/hass-pwa_app_studio-integration)** | [2026.11.26.93](https://github.com/seb5594/hass-pwa_app_studio-integration/releases/tag/2026.11.26.93) | 2021.12.0 | ☐ | [63](https://github.com/seb5594/hass-pwa_app_studio-integration/releases) | [Install](https://my.home-assistant.io/redirect/hacs_repository/?owner=seb5594&repository=hass-pwa_app_studio-integration&category=integration) |
 | <img src="assets/catalog.svg" height="44" alt=""> | **[Rockstar & Leonida Companion](https://github.com/seb5594/hass-gta6-integration)** | [v0.1.0](https://github.com/seb5594/hass-gta6-integration/releases/tag/v0.1.0) | 2026.11.0 | ☐ | [52](https://github.com/seb5594/hass-gta6-integration/releases) | [Install](https://my.home-assistant.io/redirect/hacs_repository/?owner=seb5594&repository=hass-gta6-integration&category=integration) |
 | <img src="assets/brands/vacuum_mapguard.png" height="44" alt=""> | **[Vacuum MapGuard](https://github.com/seb5594/hass-vacuum_mapguard-integration)** | [v1.1.4](https://github.com/seb5594/hass-vacuum_mapguard-integration/releases/tag/v1.1.4) | 2026.3.0 | ☑ | [332](https://github.com/seb5594/hass-vacuum_mapguard-integration/releases) | [Install](https://my.home-assistant.io/redirect/hacs_repository/?owner=seb5594&repository=hass-vacuum_mapguard-integration&category=integration) |
-| | **Total · 15 integrations** | | | **8 / 15** | **3,355** | |
+| | **Total · 15 integrations** | | | **8 / 15** | **3,356** | |
 
-☑ Listed in the [official HACS / Marketplace catalog](https://github.com/hacs/default/blob/6d8edc506db65e08bdff48a6d9b84e7041e3802f/integration). ☐ Available through a custom repository.
+☑ Listed in the [official HACS / Marketplace catalog](https://github.com/hacs/default/blob/9290af8654352384cb9ef749a850d893dfbd7bf1/integration). ☐ Available through a custom repository.
 
 Downloads count release asset downloads across all published GitHub releases, including pre-releases. GitHub-generated source archives are excluded. Repeat downloads count again, so these figures do not measure unique users or active installations. Data checked on 2026-11-26 (UTC), refreshed by the hourly catalog sync.
 
@@ -330,22 +330,22 @@ A extended integration of the builtin pulseaudio_loopback component from home as
 
 ---
 
-### <img src="assets/catalog.svg" height="48" alt=""> PWA Web-App Studio
+### <img src="assets/brands/pwa_app_studio.png" height="48" alt=""> PWA Web-App Studio
 
 Home Assistant custom integration to create progressive web apps (pwa)
 
-[![release: 2026.11.26.92](https://img.shields.io/static/v1?label=release&message=2026.11.26.92&color=1877A5&style=flat)](https://github.com/seb5594/hass-pwa_app_studio-integration/releases/tag/2026.11.26.92) ![Home Assistant: ≥ 2021.12.0](https://img.shields.io/static/v1?label=Home%20Assistant&message=%E2%89%A5%202021.12.0&color=1877A5&style=flat)<br>
-[![release checks](https://img.shields.io/github/check-runs/seb5594/hass-pwa_app_studio-integration/d7cbf73438cc886b9b03f20433afc0aefb94f227?label=release%20checks)](https://github.com/seb5594/hass-pwa_app_studio-integration/commit/d7cbf73438cc886b9b03f20433afc0aefb94f227/checks) ![tests: 2 passed](https://img.shields.io/static/v1?label=tests&message=2%20passed&color=2F855A&style=flat) [![release downloads](https://img.shields.io/github/downloads/seb5594/hass-pwa_app_studio-integration/2026.11.26.92/total?label=downloads)](https://github.com/seb5594/hass-pwa_app_studio-integration/releases/download/2026.11.26.92/pwa_app_studio.zip) [![issues](https://img.shields.io/github/issues/seb5594/hass-pwa_app_studio-integration?label=issues)](https://github.com/seb5594/hass-pwa_app_studio-integration/issues)
+[![release: 2026.11.26.93](https://img.shields.io/static/v1?label=release&message=2026.11.26.93&color=1877A5&style=flat)](https://github.com/seb5594/hass-pwa_app_studio-integration/releases/tag/2026.11.26.93) ![Home Assistant: ≥ 2021.12.0](https://img.shields.io/static/v1?label=Home%20Assistant&message=%E2%89%A5%202021.12.0&color=1877A5&style=flat)<br>
+[![release checks](https://img.shields.io/github/check-runs/seb5594/hass-pwa_app_studio-integration/fe7f57ecf6d1afe17405de18a88a1c00f5b2f52c?label=release%20checks)](https://github.com/seb5594/hass-pwa_app_studio-integration/commit/fe7f57ecf6d1afe17405de18a88a1c00f5b2f52c/checks) ![tests: 2 passed](https://img.shields.io/static/v1?label=tests&message=2%20passed&color=2F855A&style=flat) [![release downloads](https://img.shields.io/github/downloads/seb5594/hass-pwa_app_studio-integration/2026.11.26.93/total?label=downloads)](https://github.com/seb5594/hass-pwa_app_studio-integration/releases/download/2026.11.26.93/pwa_app_studio.zip) [![issues](https://img.shields.io/github/issues/seb5594/hass-pwa_app_studio-integration?label=issues)](https://github.com/seb5594/hass-pwa_app_studio-integration/issues)
 
-[**Open in HACS**](https://my.home-assistant.io/redirect/hacs_repository/?owner=seb5594&repository=hass-pwa_app_studio-integration&category=integration) · [Release package](https://github.com/seb5594/hass-pwa_app_studio-integration/releases/download/2026.11.26.92/pwa_app_studio.zip) · [Documentation](https://github.com/seb5594/hass-pwa_app_studio-integration/tree/2026.11.26.92) · [Changelog](https://github.com/seb5594/hass-pwa_app_studio-integration/blob/2026.11.26.92/CHANGELOG.md)
+[**Open in HACS**](https://my.home-assistant.io/redirect/hacs_repository/?owner=seb5594&repository=hass-pwa_app_studio-integration&category=integration) · [Release package](https://github.com/seb5594/hass-pwa_app_studio-integration/releases/download/2026.11.26.93/pwa_app_studio.zip) · [Documentation](https://github.com/seb5594/hass-pwa_app_studio-integration/tree/2026.11.26.93) · [Changelog](https://github.com/seb5594/hass-pwa_app_studio-integration/blob/2026.11.26.93/CHANGELOG.md)
 
 <details>
 <summary>Release and source details</summary>
 
 - Domain: `pwa_app_studio`
-- Published release: [2026.11.26.92](https://github.com/seb5594/hass-pwa_app_studio-integration/releases/tag/2026.11.26.92)
+- Published release: [2026.11.26.93](https://github.com/seb5594/hass-pwa_app_studio-integration/releases/tag/2026.11.26.93)
 - Source: [`integrations/pwa_app_studio`](integrations/pwa_app_studio) (Git submodule)
-- Pinned commit: [`d7cbf73`](https://github.com/seb5594/hass-pwa_app_studio-integration/commit/d7cbf73438cc886b9b03f20433afc0aefb94f227)
+- Pinned commit: [`fe7f57e`](https://github.com/seb5594/hass-pwa_app_studio-integration/commit/fe7f57ecf6d1afe17405de18a88a1c00f5b2f52c)
 
 </details>
 

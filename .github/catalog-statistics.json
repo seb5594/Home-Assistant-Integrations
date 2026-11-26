@@ -1,6 +1,6 @@
 {
   "date": "2026-11-26",
-  "catalog_commit": "6d8edc506db65e08bdff48a6d9b84e7041e3802f",
+  "catalog_commit": "9290af8654352384cb9ef749a850d893dfbd7bf1",
   "repositories": {
     "seb5594/hass-car_tires_season-integration": {
       "marketplace": true,
@@ -52,7 +52,7 @@
     },
     "seb5594/hass-pwa_app_studio-integration": {
       "marketplace": false,
-      "downloads": 62
+      "downloads": 63
     },
     "seb5594/hass-gta6-integration": {
       "marketplace": false,
