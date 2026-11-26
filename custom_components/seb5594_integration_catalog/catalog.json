@@ -116,18 +116,18 @@
   },
   {
     "repository": "seb5594/hass-escpos-thermal-printer-integration",
-    "commit": "6f2b3b471deba44a69e306c5cd4cccdbfcb66062",
+    "commit": "3e8050575b64f0d8de1bee356fa94e39c7c3cd86",
     "domain": "escpos_printer",
     "name": "ESC/POS Thermal Printer",
-    "version": "2026.11.19.2",
-    "release_tag": "2026.11.19.2",
-    "release_url": "https://github.com/seb5594/hass-escpos-thermal-printer-integration/releases/tag/2026.11.19.2",
-    "published_at": "2026-11-19T23:26:59Z",
-    "package_url": "https://github.com/seb5594/hass-escpos-thermal-printer-integration/releases/download/2026.11.19.2/escpos_printer.zip",
+    "version": "2026.11.26",
+    "release_tag": "2026.11.26",
+    "release_url": "https://github.com/seb5594/hass-escpos-thermal-printer-integration/releases/tag/2026.11.26",
+    "published_at": "2026-11-26T15:18:08Z",
+    "package_url": "https://github.com/seb5594/hass-escpos-thermal-printer-integration/releases/download/2026.11.26/escpos_printer.zip",
     "package": {
       "name": "escpos_printer.zip",
-      "url": "https://github.com/seb5594/hass-escpos-thermal-printer-integration/releases/download/2026.11.19.2/escpos_printer.zip",
-      "sha256": "6b0fb7bf7c673a74a1c1ef11c2208c2fd8a2a542fb4ef1286cf366c0704e6376"
+      "url": "https://github.com/seb5594/hass-escpos-thermal-printer-integration/releases/download/2026.11.26/escpos_printer.zip",
+      "sha256": "9622619f9123997f8509b404c6380424afa8ed3d5555142449ad963ed268559d"
     },
     "homeassistant": "2026.5.0",
     "description": "Home Assistant / HACS integration for network/usb/serial/bluetooth  thermal printers",
@@ -135,7 +135,7 @@
     "ci": "",
     "tests": "",
     "logo": "assets/brands/escpos_printer.png",
-    "logo_source": "https://github.com/seb5594/hass-escpos-thermal-printer-integration/releases/tag/2026.11.19.2 (escpos_printer.zip: brand/logo.png)"
+    "logo_source": "https://github.com/seb5594/hass-escpos-thermal-printer-integration/releases/tag/2026.11.26 (escpos_printer.zip: brand/logo.png)"
   },
   {
     "repository": "seb5594/hass-escpos-thermal-printing-designer-integration",
@@ -277,18 +277,18 @@
   },
   {
     "repository": "seb5594/hass-pwa_app_studio-integration",
-    "commit": "de159b89f7b1a53822ce123e342b61780412cb54",
+    "commit": "898100d8a428a685e30b792ae58b7f597adc25d5",
     "domain": "pwa_app_studio",
     "name": "PWA Web-App Studio",
-    "version": "2026.11.26.5",
-    "release_tag": "2026.11.26.5",
-    "release_url": "https://github.com/seb5594/hass-pwa_app_studio-integration/releases/tag/2026.11.26.5",
-    "published_at": "2026-11-26T11:19:29Z",
-    "package_url": "https://github.com/seb5594/hass-pwa_app_studio-integration/releases/download/2026.11.26.5/pwa_app_studio.zip",
+    "version": "2026.11.26.6",
+    "release_tag": "2026.11.26.6",
+    "release_url": "https://github.com/seb5594/hass-pwa_app_studio-integration/releases/tag/2026.11.26.6",
+    "published_at": "2026-11-26T15:25:16Z",
+    "package_url": "https://github.com/seb5594/hass-pwa_app_studio-integration/releases/download/2026.11.26.6/pwa_app_studio.zip",
     "package": {
       "name": "pwa_app_studio.zip",
-      "url": "https://github.com/seb5594/hass-pwa_app_studio-integration/releases/download/2026.11.26.5/pwa_app_studio.zip",
-      "sha256": "1eecacf97e093a2161255364c971af7d53351a485f48de48a936ca43a81b321f"
+      "url": "https://github.com/seb5594/hass-pwa_app_studio-integration/releases/download/2026.11.26.6/pwa_app_studio.zip",
+      "sha256": "dff22d2798a28776db21e6782b2e8d489b0b68423bf7d083e40799b19454c809"
     },
     "homeassistant": "2021.12.0",
     "description": "Home Assistant custom integration to create progressive web apps (pwa)",
