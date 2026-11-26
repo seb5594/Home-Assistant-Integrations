@@ -1,6 +1,6 @@
 {
   "date": "2026-11-26",
-  "catalog_commit": "ee3aab77dc0b498e82f7d6dfe9221d6658fb657b",
+  "catalog_commit": "6d8edc506db65e08bdff48a6d9b84e7041e3802f",
   "repositories": {
     "seb5594/hass-car_tires_season-integration": {
       "marketplace": true,
