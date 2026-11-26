@@ -162,18 +162,18 @@
   },
   {
     "repository": "seb5594/hass-google_translator-integration",
-    "commit": "7d4f35f14f348ac1676c007c8fbdb548af3f100b",
+    "commit": "51e0322947a1c48ad571c05ca657e42a465c7c89",
     "domain": "google_translator",
     "name": "Google Translator",
-    "version": "2026.11.20",
-    "release_tag": "2026.11.20",
-    "release_url": "https://github.com/seb5594/hass-google_translator-integration/releases/tag/2026.11.20",
-    "published_at": "2026-11-20T00:15:47Z",
-    "package_url": "https://github.com/seb5594/hass-google_translator-integration/releases/download/2026.11.20/google_translator.zip",
+    "version": "2026.11.26",
+    "release_tag": "2026.11.26",
+    "release_url": "https://github.com/seb5594/hass-google_translator-integration/releases/tag/2026.11.26",
+    "published_at": "2026-11-26T11:20:10Z",
+    "package_url": "https://github.com/seb5594/hass-google_translator-integration/releases/download/2026.11.26/google_translator.zip",
     "package": {
       "name": "google_translator.zip",
-      "url": "https://github.com/seb5594/hass-google_translator-integration/releases/download/2026.11.20/google_translator.zip",
-      "sha256": "bc69f060c953e5eb940aa05645305713be5a44716ad59c62791a56ed32c3aa95"
+      "url": "https://github.com/seb5594/hass-google_translator-integration/releases/download/2026.11.26/google_translator.zip",
+      "sha256": "f1e1c4a6ca867771087af51edd2179751441c5c7639e678916742df098d05227"
     },
     "homeassistant": "2023.7.0",
     "description": "Google Translator for Home Assistant",
@@ -181,7 +181,7 @@
     "ci": "ci.yml",
     "tests": "23 passed",
     "logo": "assets/brands/google_translator.png",
-    "logo_source": "https://github.com/seb5594/hass-google_translator-integration/releases/tag/2026.11.20 (google_translator.zip: brand/icon.png)"
+    "logo_source": "https://github.com/seb5594/hass-google_translator-integration/releases/tag/2026.11.26 (google_translator.zip: brand/icon.png)"
   },
   {
     "repository": "seb5594/hass-medication_monitoring-integration",
