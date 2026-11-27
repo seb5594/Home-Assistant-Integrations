@@ -300,18 +300,18 @@
   },
   {
     "repository": "seb5594/hass-pwa_app_studio-integration",
-    "commit": "a0a657ac0c0800decec01b4e84fd60d6613d702c",
+    "commit": "e2df57e54051cc316f69de0f13a59c98a8a204a7",
     "domain": "pwa_app_studio",
     "name": "PWA Web-App Studio",
-    "version": "2026.11.27",
-    "release_tag": "2026.11.27",
-    "release_url": "https://github.com/seb5594/hass-pwa_app_studio-integration/releases/tag/2026.11.27",
-    "published_at": "2026-11-26T23:01:21Z",
-    "package_url": "https://github.com/seb5594/hass-pwa_app_studio-integration/releases/download/2026.11.27/pwa_app_studio.zip",
+    "version": "2026.11.27.1",
+    "release_tag": "2026.11.27.1",
+    "release_url": "https://github.com/seb5594/hass-pwa_app_studio-integration/releases/tag/2026.11.27.1",
+    "published_at": "2026-11-27T13:40:40Z",
+    "package_url": "https://github.com/seb5594/hass-pwa_app_studio-integration/releases/download/2026.11.27.1/pwa_app_studio.zip",
     "package": {
       "name": "pwa_app_studio.zip",
-      "url": "https://github.com/seb5594/hass-pwa_app_studio-integration/releases/download/2026.11.27/pwa_app_studio.zip",
-      "sha256": "480e2ea892dc3e525411a46922d70e42fedd59fb16887771a021c01ec2346e3d"
+      "url": "https://github.com/seb5594/hass-pwa_app_studio-integration/releases/download/2026.11.27.1/pwa_app_studio.zip",
+      "sha256": "946ad09044473f70511c2e7cd966ae942a78e6fa97df6c2205ef4ceb425dfcb8"
     },
     "homeassistant": "2021.12.0",
     "description": "Home Assistant custom integration to create progressive web apps (pwa)",
@@ -319,7 +319,7 @@
     "ci": "ci.yml",
     "tests": "2 passed",
     "logo": "assets/brands/pwa_app_studio.png",
-    "logo_source": "https://github.com/seb5594/hass-pwa_app_studio-integration/releases/tag/2026.11.27 (pwa_app_studio.zip: brand/icon.png)"
+    "logo_source": "https://github.com/seb5594/hass-pwa_app_studio-integration/releases/tag/2026.11.27.1 (pwa_app_studio.zip: brand/icon.png)"
   },
   {
     "repository": "seb5594/hass-gta6-integration",
