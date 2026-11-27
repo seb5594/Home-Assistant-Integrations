@@ -1,6 +1,6 @@
 {
   "date": "2026-11-27",
-  "catalog_commit": "4c34a7a463f285ab690314518f0f8224ee584024",
+  "catalog_commit": "35f218810df823f4e3e541a4f8b18e106264b458",
   "repositories": {
     "seb5594/hass-car_tires_season-integration": {
       "marketplace": true,
@@ -28,7 +28,7 @@
     },
     "seb5594/hass-escpos-thermal-printer-integration": {
       "marketplace": false,
-      "downloads": 137
+      "downloads": 138
     },
     "seb5594/hass-escpos-thermal-printing-designer-integration": {
       "marketplace": true,
