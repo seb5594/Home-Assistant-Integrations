@@ -68,10 +68,10 @@
       "repository": "seb5594/hass-escpos-thermal-printing-designer-integration",
       "domain": "escpos_designer",
       "name": "ESC/POS Thermal Printer Designer",
-      "version": "2026.11.27",
-      "release_tag": "2026.11.27",
-      "release_url": "https://github.com/seb5594/hass-escpos-thermal-printing-designer-integration/releases/tag/2026.11.27",
-      "package_url": "https://github.com/seb5594/hass-escpos-thermal-printing-designer-integration/releases/download/2026.11.27/escpos_designer.zip"
+      "version": "2026.11.27.1",
+      "release_tag": "2026.11.27.1",
+      "release_url": "https://github.com/seb5594/hass-escpos-thermal-printing-designer-integration/releases/tag/2026.11.27.1",
+      "package_url": "https://github.com/seb5594/hass-escpos-thermal-printing-designer-integration/releases/download/2026.11.27.1/escpos_designer.zip"
     },
     {
       "repository": "seb5594/hass-google_translator-integration",
