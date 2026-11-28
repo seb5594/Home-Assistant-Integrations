@@ -23,10 +23,10 @@
       "repository": "seb5594/hass-cigarette_vending_finder-integration",
       "domain": "cigarette_vending_finder",
       "name": "Cigarette Vending Finder",
-      "version": "2026.11.28.1",
-      "release_tag": "2026.11.28.1",
-      "release_url": "https://github.com/seb5594/hass-cigarette_vending_finder-integration/releases/tag/2026.11.28.1",
-      "package_url": "https://github.com/seb5594/hass-cigarette_vending_finder-integration/releases/download/2026.11.28.1/cigarette_vending_finder.zip"
+      "version": "2026.11.28.2",
+      "release_tag": "2026.11.28.2",
+      "release_url": "https://github.com/seb5594/hass-cigarette_vending_finder-integration/releases/tag/2026.11.28.2",
+      "package_url": "https://github.com/seb5594/hass-cigarette_vending_finder-integration/releases/download/2026.11.28.2/cigarette_vending_finder.zip"
     },
     {
       "repository": "seb5594/hass-config_entry_panel-integration",

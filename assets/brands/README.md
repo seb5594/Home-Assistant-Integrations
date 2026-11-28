@@ -4,7 +4,7 @@ Source graphics retain their original rights and licenses.
 
 - **Car Tires Season** (`assets/brands/car_tires_season.png`): https://github.com/seb5594/hass-car_tires_season-integration/releases/tag/2026.11.19 (car_tires_season.zip: brand/icon.png)
 - **Cat Litter Hub – UPET / UBPet / AIRROBO / Robotail / Meowant** (`assets/brands/ubpet_cat_litter_hub.png`): https://github.com/seb5594/hass-ubpet_cat_litter_hub-integration/releases/tag/2026.11.20 (ubpet_cat_litter_hub.zip: brand/logo.png)
-- **Cigarette Vending Finder** (`assets/brands/cigarette_vending_finder.png`): https://github.com/seb5594/hass-cigarette_vending_finder-integration/releases/tag/2026.11.28.1 (cigarette_vending_finder.zip: brand/logo.png)
+- **Cigarette Vending Finder** (`assets/brands/cigarette_vending_finder.png`): https://github.com/seb5594/hass-cigarette_vending_finder-integration/releases/tag/2026.11.28.2 (cigarette_vending_finder.zip: brand/logo.png)
 - **Config Entry Panel** (`assets/brands/config_entry_panel.png`): https://github.com/seb5594/hass-config_entry_panel-integration/releases/tag/2026.11.26.3 (config_entry_panel.zip: brand/logo.png)
 - **Custom Integration Translator** (`assets/brands/custom_integration_translator.png`): https://github.com/seb5594/hass-custom_integrations_translator-integration/releases/tag/2026.11.20 (custom_integration_translator.zip: brand/icon.png)
 - **DeepL Translator** (`assets/brands/deepl_translator.png`): https://github.com/seb5594/hass-deepl_translator-integration/releases/tag/2026.11.20 (deepl_translator.zip: brand/logo.png)

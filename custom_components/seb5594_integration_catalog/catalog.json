@@ -47,18 +47,18 @@
   },
   {
     "repository": "seb5594/hass-cigarette_vending_finder-integration",
-    "commit": "4dcb0fca6e0d65733a2063a5298605fb2f88d632",
+    "commit": "47a2656808dc00ee20d512f5726879b059dd07bc",
     "domain": "cigarette_vending_finder",
     "name": "Cigarette Vending Finder",
-    "version": "2026.11.28.1",
-    "release_tag": "2026.11.28.1",
-    "release_url": "https://github.com/seb5594/hass-cigarette_vending_finder-integration/releases/tag/2026.11.28.1",
-    "published_at": "2026-11-28T09:29:37Z",
-    "package_url": "https://github.com/seb5594/hass-cigarette_vending_finder-integration/releases/download/2026.11.28.1/cigarette_vending_finder.zip",
+    "version": "2026.11.28.2",
+    "release_tag": "2026.11.28.2",
+    "release_url": "https://github.com/seb5594/hass-cigarette_vending_finder-integration/releases/tag/2026.11.28.2",
+    "published_at": "2026-11-28T10:07:39Z",
+    "package_url": "https://github.com/seb5594/hass-cigarette_vending_finder-integration/releases/download/2026.11.28.2/cigarette_vending_finder.zip",
     "package": {
       "name": "cigarette_vending_finder.zip",
-      "url": "https://github.com/seb5594/hass-cigarette_vending_finder-integration/releases/download/2026.11.28.1/cigarette_vending_finder.zip",
-      "sha256": "0c26430927d034cd5b9790af71a68aeed4f104e1dc9062dc340645ef3687c8ae"
+      "url": "https://github.com/seb5594/hass-cigarette_vending_finder-integration/releases/download/2026.11.28.2/cigarette_vending_finder.zip",
+      "sha256": "787922aaa1fa88d7fb1ee5598f868dd69553b8e1dca388cd91467ce78da99f54"
     },
     "homeassistant": "2021.11.5",
     "description": "Home Assistant custom component to find cigarettes vending machines around your home location or next one by person entity",
@@ -66,7 +66,7 @@
     "ci": "ci.yml",
     "tests": "4 passed",
     "logo": "assets/brands/cigarette_vending_finder.png",
-    "logo_source": "https://github.com/seb5594/hass-cigarette_vending_finder-integration/releases/tag/2026.11.28.1 (cigarette_vending_finder.zip: brand/logo.png)"
+    "logo_source": "https://github.com/seb5594/hass-cigarette_vending_finder-integration/releases/tag/2026.11.28.2 (cigarette_vending_finder.zip: brand/logo.png)"
   },
   {
     "repository": "seb5594/hass-config_entry_panel-integration",
